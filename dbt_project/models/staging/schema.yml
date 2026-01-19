@@ -1,0 +1,83 @@
+version: 2
+
+models:
+  - name: stg_divisions
+    description: Staging table for badminton league divisions/draws
+    columns:
+      - name: draw_id
+        description: Unique identifier for each division/draw
+        tests:
+          - unique
+          - not_null
+      - name: division_name
+        description: Name of the division (e.g., "Open Division 1", "Mixed Division 2")
+        tests:
+          - not_null
+      - name: url
+        description: Relative URL to the division's draw page
+      - name: loaded_at
+        description: Timestamp when the data was loaded into the staging table
+
+  - name: stg_matches
+    description: Staging table for match-level data
+    columns:
+      - name: match_id
+        description: Unique identifier for each match
+        tests:
+          - unique
+          - not_null
+      - name: draw_id
+        description: Foreign key to divisions table
+        tests:
+          - not_null
+      - name: division_name
+        description: Name of the division this match belongs to
+        tests:
+          - not_null
+      - name: match_date
+        description: Date and time of the match
+      - name: home_team
+        description: Home team name
+      - name: away_team
+        description: Away team name
+      - name: score
+        description: Overall match score (e.g., "6-3", "9-0")
+      - name: url
+        description: Relative URL to the match detail page
+      - name: loaded_at
+        description: Timestamp when the data was loaded into the staging table
+
+  - name: stg_games
+    description: Staging table for detailed match data with individual game results in flat format
+    columns:
+      - name: match_id
+        description: Unique identifier for each match
+        tests:
+          - unique
+          - not_null
+      - name: home_team
+        description: Home team name
+      - name: away_team
+        description: Away team name
+      - name: match_date
+        description: Date of the match (DD/MM/YYYY format)
+      - name: match_time
+        description: Time of the match (HH:MM format)
+      - name: division
+        description: Division name
+      - name: venue
+        description: Location where the match was played
+      - name: match_score
+        description: Overall match score
+      - name: MD1_Home_P1
+        description: Men's Doubles 1 - Home Player 1
+      - name: MD1_Home_P2
+        description: Men's Doubles 1 - Home Player 2
+      - name: MD1_Away_P1
+        description: Men's Doubles 1 - Away Player 1
+      - name: MD1_Away_P2
+        description: Men's Doubles 1 - Away Player 2
+      - name: MD1_Score
+        description: Men's Doubles 1 - Game score (set scores)
+      - name: loaded_at
+        description: Timestamp when the data was loaded into the staging table

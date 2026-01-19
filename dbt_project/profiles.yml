@@ -1,0 +1,7 @@
+badminton_wrapped:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/Users/c16305a/Documents/ECS/Sandpit/badminton-wrapped/data/badminton_wrapped.duckdb'
+      threads: 4

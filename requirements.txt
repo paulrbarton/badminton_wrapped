@@ -1,0 +1,18 @@
+# Web scraping
+requests
+beautifulsoup4
+selenium>=4.0.0
+webdriver-manager>=4.0.0
+
+# Data processing
+pandas
+duckdb
+
+# DBT
+dbt-core
+dbt-duckdb
+
+# Visualization
+matplotlib
+seaborn
+plotly

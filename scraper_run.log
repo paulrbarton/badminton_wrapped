@@ -1,0 +1,15 @@
+2026-01-18 21:26:25,230 - INFO - ============================================================
+2026-01-18 21:26:25,230 - INFO - Starting Nottinghamshire Badminton League scraper
+2026-01-18 21:26:25,230 - INFO - ============================================================
+2026-01-18 21:26:25,230 - INFO - Setting up Chrome WebDriver...
+2026-01-18 21:26:25,615 - WARNING - The chromedriver version (143.0.7499.192) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (144.0.7559.60); currently, chromedriver 144.0.7559.31 is recommended for chrome 144.*, so it is advised to delete the driver in PATH and retry
+2026-01-18 21:26:26,774 - INFO - Chrome WebDriver initialized successfully
+2026-01-18 21:26:26,774 - INFO - 
+--- STEP 1: Scraping divisions ---
+2026-01-18 21:26:26,774 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/events.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517
+2026-01-18 21:26:27,775 - INFO - Attempting to accept cookie consent...
+2026-01-18 21:26:57,998 - WARNING - Could not find cookie consent button - may already be accepted
+2026-01-18 21:27:00,007 - INFO - Saved page HTML to debug_events_page.html for debugging
+2026-01-18 21:27:00,010 - ERROR - Could not find divisions table with class 'ruler'
+2026-01-18 21:27:00,010 - ERROR - No divisions found!
+2026-01-18 21:27:00,010 - INFO - Closing browser...

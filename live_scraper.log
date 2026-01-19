@@ -1,0 +1,1139 @@
+2026-01-18 21:37:00,685 - INFO - ============================================================
+2026-01-18 21:37:00,685 - INFO - Starting Nottinghamshire Badminton League scraper
+2026-01-18 21:37:00,685 - INFO - ============================================================
+2026-01-18 21:37:00,685 - INFO - Setting up Chrome WebDriver...
+2026-01-18 21:37:01,627 - WARNING - The chromedriver version (143.0.7499.192) detected in PATH at /opt/homebrew/bin/chromedriver might not be compatible with the detected chrome version (144.0.7559.60); currently, chromedriver 144.0.7559.31 is recommended for chrome 144.*, so it is advised to delete the driver in PATH and retry
+2026-01-18 21:37:04,291 - INFO - Chrome WebDriver initialized successfully
+2026-01-18 21:37:04,291 - INFO - 
+--- STEP 1: Scraping divisions ---
+2026-01-18 21:37:04,291 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/events.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517
+2026-01-18 21:37:05,191 - INFO - Attempting to accept cookie consent...
+2026-01-18 21:37:05,263 - INFO - Found cookie consent button with selector: //button[contains(@class, 'js-accept-basic')]
+2026-01-18 21:37:08,643 - INFO - Cookie consent accepted successfully!
+2026-01-18 21:37:09,653 - INFO - Saved page HTML to debug_events_page.html for debugging
+2026-01-18 21:37:09,660 - INFO - Found 25 division rows
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Division 1 (draw_id: 2)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Division 2 (draw_id: 3)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Division 3 (draw_id: 4)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Division 4 (draw_id: 5)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Division 5 (draw_id: 6)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Division 6 (draw_id: 7)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Division 7 (draw_id: 8)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Division 8 (draw_id: 23)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Open Premier (draw_id: 9)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Womens Division 1 (draw_id: 1)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Womens Division 2 (draw_id: 10)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Womens Premier (draw_id: 11)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Mixed Division 1 (draw_id: 12)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Mixed Division 2 (draw_id: 13)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Mixed Division 3 (draw_id: 14)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Mixed Division 4 (draw_id: 15)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Mixed Division 5 (draw_id: 16)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Mixed Division 6 (draw_id: 17)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Mixed Premier (draw_id: 18)
+2026-01-18 21:37:09,661 - INFO - Parsed division: Knock Out Cup 2024-2025 (draw_id: 21)
+2026-01-18 21:37:09,661 - INFO - Found 20 divisions
+2026-01-18 21:37:09,661 - INFO - 
+--- STEP 2: Scraping matches from each division ---
+2026-01-18 21:37:09,661 - INFO - Total divisions to process: 20
+2026-01-18 21:37:09,661 - INFO - 
+[1/20] Processing division: Open Division 1
+2026-01-18 21:37:09,661 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=2
+2026-01-18 21:37:10,854 - INFO - Found 21 match rows in Open Division 1
+2026-01-18 21:37:10,855 - INFO - Parsed match 111: Wed 02/10/202419:00 vs 
+2026-01-18 21:37:10,855 - INFO - Parsed match 130: Thu 03/10/202419:00 vs 
+2026-01-18 21:37:10,855 - INFO - Parsed match 98: Wed 30/10/202419:30 vs 
+2026-01-18 21:37:10,855 - INFO - Parsed match 113: Mon 04/11/202419:00 vs 
+2026-01-18 21:37:10,855 - INFO - Parsed match 116: Thu 14/11/202419:00 vs 
+2026-01-18 21:37:10,855 - INFO - Parsed match 109: Fri 15/11/202418:30 vs 
+2026-01-18 21:37:10,855 - INFO - Parsed match 110: Sun 24/11/202416:00 vs 
+2026-01-18 21:37:10,855 - INFO - Parsed match 128: Thu 12/12/202419:00 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 108: Sun 15/12/202419:00 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 93: Fri 10/01/2025 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 126: Fri 17/01/2025 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 127: Wed 22/01/202519:30 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 117: Thu 23/01/202519:00 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 103: Thu 30/01/202519:00 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 115: Thu 06/02/202519:00 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 114: Thu 13/02/202519:00 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 129: Thu 20/02/202519:00 vs 
+2026-01-18 21:37:10,856 - INFO - Parsed match 104: Thu 27/02/202519:00 vs 
+2026-01-18 21:37:10,857 - INFO - Parsed match 125: Thu 20/03/202519:00 vs 
+2026-01-18 21:37:10,857 - INFO - Parsed match 99: Fri 21/03/202518:30 vs 
+2026-01-18 21:37:10,857 - INFO - Parsed match 105: Thu 27/03/202519:00 vs 
+2026-01-18 21:37:10,857 - INFO - Found 21 matches in Open Division 1
+2026-01-18 21:37:10,857 - INFO - 
+[2/20] Processing division: Open Division 2
+2026-01-18 21:37:10,857 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=3
+2026-01-18 21:37:12,356 - INFO - Found 21 match rows in Open Division 2
+2026-01-18 21:37:12,357 - INFO - Parsed match 975: Sun 06/10/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 156: Fri 18/10/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 980: Thu 31/10/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 165: Thu 07/11/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 977: Thu 07/11/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 169: Wed 20/11/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 171: Fri 29/11/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 164: Sun 01/12/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 976: Wed 04/12/202419:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 170: Sun 05/01/202515:15 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 172: Thu 16/01/202519:00 vs 
+2026-01-18 21:37:12,357 - INFO - Parsed match 168: Sun 26/01/202515:15 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 163: Thu 30/01/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 978: Thu 13/02/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 150: Sun 16/02/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 151: Sun 02/03/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 158: Fri 07/03/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 162: Mon 17/03/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 157: Wed 19/03/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 144: Sun 30/03/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Parsed match 979: Mon 31/03/202519:00 vs 
+2026-01-18 21:37:12,358 - INFO - Found 21 matches in Open Division 2
+2026-01-18 21:37:12,358 - INFO - 
+[3/20] Processing division: Open Division 3
+2026-01-18 21:37:12,358 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=4
+2026-01-18 21:37:13,557 - INFO - Found 21 match rows in Open Division 3
+2026-01-18 21:37:13,557 - INFO - Parsed match 213: Sun 13/10/202416:00 vs 
+2026-01-18 21:37:13,557 - INFO - Parsed match 211: Fri 18/10/202418:30 vs 
+2026-01-18 21:37:13,557 - INFO - Parsed match 228: Thu 07/11/202419:00 vs 
+2026-01-18 21:37:13,557 - INFO - Parsed match 206: Fri 08/11/202420:00 vs 
+2026-01-18 21:37:13,557 - INFO - Parsed match 212: Wed 27/11/202419:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 191: Fri 13/12/202419:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 226: Wed 15/01/202519:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 201: Wed 22/01/202519:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 227: Thu 23/01/202519:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 207: Fri 07/02/202519:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 224: Wed 12/02/202519:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 214: Wed 12/02/202519:30 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 225: Mon 17/02/202519:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 209: Wed 19/02/202519:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 197: Wed 19/02/202519:00 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 196: Fri 21/02/202518:30 vs 
+2026-01-18 21:37:13,558 - INFO - Parsed match 202: Wed 05/03/202519:00 vs 
+2026-01-18 21:37:13,559 - INFO - Parsed match 215: Wed 12/03/202519:00 vs 
+2026-01-18 21:37:13,559 - INFO - Parsed match 203: Wed 19/03/202519:00 vs 
+2026-01-18 21:37:13,559 - INFO - Parsed match 223: Thu 20/03/202519:00 vs 
+2026-01-18 21:37:13,559 - INFO - Parsed match 208: Wed 09/04/202519:00 vs 
+2026-01-18 21:37:13,559 - INFO - Found 21 matches in Open Division 3
+2026-01-18 21:37:13,559 - INFO - 
+[4/20] Processing division: Open Division 4
+2026-01-18 21:37:13,559 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=5
+2026-01-18 21:37:15,204 - INFO - Found 21 match rows in Open Division 4
+2026-01-18 21:37:15,204 - INFO - Parsed match 258: Fri 11/10/202419:00 vs 
+2026-01-18 21:37:15,204 - INFO - Parsed match 425: Fri 25/10/202419:30 vs 
+2026-01-18 21:37:15,204 - INFO - Parsed match 255: Sun 08/12/202419:00 vs 
+2026-01-18 21:37:15,204 - INFO - Parsed match 250: Wed 11/12/202419:00 vs 
+2026-01-18 21:37:15,204 - INFO - Parsed match 240: Sun 15/12/202419:00 vs 
+2026-01-18 21:37:15,204 - INFO - Parsed match 427: Fri 03/01/202519:30 vs 
+2026-01-18 21:37:15,204 - INFO - Parsed match 262: Sun 12/01/202513:30 vs 
+2026-01-18 21:37:15,204 - INFO - Parsed match 256: Sun 12/01/202516:00 vs 
+2026-01-18 21:37:15,204 - INFO - Parsed match 260: Sun 19/01/202519:00 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 424: Mon 27/01/202519:00 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 252: Wed 29/01/202519:00 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 251: Fri 31/01/202519:00 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 428: Sun 16/02/202513:30 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 426: Fri 21/02/202519:00 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 423: Fri 28/02/202519:30 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 263: Sun 09/03/202513:30 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 245: Wed 12/03/202519:00 vs 
+2026-01-18 21:37:15,205 - INFO - Parsed match 261: Mon 17/03/202519:00 vs 
+2026-01-18 21:37:15,206 - INFO - Parsed match 246: Wed 19/03/202519:00 vs 
+2026-01-18 21:37:15,206 - INFO - Parsed match 264: Sun 23/03/202513:30 vs 
+2026-01-18 21:37:15,206 - INFO - Parsed match 257: Wed 02/04/202519:00 vs 
+2026-01-18 21:37:15,206 - INFO - Found 21 matches in Open Division 4
+2026-01-18 21:37:15,206 - INFO - 
+[5/20] Processing division: Open Division 5
+2026-01-18 21:37:15,206 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=6
+2026-01-18 21:37:16,886 - INFO - Found 21 match rows in Open Division 5
+2026-01-18 21:37:16,886 - INFO - Parsed match 292: Mon 14/10/202419:00 vs 
+2026-01-18 21:37:16,886 - INFO - Parsed match 297: Thu 17/10/202419:00 vs 
+2026-01-18 21:37:16,886 - INFO - Parsed match 300: Thu 31/10/202419:00 vs 
+2026-01-18 21:37:16,886 - INFO - Parsed match 294: Sun 03/11/202416:00 vs 
+2026-01-18 21:37:16,886 - INFO - Parsed match 287: Mon 11/11/202419:00 vs 
+2026-01-18 21:37:16,886 - INFO - Parsed match 299: Fri 22/11/202419:00 vs 
+2026-01-18 21:37:16,886 - INFO - Parsed match 991: Thu 28/11/202419:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 296: Thu 05/12/202419:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 988: Mon 09/12/202419:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 293: Wed 11/12/202419:30 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 276: Sun 05/01/202519:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 298: Thu 09/01/202519:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 282: Fri 24/01/202519:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 993: Mon 10/02/202519:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 286: Thu 13/02/202519:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 989: Mon 17/02/202519:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 281: Fri 21/02/202519:00 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 288: Fri 28/02/2025 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 992: Wed 05/03/202519:30 vs 
+2026-01-18 21:37:16,887 - INFO - Parsed match 291: Sun 16/03/202519:00 vs 
+2026-01-18 21:37:16,888 - INFO - Parsed match 990: Fri 21/03/202519:00 vs 
+2026-01-18 21:37:16,888 - INFO - Found 21 matches in Open Division 5
+2026-01-18 21:37:16,888 - INFO - 
+[6/20] Processing division: Open Division 6
+2026-01-18 21:37:16,888 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=7
+2026-01-18 21:37:18,603 - INFO - Found 21 match rows in Open Division 6
+2026-01-18 21:37:18,603 - INFO - Parsed match 453: Mon 14/10/202419:00 vs 
+2026-01-18 21:37:18,603 - INFO - Parsed match 328: Wed 16/10/202418:30 vs 
+2026-01-18 21:37:18,603 - INFO - Parsed match 327: Sun 20/10/202419:00 vs 
+2026-01-18 21:37:18,603 - INFO - Parsed match 318: Wed 23/10/202419:30 vs 
+2026-01-18 21:37:18,603 - INFO - Parsed match 333: Sun 27/10/202416:00 vs 
+2026-01-18 21:37:18,603 - INFO - Parsed match 322: Sun 03/11/202419:00 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 324: Sun 17/11/202413:30 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 454: Thu 05/12/202419:00 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 312: Wed 08/01/202519:30 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 336: Sun 12/01/202515:15 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 335: Thu 16/01/202519:00 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 329: Wed 22/01/202518:30 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 323: Sun 26/01/202513:30 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 456: Thu 30/01/202519:00 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 330: Sun 09/02/202511:30 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 452: Thu 13/02/202519:00 vs 
+2026-01-18 21:37:18,604 - INFO - Parsed match 334: Mon 17/02/202519:00 vs 
+2026-01-18 21:37:18,605 - INFO - Parsed match 332: Sun 02/03/202519:00 vs 
+2026-01-18 21:37:18,605 - INFO - Parsed match 455: Thu 13/03/202519:00 vs 
+2026-01-18 21:37:18,605 - INFO - Parsed match 451: Sun 23/03/202519:00 vs 
+2026-01-18 21:37:18,605 - INFO - Parsed match 317: Mon 07/04/202519:00 vs 
+2026-01-18 21:37:18,605 - INFO - Found 21 matches in Open Division 6
+2026-01-18 21:37:18,605 - INFO - 
+[7/20] Processing division: Open Division 7
+2026-01-18 21:37:18,605 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=8
+2026-01-18 21:37:20,201 - INFO - Found 21 match rows in Open Division 7
+2026-01-18 21:37:20,201 - INFO - Parsed match 364: Mon 07/10/202419:00 vs 
+2026-01-18 21:37:20,201 - INFO - Parsed match 369: Fri 01/11/202419:30 vs 
+2026-01-18 21:37:20,201 - INFO - Parsed match 348: Mon 04/11/202419:00 vs 
+2026-01-18 21:37:20,201 - INFO - Parsed match 360: Fri 08/11/202419:00 vs 
+2026-01-18 21:37:20,201 - INFO - Parsed match 371: Fri 22/11/202419:30 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 358: Tue 03/12/202420:00 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 359: Mon 09/12/202419:00 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 472: Sat 04/01/202519:00 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 476: Sun 12/01/202513:30 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 354: Mon 13/01/202519:00 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 366: Tue 21/01/202520:00 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 477: Thu 30/01/202519:00 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 353: Sun 02/02/202519:00 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 475: Tue 11/02/202520:00 vs 
+2026-01-18 21:37:20,202 - INFO - Parsed match 372: Sun 16/02/202513:30 vs 
+2026-01-18 21:37:20,203 - INFO - Parsed match 365: Fri 21/02/202519:00 vs 
+2026-01-18 21:37:20,203 - INFO - Parsed match 473: Mon 24/02/202519:00 vs 
+2026-01-18 21:37:20,203 - INFO - Parsed match 474: Mon 03/03/202519:00 vs 
+2026-01-18 21:37:20,203 - INFO - Parsed match 363: Sun 09/03/202513:30 vs 
+2026-01-18 21:37:20,203 - INFO - Parsed match 370: Fri 14/03/202519:00 vs 
+2026-01-18 21:37:20,203 - INFO - Parsed match 368: Fri 21/03/202519:30 vs 
+2026-01-18 21:37:20,203 - INFO - Found 21 matches in Open Division 7
+2026-01-18 21:37:20,203 - INFO - 
+[8/20] Processing division: Open Division 8
+2026-01-18 21:37:20,203 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=23
+2026-01-18 21:37:21,793 - INFO - Found 28 match rows in Open Division 8
+2026-01-18 21:37:21,793 - INFO - Parsed match 1344: Thu 17/10/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1332: Mon 21/10/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1301: Fri 25/10/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1335: Thu 31/10/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1343: Sun 10/11/202411:30 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1276: Fri 15/11/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1304: Sun 17/11/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1284: Tue 19/11/202420:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1341: Thu 21/11/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1337: Sun 24/11/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1297: Wed 04/12/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1303: Tue 10/12/202420:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1296: Fri 13/12/202419:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1342: Tue 17/12/202420:00 vs 
+2026-01-18 21:37:21,794 - INFO - Parsed match 1333: Fri 03/01/202519:00 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1298: Sun 05/01/202513:30 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1336: Thu 16/01/202519:00 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1340: Thu 23/01/202519:00 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1295: Fri 31/01/2025 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1279: Wed 05/02/202519:00 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1282: Fri 14/02/2025 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1339: Thu 27/02/202519:00 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1283: Fri 28/02/202519:00 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1334: Thu 06/03/202519:00 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1300: Fri 14/03/2025 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1280: Wed 19/03/202519:00 vs 
+2026-01-18 21:37:21,795 - INFO - Parsed match 1345: Thu 20/03/202519:00 vs 
+2026-01-18 21:37:21,796 - INFO - Parsed match 1302: Fri 04/04/202519:00 vs 
+2026-01-18 21:37:21,796 - INFO - Found 28 matches in Open Division 8
+2026-01-18 21:37:21,796 - INFO - 
+[9/20] Processing division: Open Premier
+2026-01-18 21:37:21,796 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=9
+2026-01-18 21:37:23,314 - INFO - Found 21 match rows in Open Premier
+2026-01-18 21:37:23,314 - INFO - Parsed match 490: Sun 13/10/202419:00 vs 
+2026-01-18 21:37:23,314 - INFO - Parsed match 488: Thu 24/10/202419:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 389: Fri 01/11/202419:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 395: Thu 07/11/202419:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 384: Wed 13/11/202419:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 489: Wed 13/11/202419:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 404: Fri 29/11/2024 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 394: Fri 06/12/202418:30 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 405: Sun 08/12/202419:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 408: Sun 15/12/202419:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 390: Wed 18/12/202419:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 487: Sun 26/01/202519:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 400: Wed 29/01/202519:00 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 485: Fri 07/02/2025 vs 
+2026-01-18 21:37:23,315 - INFO - Parsed match 396: Fri 07/02/202519:00 vs 
+2026-01-18 21:37:23,316 - INFO - Parsed match 486: Wed 26/02/202519:00 vs 
+2026-01-18 21:37:23,316 - INFO - Parsed match 399: Fri 28/02/202518:30 vs 
+2026-01-18 21:37:23,316 - INFO - Parsed match 402: Wed 05/03/202519:00 vs 
+2026-01-18 21:37:23,316 - INFO - Parsed match 407: Sun 09/03/202519:00 vs 
+2026-01-18 21:37:23,316 - INFO - Parsed match 406: Fri 14/03/202519:00 vs 
+2026-01-18 21:37:23,316 - INFO - Parsed match 401: Fri 28/03/202519:00 vs 
+2026-01-18 21:37:23,316 - INFO - Found 21 matches in Open Premier
+2026-01-18 21:37:23,316 - INFO - 
+[10/20] Processing division: Womens Division 1
+2026-01-18 21:37:23,316 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=1
+2026-01-18 21:37:24,869 - INFO - Found 28 match rows in Womens Division 1
+2026-01-18 21:37:24,869 - INFO - Parsed match 58: Sun 13/10/202419:00 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 53: Thu 17/10/202419:00 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 52: Wed 06/11/202419:00 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 43: Fri 15/11/202418:30 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 16: Wed 20/11/202419:00 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 54: Sun 24/11/202416:00 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 1370: Fri 29/11/202419:00 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 12: Wed 04/12/202419:00 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 61: Wed 11/12/202418:30 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 62: Sun 22/12/202415:15 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 14: Sat 04/01/202519:00 vs 
+2026-01-18 21:37:24,870 - INFO - Parsed match 8: Fri 10/01/2025 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 51: Fri 17/01/2025 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 1371: Fri 17/01/202519:00 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 63: Thu 23/01/202519:00 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 45: Wed 29/01/202519:00 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 42: Sun 09/02/202519:00 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 1369: Wed 12/02/202519:00 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 50: Thu 13/02/202519:00 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 59: Sun 23/02/202515:15 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 11: Wed 26/02/202519:00 vs 
+2026-01-18 21:37:24,871 - INFO - Parsed match 15: Wed 05/03/202519:00 vs 
+2026-01-18 21:37:24,872 - INFO - Parsed match 1372: Fri 07/03/202519:00 vs 
+2026-01-18 21:37:24,872 - INFO - Parsed match 44: Wed 12/03/202519:30 vs 
+2026-01-18 21:37:24,872 - INFO - Parsed match 1367: Fri 14/03/202519:00 vs 
+2026-01-18 21:37:24,872 - INFO - Parsed match 1368: Fri 21/03/2025 vs 
+2026-01-18 21:37:24,872 - INFO - Parsed match 60: Wed 26/03/202518:30 vs 
+2026-01-18 21:37:24,872 - INFO - Parsed match 1373: Sun 30/03/202515:15 vs 
+2026-01-18 21:37:24,872 - INFO - Found 28 matches in Womens Division 1
+2026-01-18 21:37:24,872 - INFO - 
+[11/20] Processing division: Womens Division 2
+2026-01-18 21:37:24,872 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=10
+2026-01-18 21:37:26,486 - INFO - Found 28 match rows in Womens Division 2
+2026-01-18 21:37:26,486 - INFO - Parsed match 537: Sun 10/11/202411:30 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 514: Mon 25/11/202419:00 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 1384: Mon 02/12/202419:00 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 535: Sun 15/12/202413:30 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 538: Sun 05/01/202513:30 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 506: Mon 06/01/202519:00 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 529: Wed 22/01/202519:00 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 520: Sun 26/01/202519:00 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 1386: Tue 28/01/202520:00 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 521: Wed 29/01/202519:30 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 530: Wed 05/02/202519:30 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 1314: Fri 07/02/202519:30 vs 
+2026-01-18 21:37:26,487 - INFO - Parsed match 1387: Thu 13/02/202519:00 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 513: Sun 16/02/202519:00 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 1315: Wed 19/02/202519:30 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 1317: Fri 21/02/202519:30 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 527: Sun 23/02/202519:00 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 1313: Mon 24/02/202519:00 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 1385: Wed 26/02/202519:30 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 1316: Tue 04/03/202519:00 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 522: Wed 05/03/202519:00 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 1388: Fri 07/03/202519:30 vs 
+2026-01-18 21:37:26,488 - INFO - Parsed match 1382: Sun 09/03/202519:00 vs 
+2026-01-18 21:37:26,489 - INFO - Parsed match 1312: Fri 14/03/202519:30 vs 
+2026-01-18 21:37:26,489 - INFO - Parsed match 1383: Mon 17/03/202519:00 vs 
+2026-01-18 21:37:26,489 - INFO - Parsed match 534: Sun 23/03/202513:30 vs 
+2026-01-18 21:37:26,489 - INFO - Parsed match 528: Tue 25/03/202520:00 vs 
+2026-01-18 21:37:26,489 - INFO - Parsed match 536: Wed 26/03/202519:00 vs 
+2026-01-18 21:37:26,489 - INFO - Found 28 matches in Womens Division 2
+2026-01-18 21:37:26,489 - INFO - 
+[12/20] Processing division: Womens Premier
+2026-01-18 21:37:26,489 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=11
+2026-01-18 21:37:28,013 - INFO - Found 21 match rows in Womens Premier
+2026-01-18 21:37:28,013 - INFO - Parsed match 595: Thu 14/11/202419:00 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 598: Thu 14/11/202419:00 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 603: Wed 20/11/202419:00 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 587: Wed 27/11/202419:00 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 580: Fri 06/12/202418:30 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 593: Wed 18/12/202419:00 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 575: Fri 17/01/202519:00 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 596: Wed 29/01/202519:00 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 599: Thu 30/01/202519:00 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 574: Fri 31/01/202518:30 vs 
+2026-01-18 21:37:28,013 - INFO - Parsed match 601: Thu 06/02/202519:00 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 568: Fri 07/02/2025 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 594: Fri 07/02/202519:00 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 588: Mon 10/02/202519:00 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 581: Thu 13/02/202519:00 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 600: Thu 20/02/202519:00 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 592: Fri 28/02/202520:00 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 586: Mon 03/03/2025 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 589: Thu 13/03/202519:00 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 602: Mon 24/03/202519:00 vs 
+2026-01-18 21:37:28,014 - INFO - Parsed match 582: Fri 28/03/202519:00 vs 
+2026-01-18 21:37:28,014 - INFO - Found 21 matches in Womens Premier
+2026-01-18 21:37:28,014 - INFO - 
+[13/20] Processing division: Mixed Division 1
+2026-01-18 21:37:28,014 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=12
+2026-01-18 21:37:29,556 - INFO - Found 21 match rows in Mixed Division 1
+2026-01-18 21:37:29,556 - INFO - Parsed match 625: Wed 09/10/202419:00 vs 
+2026-01-18 21:37:29,556 - INFO - Parsed match 632: Wed 16/10/202419:30 vs 
+2026-01-18 21:37:29,556 - INFO - Parsed match 941: Sun 20/10/202419:00 vs 
+2026-01-18 21:37:29,556 - INFO - Parsed match 630: Wed 13/11/202419:30 vs 
+2026-01-18 21:37:29,556 - INFO - Parsed match 631: Sun 17/11/202416:00 vs 
+2026-01-18 21:37:29,556 - INFO - Parsed match 636: Thu 28/11/202419:00 vs 
+2026-01-18 21:37:29,556 - INFO - Parsed match 944: Sun 01/12/202415:15 vs 
+2026-01-18 21:37:29,556 - INFO - Parsed match 621: Wed 11/12/202419:00 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 638: Thu 12/12/202419:00 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 633: Wed 18/12/202419:45 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 627: Sun 19/01/202519:00 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 615: Wed 22/01/202519:00 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 626: Wed 05/02/202519:00 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 620: Fri 21/02/202519:00 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 639: Mon 24/02/202519:00 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 942: Wed 26/02/202518:30 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 637: Thu 27/02/202519:00 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 635: Fri 07/03/2025 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 943: Sun 09/03/202515:15 vs 
+2026-01-18 21:37:29,557 - INFO - Parsed match 940: Sun 16/03/202515:15 vs 
+2026-01-18 21:37:29,558 - INFO - Parsed match 939: Fri 28/03/2025 vs 
+2026-01-18 21:37:29,558 - INFO - Found 21 matches in Mixed Division 1
+2026-01-18 21:37:29,558 - INFO - 
+[14/20] Processing division: Mixed Division 2
+2026-01-18 21:37:29,558 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=13
+2026-01-18 21:37:31,096 - INFO - Found 21 match rows in Mixed Division 2
+2026-01-18 21:37:31,096 - INFO - Parsed match 924: Mon 30/09/202419:00 vs 
+2026-01-18 21:37:31,096 - INFO - Parsed match 666: Sun 06/10/2024 vs 
+2026-01-18 21:37:31,096 - INFO - Parsed match 661: Wed 16/10/202419:00 vs 
+2026-01-18 21:37:31,096 - INFO - Parsed match 671: Thu 24/10/202419:00 vs 
+2026-01-18 21:37:31,096 - INFO - Parsed match 667: Fri 25/10/202419:00 vs 
+2026-01-18 21:37:31,096 - INFO - Parsed match 663: Wed 13/11/202419:00 vs 
+2026-01-18 21:37:31,096 - INFO - Parsed match 920: Fri 29/11/2024 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 656: Mon 02/12/202419:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 919: Sun 08/12/202419:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 651: Mon 06/01/202520:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 662: Fri 24/01/202518:30 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 675: Mon 03/02/202519:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 657: Mon 03/02/202519:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 668: Fri 14/02/202519:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 669: Fri 21/02/202519:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 674: Mon 03/03/202519:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 922: Thu 06/03/202519:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 673: Thu 13/03/202519:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 921: Mon 24/03/202519:00 vs 
+2026-01-18 21:37:31,097 - INFO - Parsed match 672: Thu 27/03/202519:00 vs 
+2026-01-18 21:37:31,098 - INFO - Parsed match 923: Fri 04/04/202519:00 vs 
+2026-01-18 21:37:31,098 - INFO - Found 21 matches in Mixed Division 2
+2026-01-18 21:37:31,098 - INFO - 
+[15/20] Processing division: Mixed Division 3
+2026-01-18 21:37:31,098 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=14
+2026-01-18 21:37:32,602 - INFO - Found 21 match rows in Mixed Division 3
+2026-01-18 21:37:32,602 - INFO - Parsed match 1006: Mon 07/10/202419:00 vs 
+2026-01-18 21:37:32,602 - INFO - Parsed match 687: Wed 09/10/202419:00 vs 
+2026-01-18 21:37:32,602 - INFO - Parsed match 710: Thu 24/10/202419:00 vs 
+2026-01-18 21:37:32,602 - INFO - Parsed match 702: Mon 04/11/202419:00 vs 
+2026-01-18 21:37:32,602 - INFO - Parsed match 692: Wed 06/11/202419:00 vs 
+2026-01-18 21:37:32,602 - INFO - Parsed match 693: Wed 13/11/202419:00 vs 
+2026-01-18 21:37:32,602 - INFO - Parsed match 711: Mon 18/11/202419:00 vs 
+2026-01-18 21:37:32,602 - INFO - Parsed match 698: Wed 20/11/202419:30 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 1004: Thu 21/11/202419:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 703: Wed 04/12/202419:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 705: Sun 08/12/202416:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 707: Wed 11/12/202419:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 697: Wed 18/12/202419:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 1005: Thu 09/01/202519:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 704: Mon 03/02/202519:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 1002: Wed 05/02/202519:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 708: Mon 24/02/202519:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 709: Thu 27/02/202519:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 1003: Wed 12/03/202519:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 1001: Thu 27/03/202519:00 vs 
+2026-01-18 21:37:32,603 - INFO - Parsed match 699: Wed 02/04/202519:00 vs 
+2026-01-18 21:37:32,604 - INFO - Found 21 matches in Mixed Division 3
+2026-01-18 21:37:32,604 - INFO - 
+[16/20] Processing division: Mixed Division 4
+2026-01-18 21:37:32,604 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=15
+2026-01-18 21:37:34,167 - INFO - Found 21 match rows in Mixed Division 4
+2026-01-18 21:37:34,167 - INFO - Parsed match 746: Thu 10/10/202419:00 vs 
+2026-01-18 21:37:34,167 - INFO - Parsed match 898: Thu 10/10/202419:00 vs 
+2026-01-18 21:37:34,167 - INFO - Parsed match 740: Fri 01/11/202419:00 vs 
+2026-01-18 21:37:34,167 - INFO - Parsed match 745: Sun 03/11/202415:15 vs 
+2026-01-18 21:37:34,168 - INFO - Parsed match 734: Mon 18/11/202419:00 vs 
+2026-01-18 21:37:34,168 - INFO - Parsed match 900: Fri 29/11/202419:00 vs 
+2026-01-18 21:37:34,168 - INFO - Parsed match 741: Thu 19/12/202419:00 vs 
+2026-01-18 21:37:34,168 - INFO - Parsed match 738: Mon 13/01/202519:00 vs 
+2026-01-18 21:37:34,168 - INFO - Parsed match 728: Sun 26/01/202519:00 vs 
+2026-01-18 21:37:34,168 - INFO - Parsed match 903: Wed 05/02/202518:30 vs 
+2026-01-18 21:37:34,168 - INFO - Parsed match 739: Thu 06/02/202519:00 vs 
+2026-01-18 21:37:34,168 - INFO - Parsed match 723: Sun 09/02/202520:00 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 743: Wed 19/02/202518:30 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 899: Thu 20/02/202519:00 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 733: Mon 24/02/202519:00 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 902: Thu 06/03/202519:00 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 735: Thu 06/03/202519:00 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 744: Mon 10/03/202519:00 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 901: Thu 20/03/202519:00 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 747: Thu 27/03/202519:00 vs 
+2026-01-18 21:37:34,169 - INFO - Parsed match 729: Mon 31/03/202519:00 vs 
+2026-01-18 21:37:34,169 - INFO - Found 21 matches in Mixed Division 4
+2026-01-18 21:37:34,169 - INFO - 
+[17/20] Processing division: Mixed Division 5
+2026-01-18 21:37:34,169 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=16
+2026-01-18 21:37:35,705 - INFO - Found 21 match rows in Mixed Division 5
+2026-01-18 21:37:35,705 - INFO - Parsed match 776: Mon 28/10/202419:00 vs 
+2026-01-18 21:37:35,705 - INFO - Parsed match 765: Fri 08/11/202418:30 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 1242: Sun 17/11/202413:30 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 775: Fri 22/11/202418:30 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 1240: Fri 29/11/202419:30 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 759: Sun 15/12/202419:00 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 1239: Fri 10/01/202519:00 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 777: Sun 12/01/202519:00 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 783: Wed 15/01/202519:30 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 1237: Sun 19/01/202519:00 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 771: Mon 20/01/202519:00 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 781: Sun 26/01/202513:30 vs 
+2026-01-18 21:37:35,706 - INFO - Parsed match 1238: Fri 31/01/202519:30 vs 
+2026-01-18 21:37:35,707 - INFO - Parsed match 782: Sun 02/02/202519:00 vs 
+2026-01-18 21:37:35,707 - INFO - Parsed match 779: Sun 09/02/202511:30 vs 
+2026-01-18 21:37:35,707 - INFO - Parsed match 770: Sun 09/02/202519:00 vs 
+2026-01-18 21:37:35,707 - INFO - Parsed match 764: Mon 03/03/202519:00 vs 
+2026-01-18 21:37:35,707 - INFO - Parsed match 774: Wed 19/03/202519:30 vs 
+2026-01-18 21:37:35,707 - INFO - Parsed match 1241: Wed 26/03/202519:30 vs 
+2026-01-18 21:37:35,707 - INFO - Parsed match 780: Fri 28/03/2025 vs 
+2026-01-18 21:37:35,707 - INFO - Parsed match 769: Sun 06/04/202519:00 vs 
+2026-01-18 21:37:35,707 - INFO - Found 21 matches in Mixed Division 5
+2026-01-18 21:37:35,707 - INFO - 
+[18/20] Processing division: Mixed Division 6
+2026-01-18 21:37:35,707 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=17
+2026-01-18 21:37:37,252 - INFO - Found 21 match rows in Mixed Division 6
+2026-01-18 21:37:37,252 - INFO - Parsed match 795: Sun 13/10/202419:00 vs 
+2026-01-18 21:37:37,252 - INFO - Parsed match 811: Fri 18/10/202419:00 vs 
+2026-01-18 21:37:37,252 - INFO - Parsed match 1358: Tue 22/10/202420:00 vs 
+2026-01-18 21:37:37,252 - INFO - Parsed match 800: Sun 27/10/202419:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 1403: Mon 28/10/202419:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 1354: Tue 19/11/202420:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 1397: Thu 21/11/202419:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 819: Tue 26/11/202420:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 1353: Sun 01/12/202419:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 801: Fri 06/12/202419:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 810: Sun 12/01/202519:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 812: Fri 17/01/202519:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 816: Tue 18/02/202520:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 1399: Thu 20/02/202519:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 1402: Tue 25/02/202520:00 vs 
+2026-01-18 21:37:37,253 - INFO - Parsed match 1355: Fri 07/03/202519:00 vs 
+2026-01-18 21:37:37,254 - INFO - Parsed match 1398: Fri 14/03/202519:00 vs 
+2026-01-18 21:37:37,254 - INFO - Parsed match 815: Tue 18/03/202520:00 vs 
+2026-01-18 21:37:37,254 - INFO - Parsed match 817: Fri 21/03/202519:00 vs 
+2026-01-18 21:37:37,254 - INFO - Parsed match 1401: Mon 31/03/202519:00 vs 
+2026-01-18 21:37:37,254 - INFO - Parsed match 1357: Tue 08/04/202520:00 vs 
+2026-01-18 21:37:37,254 - INFO - Found 21 matches in Mixed Division 6
+2026-01-18 21:37:37,254 - INFO - 
+[19/20] Processing division: Mixed Premier
+2026-01-18 21:37:37,254 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=18
+2026-01-18 21:37:38,799 - INFO - Found 21 match rows in Mixed Premier
+2026-01-18 21:37:38,799 - INFO - Parsed match 855: Thu 03/10/202419:00 vs 
+2026-01-18 21:37:38,799 - INFO - Parsed match 831: Mon 07/10/202418:00 vs 
+2026-01-18 21:37:38,799 - INFO - Parsed match 853: Wed 16/10/202419:00 vs 
+2026-01-18 21:37:38,799 - INFO - Parsed match 1017: Wed 23/10/202419:00 vs 
+2026-01-18 21:37:38,799 - INFO - Parsed match 847: Fri 25/10/202418:30 vs 
+2026-01-18 21:37:38,799 - INFO - Parsed match 846: Thu 21/11/202419:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 842: Fri 22/11/2024 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 1018: Thu 28/11/202419:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 1019: Wed 04/12/202419:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 848: Wed 11/12/202419:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 841: Fri 13/12/202419:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 1016: Wed 15/01/202519:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 852: Thu 16/01/202519:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 836: Fri 24/01/202520:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 854: Fri 31/01/202519:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 837: Wed 12/02/202519:00 vs 
+2026-01-18 21:37:38,800 - INFO - Parsed match 849: Thu 20/02/202519:00 vs 
+2026-01-18 21:37:38,801 - INFO - Parsed match 843: Fri 28/02/202519:00 vs 
+2026-01-18 21:37:38,801 - INFO - Parsed match 851: Fri 07/03/202520:00 vs 
+2026-01-18 21:37:38,801 - INFO - Parsed match 1014: Wed 26/03/202519:00 vs 
+2026-01-18 21:37:38,801 - INFO - Parsed match 1015: Fri 04/04/202519:00 vs 
+2026-01-18 21:37:38,801 - INFO - Found 21 matches in Mixed Premier
+2026-01-18 21:37:38,801 - INFO - 
+[20/20] Processing division: Knock Out Cup 2024-2025
+2026-01-18 21:37:38,801 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/drawmatches.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&draw=21
+2026-01-18 21:37:40,390 - INFO - Found 15 match rows in Knock Out Cup 2024-2025
+2026-01-18 21:37:40,390 - INFO - Found 0 matches in Knock Out Cup 2024-2025
+2026-01-18 21:37:40,390 - INFO - 
+--- STEP 3: Scraping details for each match ---
+2026-01-18 21:37:40,390 - INFO - Total matches to process: 420
+2026-01-18 21:37:40,390 - WARNING - Processing 420 matches will take approximately 10.5 minutes
+2026-01-18 21:37:40,390 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=111
+2026-01-18 21:37:41,949 - INFO - Parsed match 111: 0 games found
+2026-01-18 21:37:41,949 - INFO - Found 0 games in match 111
+2026-01-18 21:37:41,949 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=130
+2026-01-18 21:37:43,562 - INFO - Parsed match 130: 0 games found
+2026-01-18 21:37:43,562 - INFO - Found 0 games in match 130
+2026-01-18 21:37:43,562 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=98
+2026-01-18 21:37:45,237 - INFO - Parsed match 98: 0 games found
+2026-01-18 21:37:45,237 - INFO - Found 0 games in match 98
+2026-01-18 21:37:45,237 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=113
+2026-01-18 21:37:46,776 - INFO - Parsed match 113: 0 games found
+2026-01-18 21:37:46,776 - INFO - Found 0 games in match 113
+2026-01-18 21:37:46,776 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=116
+2026-01-18 21:37:48,317 - INFO - Parsed match 116: 0 games found
+2026-01-18 21:37:48,317 - INFO - Found 0 games in match 116
+2026-01-18 21:37:48,317 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=109
+2026-01-18 21:37:50,000 - INFO - Parsed match 109: 0 games found
+2026-01-18 21:37:50,000 - INFO - Found 0 games in match 109
+2026-01-18 21:37:50,000 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=110
+2026-01-18 21:37:51,551 - INFO - Parsed match 110: 0 games found
+2026-01-18 21:37:51,551 - INFO - Found 0 games in match 110
+2026-01-18 21:37:51,551 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=128
+2026-01-18 21:37:53,212 - INFO - Parsed match 128: 0 games found
+2026-01-18 21:37:53,213 - INFO - Found 0 games in match 128
+2026-01-18 21:37:53,213 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=108
+2026-01-18 21:37:54,765 - INFO - Parsed match 108: 0 games found
+2026-01-18 21:37:54,765 - INFO - Found 0 games in match 108
+2026-01-18 21:37:54,765 - INFO - Progress: 10/420 matches processed (2%)
+2026-01-18 21:37:54,765 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=93
+2026-01-18 21:37:56,307 - INFO - Parsed match 93: 0 games found
+2026-01-18 21:37:56,307 - INFO - Found 0 games in match 93
+2026-01-18 21:37:56,307 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=126
+2026-01-18 21:37:57,857 - INFO - Parsed match 126: 0 games found
+2026-01-18 21:37:57,857 - INFO - Found 0 games in match 126
+2026-01-18 21:37:57,858 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=127
+2026-01-18 21:37:59,493 - INFO - Parsed match 127: 0 games found
+2026-01-18 21:37:59,493 - INFO - Found 0 games in match 127
+2026-01-18 21:37:59,493 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=117
+2026-01-18 21:38:01,146 - INFO - Parsed match 117: 0 games found
+2026-01-18 21:38:01,146 - INFO - Found 0 games in match 117
+2026-01-18 21:38:01,146 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=103
+2026-01-18 21:38:02,767 - INFO - Parsed match 103: 0 games found
+2026-01-18 21:38:02,767 - INFO - Found 0 games in match 103
+2026-01-18 21:38:02,767 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=115
+2026-01-18 21:38:04,409 - INFO - Parsed match 115: 0 games found
+2026-01-18 21:38:04,409 - INFO - Found 0 games in match 115
+2026-01-18 21:38:04,409 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=114
+2026-01-18 21:38:05,967 - INFO - Parsed match 114: 0 games found
+2026-01-18 21:38:05,967 - INFO - Found 0 games in match 114
+2026-01-18 21:38:05,967 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=129
+2026-01-18 21:38:07,532 - INFO - Parsed match 129: 0 games found
+2026-01-18 21:38:07,532 - INFO - Found 0 games in match 129
+2026-01-18 21:38:07,532 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=104
+2026-01-18 21:38:09,187 - INFO - Parsed match 104: 0 games found
+2026-01-18 21:38:09,187 - INFO - Found 0 games in match 104
+2026-01-18 21:38:09,188 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=125
+2026-01-18 21:38:10,799 - INFO - Parsed match 125: 0 games found
+2026-01-18 21:38:10,799 - INFO - Found 0 games in match 125
+2026-01-18 21:38:10,799 - INFO - Progress: 20/420 matches processed (4%)
+2026-01-18 21:38:10,799 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=99
+2026-01-18 21:38:12,377 - INFO - Parsed match 99: 0 games found
+2026-01-18 21:38:12,377 - INFO - Found 0 games in match 99
+2026-01-18 21:38:12,377 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=105
+2026-01-18 21:38:13,919 - INFO - Parsed match 105: 0 games found
+2026-01-18 21:38:13,919 - INFO - Found 0 games in match 105
+2026-01-18 21:38:13,919 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=975
+2026-01-18 21:38:15,486 - INFO - Parsed match 975: 0 games found
+2026-01-18 21:38:15,486 - INFO - Found 0 games in match 975
+2026-01-18 21:38:15,486 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=156
+2026-01-18 21:38:17,076 - INFO - Parsed match 156: 0 games found
+2026-01-18 21:38:17,076 - INFO - Found 0 games in match 156
+2026-01-18 21:38:17,076 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=980
+2026-01-18 21:38:18,781 - INFO - Parsed match 980: 0 games found
+2026-01-18 21:38:18,781 - INFO - Found 0 games in match 980
+2026-01-18 21:38:18,781 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=165
+2026-01-18 21:38:20,342 - INFO - Parsed match 165: 0 games found
+2026-01-18 21:38:20,342 - INFO - Found 0 games in match 165
+2026-01-18 21:38:20,342 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=977
+2026-01-18 21:38:21,947 - INFO - Parsed match 977: 0 games found
+2026-01-18 21:38:21,948 - INFO - Found 0 games in match 977
+2026-01-18 21:38:21,948 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=169
+2026-01-18 21:38:23,724 - INFO - Parsed match 169: 0 games found
+2026-01-18 21:38:23,724 - INFO - Found 0 games in match 169
+2026-01-18 21:38:23,724 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=171
+2026-01-18 21:38:25,308 - INFO - Parsed match 171: 0 games found
+2026-01-18 21:38:25,308 - INFO - Found 0 games in match 171
+2026-01-18 21:38:25,308 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=164
+2026-01-18 21:38:26,878 - INFO - Parsed match 164: 0 games found
+2026-01-18 21:38:26,878 - INFO - Found 0 games in match 164
+2026-01-18 21:38:26,878 - INFO - Progress: 30/420 matches processed (7%)
+2026-01-18 21:38:26,878 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=976
+2026-01-18 21:38:28,448 - INFO - Parsed match 976: 0 games found
+2026-01-18 21:38:28,448 - INFO - Found 0 games in match 976
+2026-01-18 21:38:28,448 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=170
+2026-01-18 21:38:30,333 - INFO - Parsed match 170: 0 games found
+2026-01-18 21:38:30,333 - INFO - Found 0 games in match 170
+2026-01-18 21:38:30,333 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=172
+2026-01-18 21:38:31,930 - INFO - Parsed match 172: 0 games found
+2026-01-18 21:38:31,931 - INFO - Found 0 games in match 172
+2026-01-18 21:38:31,931 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=168
+2026-01-18 21:38:33,548 - INFO - Parsed match 168: 0 games found
+2026-01-18 21:38:33,548 - INFO - Found 0 games in match 168
+2026-01-18 21:38:33,548 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=163
+2026-01-18 21:38:35,097 - INFO - Parsed match 163: 0 games found
+2026-01-18 21:38:35,097 - INFO - Found 0 games in match 163
+2026-01-18 21:38:35,097 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=978
+2026-01-18 21:38:36,766 - INFO - Parsed match 978: 0 games found
+2026-01-18 21:38:36,766 - INFO - Found 0 games in match 978
+2026-01-18 21:38:36,766 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=150
+2026-01-18 21:38:38,316 - INFO - Parsed match 150: 0 games found
+2026-01-18 21:38:38,316 - INFO - Found 0 games in match 150
+2026-01-18 21:38:38,316 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=151
+2026-01-18 21:38:39,924 - INFO - Parsed match 151: 0 games found
+2026-01-18 21:38:39,924 - INFO - Found 0 games in match 151
+2026-01-18 21:38:39,924 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=158
+2026-01-18 21:38:41,512 - INFO - Parsed match 158: 0 games found
+2026-01-18 21:38:41,512 - INFO - Found 0 games in match 158
+2026-01-18 21:38:41,512 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=162
+2026-01-18 21:38:43,127 - INFO - Parsed match 162: 0 games found
+2026-01-18 21:38:43,127 - INFO - Found 0 games in match 162
+2026-01-18 21:38:43,127 - INFO - Progress: 40/420 matches processed (9%)
+2026-01-18 21:38:43,127 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=157
+2026-01-18 21:38:44,696 - INFO - Parsed match 157: 0 games found
+2026-01-18 21:38:44,696 - INFO - Found 0 games in match 157
+2026-01-18 21:38:44,696 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=144
+2026-01-18 21:38:46,318 - INFO - Parsed match 144: 0 games found
+2026-01-18 21:38:46,318 - INFO - Found 0 games in match 144
+2026-01-18 21:38:46,318 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=979
+2026-01-18 21:38:47,842 - INFO - Parsed match 979: 0 games found
+2026-01-18 21:38:47,842 - INFO - Found 0 games in match 979
+2026-01-18 21:38:47,842 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=213
+2026-01-18 21:38:49,479 - INFO - Parsed match 213: 0 games found
+2026-01-18 21:38:49,479 - INFO - Found 0 games in match 213
+2026-01-18 21:38:49,479 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=211
+2026-01-18 21:38:51,052 - INFO - Parsed match 211: 0 games found
+2026-01-18 21:38:51,052 - INFO - Found 0 games in match 211
+2026-01-18 21:38:51,052 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=228
+2026-01-18 21:38:52,869 - INFO - Parsed match 228: 0 games found
+2026-01-18 21:38:52,869 - INFO - Found 0 games in match 228
+2026-01-18 21:38:52,869 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=206
+2026-01-18 21:38:54,502 - INFO - Parsed match 206: 0 games found
+2026-01-18 21:38:54,503 - INFO - Found 0 games in match 206
+2026-01-18 21:38:54,503 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=212
+2026-01-18 21:38:56,051 - INFO - Parsed match 212: 0 games found
+2026-01-18 21:38:56,051 - INFO - Found 0 games in match 212
+2026-01-18 21:38:56,051 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=191
+2026-01-18 21:38:57,574 - INFO - Parsed match 191: 0 games found
+2026-01-18 21:38:57,574 - INFO - Found 0 games in match 191
+2026-01-18 21:38:57,574 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=226
+2026-01-18 21:38:59,090 - INFO - Parsed match 226: 0 games found
+2026-01-18 21:38:59,091 - INFO - Found 0 games in match 226
+2026-01-18 21:38:59,091 - INFO - Progress: 50/420 matches processed (11%)
+2026-01-18 21:38:59,091 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=201
+2026-01-18 21:39:00,794 - INFO - Parsed match 201: 0 games found
+2026-01-18 21:39:00,794 - INFO - Found 0 games in match 201
+2026-01-18 21:39:00,794 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=227
+2026-01-18 21:39:02,404 - INFO - Parsed match 227: 0 games found
+2026-01-18 21:39:02,405 - INFO - Found 0 games in match 227
+2026-01-18 21:39:02,405 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=207
+2026-01-18 21:39:04,056 - INFO - Parsed match 207: 0 games found
+2026-01-18 21:39:04,056 - INFO - Found 0 games in match 207
+2026-01-18 21:39:04,056 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=224
+2026-01-18 21:39:05,678 - INFO - Parsed match 224: 0 games found
+2026-01-18 21:39:05,678 - INFO - Found 0 games in match 224
+2026-01-18 21:39:05,678 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=214
+2026-01-18 21:39:07,294 - INFO - Parsed match 214: 0 games found
+2026-01-18 21:39:07,294 - INFO - Found 0 games in match 214
+2026-01-18 21:39:07,294 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=225
+2026-01-18 21:39:08,953 - INFO - Parsed match 225: 0 games found
+2026-01-18 21:39:08,953 - INFO - Found 0 games in match 225
+2026-01-18 21:39:08,953 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=209
+2026-01-18 21:39:10,501 - INFO - Parsed match 209: 0 games found
+2026-01-18 21:39:10,501 - INFO - Found 0 games in match 209
+2026-01-18 21:39:10,501 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=197
+2026-01-18 21:39:12,054 - INFO - Parsed match 197: 0 games found
+2026-01-18 21:39:12,054 - INFO - Found 0 games in match 197
+2026-01-18 21:39:12,054 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=196
+2026-01-18 21:39:13,630 - INFO - Parsed match 196: 0 games found
+2026-01-18 21:39:13,630 - INFO - Found 0 games in match 196
+2026-01-18 21:39:13,630 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=202
+2026-01-18 21:39:15,231 - INFO - Parsed match 202: 0 games found
+2026-01-18 21:39:15,231 - INFO - Found 0 games in match 202
+2026-01-18 21:39:15,231 - INFO - Progress: 60/420 matches processed (14%)
+2026-01-18 21:39:15,231 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=215
+2026-01-18 21:39:16,796 - INFO - Parsed match 215: 0 games found
+2026-01-18 21:39:16,796 - INFO - Found 0 games in match 215
+2026-01-18 21:39:16,796 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=203
+2026-01-18 21:39:18,575 - INFO - Parsed match 203: 0 games found
+2026-01-18 21:39:18,575 - INFO - Found 0 games in match 203
+2026-01-18 21:39:18,575 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=223
+2026-01-18 21:39:20,122 - INFO - Parsed match 223: 0 games found
+2026-01-18 21:39:20,122 - INFO - Found 0 games in match 223
+2026-01-18 21:39:20,122 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=208
+2026-01-18 21:39:21,652 - INFO - Parsed match 208: 0 games found
+2026-01-18 21:39:21,653 - INFO - Found 0 games in match 208
+2026-01-18 21:39:21,653 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=258
+2026-01-18 21:39:23,207 - INFO - Parsed match 258: 0 games found
+2026-01-18 21:39:23,207 - INFO - Found 0 games in match 258
+2026-01-18 21:39:23,207 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=425
+2026-01-18 21:39:24,747 - INFO - Parsed match 425: 0 games found
+2026-01-18 21:39:24,747 - INFO - Found 0 games in match 425
+2026-01-18 21:39:24,747 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=255
+2026-01-18 21:39:26,371 - INFO - Parsed match 255: 0 games found
+2026-01-18 21:39:26,373 - INFO - Found 0 games in match 255
+2026-01-18 21:39:26,373 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=250
+2026-01-18 21:39:28,005 - INFO - Parsed match 250: 0 games found
+2026-01-18 21:39:28,005 - INFO - Found 0 games in match 250
+2026-01-18 21:39:28,005 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=240
+2026-01-18 21:39:29,670 - INFO - Parsed match 240: 0 games found
+2026-01-18 21:39:29,670 - INFO - Found 0 games in match 240
+2026-01-18 21:39:29,670 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=427
+2026-01-18 21:39:31,225 - INFO - Parsed match 427: 0 games found
+2026-01-18 21:39:31,225 - INFO - Found 0 games in match 427
+2026-01-18 21:39:31,225 - INFO - Progress: 70/420 matches processed (16%)
+2026-01-18 21:39:31,225 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=262
+2026-01-18 21:39:32,866 - INFO - Parsed match 262: 0 games found
+2026-01-18 21:39:32,866 - INFO - Found 0 games in match 262
+2026-01-18 21:39:32,866 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=256
+2026-01-18 21:39:34,419 - INFO - Parsed match 256: 0 games found
+2026-01-18 21:39:34,419 - INFO - Found 0 games in match 256
+2026-01-18 21:39:34,419 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=260
+2026-01-18 21:39:35,973 - INFO - Parsed match 260: 0 games found
+2026-01-18 21:39:35,973 - INFO - Found 0 games in match 260
+2026-01-18 21:39:35,973 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=424
+2026-01-18 21:39:37,511 - INFO - Parsed match 424: 0 games found
+2026-01-18 21:39:37,511 - INFO - Found 0 games in match 424
+2026-01-18 21:39:37,511 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=252
+2026-01-18 21:39:39,048 - INFO - Parsed match 252: 0 games found
+2026-01-18 21:39:39,048 - INFO - Found 0 games in match 252
+2026-01-18 21:39:39,049 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=251
+2026-01-18 21:39:40,597 - INFO - Parsed match 251: 0 games found
+2026-01-18 21:39:40,597 - INFO - Found 0 games in match 251
+2026-01-18 21:39:40,597 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=428
+2026-01-18 21:39:42,180 - INFO - Parsed match 428: 0 games found
+2026-01-18 21:39:42,180 - INFO - Found 0 games in match 428
+2026-01-18 21:39:42,180 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=426
+2026-01-18 21:39:43,727 - INFO - Parsed match 426: 0 games found
+2026-01-18 21:39:43,727 - INFO - Found 0 games in match 426
+2026-01-18 21:39:43,727 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=423
+2026-01-18 21:39:45,379 - INFO - Parsed match 423: 0 games found
+2026-01-18 21:39:45,379 - INFO - Found 0 games in match 423
+2026-01-18 21:39:45,379 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=263
+2026-01-18 21:39:47,078 - INFO - Parsed match 263: 0 games found
+2026-01-18 21:39:47,078 - INFO - Found 0 games in match 263
+2026-01-18 21:39:47,078 - INFO - Progress: 80/420 matches processed (19%)
+2026-01-18 21:39:47,078 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=245
+2026-01-18 21:39:48,706 - INFO - Parsed match 245: 0 games found
+2026-01-18 21:39:48,706 - INFO - Found 0 games in match 245
+2026-01-18 21:39:48,706 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=261
+2026-01-18 21:39:50,258 - INFO - Parsed match 261: 0 games found
+2026-01-18 21:39:50,258 - INFO - Found 0 games in match 261
+2026-01-18 21:39:50,258 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=246
+2026-01-18 21:39:51,874 - INFO - Parsed match 246: 0 games found
+2026-01-18 21:39:51,874 - INFO - Found 0 games in match 246
+2026-01-18 21:39:51,874 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=264
+2026-01-18 21:39:53,456 - INFO - Parsed match 264: 0 games found
+2026-01-18 21:39:53,456 - INFO - Found 0 games in match 264
+2026-01-18 21:39:53,456 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=257
+2026-01-18 21:39:54,995 - INFO - Parsed match 257: 0 games found
+2026-01-18 21:39:54,995 - INFO - Found 0 games in match 257
+2026-01-18 21:39:54,995 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=292
+2026-01-18 21:39:56,532 - INFO - Parsed match 292: 0 games found
+2026-01-18 21:39:56,532 - INFO - Found 0 games in match 292
+2026-01-18 21:39:56,532 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=297
+2026-01-18 21:39:58,078 - INFO - Parsed match 297: 0 games found
+2026-01-18 21:39:58,079 - INFO - Found 0 games in match 297
+2026-01-18 21:39:58,079 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=300
+2026-01-18 21:39:59,615 - INFO - Parsed match 300: 0 games found
+2026-01-18 21:39:59,615 - INFO - Found 0 games in match 300
+2026-01-18 21:39:59,615 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=294
+2026-01-18 21:40:01,154 - INFO - Parsed match 294: 0 games found
+2026-01-18 21:40:01,154 - INFO - Found 0 games in match 294
+2026-01-18 21:40:01,154 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=287
+2026-01-18 21:40:02,745 - INFO - Parsed match 287: 0 games found
+2026-01-18 21:40:02,745 - INFO - Found 0 games in match 287
+2026-01-18 21:40:02,745 - INFO - Progress: 90/420 matches processed (21%)
+2026-01-18 21:40:02,745 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=299
+2026-01-18 21:40:04,348 - INFO - Parsed match 299: 0 games found
+2026-01-18 21:40:04,348 - INFO - Found 0 games in match 299
+2026-01-18 21:40:04,348 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=991
+2026-01-18 21:40:05,897 - INFO - Parsed match 991: 0 games found
+2026-01-18 21:40:05,897 - INFO - Found 0 games in match 991
+2026-01-18 21:40:05,897 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=296
+2026-01-18 21:40:07,651 - INFO - Parsed match 296: 0 games found
+2026-01-18 21:40:07,651 - INFO - Found 0 games in match 296
+2026-01-18 21:40:07,651 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=988
+2026-01-18 21:40:09,248 - INFO - Parsed match 988: 0 games found
+2026-01-18 21:40:09,248 - INFO - Found 0 games in match 988
+2026-01-18 21:40:09,248 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=293
+2026-01-18 21:40:10,797 - INFO - Parsed match 293: 0 games found
+2026-01-18 21:40:10,797 - INFO - Found 0 games in match 293
+2026-01-18 21:40:10,797 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=276
+2026-01-18 21:40:12,550 - INFO - Parsed match 276: 0 games found
+2026-01-18 21:40:12,550 - INFO - Found 0 games in match 276
+2026-01-18 21:40:12,550 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=298
+2026-01-18 21:40:14,160 - INFO - Parsed match 298: 0 games found
+2026-01-18 21:40:14,160 - INFO - Found 0 games in match 298
+2026-01-18 21:40:14,160 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=282
+2026-01-18 21:40:15,781 - INFO - Parsed match 282: 0 games found
+2026-01-18 21:40:15,781 - INFO - Found 0 games in match 282
+2026-01-18 21:40:15,781 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=993
+2026-01-18 21:40:17,406 - INFO - Parsed match 993: 0 games found
+2026-01-18 21:40:17,406 - INFO - Found 0 games in match 993
+2026-01-18 21:40:17,406 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=286
+2026-01-18 21:40:18,984 - INFO - Parsed match 286: 0 games found
+2026-01-18 21:40:18,984 - INFO - Found 0 games in match 286
+2026-01-18 21:40:18,984 - INFO - Progress: 100/420 matches processed (23%)
+2026-01-18 21:40:18,984 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=989
+2026-01-18 21:40:20,528 - INFO - Parsed match 989: 0 games found
+2026-01-18 21:40:20,528 - INFO - Found 0 games in match 989
+2026-01-18 21:40:20,528 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=281
+2026-01-18 21:40:22,079 - INFO - Parsed match 281: 0 games found
+2026-01-18 21:40:22,079 - INFO - Found 0 games in match 281
+2026-01-18 21:40:22,079 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=288
+2026-01-18 21:40:23,718 - INFO - Parsed match 288: 0 games found
+2026-01-18 21:40:23,718 - INFO - Found 0 games in match 288
+2026-01-18 21:40:23,718 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=992
+2026-01-18 21:40:25,395 - INFO - Parsed match 992: 0 games found
+2026-01-18 21:40:25,395 - INFO - Found 0 games in match 992
+2026-01-18 21:40:25,395 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=291
+2026-01-18 21:40:26,929 - INFO - Parsed match 291: 0 games found
+2026-01-18 21:40:26,929 - INFO - Found 0 games in match 291
+2026-01-18 21:40:26,929 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=990
+2026-01-18 21:40:28,472 - INFO - Parsed match 990: 0 games found
+2026-01-18 21:40:28,472 - INFO - Found 0 games in match 990
+2026-01-18 21:40:28,472 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=453
+2026-01-18 21:40:30,108 - INFO - Parsed match 453: 0 games found
+2026-01-18 21:40:30,108 - INFO - Found 0 games in match 453
+2026-01-18 21:40:30,108 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=328
+2026-01-18 21:40:31,696 - INFO - Parsed match 328: 0 games found
+2026-01-18 21:40:31,696 - INFO - Found 0 games in match 328
+2026-01-18 21:40:31,696 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=327
+2026-01-18 21:40:33,273 - INFO - Parsed match 327: 0 games found
+2026-01-18 21:40:33,273 - INFO - Found 0 games in match 327
+2026-01-18 21:40:33,273 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=318
+2026-01-18 21:40:34,781 - INFO - Parsed match 318: 0 games found
+2026-01-18 21:40:34,781 - INFO - Found 0 games in match 318
+2026-01-18 21:40:34,781 - INFO - Progress: 110/420 matches processed (26%)
+2026-01-18 21:40:34,781 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=333
+2026-01-18 21:40:36,355 - INFO - Parsed match 333: 0 games found
+2026-01-18 21:40:36,355 - INFO - Found 0 games in match 333
+2026-01-18 21:40:36,355 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=322
+2026-01-18 21:40:38,229 - INFO - Parsed match 322: 0 games found
+2026-01-18 21:40:38,229 - INFO - Found 0 games in match 322
+2026-01-18 21:40:38,229 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=324
+2026-01-18 21:40:39,788 - INFO - Parsed match 324: 0 games found
+2026-01-18 21:40:39,788 - INFO - Found 0 games in match 324
+2026-01-18 21:40:39,788 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=454
+2026-01-18 21:40:41,327 - INFO - Parsed match 454: 0 games found
+2026-01-18 21:40:41,327 - INFO - Found 0 games in match 454
+2026-01-18 21:40:41,327 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=312
+2026-01-18 21:40:42,856 - INFO - Parsed match 312: 0 games found
+2026-01-18 21:40:42,857 - INFO - Found 0 games in match 312
+2026-01-18 21:40:42,857 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=336
+2026-01-18 21:40:44,366 - INFO - Parsed match 336: 0 games found
+2026-01-18 21:40:44,366 - INFO - Found 0 games in match 336
+2026-01-18 21:40:44,366 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=335
+2026-01-18 21:40:45,978 - INFO - Parsed match 335: 0 games found
+2026-01-18 21:40:45,978 - INFO - Found 0 games in match 335
+2026-01-18 21:40:45,978 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=329
+2026-01-18 21:40:47,791 - INFO - Parsed match 329: 0 games found
+2026-01-18 21:40:47,791 - INFO - Found 0 games in match 329
+2026-01-18 21:40:47,791 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=323
+2026-01-18 21:40:49,340 - INFO - Parsed match 323: 0 games found
+2026-01-18 21:40:49,340 - INFO - Found 0 games in match 323
+2026-01-18 21:40:49,340 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=456
+2026-01-18 21:40:50,955 - INFO - Parsed match 456: 0 games found
+2026-01-18 21:40:50,955 - INFO - Found 0 games in match 456
+2026-01-18 21:40:50,955 - INFO - Progress: 120/420 matches processed (28%)
+2026-01-18 21:40:50,955 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=330
+2026-01-18 21:40:52,511 - INFO - Parsed match 330: 0 games found
+2026-01-18 21:40:52,512 - INFO - Found 0 games in match 330
+2026-01-18 21:40:52,512 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=452
+2026-01-18 21:40:53,736 - INFO - Parsed match 452: 0 games found
+2026-01-18 21:40:53,736 - INFO - Found 0 games in match 452
+2026-01-18 21:40:53,736 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=334
+2026-01-18 21:40:55,299 - INFO - Parsed match 334: 0 games found
+2026-01-18 21:40:55,299 - INFO - Found 0 games in match 334
+2026-01-18 21:40:55,299 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=332
+2026-01-18 21:40:56,929 - INFO - Parsed match 332: 0 games found
+2026-01-18 21:40:56,930 - INFO - Found 0 games in match 332
+2026-01-18 21:40:56,930 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=455
+2026-01-18 21:40:58,502 - INFO - Parsed match 455: 0 games found
+2026-01-18 21:40:58,502 - INFO - Found 0 games in match 455
+2026-01-18 21:40:58,502 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=451
+2026-01-18 21:41:00,074 - INFO - Parsed match 451: 0 games found
+2026-01-18 21:41:00,074 - INFO - Found 0 games in match 451
+2026-01-18 21:41:00,074 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=317
+2026-01-18 21:41:01,683 - INFO - Parsed match 317: 0 games found
+2026-01-18 21:41:01,683 - INFO - Found 0 games in match 317
+2026-01-18 21:41:01,683 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=364
+2026-01-18 21:41:03,270 - INFO - Parsed match 364: 0 games found
+2026-01-18 21:41:03,270 - INFO - Found 0 games in match 364
+2026-01-18 21:41:03,270 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=369
+2026-01-18 21:41:04,819 - INFO - Parsed match 369: 0 games found
+2026-01-18 21:41:04,819 - INFO - Found 0 games in match 369
+2026-01-18 21:41:04,820 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=348
+2026-01-18 21:41:06,570 - INFO - Parsed match 348: 0 games found
+2026-01-18 21:41:06,571 - INFO - Found 0 games in match 348
+2026-01-18 21:41:06,571 - INFO - Progress: 130/420 matches processed (30%)
+2026-01-18 21:41:06,571 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=360
+2026-01-18 21:41:08,119 - INFO - Parsed match 360: 0 games found
+2026-01-18 21:41:08,119 - INFO - Found 0 games in match 360
+2026-01-18 21:41:08,119 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=371
+2026-01-18 21:41:09,664 - INFO - Parsed match 371: 0 games found
+2026-01-18 21:41:09,664 - INFO - Found 0 games in match 371
+2026-01-18 21:41:09,664 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=358
+2026-01-18 21:41:11,238 - INFO - Parsed match 358: 0 games found
+2026-01-18 21:41:11,238 - INFO - Found 0 games in match 358
+2026-01-18 21:41:11,238 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=359
+2026-01-18 21:41:12,830 - INFO - Parsed match 359: 0 games found
+2026-01-18 21:41:12,830 - INFO - Found 0 games in match 359
+2026-01-18 21:41:12,830 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=472
+2026-01-18 21:41:14,385 - INFO - Parsed match 472: 0 games found
+2026-01-18 21:41:14,385 - INFO - Found 0 games in match 472
+2026-01-18 21:41:14,385 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=476
+2026-01-18 21:41:15,933 - INFO - Parsed match 476: 0 games found
+2026-01-18 21:41:15,933 - INFO - Found 0 games in match 476
+2026-01-18 21:41:15,933 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=354
+2026-01-18 21:41:17,571 - INFO - Parsed match 354: 0 games found
+2026-01-18 21:41:17,571 - INFO - Found 0 games in match 354
+2026-01-18 21:41:17,571 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=366
+2026-01-18 21:41:19,108 - INFO - Parsed match 366: 0 games found
+2026-01-18 21:41:19,108 - INFO - Found 0 games in match 366
+2026-01-18 21:41:19,108 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=477
+2026-01-18 21:41:20,855 - INFO - Parsed match 477: 0 games found
+2026-01-18 21:41:20,855 - INFO - Found 0 games in match 477
+2026-01-18 21:41:20,855 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=353
+2026-01-18 21:41:22,470 - INFO - Parsed match 353: 0 games found
+2026-01-18 21:41:22,470 - INFO - Found 0 games in match 353
+2026-01-18 21:41:22,470 - INFO - Progress: 140/420 matches processed (33%)
+2026-01-18 21:41:22,470 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=475
+2026-01-18 21:41:24,040 - INFO - Parsed match 475: 0 games found
+2026-01-18 21:41:24,040 - INFO - Found 0 games in match 475
+2026-01-18 21:41:24,040 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=372
+2026-01-18 21:41:25,613 - INFO - Parsed match 372: 0 games found
+2026-01-18 21:41:25,613 - INFO - Found 0 games in match 372
+2026-01-18 21:41:25,613 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=365
+2026-01-18 21:41:27,180 - INFO - Parsed match 365: 0 games found
+2026-01-18 21:41:27,180 - INFO - Found 0 games in match 365
+2026-01-18 21:41:27,180 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=473
+2026-01-18 21:41:28,783 - INFO - Parsed match 473: 0 games found
+2026-01-18 21:41:28,783 - INFO - Found 0 games in match 473
+2026-01-18 21:41:28,783 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=474
+2026-01-18 21:41:30,494 - INFO - Parsed match 474: 0 games found
+2026-01-18 21:41:30,494 - INFO - Found 0 games in match 474
+2026-01-18 21:41:30,494 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=363
+2026-01-18 21:41:32,310 - INFO - Parsed match 363: 0 games found
+2026-01-18 21:41:32,310 - INFO - Found 0 games in match 363
+2026-01-18 21:41:32,311 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=370
+2026-01-18 21:41:33,825 - INFO - Parsed match 370: 0 games found
+2026-01-18 21:41:33,825 - INFO - Found 0 games in match 370
+2026-01-18 21:41:33,825 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=368
+2026-01-18 21:41:35,377 - INFO - Parsed match 368: 0 games found
+2026-01-18 21:41:35,377 - INFO - Found 0 games in match 368
+2026-01-18 21:41:35,377 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1344
+2026-01-18 21:41:37,017 - INFO - Parsed match 1344: 0 games found
+2026-01-18 21:41:37,017 - INFO - Found 0 games in match 1344
+2026-01-18 21:41:37,017 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1332
+2026-01-18 21:41:38,564 - INFO - Parsed match 1332: 0 games found
+2026-01-18 21:41:38,564 - INFO - Found 0 games in match 1332
+2026-01-18 21:41:38,564 - INFO - Progress: 150/420 matches processed (35%)
+2026-01-18 21:41:38,564 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1301
+2026-01-18 21:41:40,123 - INFO - Parsed match 1301: 0 games found
+2026-01-18 21:41:40,123 - INFO - Found 0 games in match 1301
+2026-01-18 21:41:40,123 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1335
+2026-01-18 21:41:41,776 - INFO - Parsed match 1335: 0 games found
+2026-01-18 21:41:41,776 - INFO - Found 0 games in match 1335
+2026-01-18 21:41:41,776 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1343
+2026-01-18 21:41:43,342 - INFO - Parsed match 1343: 0 games found
+2026-01-18 21:41:43,342 - INFO - Found 0 games in match 1343
+2026-01-18 21:41:43,342 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1276
+2026-01-18 21:41:44,919 - INFO - Parsed match 1276: 0 games found
+2026-01-18 21:41:44,919 - INFO - Found 0 games in match 1276
+2026-01-18 21:41:44,919 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1304
+2026-01-18 21:41:46,478 - INFO - Parsed match 1304: 0 games found
+2026-01-18 21:41:46,478 - INFO - Found 0 games in match 1304
+2026-01-18 21:41:46,478 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1284
+2026-01-18 21:41:48,082 - INFO - Parsed match 1284: 0 games found
+2026-01-18 21:41:48,082 - INFO - Found 0 games in match 1284
+2026-01-18 21:41:48,082 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1341
+2026-01-18 21:41:49,713 - INFO - Parsed match 1341: 0 games found
+2026-01-18 21:41:49,713 - INFO - Found 0 games in match 1341
+2026-01-18 21:41:49,713 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1337
+2026-01-18 21:41:51,278 - INFO - Parsed match 1337: 0 games found
+2026-01-18 21:41:51,278 - INFO - Found 0 games in match 1337
+2026-01-18 21:41:51,278 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1297
+2026-01-18 21:41:52,950 - INFO - Parsed match 1297: 0 games found
+2026-01-18 21:41:52,950 - INFO - Found 0 games in match 1297
+2026-01-18 21:41:52,950 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1303
+2026-01-18 21:41:54,487 - INFO - Parsed match 1303: 0 games found
+2026-01-18 21:41:54,487 - INFO - Found 0 games in match 1303
+2026-01-18 21:41:54,487 - INFO - Progress: 160/420 matches processed (38%)
+2026-01-18 21:41:54,487 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1296
+2026-01-18 21:41:56,048 - INFO - Parsed match 1296: 0 games found
+2026-01-18 21:41:56,048 - INFO - Found 0 games in match 1296
+2026-01-18 21:41:56,048 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1342
+2026-01-18 21:41:57,694 - INFO - Parsed match 1342: 0 games found
+2026-01-18 21:41:57,694 - INFO - Found 0 games in match 1342
+2026-01-18 21:41:57,694 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1333
+2026-01-18 21:41:59,261 - INFO - Parsed match 1333: 0 games found
+2026-01-18 21:41:59,262 - INFO - Found 0 games in match 1333
+2026-01-18 21:41:59,262 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1298
+2026-01-18 21:42:00,967 - INFO - Parsed match 1298: 0 games found
+2026-01-18 21:42:00,967 - INFO - Found 0 games in match 1298
+2026-01-18 21:42:00,967 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1336
+2026-01-18 21:42:02,580 - INFO - Parsed match 1336: 0 games found
+2026-01-18 21:42:02,580 - INFO - Found 0 games in match 1336
+2026-01-18 21:42:02,580 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1340
+2026-01-18 21:42:04,200 - INFO - Parsed match 1340: 0 games found
+2026-01-18 21:42:04,200 - INFO - Found 0 games in match 1340
+2026-01-18 21:42:04,200 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1295
+2026-01-18 21:42:06,206 - INFO - Parsed match 1295: 0 games found
+2026-01-18 21:42:06,206 - INFO - Found 0 games in match 1295
+2026-01-18 21:42:06,206 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1279
+2026-01-18 21:42:07,817 - INFO - Parsed match 1279: 0 games found
+2026-01-18 21:42:07,818 - INFO - Found 0 games in match 1279
+2026-01-18 21:42:07,818 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1282
+2026-01-18 21:42:09,364 - INFO - Parsed match 1282: 0 games found
+2026-01-18 21:42:09,364 - INFO - Found 0 games in match 1282
+2026-01-18 21:42:09,364 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1339
+2026-01-18 21:42:10,964 - INFO - Parsed match 1339: 0 games found
+2026-01-18 21:42:10,964 - INFO - Found 0 games in match 1339
+2026-01-18 21:42:10,964 - INFO - Progress: 170/420 matches processed (40%)
+2026-01-18 21:42:10,964 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1283
+2026-01-18 21:42:12,494 - INFO - Parsed match 1283: 0 games found
+2026-01-18 21:42:12,495 - INFO - Found 0 games in match 1283
+2026-01-18 21:42:12,495 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1334
+2026-01-18 21:42:14,115 - INFO - Parsed match 1334: 0 games found
+2026-01-18 21:42:14,115 - INFO - Found 0 games in match 1334
+2026-01-18 21:42:14,115 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1300
+2026-01-18 21:42:15,756 - INFO - Parsed match 1300: 0 games found
+2026-01-18 21:42:15,756 - INFO - Found 0 games in match 1300
+2026-01-18 21:42:15,756 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1280
+2026-01-18 21:42:17,596 - INFO - Parsed match 1280: 0 games found
+2026-01-18 21:42:17,596 - INFO - Found 0 games in match 1280
+2026-01-18 21:42:17,596 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1345
+2026-01-18 21:42:19,148 - INFO - Parsed match 1345: 0 games found
+2026-01-18 21:42:19,148 - INFO - Found 0 games in match 1345
+2026-01-18 21:42:19,148 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=1302
+2026-01-18 21:42:20,753 - INFO - Parsed match 1302: 0 games found
+2026-01-18 21:42:20,753 - INFO - Found 0 games in match 1302
+2026-01-18 21:42:20,753 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=490
+2026-01-18 21:42:22,281 - INFO - Parsed match 490: 0 games found
+2026-01-18 21:42:22,281 - INFO - Found 0 games in match 490
+2026-01-18 21:42:22,281 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=488
+2026-01-18 21:42:23,831 - INFO - Parsed match 488: 0 games found
+2026-01-18 21:42:23,831 - INFO - Found 0 games in match 488
+2026-01-18 21:42:23,831 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=389
+2026-01-18 21:42:25,568 - INFO - Parsed match 389: 0 games found
+2026-01-18 21:42:25,568 - INFO - Found 0 games in match 389
+2026-01-18 21:42:25,568 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=395
+2026-01-18 21:42:27,116 - INFO - Parsed match 395: 0 games found
+2026-01-18 21:42:27,116 - INFO - Found 0 games in match 395
+2026-01-18 21:42:27,116 - INFO - Progress: 180/420 matches processed (42%)
+2026-01-18 21:42:27,116 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=384
+2026-01-18 21:42:28,660 - INFO - Parsed match 384: 0 games found
+2026-01-18 21:42:28,660 - INFO - Found 0 games in match 384
+2026-01-18 21:42:28,660 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=489
+2026-01-18 21:42:30,216 - INFO - Parsed match 489: 0 games found
+2026-01-18 21:42:30,216 - INFO - Found 0 games in match 489
+2026-01-18 21:42:30,216 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=404
+2026-01-18 21:42:31,869 - INFO - Parsed match 404: 0 games found
+2026-01-18 21:42:31,869 - INFO - Found 0 games in match 404
+2026-01-18 21:42:31,869 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=394
+2026-01-18 21:42:33,448 - INFO - Parsed match 394: 0 games found
+2026-01-18 21:42:33,448 - INFO - Found 0 games in match 394
+2026-01-18 21:42:33,448 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=405
+2026-01-18 21:42:35,017 - INFO - Parsed match 405: 0 games found
+2026-01-18 21:42:35,018 - INFO - Found 0 games in match 405
+2026-01-18 21:42:35,018 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=408
+2026-01-18 21:42:36,594 - INFO - Parsed match 408: 0 games found
+2026-01-18 21:42:36,594 - INFO - Found 0 games in match 408
+2026-01-18 21:42:36,594 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=390
+2026-01-18 21:42:38,233 - INFO - Parsed match 390: 0 games found
+2026-01-18 21:42:38,233 - INFO - Found 0 games in match 390
+2026-01-18 21:42:38,233 - INFO - Navigating to: https://be.tournamentsoftware.com/sport/teammatch.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517&match=487
