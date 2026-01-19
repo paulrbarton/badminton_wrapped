@@ -16,7 +16,7 @@ renamed as (
         venue,
         score as match_score,
         
-        -- Rubbers (games) - unified naming regardless of Men's/Women's/Mixed
+        -- Rubbers (9 per match in badminton)
         R1_Home_P1, R1_Home_P2, R1_Away_P1, R1_Away_P2, R1_Score,
         R2_Home_P1, R2_Home_P2, R2_Away_P1, R2_Away_P2, R2_Score,
         R3_Home_P1, R3_Home_P2, R3_Away_P1, R3_Away_P2, R3_Score,
@@ -26,12 +26,6 @@ renamed as (
         R7_Home_P1, R7_Home_P2, R7_Away_P1, R7_Away_P2, R7_Score,
         R8_Home_P1, R8_Home_P2, R8_Away_P1, R8_Away_P2, R8_Score,
         R9_Home_P1, R9_Home_P2, R9_Away_P1, R9_Away_P2, R9_Score,
-        R10_Home_P1, R10_Home_P2, R10_Away_P1, R10_Away_P2, R10_Score,
-        R11_Home_P1, R11_Home_P2, R11_Away_P1, R11_Away_P2, R11_Score,
-        R12_Home_P1, R12_Home_P2, R12_Away_P1, R12_Away_P2, R12_Score,
-        R13_Home_P1, R13_Home_P2, R13_Away_P1, R13_Away_P2, R13_Score,
-        R14_Home_P1, R14_Home_P2, R14_Away_P1, R14_Away_P2, R14_Score,
-        R15_Home_P1, R15_Home_P2, R15_Away_P1, R15_Away_P2, R15_Score,
         
         current_timestamp as loaded_at
     from source

@@ -13,32 +13,9 @@ This project extracts detailed match and game data from Tournament Software, loa
 - ✅ 420 matches scraped
 - ✅ Game-level details extracted with player names and scores
 - ✅ dbt staging models loaded into DuckDB
-
-## Project Structure
-
-```
-badminton-wrapped/
-├── scraping/
-│   ├── config.py              # Configuration (URLs, paths, settings)
-│   ├── scraper.py             # BadmintonScraper class with Selenium
-│   ├── parsers.py             # HTML parsing functions
-│   ├── main.py                # Main orchestration script
-│   └── test_single_match.py   # Testing utility
-├── dbt_project/
-│   ├── models/
-│   │   └── staging/
-│   │       ├── stg_divisions.sql  # Division/draw data
-│   │       ├── stg_matches.sql    # Match-level data
-│   │       ├── stg_games.sql      # Game-level details
-│   │       └── schema.yml         # Model documentation
-│   ├── profiles.yml           # DuckDB connection config
-│   └── dbt_project.yml        # dbt project config
-├── data/
-│   ├── raw/                   # CSV files (divisions, matches, games)
-│   └── badminton_wrapped.duckdb  # DuckDB database
-└── .venv/                     # Python 3.14 for scraping
-└── .venv_dbt/                 # Python 3.12 for dbt
-```
+- ✅ Intermediate models for player-level rubber analysis
+- ✅ Mart models for club awards (Comeback King, Club Stalwart, No Mercy)
+- ✅ Award image generation with partnership support
 
 ## Setup
 
@@ -102,17 +79,57 @@ python3 scraping/test_single_match.py
 source .venv_dbt/bin/activate
 cd dbt_project
 
-# Run staging models
+# Run all models (staging, intermediate, marts)
 dbt run --profiles-dir .
+
+# Run specific model layers
+dbt run --select staging --profiles-dir .
+dbt run --select intermediate --profiles-dir .
+dbt run --select marts --profiles-dir .
 
 # Test data quality
 dbt test --profiles-dir .
+
+# Generate and view documentation
+dbt docs generate --profiles-dir .
+dbt docs serve --profiles-dir .
 ```
 
-**Staging Models**:
-- `stg_divisions` - Division/draw information
-- `stg_matches` - Match-level data (date, teams, score, venue)
-- `stg_games` - Game-level details with player names and rubber scores (R1, R2, R3...)
+**Model Layers**:
+- **Staging**: Light transformations from raw CSV data
+  - `stg_divisions` - Division/draw information
+  - `stg_matches` - Match-level data (date, teams, score, venue)
+  - `stg_games` - Game-level details with player names and rubber scores
+- **Intermediate**: Purpose-built transformations
+  - `int_match_rubbers` - Rubber-level analysis with parsed game scores
+  - `int_player_match_rubbers` - Player-level rubber participation
+- **Marts**: Analytics-ready business entities
+  - `mart_club_awards` - Club awards by player (supports individual and partnership awards)
+
+### Generating Award Images
+
+```bash
+# Activate dbt environment (image generator uses DuckDB)
+source .venv_dbt/bin/activate
+
+# Generate award images for a specific club
+python3 visualization/generate_award_images.py --club "West Bridgford"
+
+# Generate for multiple clubs
+python3 visualization/generate_award_images.py --club "Beeston"
+```
+
+**Award Types**:
+- **Comeback King** (`most_comebacks`) - Most rubbers won after losing game 1
+- **Club Stalwart** (`club_stalwart`) - Most matches played in the season
+- **No Mercy** (`no_mercy`) - Largest winning margin in a 2-game rubber (partnership award)
+
+**Features**:
+- Shareable PNG images (1080x1920, optimized for social media)
+- Gradient backgrounds with subtle racket watermark
+- Partnership awards display both players on a single image
+- Individual awards use format: `{player_name}_{award}.png`
+- Partnership awards use format: `{player1}_and_{player2}_{award}.png`
 
 ### Querying Data
 
@@ -128,7 +145,9 @@ SELECT match_id, R1_Home_P1, R1_Score FROM stg_games LIMIT 10;
 
 ## Data Schema
 
-### games.csv Format
+### Raw CSV Files
+
+#### games.csv Format
 
 Each row represents one complete match with all games (rubbers) as columns:
 
@@ -142,6 +161,26 @@ Each row represents one complete match with all games (rubbers) as columns:
 
 **Note**: Changed from game-type-specific columns (MD1, WD1, XD1) to unified rubber numbering (R1, R2, R3...) for easier analysis.
 
+### Database Tables
+
+#### mart_club_awards
+
+Club awards by player with support for individual and partnership awards:
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `award` | varchar | Award type identifier |
+| `club` | varchar | Club name |
+| `player` | varchar | Primary player (or first player for partnerships) |
+| `player_2` | varchar | Secondary player for partnership awards (NULL for individual) |
+| `award_value` | int | Award metric value |
+| `award_details` | varchar | Detailed information about award achievement |
+
+**Award Types**:
+- `most_comebacks` - Individual award (player_2 = NULL)
+- `club_stalwart` - Individual award (player_2 = NULL)
+- `no_mercy` - Partnership award (player_2 = partner name)
+
 ## Technical Notes
 
 - **Python Versions**: 3.14 for scraping, 3.12 for dbt (due to pydantic v1 compatibility requirements)
@@ -149,11 +188,33 @@ Each row represents one complete match with all games (rubbers) as columns:
 - **Database**: DuckDB (lightweight, embedded, SQL analytics)
 - **Data Format**: Flat CSV structure (one row per match) for simplicity
 - **Paths**: All dbt models use absolute paths to avoid portability issues
+- **Image Generation**: PIL/Pillow for award image rendering with SF Pro font
+
+## Key Design Patterns
+
+### Partnership Awards
+
+The `player_2` column in `mart_club_awards` enables clean handling of partnership vs individual awards:
+
+- **Individual awards** (most_comebacks, club_stalwart): `player_2 = NULL`
+- **Partnership awards** (no_mercy): `player_2 = partner_name`
+
+This approach:
+- ✅ Preserves data granularity (both players tracked in one row)
+- ✅ Avoids UNION ALL duplication pattern
+- ✅ Enables straightforward queries for both types
+- ✅ Makes image generation conditional based on `player_2` presence
+- ✅ Extensible for future pair-based awards
+
+### Award Image File Naming
+
+- Individual: `{player_slug}_{award}.png` (e.g., `paul_barton_most_comebacks.png`)
+- Partnership: `{player1_slug}_and_{player2_slug}_{award}.png` (e.g., `mandy_lee_and_robert_tateson_no_mercy.png`)
 
 ## Next Steps
 
-- [ ] Create dbt mart models for analytics
-- [ ] Player-level aggregations
+- [ ] Additional award types (deuce master, clean sweep, biggest comeback)
+- [ ] Player-level aggregations and statistics
 - [ ] Team performance metrics
-- [ ] Visualization scripts
-- [ ] Wrapped-style summary reports
+- [ ] Interactive visualization dashboard
+- [ ] Automated award generation for all clubs

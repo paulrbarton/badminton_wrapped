@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: mart_club_awards
+    description: |
+      Club awards by player. Each row represents one player winning one award.
+      Currently includes:
+      - most_comebacks: Players who came back from losing game 1 to win the rubber
+      
+      Future awards could include:
+      - most_deuce_wins: Players who won the most games that went to deuce
+      - biggest_comeback_points: Largest point deficit overcome in a single game
+      - most_clean_sweeps: Most 2-0 rubber wins
+      
+    columns:
+      - name: award
+        description: |
+          Type of award being given. Currently only 'most_comebacks'.
+          A comeback is when a player lost game 1 but won the rubber (won games 2 and 3).
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['most_comebacks', 'club_stalwart', 'no_mercy']
+      
+      - name: club
+        description: |
+          Club name extracted from team name. 
+          Example: "West Bridgford" from "West Bridgford Open 2 (SGO2)"
+        tests:
+          - not_null
+      
+      - name: player
+        description: |
+          Primary player name who won the award.
+          For individual awards, this is the sole winner.
+          For partnership awards (e.g., no_mercy), this is the first player in the pair.
+        tests:
+          - not_null
+      
+      - name: player_2
+        description: |
+          Secondary player name for partnership awards only.
+          NULL for individual awards (most_comebacks, club_stalwart).
+          Contains the partner's name for pair-based awards (no_mercy).
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: "(player_2 IS NULL AND award != 'no_mercy') OR (player_2 IS NOT NULL AND award = 'no_mercy')"
+              config:
+                where: "1=1"  # Apply to all rows
+      
+      - name: award_value
+        description: |
+          Numeric value for the award. For most_comebacks, this is the count of comeback wins.
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+      
+      - name: award_details
+        description: |
+          Textual description of all rubbers that contributed to this award.
+          For most_comebacks, each rubber is formatted as:
+          "YYYY-MM-DD: vs [Opponent Team] (Rubber N with [Partner]) - Lost Game 1 X-Y, Won Game 2 A-B, Won Game 3 C-D"
+          Multiple rubbers are separated by " | " delimiter.
+          This provides full context showing exactly which matches earned the player their award.
+        tests:
+          - not_null

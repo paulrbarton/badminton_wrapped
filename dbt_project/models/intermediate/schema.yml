@@ -1,0 +1,350 @@
+version: 2
+
+models:
+  - name: int_match_rubbers
+    description: |
+      Intermediate model that unpivots rubbers from stg_games and parses 
+      individual game scores within each rubber. Each rubber (R1-R9) contains
+      2-3 individual games. This model breaks down score strings like "21-11 21-10"
+      into separate game-level data with winner determination.
+      
+      One row per rubber (not per individual game within rubber).
+      
+      Score parsing examples:
+      - "21-11 21-10" = 2 games, home won both
+      - "17-21 21-16 18-21" = 3 games, away won 2 of 3
+    columns:
+      - name: match_id
+        description: Foreign key to matches
+        tests:
+          - not_null
+          
+      - name: rubber_number
+        description: Rubber number within the match (1-15)
+        tests:
+          - not_null
+          
+      - name: home_team
+        description: Home team name
+        
+      - name: away_team
+        description: Away team name
+        
+      - name: match_date
+        description: Date of the match
+        
+      - name: division
+        description: Division name
+        
+      - name: venue
+        description: Venue where match was played
+        
+      - name: home_player_1
+        description: First home player in this rubber
+        
+      - name: home_player_2
+        description: Second home player in this rubber
+        
+      - name: away_player_1
+        description: First away player in this rubber
+        
+      - name: away_player_2
+        description: Second away player in this rubber
+        
+      - name: rubber_score
+        description: Raw score string (e.g., "21-11 21-10" or "17-21 21-16 18-21")
+        tests:
+          - not_null
+          
+      - name: total_games_in_rubber
+        description: Number of individual games in this rubber (2 or 3)
+        tests:
+          - not_null
+          - accepted_values:
+              values: [2, 3]
+              
+      - name: game_1_home_score
+        description: Home team score in game 1
+        tests:
+          - not_null
+          
+      - name: game_1_away_score
+        description: Away team score in game 1
+        tests:
+          - not_null
+          
+      - name: game_1_winner
+        description: Winner of game 1 (home/away)
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['home', 'away']
+              
+      - name: game_2_home_score
+        description: Home team score in game 2 (null if only 1 game played)
+        
+      - name: game_2_away_score
+        description: Away team score in game 2 (null if only 1 game played)
+        
+      - name: game_2_winner
+        description: Winner of game 2 (home/away)
+        
+      - name: game_3_home_score
+        description: Home team score in game 3 (null if didn't go to 3 games)
+        
+      - name: game_3_away_score
+        description: Away team score in game 3 (null if didn't go to 3 games)
+        
+      - name: game_3_winner
+        description: Winner of game 3 (home/away/null)
+        tests:
+          - accepted_values:
+              values: ['home', 'away']
+              config:
+                where: "game_3_winner is not null"
+                
+      - name: home_games_won
+        description: Number of individual games won by home team in this rubber
+        tests:
+          - not_null
+          
+      - name: away_games_won
+        description: Number of individual games won by away team in this rubber
+        tests:
+          - not_null
+          
+      - name: rubber_winner
+        description: Winner of the rubber (home/away) - team that won 2+ games
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['home', 'away']
+              
+      - name: went_to_three_games
+        description: Boolean flag indicating if rubber went to 3 games
+        tests:
+          - not_null
+          
+      - name: rubber_winner_team
+        description: Name of the team that won this rubber
+        tests:
+          - not_null
+          
+      - name: rubber_loser_team
+        description: Name of the team that lost this rubber
+        tests:
+          - not_null
+          
+      - name: game_1_margin
+        description: Margin of victory in game 1 (absolute difference in scores)
+        tests:
+          - not_null
+          
+      - name: game_2_margin
+        description: Margin of victory in game 2 (absolute difference in scores)
+        tests:
+          - not_null
+          
+      - name: game_3_margin
+        description: Margin of victory in game 3 (null if didn't go to 3 games)
+        
+      - name: game_1_went_to_deuce
+        description: Boolean flag indicating if game 1 went to deuce/extended play (winner > 21 points)
+        tests:
+          - not_null
+          
+      - name: game_2_went_to_deuce
+        description: Boolean flag indicating if game 2 went to deuce/extended play (winner > 21 points)
+        tests:
+          - not_null
+          
+      - name: game_3_went_to_deuce
+        description: Boolean flag indicating if game 3 went to deuce/extended play (null if no game 3)
+        
+      - name: is_forfeit
+        description: Boolean flag indicating if this rubber was forfeited (one side didn't show up, resulting in 21-0 21-0)
+        tests:
+          - not_null
+
+  - name: int_player_match_rubbers
+    description: |
+      Intermediate model showing individual player statistics for each match rubber.
+      Unpivots int_match_rubbers so each row represents one player's performance
+      in one rubber. Each rubber has 4 player records (2 home, 2 away).
+      
+      This model provides player-level granularity for analyzing individual
+      performance, partnerships, and head-to-head matchups.
+    columns:
+      - name: match_id
+        description: Foreign key to matches
+        tests:
+          - not_null
+          
+      - name: rubber_number
+        description: Rubber number within the match (1-9)
+        tests:
+          - not_null
+          
+      - name: player_name
+        description: Name of the player
+        tests:
+          - not_null
+          
+      - name: partner_name
+        description: Name of the player's partner in this rubber
+        
+      - name: team
+        description: Player's team name
+        tests:
+          - not_null
+          
+      - name: opponent_team
+        description: Opponent team name
+        tests:
+          - not_null
+          
+      - name: opponent_1
+        description: First opponent player
+        
+      - name: opponent_2
+        description: Second opponent player
+        
+      - name: match_date
+        description: Date of the match
+        tests:
+          - not_null
+          
+      - name: division
+        description: Division name
+        tests:
+          - not_null
+          
+      - name: venue
+        description: Venue where match was played
+        
+      - name: home_away
+        description: Whether player was home or away
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['home', 'away']
+              
+      - name: player_position
+        description: Player position in the pairing (1 or 2)
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2]
+              
+      - name: won_rubber
+        description: Boolean flag indicating if player won this rubber
+        tests:
+          - not_null
+          
+      - name: rubber_winner
+        description: Which side won the rubber (home/away)
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['home', 'away']
+              
+      - name: total_games_in_rubber
+        description: Number of individual games in this rubber (2 or 3)
+        tests:
+          - not_null
+          - accepted_values:
+              values: [2, 3]
+              
+      - name: games_won
+        description: Number of individual games won by player's team
+        tests:
+          - not_null
+          
+      - name: games_lost
+        description: Number of individual games lost by player's team
+        tests:
+          - not_null
+          
+      - name: went_to_three_games
+        description: Boolean flag indicating if rubber went to 3 games
+        tests:
+          - not_null
+          
+      - name: game_1_score_for
+        description: Player's team score in game 1
+        tests:
+          - not_null
+          
+      - name: game_1_score_against
+        description: Opponent's score in game 1
+        tests:
+          - not_null
+          
+      - name: game_1_won
+        description: Boolean flag indicating if player won game 1
+        tests:
+          - not_null
+          
+      - name: game_1_margin
+        description: Margin of victory/defeat in game 1
+        tests:
+          - not_null
+          
+      - name: game_1_went_to_deuce
+        description: Boolean flag indicating if game 1 went to deuce
+        tests:
+          - not_null
+          
+      - name: game_2_score_for
+        description: Player's team score in game 2
+        
+      - name: game_2_score_against
+        description: Opponent's score in game 2
+        
+      - name: game_2_won
+        description: Boolean flag indicating if player won game 2
+        
+      - name: game_2_margin
+        description: Margin of victory/defeat in game 2
+        
+      - name: game_2_went_to_deuce
+        description: Boolean flag indicating if game 2 went to deuce
+        
+      - name: game_3_score_for
+        description: Player's team score in game 3 (null if didn't go to 3)
+        
+      - name: game_3_score_against
+        description: Opponent's score in game 3 (null if didn't go to 3)
+        
+      - name: game_3_won
+        description: Boolean flag indicating if player won game 3
+        
+      - name: game_3_margin
+        description: Margin of victory/defeat in game 3
+        
+      - name: game_3_went_to_deuce
+        description: Boolean flag indicating if game 3 went to deuce
+        
+      - name: rubber_score
+        description: Raw score string (e.g., "21-11 21-10")
+        tests:
+          - not_null
+          
+      - name: total_points_for
+        description: Total points scored by player's team across all games in rubber
+        tests:
+          - not_null
+          
+      - name: total_points_against
+        description: Total points scored against player's team across all games in rubber
+        tests:
+          - not_null
+          
+      - name: point_differential
+        description: Net point differential for player in this rubber (positive = outscored opponents)
+        tests:
+          - not_null          
+      - name: is_forfeit
+        description: Boolean flag indicating if this rubber was forfeited (opponent didn't show up, resulting in 21-0 21-0)
+        tests:
+          - not_null
