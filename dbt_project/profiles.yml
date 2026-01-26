@@ -4,4 +4,7 @@ badminton_wrapped:
     dev:
       type: duckdb
       path: '/Users/c16305a/Documents/ECS/Sandpit/badminton-wrapped/data/badminton_wrapped.duckdb'
-      threads: 4
+      threads: 1
+      settings:
+        preserve_insertion_order: false
+        memory_limit: '8GB'

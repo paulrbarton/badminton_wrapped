@@ -29,19 +29,20 @@ logger = logging.getLogger(__name__)
 IMAGE_WIDTH = 1080
 IMAGE_HEIGHT = 1920
 
-# Color scheme (gradient from purple to pink, inspired by Spotify Wrapped)
-COLOR_GRADIENT_START = "#1e3a5f"  # Deep blue
-COLOR_GRADIENT_END = "#4a90e2"    # Bright blue
+# Color scheme (darker background with neon accents)
+COLOR_GRADIENT_START = "#0a0a0a"  # Very dark grey/black
+COLOR_GRADIENT_END = "#1a1a2e"    # Dark blue-grey
 COLOR_TEXT_PRIMARY = "#FFFFFF"     # White
-COLOR_TEXT_SECONDARY = "#E0E0E0"   # Light grey
-COLOR_ACCENT = "#FFD700"           # Gold for awards
+COLOR_TEXT_SECONDARY = "#FFFFFF"   # White
+COLOR_ACCENT = "#FFFFFF"           # White
+COLOR_NET = "#FF6B35"              # Neon orange
 
 # Typography sizes
-FONT_SIZE_TITLE = 72
-FONT_SIZE_PLAYER = 96
-FONT_SIZE_VALUE = 144
-FONT_SIZE_DETAIL = 36
-FONT_SIZE_SUBTITLE = 48
+FONT_SIZE_TITLE = 88
+FONT_SIZE_PLAYER = 120
+FONT_SIZE_VALUE = 180
+FONT_SIZE_DETAIL = 42
+FONT_SIZE_SUBTITLE = 58
 
 
 class AwardImageGenerator:
@@ -66,13 +67,14 @@ class AwardImageGenerator:
         """Load fonts for the images."""
         fonts = {}
         
-        # Try to load system fonts (macOS paths)
+        # Try to load system fonts (macOS paths) - prioritize bold fonts
         font_paths = [
+            "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+            "/System/Library/Fonts/SFCompactDisplay-Bold.otf",
             "/System/Library/Fonts/SFNS.ttf",
             "/System/Library/Fonts/Helvetica.ttc",
             "/System/Library/Fonts/SFNSDisplay.ttf",
             "/Library/Fonts/Arial.ttf",
-            "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
         ]
         
         try:
@@ -124,10 +126,10 @@ class AwardImageGenerator:
     def _draw_racket_silhouette(self, draw: ImageDraw.Draw, width: int, height: int):
         """Draw a semi-transparent badminton racket silhouette in the background."""
         # Racket dimensions (large, centered)
-        racket_head_width = 350
-        racket_head_height = 420
-        handle_width = 60
-        handle_length = 400
+        racket_head_width = 420
+        racket_head_height = 500
+        handle_width = 25
+        handle_length = 480
         
         # Position (centered, slightly offset)
         center_x = width // 2
@@ -191,6 +193,48 @@ class AwardImageGenerator:
         
         return overlay
     
+    def _draw_badminton_net(self, width: int, height: int) -> Image.Image:
+        """Draw a badminton net at the bottom with neon orange gradient fading out."""
+        overlay = Image.new('RGBA', (width, height), (0, 0, 0, 0))
+        overlay_draw = ImageDraw.Draw(overlay)
+        
+        # Net parameters
+        net_height = 400  # Height of net from bottom
+        net_start_y = height - net_height
+        net_cord_thickness = 12  # Thick cord at top
+        
+        # Parse neon orange color
+        net_color = ImageColor.getrgb(COLOR_NET)
+        
+        # Draw thick net cord at the top (fully opaque)
+        for i in range(net_cord_thickness):
+            y = net_start_y + i
+            overlay_draw.line([(0, y), (width, y)], fill=(*net_color, 220), width=1)
+        
+        # Draw horizontal net lines with gradient fade (starting below the cord)
+        num_horizontal_lines = 15
+        for i in range(num_horizontal_lines):
+            y = net_start_y + net_cord_thickness + (i * ((net_height - net_cord_thickness) // num_horizontal_lines))
+            # Calculate alpha based on position (fade from top to bottom)
+            alpha = int(180 * (1 - (y - net_start_y) / net_height))  # Fades to 0
+            line_color = (*net_color, alpha)
+            overlay_draw.line([(0, y), (width, y)], fill=line_color, width=6)
+        
+        # Draw vertical net lines with gradient fade
+        num_vertical_lines = 20
+        for i in range(num_vertical_lines + 1):
+            x = i * (width // num_vertical_lines)
+            for y in range(net_start_y, height, 2):
+                # Calculate alpha based on position (fade from top to bottom)
+                alpha = int(180 * (1 - (y - net_start_y) / net_height))
+                line_color = (*net_color, alpha)
+                overlay_draw.point((x, y), fill=line_color)
+                if x > 0:  # Make lines thicker
+                    overlay_draw.point((x-1, y), fill=line_color)
+                    overlay_draw.point((x+1, y), fill=line_color)
+        
+        return overlay
+    
     def _wrap_text(self, text: str, font: ImageFont.FreeTypeFont, max_width: int) -> List[str]:
         """Wrap text to fit within a maximum width."""
         words = text.split()
@@ -223,8 +267,31 @@ class AwardImageGenerator:
             'most_clean_sweeps': 'Domination Award',
             'club_stalwart': 'Club Stalwart',
             'no_mercy': 'No Mercy',
+            'performs_under_pressure': 'Performs Under Pressure',
+            'longest_winning_streak': 'Longest Winning Streak',
+            'defensive_wall': 'Defensive Wall',
+            'giant_killing': 'Giant Slayer',
+            'epic_win': 'Epic Win',
+            'clean_sweep_specialist': 'Clean Sweep Specialist',
+            'perfect_partnership': 'Perfect Partnership',
         }
         return award_names.get(award, award.replace('_', ' ').title())
+    
+    def _get_award_explanation(self, award: str) -> str:
+        """Get a brief explanation for each award type."""
+        explanations = {
+            'most_comebacks': 'Won after losing the first game',
+            'club_stalwart': 'Most dedicated club player',
+            'performs_under_pressure': 'Master of narrow victories',
+            'longest_winning_streak': 'Unstoppable winning run',
+            'defensive_wall': 'Fewest points conceded',
+            'giant_killing': 'Beat opponents from higher divisions',
+            'no_mercy': 'Biggest 2-game demolition',
+            'epic_win': 'Highest-scoring 3-game thriller',
+            'clean_sweep_specialist': 'Dominant 2-0 rubber wins',
+            'perfect_partnership': 'Unbeatable partnership',
+        }
+        return explanations.get(award, '')
     
     def _format_award_value_text(self, award: str, value: int) -> str:
         """Format the award value with appropriate context."""
@@ -240,6 +307,20 @@ class AwardImageGenerator:
             return "Matches Played" if value != 1 else "Match Played"
         elif award == 'no_mercy':
             return "Point Margin" if value != 1 else "Point Margin"
+        elif award == 'performs_under_pressure':
+            return "2-Point Wins" if value != 1 else "2-Point Win"
+        elif award == 'longest_winning_streak':
+            return "Consecutive Wins" if value != 1 else "Consecutive Win"
+        elif award == 'defensive_wall':
+            return "Avg Points Conceded"
+        elif award == 'giant_killing':
+            return "Division" + ("s" if value != 1 else "") + " Higher"
+        elif award == 'epic_win':
+            return "Total Points Scored"
+        elif award == 'clean_sweep_specialist':
+            return "Clean Sweeps" if value != 1 else "Clean Sweep"
+        elif award == 'perfect_partnership':
+            return "Wins Together" if value != 1 else "Win Together"
         else:
             return ""
     
@@ -307,7 +388,11 @@ class AwardImageGenerator:
         
         # Add racket silhouette overlay
         racket_overlay = self._draw_racket_silhouette(None, IMAGE_WIDTH, IMAGE_HEIGHT)
-        img = Image.alpha_composite(img.convert('RGBA'), racket_overlay).convert('RGB')
+        img = Image.alpha_composite(img.convert('RGBA'), racket_overlay)
+        
+        # Add badminton net at bottom
+        net_overlay = self._draw_badminton_net(IMAGE_WIDTH, IMAGE_HEIGHT)
+        img = Image.alpha_composite(img, net_overlay).convert('RGB')
         
         draw = ImageDraw.Draw(img)
         
@@ -315,33 +400,19 @@ class AwardImageGenerator:
         margin = 80
         current_y = margin
         
-        # 1. Title: "BADMINTON WRAPPED 2024-25"
-        title_text = "BADMINTON WRAPPED"
+        # 1. Season text at top
         season_text = "2024-25 Season"
-        
-        bbox = self.fonts['title'].getbbox(title_text)
-        title_width = bbox[2] - bbox[0]
-        title_x = (IMAGE_WIDTH - title_width) // 2
-        
-        draw.text(
-            (title_x, current_y),
-            title_text,
-            font=self.fonts['title'],
-            fill=COLOR_TEXT_SECONDARY
-        )
-        current_y += 90
-        
-        bbox = self.fonts['detail'].getbbox(season_text)
+        bbox = self.fonts['subtitle'].getbbox(season_text)
         season_width = bbox[2] - bbox[0]
         season_x = (IMAGE_WIDTH - season_width) // 2
         
         draw.text(
             (season_x, current_y),
             season_text,
-            font=self.fonts['detail'],
+            font=self.fonts['subtitle'],
             fill=COLOR_TEXT_SECONDARY
         )
-        current_y += 120
+        current_y += 100
         
         # 2. Club name
         bbox = self.fonts['subtitle'].getbbox(club)
@@ -393,9 +464,24 @@ class AwardImageGenerator:
             font=self.fonts['subtitle'],
             fill=COLOR_TEXT_SECONDARY
         )
-        current_y += 100
+        current_y += 80
         
-        # 5. Award value (big number)
+        # 5. Award explanation
+        explanation = self._get_award_explanation(award)
+        if explanation:
+            bbox = self.fonts['detail'].getbbox(explanation)
+            explanation_width = bbox[2] - bbox[0]
+            explanation_x = (IMAGE_WIDTH - explanation_width) // 2
+            
+            draw.text(
+                (explanation_x, current_y),
+                explanation,
+                font=self.fonts['detail'],
+                fill=COLOR_TEXT_SECONDARY
+            )
+            current_y += 100
+        
+        # 6. Award value (big number)
         value_text = str(award_value)
         bbox = self.fonts['value'].getbbox(value_text)
         value_width = bbox[2] - bbox[0]
@@ -409,7 +495,7 @@ class AwardImageGenerator:
         )
         current_y += 160
         
-        # 6. Award value context
+        # 7. Award value context
         value_context = self._format_award_value_text(award, award_value)
         bbox = self.fonts['subtitle'].getbbox(value_context)
         context_width = bbox[2] - bbox[0]
@@ -423,7 +509,7 @@ class AwardImageGenerator:
         )
         current_y += 120
         
-        # 7. Award details (top matches)
+        # 8. Award details (top matches)
         if award_details:
             detail_lines = self._parse_award_details(award_details, max_items=3)
             

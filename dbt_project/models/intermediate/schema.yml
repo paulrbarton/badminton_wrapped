@@ -165,7 +165,187 @@ models:
         description: Boolean flag indicating if this rubber was forfeited (one side didn't show up, resulting in 21-0 21-0)
         tests:
           - not_null
+  - name: int_player_home_divisions
+    description: |
+      Intermediate model that determines each player's home division 
+      based on where they play most frequently. Used for calculating 
+      cross-division matchup awards (e.g., giant killing).
+      
+      Each player is assigned to their most common division (mode), 
+      with division rank extracted as a numeric value where lower 
+      numbers = higher divisions (e.g., Division 1 > Division 2).
+      Premier divisions are treated as rank 0 (highest level).
+      
+      One row per player.
+    columns:
+      - name: player_name
+        description: Player's full name
+        tests:
+          - unique
+          - not_null
+          
+      - name: home_division
+        description: Player's primary division (e.g., "Open Division 2")
+        tests:
+          - not_null
+          
+      - name: division_category
+        description: Division category (Open, Womens, Mixed, Mens)
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Open', 'Womens', 'Mixed', 'Mens', 'Unknown']
+          
+      - name: home_division_number
+        description: Numeric division rank (0 = Premier, 1 = Division 1, etc.). Lower number = higher skill level.
+        tests:
+          - not_null
+          
+      - name: rubbers_in_home_division
+        description: Number of rubbers played in this division (used to determine home division)
+        tests:
+          - not_null
 
+  - name: int_player_highest_divisions
+    description: |
+      Intermediate model that determines each player's highest division 
+      (most competitive level) achieved across all rubbers played. 
+      Used for calculating cross-division matchup awards (e.g., giant killing).
+      
+      Each player is assigned to their highest division (minimum division number), 
+      with division rank extracted as a numeric value where lower 
+      numbers = higher divisions (e.g., Division 1 > Division 2).
+      Premier divisions are treated as rank 0 (highest level).
+      
+      For players who competed in multiple categories (Open/Womens/Mixed/Mens),
+      the primary category is selected based on where they played most rubbers.
+      
+      One row per player.
+    columns:
+      - name: player_name
+        description: Player's full name
+        tests:
+          - unique
+          - not_null
+          
+      - name: highest_division
+        description: Player's highest division achieved (e.g., "Open Division 1")
+        tests:
+          - not_null
+          
+      - name: division_category
+        description: Division category (Open, Womens, Mixed, Mens) for the highest division
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Open', 'Womens', 'Mixed', 'Mens', 'Unknown']
+          
+      - name: highest_division_number
+        description: Numeric division rank (0 = Premier, 1 = Division 1, etc.). Lower number = higher skill level.
+        tests:
+          - not_null
+          
+      - name: rubbers_in_highest_division
+        description: Number of rubbers played in this highest division
+        tests:
+          - not_null
+
+  - name: int_cross_division_matchups
+    description: |
+      Intermediate model identifying rubbers where a player defeated 
+      an opponent from a higher division (based on highest divisions achieved).
+      
+      Only includes wins where at least one opponent's highest division 
+      is higher (lower division number) than the winner's highest division,
+      and both are in the same category (e.g., Open vs Open only).
+      
+      Used for the Giant Killing award.
+      
+      One row per qualifying rubber.
+    columns:
+      - name: match_id
+        description: Foreign key to matches
+        tests:
+          - not_null
+          
+      - name: rubber_number
+        description: Rubber number within the match
+        tests:
+          - not_null
+          
+      - name: player_name
+        description: Name of the winning player
+        tests:
+          - not_null
+          
+      - name: partner_name
+        description: Name of player's partner in this rubber
+        
+      - name: team
+        description: Player's team name
+        tests:
+          - not_null
+          
+      - name: opponent_team
+        description: Opposing team name
+        tests:
+          - not_null
+          
+      - name: match_division
+        description: Division where the match took place
+        tests:
+          - not_null
+          
+      - name: match_date
+        description: Date of the match
+        tests:
+          - not_null
+          
+      - name: venue
+        description: Venue where match was played
+        
+      - name: player_highest_division
+        description: Player's highest division achieved (most competitive level they've played)
+        tests:
+          - not_null
+          
+      - name: player_division_category
+        description: Player's division category
+        tests:
+          - not_null
+          
+      - name: player_highest_division_number
+        description: Player's highest division numeric rank (lower = higher level)
+        tests:
+          - not_null
+          
+      - name: rubber_margin
+        description: Total point margin of victory across all games in the rubber
+        tests:
+          - not_null
+          
+      - name: higher_division_opponent_name
+        description: Name of the opponent from the higher division
+        tests:
+          - not_null
+          
+      - name: higher_division_opponent_highest_division
+        description: Highest division of the higher-division opponent
+        tests:
+          - not_null
+          
+      - name: higher_division_opponent_division_number
+        description: Numeric division rank of the higher-division opponent (lower = higher level)
+        tests:
+          - not_null
+          
+      - name: divisions_higher
+        description: Number of divisions higher the opponent's highest division is (1 = one division higher, 2 = two divisions higher, etc.)
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5, 6, 7, 8]
+              quote: false
   - name: int_player_match_rubbers
     description: |
       Intermediate model showing individual player statistics for each match rubber.

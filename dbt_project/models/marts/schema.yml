@@ -6,21 +6,32 @@ models:
       Club awards by player. Each row represents one player winning one award.
       Currently includes:
       - most_comebacks: Players who came back from losing game 1 to win the rubber
-      
-      Future awards could include:
-      - most_deuce_wins: Players who won the most games that went to deuce
-      - biggest_comeback_points: Largest point deficit overcome in a single game
-      - most_clean_sweeps: Most 2-0 rubber wins
+      - club_stalwart: Players who played the most matches for their club
+      - no_mercy: Partnership with the largest winning margin in a 2-game rubber
+      - performs_under_pressure: Player who won the most games by exactly 2 points
+      - longest_winning_streak: Player who won the most consecutive rubbers
+      - defensive_wall: Player who conceded the fewest points per rubber
+      - giant_killing: Player who defeated opponents from the highest divisions above their own
+      - clean_sweep_specialist: Player with the most 2-0 rubber wins (minimum 3)
+      - perfect_partnership: Partnership with the most 2-0 wins together (minimum 5 rubbers)
       
     columns:
       - name: award
         description: |
-          Type of award being given. Currently only 'most_comebacks'.
-          A comeback is when a player lost game 1 but won the rubber (won games 2 and 3).
+          Type of award being given:
+          - 'most_comebacks': Lost game 1 but won the rubber (won games 2 and 3)
+          - 'club_stalwart': Most matches played for the club
+          - 'no_mercy': Largest point margin in a 2-game rubber win (partnership award)
+          - 'performs_under_pressure': Most games won by exactly 2 points (21-19, 22-20, etc.)
+          - 'longest_winning_streak': Most consecutive rubbers won
+          - 'defensive_wall': Fewest average points conceded per rubber (minimum 10 rubbers)
+          - 'giant_killing': Defeated opponent(s) from higher division(s), based on each player's home division (only same category comparisons)
+          - 'clean_sweep_specialist': Most 2-0 rubber wins (minimum 3 clean sweeps)
+          - 'perfect_partnership': Most 2-0 wins as a partnership (minimum 5 rubbers together)
         tests:
           - not_null
           - accepted_values:
-              values: ['most_comebacks', 'club_stalwart', 'no_mercy']
+              values: ['most_comebacks', 'club_stalwart', 'no_mercy', 'performs_under_pressure', 'longest_winning_streak', 'defensive_wall', 'giant_killing', 'epic_win', 'clean_sweep_specialist', 'perfect_partnership']
       
       - name: club
         description: |
@@ -40,17 +51,26 @@ models:
       - name: player_2
         description: |
           Secondary player name for partnership awards only.
-          NULL for individual awards (most_comebacks, club_stalwart).
-          Contains the partner's name for pair-based awards (no_mercy).
+          NULL for individual awards (most_comebacks, club_stalwart, performs_under_pressure, longest_winning_streak, defensive_wall, giant_killing, clean_sweep_specialist).
+          Contains the partner's name for pair-based awards (no_mercy, epic_win, perfect_partnership).
         tests:
           - dbt_utils.expression_is_true:
-              expression: "(player_2 IS NULL AND award != 'no_mercy') OR (player_2 IS NOT NULL AND award = 'no_mercy')"
+              expression: "(player_2 IS NULL AND award NOT IN ('no_mercy', 'epic_win', 'perfect_partnership')) OR (player_2 IS NOT NULL AND award IN ('no_mercy', 'epic_win', 'perfect_partnership'))"
               config:
                 where: "1=1"  # Apply to all rows
       
       - name: award_value
         description: |
-          Numeric value for the award. For most_comebacks, this is the count of comeback wins.
+          Numeric value for the award:
+          - most_comebacks: Count of comeback wins
+          - club_stalwart: Number of matches played
+          - no_mercy: Largest point margin in a single game
+          - performs_under_pressure: Count of 2-point margin wins
+          - longest_winning_streak: Number of consecutive rubbers won
+          - defensive_wall: Average points conceded per rubber (rounded)
+          - giant_killing: Maximum number of divisions higher that an opponent was (e.g., 2 means defeated opponent from 2 divisions higher)
+          - clean_sweep_specialist: Number of 2-0 rubber wins
+          - perfect_partnership: Number of 2-0 wins together as a pair
         tests:
           - not_null
           - dbt_utils.expression_is_true:
