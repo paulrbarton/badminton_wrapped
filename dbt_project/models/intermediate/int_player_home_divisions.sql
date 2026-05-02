@@ -6,17 +6,19 @@ with player_division_appearances as (
     select
         player_name,
         division,
+        season,
         count(*) as rubbers_played
     from {{ ref('int_player_match_rubbers') }}
-    group by player_name, division
+    group by player_name, division, season
 ),
 
 player_primary_division as (
     select
         player_name,
         division as home_division,
+        season,
         rubbers_played,
-        row_number() over (partition by player_name order by rubbers_played desc, division) as rn
+        row_number() over (partition by player_name, season order by rubbers_played desc, division) as rn
     from player_division_appearances
 ),
 
@@ -24,6 +26,7 @@ extract_division_info as (
     select
         player_name,
         home_division,
+        season,
         rubbers_played,
         
         -- Extract division category (Open, Womens, Mixed, Mens)
@@ -51,5 +54,6 @@ select
     home_division,
     division_category,
     home_division_number,
-    rubbers_played as rubbers_in_home_division
+    rubbers_played as rubbers_in_home_division,
+    season
 from extract_division_info

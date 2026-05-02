@@ -48,17 +48,19 @@ FONT_SIZE_SUBTITLE = 58
 class AwardImageGenerator:
     """Generate award images for badminton players."""
     
-    def __init__(self, db_path: str, output_dir: str):
+    def __init__(self, db_path: str, output_dir: str, season: str = "2025-26"):
         """
         Initialize the generator.
         
         Args:
             db_path: Path to the DuckDB database
             output_dir: Directory to save generated images
+            season: Season identifier (e.g., "2024-25", "2025-26")
         """
         self.db_path = Path(db_path)
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.season = season
         
         # Try to load fonts (fallback to default if not available)
         self.fonts = self._load_fonts()
@@ -401,7 +403,7 @@ class AwardImageGenerator:
         current_y = margin
         
         # 1. Season text at top
-        season_text = "2024-25 Season"
+        season_text = f"{self.season} Season"
         bbox = self.fonts['subtitle'].getbbox(season_text)
         season_width = bbox[2] - bbox[0]
         season_x = (IMAGE_WIDTH - season_width) // 2
@@ -557,10 +559,11 @@ class AwardImageGenerator:
                     award_details
                 FROM mart_club_awards
                 WHERE club = ?
+                AND season = ?
                 ORDER BY award, award_value DESC
             """
             
-            result = conn.execute(query, [club]).fetchall()
+            result = conn.execute(query, [club, self.season]).fetchall()
             conn.close()
             
             if not result:
@@ -651,6 +654,11 @@ def main():
         '--output-dir',
         help='Output directory for images (default: ../data/processed/award_images/{club_name}/)'
     )
+    parser.add_argument(
+        '--season',
+        default='2025-26',
+        help='Season to generate awards for (default: 2025-26)'
+    )
     
     args = parser.parse_args()
     
@@ -664,7 +672,8 @@ def main():
     # Create generator
     generator = AwardImageGenerator(
         db_path=args.db_path,
-        output_dir=output_dir
+        output_dir=output_dir,
+        season=args.season
     )
     
     # Generate images

@@ -6,22 +6,61 @@ from pathlib import Path
 # Base URL for Tournament Software
 BASE_URL = "https://be.tournamentsoftware.com"
 
-# Tournament ID for Nottinghamshire League 2024-25
-TOURNAMENT_ID = "73AE9D42-2FDF-48B1-B9CE-CA35B0B18517"
+# Season configurations
+SEASONS = {
+    "2024-25": {
+        "tournament_id": "73AE9D42-2FDF-48B1-B9CE-CA35B0B18517",
+        "season_name": "Nottinghamshire 2024-25",
+        "events_url_extra_params": "",
+    },
+    "2025-26": {
+        "tournament_id": "ACB2DE1B-113D-450F-A961-EA543B10373E",
+        "season_name": "Nottingham 2025-26",
+        "events_url_extra_params": "&tlt=1",
+    },
+}
+
+# Default season to scrape
+DEFAULT_SEASON = "2025-26"
 
 # Project paths
 PROJECT_ROOT = Path(__file__).parent.parent
-DATA_RAW_DIR = PROJECT_ROOT / "data" / "raw"
 DATA_PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-
-# Ensure directories exist
-DATA_RAW_DIR.mkdir(parents=True, exist_ok=True)
 DATA_PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
-# Output file paths
-DIVISIONS_CSV = DATA_RAW_DIR / "divisions.csv"
-MATCHES_CSV = DATA_RAW_DIR / "matches.csv"
-GAMES_CSV = DATA_RAW_DIR / "games.csv"
+
+def get_season_config(season: str) -> dict:
+    """
+    Get configuration for a specific season.
+
+    Args:
+        season: Season key (e.g., "2024-25", "2025-26")
+
+    Returns:
+        Dictionary with resolved URLs and paths for the season
+    """
+    if season not in SEASONS:
+        raise ValueError(f"Unknown season '{season}'. Available: {list(SEASONS.keys())}")
+
+    cfg = SEASONS[season]
+    tid = cfg["tournament_id"]
+
+    data_raw_dir = PROJECT_ROOT / "data" / "raw" / season
+    data_raw_dir.mkdir(parents=True, exist_ok=True)
+
+    return {
+        "season": season,
+        "season_name": cfg["season_name"],
+        "tournament_id": tid,
+        "data_raw_dir": data_raw_dir,
+        "divisions_csv": data_raw_dir / "divisions.csv",
+        "matches_csv": data_raw_dir / "matches.csv",
+        "games_csv": data_raw_dir / "games.csv",
+        "events_url": f"{BASE_URL}/sport/events.aspx?id={tid}{cfg['events_url_extra_params']}",
+        "drawmatches_url": f"{BASE_URL}/sport/drawmatches.aspx?id={tid}&draw={{draw_id}}",
+        "teammatch_url": f"{BASE_URL}/sport/teammatch.aspx?id={tid}&match={{match_id}}",
+    }
+
 
 # Scraping settings
 REQUEST_DELAY = 1  # seconds between requests to be respectful
@@ -47,8 +86,3 @@ COOKIE_CONSENT_SELECTORS = [
     ".cookie-accept",
     "#cookie-accept"
 ]
-
-# Page URLs
-EVENTS_URL = f"{BASE_URL}/sport/events.aspx?id={TOURNAMENT_ID}"
-DRAWMATCHES_URL = f"{BASE_URL}/sport/drawmatches.aspx?id={TOURNAMENT_ID}&draw={{draw_id}}"
-TEAMMATCH_URL = f"{BASE_URL}/sport/teammatch.aspx?id={TOURNAMENT_ID}&match={{match_id}}"

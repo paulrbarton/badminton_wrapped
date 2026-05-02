@@ -7,15 +7,17 @@ with player_division_appearances as (
     select
         player_name,
         division,
+        season,
         count(*) as rubbers_played
     from {{ ref('int_player_match_rubbers') }}
-    group by player_name, division
+    group by player_name, division, season
 ),
 
 extract_division_info as (
     select
         player_name,
         division,
+        season,
         rubbers_played,
         
         -- Extract division category (Open, Womens, Mixed, Mens)
@@ -41,9 +43,10 @@ player_highest_division as (
     select
         player_name,
         division_category,
+        season,
         min(division_number) as highest_division_number  -- Minimum = highest level
     from extract_division_info
-    group by player_name, division_category
+    group by player_name, division_category, season
 ),
 
 -- Get the full division name for the highest division
@@ -51,6 +54,7 @@ with_division_name as (
     select
         phd.player_name,
         phd.division_category,
+        phd.season,
         phd.highest_division_number,
         edi.division as highest_division,
         edi.rubbers_played as rubbers_in_highest_division
@@ -59,6 +63,7 @@ with_division_name as (
         on phd.player_name = edi.player_name
         and phd.division_category = edi.division_category
         and phd.highest_division_number = edi.division_number
+        and phd.season = edi.season
 ),
 
 -- Handle players who played in multiple categories - select primary category
@@ -69,7 +74,8 @@ final as (
         division_category,
         highest_division_number,
         rubbers_in_highest_division,
-        row_number() over (partition by player_name order by rubbers_in_highest_division desc, highest_division_number) as rn
+        season,
+        row_number() over (partition by player_name, season order by rubbers_in_highest_division desc, highest_division_number) as rn
     from with_division_name
 )
 
@@ -78,6 +84,7 @@ select
     highest_division,
     division_category,
     highest_division_number,
-    rubbers_in_highest_division
+    rubbers_in_highest_division,
+    season
 from final
 where rn = 1

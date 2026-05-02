@@ -15,6 +15,10 @@ models:
           - not_null
       - name: url
         description: Relative URL to the division's draw page
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
+        tests:
+          - not_null
       - name: loaded_at
         description: Timestamp when the data was loaded into the staging table
 
@@ -44,6 +48,10 @@ models:
         description: Overall match score (e.g., "6-3", "9-0")
       - name: url
         description: Relative URL to the match detail page
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
+        tests:
+          - not_null
       - name: loaded_at
         description: Timestamp when the data was loaded into the staging table
 
@@ -69,6 +77,10 @@ models:
         description: Location where the match was played
       - name: match_score
         description: Overall match score
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
+        tests:
+          - not_null
       - name: MD1_Home_P1
         description: Men's Doubles 1 - Home Player 1
       - name: MD1_Home_P2

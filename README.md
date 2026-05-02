@@ -1,21 +1,27 @@
 # Badminton Wrapped
 
-A data pipeline for scraping, transforming, and visualizing badminton match data from the Nottinghamshire Badminton League 2024-25 season.
+A data pipeline for scraping, transforming, and visualizing badminton match data from the Nottinghamshire Badminton League. Supports multiple seasons.
 
 ## Project Overview
 
 This project extracts detailed match and game data from Tournament Software, loads it into DuckDB via dbt, and prepares it for analysis and visualization.
 
-**Data Source**: [Nottinghamshire Badminton League](https://www.tournamentsoftware.com/sport/events.aspx?id=6C92CA66-DE3E-4D68-A1D7-0B8AF7ECF651)
+**Data Sources**:
+- [2024-25 Season](https://be.tournamentsoftware.com/sport/events.aspx?id=73AE9D42-2FDF-48B1-B9CE-CA35B0B18517)
+- [2025-26 Season](https://be.tournamentsoftware.com/sport/events.aspx?id=ACB2DE1B-113D-450F-A961-EA543B10373E&tlt=1)
+
+**Supported Seasons**:
+| Season | Tournament ID | Status |
+|--------|--------------|--------|
+| 2024-25 | `73AE9D42-2FDF-48B1-B9CE-CA35B0B18517` | ✅ Complete |
+| 2025-26 | `ACB2DE1B-113D-450F-A961-EA543B10373E` | 🚧 In progress |
 
 **Current Status**:
-- ✅ 20 divisions scraped
-- ✅ 420 matches scraped
-- ✅ Game-level details extracted with player names and scores
-- ✅ dbt staging models loaded into DuckDB
+- ✅ Multi-season scraping support
+- ✅ dbt staging models with `season` column
 - ✅ Intermediate models for player-level rubber analysis
-- ✅ Mart models for club awards (Comeback King, Club Stalwart, No Mercy)
-- ✅ Award image generation with partnership support
+- ✅ Mart models for 10 club award types
+- ✅ Award image generation with partnership and season support
 
 ## Setup
 
@@ -53,24 +59,26 @@ pip install dbt-core dbt-duckdb
 # Activate scraping environment
 source .venv/bin/activate
 
-# Run full scraper (3 steps: divisions → matches → game details)
+# Run full scraper for default season (2025-26)
 python3 scraping/main.py
 
-# Test single match parser
-python3 scraping/test_single_match.py
+# Run scraper for a specific season
+python3 scraping/main.py --season 2024-25
+python3 scraping/main.py --season 2025-26
 ```
 
 **Scraper Features**:
+- Multi-season support via `--season` CLI argument
 - Cookie consent handling
 - Rate limiting (1 second delay between requests)
 - Incremental CSV saving
 - Visible browser mode for debugging
 - Progress logging to `scraper.log`
 
-**Output Files**:
-- `data/raw/divisions.csv` - 20 divisions
-- `data/raw/matches.csv` - 420 matches
-- `data/raw/games.csv` - Flat format with all game details per match
+**Output Files** (per season in `data/raw/{season}/`):
+- `data/raw/{season}/divisions.csv` - Division/draw information
+- `data/raw/{season}/matches.csv` - Match-level data
+- `data/raw/{season}/games.csv` - Flat format with all game details per match
 
 ### Data Transformation with dbt
 
@@ -79,8 +87,12 @@ python3 scraping/test_single_match.py
 source .venv_dbt/bin/activate
 cd dbt_project
 
-# Run all models (staging, intermediate, marts)
+# Run all models for default season (2025-26)
 dbt run --profiles-dir .
+
+# Run for a specific season
+dbt run --profiles-dir . --vars '{season: "2024-25"}'
+dbt run --profiles-dir . --vars '{season: "2025-26"}'
 
 # Run specific model layers
 dbt run --select staging --profiles-dir .
@@ -95,16 +107,21 @@ dbt docs generate --profiles-dir .
 dbt docs serve --profiles-dir .
 ```
 
+**Season Variable**: All models use `{{ var("season") }}` to load season-specific CSV data. Default is `"2025-26"` (set in `dbt_project.yml`).
+
 **Model Layers**:
-- **Staging**: Light transformations from raw CSV data
+- **Staging**: Light transformations from raw CSV data (adds `season` column)
   - `stg_divisions` - Division/draw information
   - `stg_matches` - Match-level data (date, teams, score, venue)
   - `stg_games` - Game-level details with player names and rubber scores
 - **Intermediate**: Purpose-built transformations
   - `int_match_rubbers` - Rubber-level analysis with parsed game scores
   - `int_player_match_rubbers` - Player-level rubber participation
+  - `int_player_home_divisions` - Player home division determination
+  - `int_player_highest_divisions` - Player highest division played
+  - `int_cross_division_matchups` - Cross-division opponent analysis
 - **Marts**: Analytics-ready business entities
-  - `mart_club_awards` - Club awards by player (supports individual and partnership awards)
+  - `mart_club_awards` - Club awards by player (10 award types, individual and partnership)
 
 ### Generating Award Images
 
@@ -112,8 +129,11 @@ dbt docs serve --profiles-dir .
 # Activate dbt environment (image generator uses DuckDB)
 source .venv_dbt/bin/activate
 
-# Generate award images for a specific club
+# Generate award images for a specific club (default season: 2025-26)
 python3 visualization/generate_award_images.py --club "West Bridgford"
+
+# Generate for a specific season
+python3 visualization/generate_award_images.py --club "West Bridgford" --season 2024-25
 
 # Generate for multiple clubs
 python3 visualization/generate_award_images.py --club "Beeston"
@@ -123,6 +143,13 @@ python3 visualization/generate_award_images.py --club "Beeston"
 - **Comeback King** (`most_comebacks`) - Most rubbers won after losing game 1
 - **Club Stalwart** (`club_stalwart`) - Most matches played in the season
 - **No Mercy** (`no_mercy`) - Largest winning margin in a 2-game rubber (partnership award)
+- **Performs Under Pressure** (`performs_under_pressure`) - Most games won by exactly 2 points
+- **Longest Winning Streak** (`longest_winning_streak`) - Most consecutive rubbers won
+- **Defensive Wall** (`defensive_wall`) - Fewest average points conceded per rubber
+- **Giant Killing** (`giant_killing`) - Defeated opponents from highest divisions above own
+- **Epic Win** (`epic_win`) - Highest total points scored in a 3-game rubber win (partnership)
+- **Clean Sweep Specialist** (`clean_sweep_specialist`) - Most 2-0 rubber wins (min 3)
+- **Perfect Partnership** (`perfect_partnership`) - Most 2-0 wins as a pair (min 5)
 
 **Features**:
 - Shareable PNG images (1080x1920, optimized for social media)
@@ -171,15 +198,15 @@ Club awards by player with support for individual and partnership awards:
 |--------|------|-------------|
 | `award` | varchar | Award type identifier |
 | `club` | varchar | Club name |
+| `season` | varchar | Season identifier (e.g., "2024-25") |
 | `player` | varchar | Primary player (or first player for partnerships) |
 | `player_2` | varchar | Secondary player for partnership awards (NULL for individual) |
 | `award_value` | int | Award metric value |
 | `award_details` | varchar | Detailed information about award achievement |
 
-**Award Types**:
-- `most_comebacks` - Individual award (player_2 = NULL)
-- `club_stalwart` - Individual award (player_2 = NULL)
-- `no_mercy` - Partnership award (player_2 = partner name)
+**Individual Awards** (player_2 = NULL): `most_comebacks`, `club_stalwart`, `performs_under_pressure`, `longest_winning_streak`, `defensive_wall`, `giant_killing`, `clean_sweep_specialist`
+
+**Partnership Awards** (player_2 = partner name): `no_mercy`, `epic_win`, `perfect_partnership`
 
 ## Technical Notes
 
@@ -192,12 +219,23 @@ Club awards by player with support for individual and partnership awards:
 
 ## Key Design Patterns
 
+### Multi-Season Support
+
+The pipeline supports multiple seasons through:
+- **Scraper**: `--season` CLI argument (default: `2025-26`)
+- **dbt**: `var("season")` variable (default: `"2025-26"` in `dbt_project.yml`)
+- **Visualization**: `--season` CLI argument (default: `2025-26`)
+- **Data storage**: Season-specific directories `data/raw/{season}/`
+- **All models**: `season` column propagated from staging through marts
+
+To add a new season, add its tournament ID to `scraping/config.py` in the `SEASONS` dict.
+
 ### Partnership Awards
 
 The `player_2` column in `mart_club_awards` enables clean handling of partnership vs individual awards:
 
-- **Individual awards** (most_comebacks, club_stalwart): `player_2 = NULL`
-- **Partnership awards** (no_mercy): `player_2 = partner_name`
+- **Individual awards**: `player_2 = NULL`
+- **Partnership awards** (no_mercy, epic_win, perfect_partnership): `player_2 = partner_name`
 
 This approach:
 - ✅ Preserves data granularity (both players tracked in one row)
@@ -211,10 +249,36 @@ This approach:
 - Individual: `{player_slug}_{award}.png` (e.g., `paul_barton_most_comebacks.png`)
 - Partnership: `{player1_slug}_and_{player2_slug}_{award}.png` (e.g., `mandy_lee_and_robert_tateson_no_mercy.png`)
 
+### Awards Website
+
+An interactive static website hosted on GitHub Pages that displays club awards across all seasons.
+
+```bash
+# Export award data from DuckDB to JSON (from scraping venv)
+source .venv/bin/activate
+python3 visualization/export_awards_json.py
+
+# Preview locally
+cd docs && python3 -m http.server 8000
+# Open http://localhost:8000
+```
+
+**Navigation**: Season → Club → Awards
+
+**Adding a new season to the website**:
+1. Scrape and load the season data (see above)
+2. Run dbt to rebuild models: `dbt run --profiles-dir . --vars '{season: "2025-26"}'`
+3. Re-export: `python3 visualization/export_awards_json.py`
+4. Commit and push — GitHub Pages updates automatically
+
+**GitHub Pages Setup**: In the repository settings, set Pages source to "Deploy from a branch", branch `main`, folder `/docs`.
+
+**Output Files** (in `docs/data/`):
+- `seasons.json` — list of available seasons
+- `{season}.json` — per-season file with all clubs and their awards
+
 ## Next Steps
 
-- [ ] Additional award types (deuce master, clean sweep, biggest comeback)
 - [ ] Player-level aggregations and statistics
 - [ ] Team performance metrics
-- [ ] Interactive visualization dashboard
-- [ ] Automated award generation for all clubs
+- [ ] Cross-season comparison analytics

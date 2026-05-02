@@ -16,6 +16,9 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+vars:
+  season: "2025-26"
+
 models:
   badminton_wrapped:
     staging:

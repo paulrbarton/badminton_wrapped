@@ -39,6 +39,11 @@ models:
           Example: "West Bridgford" from "West Bridgford Open 2 (SGO2)"
         tests:
           - not_null
+
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
+        tests:
+          - not_null
       
       - name: player
         description: |
