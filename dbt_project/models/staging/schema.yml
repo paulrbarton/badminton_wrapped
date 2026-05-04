@@ -2,12 +2,14 @@ version: 2
 
 models:
   - name: stg_divisions
-    description: Staging table for badminton league divisions/draws
+    description: Staging table for badminton league divisions/draws. Contains all seasons.
+    tests:
+      - unique:
+          column_name: "season || '~' || draw_id"
     columns:
       - name: draw_id
-        description: Unique identifier for each division/draw
+        description: Identifier for each division/draw (unique within a season)
         tests:
-          - unique
           - not_null
       - name: division_name
         description: Name of the division (e.g., "Open Division 1", "Mixed Division 2")
@@ -23,12 +25,14 @@ models:
         description: Timestamp when the data was loaded into the staging table
 
   - name: stg_matches
-    description: Staging table for match-level data
+    description: Staging table for match-level data. Contains all seasons.
+    tests:
+      - unique:
+          column_name: "season || '~' || match_id"
     columns:
       - name: match_id
-        description: Unique identifier for each match
+        description: Identifier for each match (unique within a season)
         tests:
-          - unique
           - not_null
       - name: draw_id
         description: Foreign key to divisions table
@@ -56,12 +60,14 @@ models:
         description: Timestamp when the data was loaded into the staging table
 
   - name: stg_games
-    description: Staging table for detailed match data with individual game results in flat format
+    description: Staging table for detailed match data with individual game results in flat format. Contains all seasons.
+    tests:
+      - unique:
+          column_name: "season || '~' || match_id"
     columns:
       - name: match_id
-        description: Unique identifier for each match
+        description: Identifier for each match (unique within a season)
         tests:
-          - unique
           - not_null
       - name: home_team
         description: Home team name
@@ -81,15 +87,15 @@ models:
         description: Season identifier (e.g., "2024-25", "2025-26")
         tests:
           - not_null
-      - name: MD1_Home_P1
-        description: Men's Doubles 1 - Home Player 1
-      - name: MD1_Home_P2
-        description: Men's Doubles 1 - Home Player 2
-      - name: MD1_Away_P1
-        description: Men's Doubles 1 - Away Player 1
-      - name: MD1_Away_P2
-        description: Men's Doubles 1 - Away Player 2
-      - name: MD1_Score
-        description: Men's Doubles 1 - Game score (set scores)
+      - name: R1_Home_P1
+        description: Rubber 1 - Home Player 1
+      - name: R1_Home_P2
+        description: Rubber 1 - Home Player 2
+      - name: R1_Away_P1
+        description: Rubber 1 - Away Player 1
+      - name: R1_Away_P2
+        description: Rubber 1 - Away Player 2
+      - name: R1_Score
+        description: Rubber 1 - Game score (set scores)
       - name: loaded_at
         description: Timestamp when the data was loaded into the staging table

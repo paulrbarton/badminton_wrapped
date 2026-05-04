@@ -87,12 +87,13 @@ python3 scraping/main.py --season 2025-26
 source .venv_dbt/bin/activate
 cd dbt_project
 
-# Run all models for default season (2025-26)
-dbt run --profiles-dir .
+# Step 1: Load scraped CSV data into DuckDB raw tables
+# (additive - each season is loaded independently without overwriting others)
+python3 load_staging_tables.py --season 2024-25
+python3 load_staging_tables.py --season 2025-26
 
-# Run for a specific season
-dbt run --profiles-dir . --vars '{season: "2024-25"}'
-dbt run --profiles-dir . --vars '{season: "2025-26"}'
+# Step 2: Run dbt models (processes all loaded seasons at once)
+dbt run --profiles-dir .
 
 # Run specific model layers
 dbt run --select staging --profiles-dir .
@@ -107,10 +108,10 @@ dbt docs generate --profiles-dir .
 dbt docs serve --profiles-dir .
 ```
 
-**Season Variable**: All models use `{{ var("season") }}` to load season-specific CSV data. Default is `"2025-26"` (set in `dbt_project.yml`).
+**Loading Pipeline**: Raw CSVs are loaded into DuckDB `raw_*` tables by `load_staging_tables.py`. Each season is loaded independently using `--season` — running for one season never overwrites another. dbt staging models then read from these raw tables, and intermediate/mart models process all seasons together.
 
 **Model Layers**:
-- **Staging**: Light transformations from raw CSV data (adds `season` column)
+- **Staging**: Views over raw DuckDB tables (all seasons)
   - `stg_divisions` - Division/draw information
   - `stg_matches` - Match-level data (date, teams, score, venue)
   - `stg_games` - Game-level details with player names and rubber scores
@@ -223,9 +224,10 @@ Club awards by player with support for individual and partnership awards:
 
 The pipeline supports multiple seasons through:
 - **Scraper**: `--season` CLI argument (default: `2025-26`)
-- **dbt**: `var("season")` variable (default: `"2025-26"` in `dbt_project.yml`)
-- **Visualization**: `--season` CLI argument (default: `2025-26`)
-- **Data storage**: Season-specific directories `data/raw/{season}/`
+- **Loading**: `load_staging_tables.py --season` loads CSVs into DuckDB `raw_*` tables additively (DELETE+INSERT per season)
+- **dbt**: Staging views read all seasons from raw tables; intermediate/mart models process all seasons together
+- **Visualization**: `--season` CLI argument filters awards by season
+- **Data storage**: Season-specific CSV directories `data/raw/{season}/`; all seasons coexist in DuckDB
 - **All models**: `season` column propagated from staging through marts
 
 To add a new season, add its tournament ID to `scraping/config.py` in the `SEASONS` dict.
