@@ -1,5 +1,6 @@
 """
-Direct DuckDB script to load CSV files into staging tables.
+Direct DuckDB script to load CSV files into raw staging tables.
+Uses DELETE+INSERT pattern to support additive multi-season loading.
 Workaround for Python 3.14 compatibility issues with dbt.
 """
 import argparse
@@ -23,13 +24,23 @@ print(f"Loading season: {season}")
 print(f"Raw data directory: {raw_dir}")
 print("="*60)
 
-# Create staging tables
-print("\n1. Creating staging tables...")
+# Create raw tables (if they don't exist) and load data
+print("\n1. Loading raw tables...")
 
-# stg_divisions
-print("   - Creating stg_divisions...")
+# raw_divisions
+print("   - Loading raw_divisions...")
+conn.execute("""
+    CREATE TABLE IF NOT EXISTS raw_divisions (
+        draw_id VARCHAR,
+        division_name VARCHAR,
+        url VARCHAR,
+        season VARCHAR,
+        loaded_at TIMESTAMP
+    )
+""")
+conn.execute(f"DELETE FROM raw_divisions WHERE season = '{season}'")
 conn.execute(f"""
-    CREATE OR REPLACE TABLE stg_divisions AS
+    INSERT INTO raw_divisions
     SELECT 
         draw_id,
         division_name,
@@ -39,10 +50,25 @@ conn.execute(f"""
     FROM read_csv_auto('{raw_dir}/divisions.csv', header=true)
 """)
 
-# stg_matches  
-print("   - Creating stg_matches...")
+# raw_matches
+print("   - Loading raw_matches...")
+conn.execute("""
+    CREATE TABLE IF NOT EXISTS raw_matches (
+        match_id VARCHAR,
+        draw_id VARCHAR,
+        division_name VARCHAR,
+        match_date VARCHAR,
+        home_team VARCHAR,
+        away_team VARCHAR,
+        score VARCHAR,
+        url VARCHAR,
+        season VARCHAR,
+        loaded_at TIMESTAMP
+    )
+""")
+conn.execute(f"DELETE FROM raw_matches WHERE season = '{season}'")
 conn.execute(f"""
-    CREATE OR REPLACE TABLE stg_matches AS
+    INSERT INTO raw_matches
     SELECT 
         match_id,
         draw_id,
@@ -57,10 +83,34 @@ conn.execute(f"""
     FROM read_csv_auto('{raw_dir}/matches.csv', header=true)
 """)
 
-# stg_games (flat format with all game columns)
-print("   - Creating stg_games...")
+# raw_games (flat format with R1-R9 rubber columns)
+print("   - Loading raw_games...")
+conn.execute("""
+    CREATE TABLE IF NOT EXISTS raw_games (
+        match_id VARCHAR,
+        home_team VARCHAR,
+        away_team VARCHAR,
+        match_date VARCHAR,
+        match_time VARCHAR,
+        division VARCHAR,
+        venue VARCHAR,
+        match_score VARCHAR,
+        R1_Home_P1 VARCHAR, R1_Home_P2 VARCHAR, R1_Away_P1 VARCHAR, R1_Away_P2 VARCHAR, R1_Score VARCHAR,
+        R2_Home_P1 VARCHAR, R2_Home_P2 VARCHAR, R2_Away_P1 VARCHAR, R2_Away_P2 VARCHAR, R2_Score VARCHAR,
+        R3_Home_P1 VARCHAR, R3_Home_P2 VARCHAR, R3_Away_P1 VARCHAR, R3_Away_P2 VARCHAR, R3_Score VARCHAR,
+        R4_Home_P1 VARCHAR, R4_Home_P2 VARCHAR, R4_Away_P1 VARCHAR, R4_Away_P2 VARCHAR, R4_Score VARCHAR,
+        R5_Home_P1 VARCHAR, R5_Home_P2 VARCHAR, R5_Away_P1 VARCHAR, R5_Away_P2 VARCHAR, R5_Score VARCHAR,
+        R6_Home_P1 VARCHAR, R6_Home_P2 VARCHAR, R6_Away_P1 VARCHAR, R6_Away_P2 VARCHAR, R6_Score VARCHAR,
+        R7_Home_P1 VARCHAR, R7_Home_P2 VARCHAR, R7_Away_P1 VARCHAR, R7_Away_P2 VARCHAR, R7_Score VARCHAR,
+        R8_Home_P1 VARCHAR, R8_Home_P2 VARCHAR, R8_Away_P1 VARCHAR, R8_Away_P2 VARCHAR, R8_Score VARCHAR,
+        R9_Home_P1 VARCHAR, R9_Home_P2 VARCHAR, R9_Away_P1 VARCHAR, R9_Away_P2 VARCHAR, R9_Score VARCHAR,
+        season VARCHAR,
+        loaded_at TIMESTAMP
+    )
+""")
+conn.execute(f"DELETE FROM raw_games WHERE season = '{season}'")
 conn.execute(f"""
-    CREATE OR REPLACE TABLE stg_games AS
+    INSERT INTO raw_games
     SELECT 
         match_id,
         home_team,
@@ -70,28 +120,15 @@ conn.execute(f"""
         division,
         venue,
         score as match_score,
-        
-        -- Men's Doubles games
-        MD1_Home_P1, MD1_Home_P2, MD1_Away_P1, MD1_Away_P2, MD1_Score,
-        MD2_Home_P1, MD2_Home_P2, MD2_Away_P1, MD2_Away_P2, MD2_Score,
-        MD3_Home_P1, MD3_Home_P2, MD3_Away_P1, MD3_Away_P2, MD3_Score,
-        MD4_Home_P1, MD4_Home_P2, MD4_Away_P1, MD4_Away_P2, MD4_Score,
-        MD5_Home_P1, MD5_Home_P2, MD5_Away_P1, MD5_Away_P2, MD5_Score,
-        MD6_Home_P1, MD6_Home_P2, MD6_Away_P1, MD6_Away_P2, MD6_Score,
-        MD7_Home_P1, MD7_Home_P2, MD7_Away_P1, MD7_Away_P2, MD7_Score,
-        MD8_Home_P1, MD8_Home_P2, MD8_Away_P1, MD8_Away_P2, MD8_Score,
-        MD9_Home_P1, MD9_Home_P2, MD9_Away_P1, MD9_Away_P2, MD9_Score,
-        
-        -- Women's Doubles games
-        WD1_Home_P1, WD1_Home_P2, WD1_Away_P1, WD1_Away_P2, WD1_Score,
-        WD2_Home_P1, WD2_Home_P2, WD2_Away_P1, WD2_Away_P2, WD2_Score,
-        WD3_Home_P1, WD3_Home_P2, WD3_Away_P1, WD3_Away_P2, WD3_Score,
-        
-        -- Mixed Doubles games
-        XD1_Home_P1, XD1_Home_P2, XD1_Away_P1, XD1_Away_P2, XD1_Score,
-        XD2_Home_P1, XD2_Home_P2, XD2_Away_P1, XD2_Away_P2, XD2_Score,
-        XD3_Home_P1, XD3_Home_P2, XD3_Away_P1, XD3_Away_P2, XD3_Score,
-        
+        R1_Home_P1, R1_Home_P2, R1_Away_P1, R1_Away_P2, R1_Score,
+        R2_Home_P1, R2_Home_P2, R2_Away_P1, R2_Away_P2, R2_Score,
+        R3_Home_P1, R3_Home_P2, R3_Away_P1, R3_Away_P2, R3_Score,
+        R4_Home_P1, R4_Home_P2, R4_Away_P1, R4_Away_P2, R4_Score,
+        R5_Home_P1, R5_Home_P2, R5_Away_P1, R5_Away_P2, R5_Score,
+        R6_Home_P1, R6_Home_P2, R6_Away_P1, R6_Away_P2, R6_Score,
+        R7_Home_P1, R7_Home_P2, R7_Away_P1, R7_Away_P2, R7_Score,
+        R8_Home_P1, R8_Home_P2, R8_Away_P1, R8_Away_P2, R8_Score,
+        R9_Home_P1, R9_Home_P2, R9_Away_P1, R9_Away_P2, R9_Score,
         '{season}' as season,
         current_timestamp as loaded_at
     FROM read_csv_auto('{raw_dir}/games.csv', header=true)
@@ -99,28 +136,26 @@ conn.execute(f"""
 
 print("\n2. Verifying tables...")
 
-# Get row counts
-divisions_count = conn.execute("SELECT COUNT(*) FROM stg_divisions").fetchone()[0]
-matches_count = conn.execute("SELECT COUNT(*) FROM stg_matches").fetchone()[0]
-games_count = conn.execute("SELECT COUNT(*) FROM stg_games").fetchone()[0]
-
-print(f"   - stg_divisions: {divisions_count} rows")
-print(f"   - stg_matches: {matches_count} rows")
-print(f"   - stg_games: {games_count} rows")
+# Get row counts per season
+for table in ['raw_divisions', 'raw_matches', 'raw_games']:
+    total = conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
+    seasons = conn.execute(f"SELECT season, COUNT(*) as cnt FROM {table} GROUP BY season ORDER BY season").fetchall()
+    season_str = ', '.join([f"{s}: {c}" for s, c in seasons])
+    print(f"   - {table}: {total} total rows ({season_str})")
 
 print("\n3. Sample data from each table:")
 
-print("\n   stg_divisions (first 3 rows):")
-print(conn.execute("SELECT * FROM stg_divisions LIMIT 3").df().to_string(index=False))
+print(f"\n   raw_divisions (season={season}, first 3 rows):")
+print(conn.execute(f"SELECT * FROM raw_divisions WHERE season = '{season}' LIMIT 3").df().to_string(index=False))
 
-print("\n   stg_matches (first 3 rows):")
-print(conn.execute("SELECT match_id, division_name, home_team, away_team, score FROM stg_matches LIMIT 3").df().to_string(index=False))
+print(f"\n   raw_matches (season={season}, first 3 rows):")
+print(conn.execute(f"SELECT match_id, division_name, home_team, away_team, score, season FROM raw_matches WHERE season = '{season}' LIMIT 3").df().to_string(index=False))
 
-print("\n   stg_games (first row, basic columns):")
-print(conn.execute("SELECT match_id, home_team, away_team, match_date, venue, match_score FROM stg_games LIMIT 1").df().to_string(index=False))
+print(f"\n   raw_games (season={season}, first row, basic columns):")
+print(conn.execute(f"SELECT match_id, home_team, away_team, match_date, venue, match_score, season FROM raw_games WHERE season = '{season}' LIMIT 1").df().to_string(index=False))
 
 print("\n" + "="*60)
-print("✓ All staging tables created successfully in DuckDB!")
+print(f"✓ Season {season} loaded successfully into raw tables!")
 print(f"✓ Database location: {db_path}")
 print("="*60)
 

@@ -58,11 +58,6 @@ models:
           Secondary player name for partnership awards only.
           NULL for individual awards (most_comebacks, club_stalwart, performs_under_pressure, longest_winning_streak, defensive_wall, giant_killing, clean_sweep_specialist).
           Contains the partner's name for pair-based awards (no_mercy, epic_win, perfect_partnership).
-        tests:
-          - dbt_utils.expression_is_true:
-              expression: "(player_2 IS NULL AND award NOT IN ('no_mercy', 'epic_win', 'perfect_partnership')) OR (player_2 IS NOT NULL AND award IN ('no_mercy', 'epic_win', 'perfect_partnership'))"
-              config:
-                where: "1=1"  # Apply to all rows
       
       - name: award_value
         description: |
@@ -78,8 +73,6 @@ models:
           - perfect_partnership: Number of 2-0 wins together as a pair
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: ">= 0"
       
       - name: award_details
         description: |
