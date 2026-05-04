@@ -75,6 +75,7 @@
             <header class="site-header">
                 <h1 class="site-title">🏸 Badminton <span class="accent">Wrapped</span></h1>
                 <p class="site-subtitle">Nottinghamshire Badminton League Awards</p>
+                <nav class="site-nav"><a href="#/about">About these awards</a></nav>
             </header>
         `;
     }
@@ -140,7 +141,7 @@
                     </section>
                     <div class="season-grid">${cards}</div>
                     <footer class="site-footer">
-                        Nottinghamshire Badminton League · Data from league match results
+                        Nottinghamshire Badminton League · Data from league match results · <a href="#/about">About</a>
                     </footer>
                 </div>
             `;
@@ -221,7 +222,7 @@
                     </section>
                     <div class="club-grid">${cards}</div>
                     <footer class="site-footer">
-                        Nottinghamshire Badminton League · Data from league match results
+                        Nottinghamshire Badminton League · Data from league match results · <a href="#/about">About</a>
                     </footer>
                 </div>
             `;
@@ -369,7 +370,7 @@
                     </section>
                     <div class="award-grid">${awardCards}</div>
                     <footer class="site-footer">
-                        Nottinghamshire Badminton League · Data from league match results
+                        Nottinghamshire Badminton League · Data from league match results · <a href="#/about">About</a>
                     </footer>
                 </div>
             `;
@@ -385,6 +386,104 @@
         }
     }
 
+    // ── About Page ─────────────────────────────────────
+
+    function renderAboutPage() {
+        app.innerHTML = `
+            <div class="fade-in">
+                ${renderHeader()}
+                ${renderBreadcrumbs([
+                    { label: "Home", hash: "#/" },
+                    { label: "About" },
+                ])}
+                ${renderNetDecoration()}
+                <article class="about-page">
+                    <section class="about-section">
+                        <h2>What is Badminton Wrapped?</h2>
+                        <p>
+                            Badminton Wrapped is a bit of fun inspired by other "Wrapped" experiences. We take the match results
+                            from the <strong>Nottinghamshire Badminton League</strong> and crunch the numbers to hand
+                            out awards to players at each club.
+                        </p>
+                        <p>
+                            Think of it like an end-of-season highlights reel — who was the comeback king?
+                            Who had the longest winning streak? Who never lost at home?
+                        </p>
+                    </section>
+
+                    <section class="about-section">
+                        <h2>Where does the data come from?</h2>
+                        <p>
+                            All the data comes from the <strong>publicly available match results</strong> on the
+                            Nottinghamshire Badminton League website. We collect the scores from every match that
+                            has been played and reported during the season — the same results you can already see
+                            on the league site.
+                        </p>
+                        <p>
+                            No private or personal information is used. The only data we work with is what's already
+                            on the public league results pages: player names, scores and which teams played.
+                        </p>
+                    </section>
+
+                    <section class="about-section">
+                        <h2>How accurate is it?</h2>
+                        <p>
+                            We do our best, but <strong>the numbers might not be 100% accurate</strong>. Here are a
+                            few reasons why:
+                        </p>
+                        <ul class="about-list">
+                            <li>If a match result wasn't entered on the league website, we won't have it.</li>
+                            <li>Walkovers, conceded matches or incomplete scorecards can skew things slightly.</li>
+                            <li>Player names are matched as they appear on the scorecard — if the same person's name
+                                is spelled differently across matches, they might be counted separately.</li>
+                            <li>Some awards rely on working out which division a player "belongs" to, which
+                                isn't always straightforward when someone plays across multiple teams.</li>
+                        </ul>
+                        <p>
+                            If something looks off, it probably is! Don't take it too seriously.
+                        </p>
+                    </section>
+
+                    <section class="about-section">
+                        <h2>What are the awards?</h2>
+                        <p>
+                            Each club gets its own set of awards based on the season's results. Some are for individual
+                            players, others are for partnerships. Here's a quick rundown:
+                        </p>
+                        <div class="about-awards-grid">
+                            ${Object.values(AWARDS_CONFIG).map(a => `
+                                <div class="about-award-item">
+                                    <span class="about-award-emoji">${a.emoji}</span>
+                                    <div>
+                                        <strong>${escapeHtml(a.title)}</strong>
+                                        <span class="about-award-desc">— ${escapeHtml(a.description)}</span>
+                                    </div>
+                                </div>
+                            `).join("")}
+                        </div>
+                    </section>
+
+                    <section class="about-section">
+                        <h2>Is this an official league thing?</h2>
+                        <p>
+                            <strong>No.</strong> Badminton Wrapped is an independent project and is not affiliated with
+                            or endorsed by the Nottinghamshire Badminton League. It's just a bit of fun put together
+                            by someone who plays in the league and likes data.
+                        </p>
+                    </section>
+
+                    <section class="about-section about-cta">
+                        <p>Now go find your club and see who won what! 🏸</p>
+                        <a href="#/" class="about-back-link">← Back to seasons</a>
+                    </section>
+                </article>
+                <footer class="site-footer">
+                    Nottinghamshire Badminton League · Data from league match results · <a href="#/about">About</a>
+                </footer>
+            </div>
+        `;
+    }
+
     // ── Router ──────────────────────────────────────────
 
     async function route() {
@@ -393,6 +492,8 @@
 
         if (parts.length === 0) {
             await renderSeasonsPage();
+        } else if (parts.length === 1 && parts[0] === "about") {
+            renderAboutPage();
         } else if (parts.length === 1) {
             await renderClubsPage(parts[0]);
         } else if (parts.length === 2) {
