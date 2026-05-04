@@ -1,0 +1,1901 @@
+{
+  "season": "2025-26",
+  "clubs": {
+    "arboretum": {
+      "name": "Arboretum",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Vu Hoai Huong Tran",
+          "player_2": null,
+          "award_value": 31,
+          "award_details": "2025-10-06: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 1 with Yvez McKenzie) - Won 11-21 13-21 | 2025-10-06: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 7 with Yvez McKenzie) - Won 12-21 9-21 | 2025-10-19: vs Forest Mixed 3 (FOX3) (Rubber 6 with Glenn Mesa) - Won 21-19 21-16 | 2025-10-19: vs Forest Mixed 3 (FOX3) (Rubber 8 with Glenn Mesa) - Won 21-14 21-16 | 2025-11-09: vs Beeston Braves Womens 1 (BBW1) (Rubber 2 with Michelle Kwan) - Won 17-21 14-21 | 2025-11-09: vs Beeston Braves Womens 1 (BBW1) (Rubber 8 with Michelle Kwan) - Won 15-21 15-21 | 2025-11-14: vs Carlton Mixed 1 (CAX1) (Rubber 1 with Mukesh Gangar) - Won 4-21 15-21 | 2025-11-14: vs Carlton Mixed 1 (CAX1) (Rubber 7 with Mukesh Gangar) - Won 13-21 11-21 | 2025-11-29: vs Crusader Mixed 2 (CRX2) (Rubber 1 with Harsh Shah) - Won 18-21 11-21 | 2025-11-29: vs Crusader Mixed 2 (CRX2) (Rubber 4 with Harsh Shah) - Won 19-21 21-23 | 2025-11-29: vs Crusader Mixed 2 (CRX2) (Rubber 7 with Harsh Shah) - Won 23-25 17-21 | 2025-11-30: vs North Notts Social Womens 1 (NNW1) (Rubber 9 with Michelle Kwan) - Won 21-11 21-8 | 2025-12-03: vs Bilborough Womens 1 (BOW1) (Rubber 2 with Izabela Niziol) - Won 13-21 12-21 | 2025-12-03: vs Bilborough Womens 1 (BOW1) (Rubber 5 with Izabela Niziol) - Won 12-21 12-21 | 2025-12-03: vs Bilborough Womens 1 (BOW1) (Rubber 8 with Izabela Niziol) - Won 12-21 11-21 | 2025-12-07: vs Chilwell Mixed 1 (CHX1) (Rubber 6 with Harsh Shah) - Won 22-20 21-15 | 2026-01-04: vs Bingham Mixed 3 (BIX3) (Rubber 6 with Glenn Mesa) - Won 22-20 21-11 | 2026-01-04: vs Bingham Mixed 3 (BIX3) (Rubber 8 with Glenn Mesa) - Won 21-16 21-19 | 2026-02-01: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 1 with Izabela Niziol) - Won 22-20 21-19 | 2026-02-01: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 6 with Izabela Niziol) - Won 21-7 21-10 | 2026-02-01: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 8 with Izabela Niziol) - Won 21-9 21-5 | 2026-02-08: vs Forest Womens 2 (FOW2) (Rubber 4 with Izabela Niziol) - Won 21-12 21-18 | 2026-02-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 3 with Mathews Parampil) - Won 21-13 21-17 | 2026-02-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 5 with Mathews Parampil) - Won 21-8 21-11 | 2026-02-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 7 with Mathews Parampil) - Won 21-19 21-15 | 2026-03-01: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 2 with Izabela Niziol) - Won 13-21 10-21 | 2026-03-01: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 5 with Izabela Niziol) - Won 2-21 5-21 | 2026-03-01: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 8 with Izabela Niziol) - Won 15-21 16-21 | 2026-04-10: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 3 with Mathews Parampil) - Won 9-21 7-21 | 2026-04-10: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 6 with Mathews Parampil) - Won 9-21 20-22 | 2026-04-10: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 9 with Mathews Parampil) - Won 22-24 15-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Kumar Aryan",
+          "player_2": null,
+          "award_value": 18,
+          "award_details": "Played in 18 matches | Played 54 rubbers | Total points: 4782"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Izabela Niziol",
+          "player_2": null,
+          "award_value": 26,
+          "award_details": "Conceded 366 points across 14 rubbers (avg: 26.1 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Mathews Parampil",
+          "player_2": "Glenn Mesa",
+          "award_value": 65,
+          "award_details": null
+        },
+        {
+          "award": "giant_killing",
+          "player": "Izabela Niziol",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2026-02-08: vs Forest Womens 2 (FOW2) (Rubber 4 with Vu Hoai Huong Tran) - Defeated Lee Truong from Mixed Premier (5 divisions higher), margin: +12 | 2025-12-03: vs Bilborough Womens 1 (BOW1) (Rubber 5 with Vu Hoai Huong Tran) - Defeated Amy Kent from Mixed Division 2 (3 divisions higher), margin: +18 | 2025-12-03: vs Bilborough Womens 1 (BOW1) (Rubber 2 with Vu Hoai Huong Tran) - Defeated Bridget Stanbrook from Mixed Division 4 (1 division higher), margin: +17"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Paulina Czubacka",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2025-12-14: vs Southwell Mixed 1 (SOX1) (Rubber 9 with Mathews Parampil) | 2026-02-01: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 2 with Michelle Kwan) | 2026-02-01: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 4 with Michelle Kwan) | 2026-02-01: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 9 with Michelle Kwan) | 2026-02-08: vs Forest Womens 2 (FOW2) (Rubber 1 with Kayleigh Gee) | 2026-02-08: vs Forest Womens 2 (FOW2) (Rubber 8 with Kayleigh Gee) | 2026-02-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 2 with Michael Sparenberg) | 2026-02-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 4 with Michael Sparenberg) | 2026-02-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 9 with Michael Sparenberg) | 2026-03-01: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 1 with Kayleigh Gee) | 2026-03-01: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 4 with Kayleigh Gee) | 2026-03-01: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 7 with Kayleigh Gee)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Glenn Mesa",
+          "player_2": null,
+          "award_value": 7,
+          "award_details": "2025-11-09: vs Carlton Open 1 (CAO1) (Rubber 4 with Michael Sparenberg) - Lost Game 1 22-24, Won Game 2 21-16, Won Game 3 22-20 | 2025-11-16: vs Beeston Fields Mixed 3 (BFMX3) (Rubber 7 with Kayleigh Gee) - Lost Game 1 19-21, Won Game 2 21-11, Won Game 3 21-18 | 2025-12-14: vs Southwell Mixed 1 (SOX1) (Rubber 6 with Kayleigh Gee) - Lost Game 1 16-21, Won Game 2 21-10, Won Game 3 21-13 | 2026-01-04: vs Bingham Mixed 3 (BIX3) (Rubber 1 with Vu Hoai Huong Tran) - Lost Game 1 19-21, Won Game 2 21-18, Won Game 3 23-21 | 2026-01-11: vs Mapperley Park Open 1 (MPO1) (Rubber 9 with Michael Sparenberg) - Lost Game 1 16-21, Won Game 2 21-16, Won Game 3 21-14 | 2026-02-15: vs Forest Open 2 (FOO2) (Rubber 1 with Mathews Parampil) - Lost Game 1 20-22, Won Game 2 21-17, Won Game 3 24-22 | 2026-04-27: vs Byron Open 1 (BYO1) (Rubber 7 with Michael Sparenberg) - Lost Game 1 19-21, Won Game 2 21-17, Won Game 3 21-16"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Vu Hoai Huong Tran",
+          "player_2": "Izabela Niziol",
+          "award_value": 35,
+          "award_details": "Team: Arboretum Womens 1 (ARW1) | vs Radcliffe Knights Womens 1 (RKW1) | Score: 2-21 5-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Kayleigh Gee",
+          "player_2": "Paulina Czubacka",
+          "award_value": 13,
+          "award_details": "2025-11-09: vs Beeston Braves Womens 1 (BBW1) (Rubber 1) - Won 15-21 6-21 | 2025-11-09: vs Beeston Braves Womens 1 (BBW1) (Rubber 4) - Won 14-21 12-21 | 2025-11-30: vs North Notts Social Womens 1 (NNW1) (Rubber 1) - Won 21-14 21-11 | 2025-11-30: vs North Notts Social Womens 1 (NNW1) (Rubber 6) - Won 21-13 21-6 | 2025-11-30: vs North Notts Social Womens 1 (NNW1) (Rubber 8) - Won 21-9 21-12"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Glenn Mesa",
+          "player_2": null,
+          "award_value": 19,
+          "award_details": "2025-10-19: vs Forest Mixed 3 (FOX3) (Rubber 1 with Vu Hoai Huong Tran) - Game 3: 23-21 | 2025-10-19: vs Forest Mixed 3 (FOX3) (Rubber 6 with Vu Hoai Huong Tran) - Game 1: 21-19 | 2025-11-09: vs Carlton Open 1 (CAO1) (Rubber 2 with Michael Sparenberg) - Game 1: 21-19 | 2025-11-09: vs Carlton Open 1 (CAO1) (Rubber 4 with Michael Sparenberg) - Game 3: 22-20 | 2025-11-14: vs Carlton Mixed 1 (CAX1) (Rubber 8 with Kayleigh Gee) - Game 1: 24-22 | 2025-11-16: vs Beeston Fields Mixed 3 (BFMX3) (Rubber 3 with Kayleigh Gee) - Game 1: 24-22, Game 3: 21-19 | 2025-11-16: vs Beeston Fields Mixed 3 (BFMX3) (Rubber 5 with Kayleigh Gee) - Game 1: 21-19 | 2025-12-07: vs Chilwell Mixed 1 (CHX1) (Rubber 3 with Alex Langford) - Game 2: 22-20 | 2025-12-07: vs Chilwell Mixed 1 (CHX1) (Rubber 5 with Alex Langford) - Game 2: 21-19 | 2025-12-07: vs Chilwell Mixed 1 (CHX1) (Rubber 7 with Alex Langford) - Game 2: 22-20 | 2026-01-04: vs Bingham Mixed 3 (BIX3) (Rubber 1 with Vu Hoai Huong Tran) - Game 3: 23-21 | 2026-01-04: vs Bingham Mixed 3 (BIX3) (Rubber 6 with Vu Hoai Huong Tran) - Game 1: 22-20 | 2026-01-04: vs Bingham Mixed 3 (BIX3) (Rubber 8 with Vu Hoai Huong Tran) - Game 2: 21-19 | 2026-02-15: vs Forest Open 2 (FOO2) (Rubber 1 with Mathews Parampil) - Game 3: 24-22 | 2026-02-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 6 with Kayleigh Gee) - Game 2: 23-21 | 2026-03-18: vs Bingham Open 2 (BIO2) (Rubber 5 with Michael Sparenberg) - Game 1: 21-19 | 2026-04-10: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 4 with Kayleigh Gee) - Game 2: 21-19 | 2026-04-27: vs Byron Open 1 (BYO1) (Rubber 4 with Michael Sparenberg) - Game 1: 21-19"
+        }
+      ]
+    },
+    "beeston-braves": {
+      "name": "Beeston Braves",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Josh Kubik",
+          "player_2": null,
+          "award_value": 22,
+          "award_details": "2025-11-02: vs Bilborough Mixed 2 (BOX2) (Rubber 3 with Ani Mohandas) - Won 21-8 21-13 | 2025-11-02: vs Bilborough Mixed 2 (BOX2) (Rubber 5 with Ani Mohandas) - Won 21-15 21-9 | 2025-11-02: vs Bilborough Mixed 2 (BOX2) (Rubber 7 with Ani Mohandas) - Won 21-8 21-14 | 2025-11-13: vs West Bridgford Open 2 (SGO2) (Rubber 7 with Rajiv Shah) - Won 16-21 9-21 | 2025-11-23: vs Falcon Feathers Open 1 (FFO1) (Rubber 2 with Rajiv Shah) - Won 21-15 21-13 | 2025-11-23: vs Falcon Feathers Open 1 (FFO1) (Rubber 4 with Rajiv Shah) - Won 21-14 21-5 | 2025-11-23: vs Falcon Feathers Open 1 (FFO1) (Rubber 9 with Rajiv Shah) - Won 23-21 21-6 | 2025-12-07: vs Freddie's Open 1 (FGO1) (Rubber 2 with Rajiv Shah) - Won 23-21 21-17 | 2026-01-04: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 1 with Ani Mohandas) - Won 21-9 22-20 | 2026-01-04: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 6 with Ani Mohandas) - Won 21-14 21-12 | 2026-01-04: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 8 with Ani Mohandas) - Won 21-14 21-12 | 2026-01-18: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 8 with Ani Mohandas) - Won 21-17 21-19 | 2026-01-25: vs Southwell Mixed 2 (SOX2) (Rubber 8 with Monika Stumpf) - Won 18-21 19-21 | 2026-03-01: vs Carlton Open 3 (CAO3) (Rubber 2 with Benjamin Pugh) - Won 21-9 21-9 | 2026-03-01: vs Carlton Open 3 (CAO3) (Rubber 9 with Benjamin Pugh) - Won 21-14 21-15 | 2026-03-27: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 6 with Alan Li) - Won 15-21 17-21 | 2026-03-27: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 9 with Alan Li) - Won 8-21 16-21 | 2026-03-29: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 1 with Ani Mohandas) - Won 21-16 21-15 | 2026-03-29: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 6 with Ani Mohandas) - Won 21-19 21-19 | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 3 with Alan Li) - Won 10-21 16-21 | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 6 with Alan Li) - Won 16-21 4-21 | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 9 with Alan Li) - Won 22-24 20-22"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Josh Kubik",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "Played in 15 matches | Played 44 rubbers | Total points: 3490"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Ani Mohandas",
+          "player_2": null,
+          "award_value": 36,
+          "award_details": "Conceded 714 points across 20 rubbers (avg: 35.7 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Manish Mohanty",
+          "player_2": "Kanesan Vickneswaran",
+          "award_value": 63,
+          "award_details": "2026-03-22 at Chilwell Olympia Sports Centre vs Southwell Open 2 (SOO2) (Score: 18-21 22-20 23-21, Total points: 63, Game 3: 23)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Josh Kubik",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-03-01: vs Carlton Open 3 (CAO3) (Rubber 2 with Benjamin Pugh) - Defeated Wlodzimierz Pietrzak from Open Division 1 (4 divisions higher), margin: +24 | 2026-03-01: vs Carlton Open 3 (CAO3) (Rubber 4 with Benjamin Pugh) - Defeated Can Truong from Open Division 1 (4 divisions higher), margin: +7 | 2026-03-01: vs Carlton Open 3 (CAO3) (Rubber 9 with Benjamin Pugh) - Defeated Martin Tilling from Open Division 1 (4 divisions higher), margin: +13 | 2025-11-13: vs West Bridgford Open 2 (SGO2) (Rubber 4 with Rajiv Shah) - Defeated Joshua McGregor from Open Division 2 (3 divisions higher), margin: +11 | 2026-01-04: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 1 with Ani Mohandas) - Defeated Charles Visarra from Open Division 2 (3 divisions higher), margin: +14 | 2025-11-02: vs Bilborough Mixed 2 (BOX2) (Rubber 3 with Ani Mohandas) - Defeated Ian Cross from Open Division 3 (2 divisions higher), margin: +21 | 2025-11-02: vs Bilborough Mixed 2 (BOX2) (Rubber 7 with Ani Mohandas) - Defeated Robert Brown from Open Division 3 (2 divisions higher), margin: +20 | 2026-01-25: vs Southwell Mixed 2 (SOX2) (Rubber 8 with Monika Stumpf) - Defeated Alasdair Mullen from Open Division 3 (2 divisions higher), margin: +5 | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 3 with Alan Li) - Defeated Ian Cross from Open Division 3 (2 divisions higher), margin: +16 | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 6 with Alan Li) - Defeated David Hall from Open Division 3 (2 divisions higher), margin: +22 | 2026-01-04: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 8 with Ani Mohandas) - Defeated Prashant Chahal from Open Division 4 (1 division higher), margin: +16 | 2026-03-27: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 3 with Alan Li) - Defeated Adnan Aslam from Open Division 4 (1 division higher), margin: +9 | 2026-03-29: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 1 with Ani Mohandas) - Defeated David Lee from Open Division 4 (1 division higher), margin: +11 | 2026-03-29: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 6 with Ani Mohandas) - Defeated Tom Clare from Open Division 4 (1 division higher), margin: +4 | 2026-03-29: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 8 with Ani Mohandas) - Defeated Mark Tinsley from Open Division 4 (1 division higher), margin: +7"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Alan Li",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2026-03-27: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 3 with Josh Kubik) | 2026-03-27: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 6 with Josh Kubik) | 2026-03-27: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 9 with Josh Kubik) | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 3 with Josh Kubik) | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 6 with Josh Kubik) | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 9 with Josh Kubik)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Leigh Shearer",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2026-02-15: vs North Notts Social Womens 1 (NNW1) (Rubber 2 with Bhavisha Shah) - Lost Game 1 12-21, Won Game 2 22-20, Won Game 3 21-19 | 2026-03-18: vs Bilborough Womens 1 (BOW1) (Rubber 1 with Milou Manie) - Lost Game 1 19-21, Won Game 2 21-14, Won Game 3 21-17 | 2026-03-18: vs Bilborough Womens 1 (BOW1) (Rubber 4 with Milou Manie) - Lost Game 1 11-21, Won Game 2 22-20, Won Game 3 21-19 | 2026-03-18: vs Bilborough Womens 1 (BOW1) (Rubber 7 with Milou Manie) - Lost Game 1 22-24, Won Game 2 21-12, Won Game 3 21-8 | 2026-04-26: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 9 with Bhavisha Shah) - Lost Game 1 16-21, Won Game 2 21-11, Won Game 3 21-18"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Kanesan Vickneswaran",
+          "player_2": "Manish Mohanty",
+          "award_value": 42,
+          "award_details": "Team: Beeston Braves Open 1 (BBO1) | vs West Bridgford Open 2 (SGO2) | Score: 0-21 0-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Ani Mohandas",
+          "player_2": "Josh Kubik",
+          "award_value": 9,
+          "award_details": "2025-11-02: vs Bilborough Mixed 2 (BOX2) (Rubber 3) - Won 21-8 21-13 | 2025-11-02: vs Bilborough Mixed 2 (BOX2) (Rubber 5) - Won 21-15 21-9 | 2025-11-02: vs Bilborough Mixed 2 (BOX2) (Rubber 7) - Won 21-8 21-14 | 2026-01-04: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 1) - Won 21-9 22-20 | 2026-01-04: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 6) - Won 21-14 21-12"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Josh Kubik",
+          "player_2": null,
+          "award_value": 10,
+          "award_details": "2025-11-23: vs Falcon Feathers Open 1 (FFO1) (Rubber 9 with Rajiv Shah) - Game 1: 23-21 | 2025-12-07: vs Freddie's Open 1 (FGO1) (Rubber 2 with Rajiv Shah) - Game 1: 23-21 | 2026-01-04: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 1 with Ani Mohandas) - Game 2: 22-20 | 2026-01-18: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 6 with Ani Mohandas) - Game 2: 21-19 | 2026-01-18: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 8 with Ani Mohandas) - Game 2: 21-19 | 2026-01-25: vs Southwell Mixed 2 (SOX2) (Rubber 8 with Monika Stumpf) - Game 2: 21-19 | 2026-03-29: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 6 with Ani Mohandas) - Game 1: 21-19, Game 2: 21-19 | 2026-04-22: vs Bilborough Open 2 (BOO2) (Rubber 9 with Alan Li) - Game 1: 24-22, Game 2: 22-20"
+        }
+      ]
+    },
+    "beeston-fields": {
+      "name": "Beeston Fields",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Simon Gibson-Leitch",
+          "player_2": null,
+          "award_value": 32,
+          "award_details": "2025-09-26: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 6 with Julie Bigwood) - Won 21-7 21-19 | 2025-09-26: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 8 with Julie Bigwood) - Won 21-14 21-7 | 2025-10-10: vs Beeston Fields Open 2 (BFO2) (Rubber 3 with Steven Strickland) - Won 21-10 21-14 | 2025-10-10: vs Beeston Fields Open 2 (BFO2) (Rubber 7 with Steven Strickland) - Won 21-18 21-18 | 2025-10-17: vs Southwell Mixed 1 (SOX1) (Rubber 6 with Julie Bigwood) - Won 21-11 21-12 | 2025-10-17: vs Southwell Mixed 1 (SOX1) (Rubber 8 with Julie Bigwood) - Won 21-18 21-16 | 2025-10-19: vs East Leake Open 1 (ELO1) (Rubber 1 with Matthew Lawrence) - Won 17-21 16-21 | 2025-10-19: vs East Leake Open 1 (ELO1) (Rubber 4 with Matthew Lawrence) - Won 18-21 13-21 | 2025-10-19: vs East Leake Open 1 (ELO1) (Rubber 7 with Matthew Lawrence) - Won 15-21 9-21 | 2025-11-12: vs East Leake Mixed 1 (ELX1) (Rubber 5 with Nadja Grothe) - Won 14-21 10-21 | 2025-11-12: vs East Leake Mixed 1 (ELX1) (Rubber 8 with Nadja Grothe) - Won 15-21 16-21 | 2025-11-14: vs Bingham Open 1 (BIO1) (Rubber 6 with Muhammed Rehan Riaz) - Won 21-15 21-12 | 2025-11-23: vs Rolls Royce Open 1 (RRO1) (Rubber 1 with Matthew Lawrence) - Won 16-21 18-21 | 2025-11-23: vs Rolls Royce Open 1 (RRO1) (Rubber 4 with Matthew Lawrence) - Won 16-21 18-21 | 2025-11-23: vs Rolls Royce Open 1 (RRO1) (Rubber 7 with Matthew Lawrence) - Won 17-21 14-21 | 2025-11-28: vs Forest Mixed 2 (FOX2) (Rubber 2 with Bryony Taylor) - Won 21-12 21-15 | 2025-11-28: vs Forest Mixed 2 (FOX2) (Rubber 4 with Bryony Taylor) - Won 21-19 21-9 | 2025-11-28: vs Forest Mixed 2 (FOX2) (Rubber 9 with Bryony Taylor) - Won 21-13 21-13 | 2025-12-08: vs Mapperley Park Mixed 1 (MPX1) (Rubber 1 with Julie Bigwood) - Won 16-21 13-21 | 2025-12-08: vs Mapperley Park Mixed 1 (MPX1) (Rubber 4 with Julie Bigwood) - Won 13-21 16-21 | 2026-01-23: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 6 with Dominic Hobdell) - Won 21-16 21-16 | 2026-02-12: vs Forest Open 1 (FOO1) (Rubber 3 with James Chean Khun Ng) - Won 5-21 15-21 | 2026-02-12: vs Forest Open 1 (FOO1) (Rubber 9 with James Chean Khun Ng) - Won 12-21 13-21 | 2026-02-26: vs Forest Mixed 2 (FOX2) (Rubber 9 with Ciara Shaw) - Won 18-21 19-21 | 2026-02-27: vs Bingham Mixed 1 (BIX1) (Rubber 6 with Minnie Wong) - Won 21-17 21-17 | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 1 with Steven Strickland) - Won 21-15 21-17 | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 6 with Steven Strickland) - Won 21-18 21-16 | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 8 with Steven Strickland) - Won 21-0 21-0 | 2026-04-01: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 2 with Jeremy Lu) - Won 8-21 7-21 | 2026-04-01: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 5 with Jeremy Lu) - Won 10-21 10-21 | 2026-04-01: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 8 with Jeremy Lu) - Won 18-21 10-21 | 2026-04-17: vs Rolls Royce Open 1 (RRO1) (Rubber 9 with Matthew Lawrence) - Won 22-20 21-16"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Pak Yu Ernest Ma",
+          "player_2": null,
+          "award_value": 22,
+          "award_details": "Played in 22 matches | Played 66 rubbers | Total points: 5250"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Kimberley Clague",
+          "player_2": null,
+          "award_value": 23,
+          "award_details": "Conceded 646 points across 28 rubbers (avg: 23.1 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Simon Gibson-Leitch",
+          "player_2": "Matthew Lawrence",
+          "award_value": 67,
+          "award_details": null
+        },
+        {
+          "award": "giant_killing",
+          "player": "Frederick William Utama",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-02-02: vs Beeston Valley Open 3 (BVO3) (Rubber 5 with Kelvin Chan) - Defeated Hyunwoo Jung from Open Division 3 (4 divisions higher), margin: +16 | 2026-02-02: vs Beeston Valley Open 3 (BVO3) (Rubber 8 with Kelvin Chan) - Defeated Sadi Sadi from Open Division 3 (4 divisions higher), margin: +10 | 2025-12-05: vs Radcliffe Knights Open 3 (RKO3) (Rubber 5 with Kelvin Chan) - Defeated Roscoe Fernandes from Open Division 4 (3 divisions higher), margin: +10 | 2025-12-05: vs Radcliffe Knights Open 3 (RKO3) (Rubber 7 with Kelvin Chan) - Defeated David Lee from Open Division 4 (3 divisions higher), margin: +16 | 2025-12-05: vs Radcliffe Knights Open 3 (RKO3) (Rubber 3 with Kelvin Chan) - Defeated Mark Forth from Open Division 6 (1 division higher), margin: +21"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Steven Strickland",
+          "player_2": null,
+          "award_value": 36,
+          "award_details": "2025-09-19: vs Beeston Fields Mixed 2 (BFMX2) (Rubber 3 with Heidi Wiltshire) | 2025-09-19: vs Beeston Fields Mixed 2 (BFMX2) (Rubber 5 with Heidi Wiltshire) | 2025-09-19: vs Beeston Fields Mixed 2 (BFMX2) (Rubber 7 with Heidi Wiltshire) | 2025-10-10: vs Beeston Fields Open 2 (BFO2) (Rubber 3 with Simon Gibson-Leitch) | 2025-10-10: vs Beeston Fields Open 2 (BFO2) (Rubber 5 with Simon Gibson-Leitch) | 2025-10-10: vs Beeston Fields Open 2 (BFO2) (Rubber 7 with Simon Gibson-Leitch) | 2025-11-16: vs East Leake Mixed 1 (ELX1) (Rubber 1 with Kimberley Clague) | 2025-11-16: vs East Leake Mixed 1 (ELX1) (Rubber 4 with Kimberley Clague) | 2025-11-16: vs East Leake Mixed 1 (ELX1) (Rubber 7 with Kimberley Clague) | 2025-12-03: vs Bingham Open 1 (BIO1) (Rubber 1 with Jeremy Lu) | 2025-12-03: vs Bingham Open 1 (BIO1) (Rubber 4 with Jeremy Lu) | 2025-12-03: vs Bingham Open 1 (BIO1) (Rubber 7 with Jeremy Lu) | 2026-02-12: vs Forest Open 1 (FOO1) (Rubber 2 with Matthew Lawrence) | 2026-02-12: vs Forest Open 1 (FOO1) (Rubber 5 with Matthew Lawrence) | 2026-02-12: vs Forest Open 1 (FOO1) (Rubber 8 with Matthew Lawrence) | 2026-02-18: vs Bingham Mixed 1 (BIX1) (Rubber 1 with Kimberley Clague) | 2026-02-18: vs Bingham Mixed 1 (BIX1) (Rubber 4 with Kimberley Clague) | 2026-02-18: vs Bingham Mixed 1 (BIX1) (Rubber 7 with Kimberley Clague) | 2026-02-26: vs Forest Mixed 2 (FOX2) (Rubber 1 with Kimberley Clague) | 2026-02-26: vs Forest Mixed 2 (FOX2) (Rubber 4 with Kimberley Clague) | 2026-02-26: vs Forest Mixed 2 (FOX2) (Rubber 7 with Kimberley Clague) | 2026-03-13: vs Forest Mixed 1 (FOX1) (Rubber 1 with Kimberley Clague) | 2026-03-13: vs Forest Mixed 1 (FOX1) (Rubber 6 with Kimberley Clague) | 2026-03-13: vs Forest Mixed 1 (FOX1) (Rubber 8 with Kimberley Clague) | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 1 with Simon Gibson-Leitch) | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 6 with Simon Gibson-Leitch) | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 8 with Simon Gibson-Leitch) | 2026-04-01: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 3 with Jonathan Ritter) | 2026-04-01: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 6 with Jonathan Ritter) | 2026-04-01: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 9 with Jonathan Ritter) | 2026-04-17: vs Rolls Royce Open 1 (RRO1) (Rubber 3 with Jeremy Lu) | 2026-04-17: vs Rolls Royce Open 1 (RRO1) (Rubber 5 with Jeremy Lu) | 2026-04-17: vs Rolls Royce Open 1 (RRO1) (Rubber 7 with Jeremy Lu) | 2026-04-24: vs Mansfield Oaktree Mixed 1 (MOX1) (Rubber 1 with Kimberley Clague) | 2026-04-24: vs Mansfield Oaktree Mixed 1 (MOX1) (Rubber 6 with Kimberley Clague) | 2026-04-24: vs Mansfield Oaktree Mixed 1 (MOX1) (Rubber 8 with Kimberley Clague)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Matthew Lawrence",
+          "player_2": null,
+          "award_value": 8,
+          "award_details": "2025-11-06: vs Forest Mixed 1 (FOX1) (Rubber 4 with Minnie Wong) - Lost Game 1 14-21, Won Game 2 21-15, Won Game 3 21-19 | 2025-11-28: vs Forest Mixed 2 (FOX2) (Rubber 3 with Minnie Wong) - Lost Game 1 17-21, Won Game 2 21-13, Won Game 3 23-21 | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 3 with James Latham) - Lost Game 1 15-21, Won Game 2 21-8, Won Game 3 21-15 | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 5 with James Latham) - Lost Game 1 16-21, Won Game 2 26-24, Won Game 3 11-5 | 2026-03-27: vs East Leake Open 1 (ELO1) (Rubber 7 with James Latham) - Lost Game 1 18-21, Won Game 2 21-19, Won Game 3 21-8 | 2026-04-01: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 7 with James Latham) - Lost Game 1 19-21, Won Game 2 21-19, Won Game 3 21-17 | 2026-04-17: vs Rolls Royce Open 1 (RRO1) (Rubber 2 with Simon Gibson-Leitch) - Lost Game 1 13-21, Won Game 2 21-17, Won Game 3 21-16 | 2026-04-17: vs Rolls Royce Open 1 (RRO1) (Rubber 4 with Simon Gibson-Leitch) - Lost Game 1 20-22, Won Game 2 21-16, Won Game 3 26-24"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Simon Gibson-Leitch",
+          "player_2": "Steven Strickland",
+          "award_value": 42,
+          "award_details": "Team: Beeston Fields Open 1 (BFO1) | vs East Leake Open 1 (ELO1) | Score: 21-0 21-0"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Kimberley Clague",
+          "player_2": "Steven Strickland",
+          "award_value": 15,
+          "award_details": "2025-11-16: vs East Leake Mixed 1 (ELX1) (Rubber 1) - Won 12-21 8-21 | 2025-11-16: vs East Leake Mixed 1 (ELX1) (Rubber 4) - Won 15-21 10-21 | 2025-11-16: vs East Leake Mixed 1 (ELX1) (Rubber 7) - Won 8-21 8-21 | 2026-02-18: vs Bingham Mixed 1 (BIX1) (Rubber 1) - Won 14-21 13-21 | 2026-02-18: vs Bingham Mixed 1 (BIX1) (Rubber 4) - Won 17-21 14-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Pak Yu Ernest Ma",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-10-15: vs East Leake Mixed 3 (ELX3) (Rubber 4 with Rachel Thompson) - Game 2: 21-19 | 2025-10-17: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 1 with Kush Channa) - Game 3: 21-19 | 2025-10-19: vs East Leake Open 1 (ELO1) (Rubber 3 with Ben Watson) - Game 2: 21-19 | 2025-11-20: vs Forest Open 3 (FOO3) (Rubber 7 with Kush Channa) - Game 1: 21-19 | 2025-11-23: vs Rolls Royce Open 1 (RRO1) (Rubber 3 with Kush Channa) - Game 1: 21-19 | 2025-11-28: vs Southwell Mixed 2 (SOX2) (Rubber 9 with Rachel Thompson) - Game 1: 22-20 | 2026-01-09: vs Carlton Mixed 1 (CAX1) (Rubber 3 with Rachel Thompson) - Game 3: 22-20 | 2026-01-30: vs Forest Mixed 4 (FOX4) (Rubber 6 with Rachel Thompson) - Game 3: 21-19 | 2026-02-04: vs Bilborough Mixed 2 (BOX2) (Rubber 7 with Rachel Thompson) - Game 3: 21-19 | 2026-03-06: vs Mapperley Park Open 2 (MPO2) (Rubber 1 with Sunil Gurung) - Game 1: 22-20 | 2026-03-06: vs Mapperley Park Open 2 (MPO2) (Rubber 6 with Sunil Gurung) - Game 3: 22-20 | 2026-03-06: vs Mapperley Park Open 2 (MPO2) (Rubber 8 with Sunil Gurung) - Game 1: 22-20 | 2026-03-13: vs Mapperley Park Mixed 1 (MPX1) (Rubber 9 with Rachel Thompson) - Game 1: 22-20 | 2026-03-15: vs Arboretum Open 2 (ARO2) (Rubber 3 with Meng Li Leong) - Game 2: 22-20 | 2026-04-24: vs East Leake Open 2 (ELO2) (Rubber 1 with Ben Watson) - Game 1: 24-22"
+        }
+      ]
+    },
+    "beeston-valley": {
+      "name": "Beeston Valley",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Hyunwoo Jung",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2025-10-27: vs Bilborough Open 1 (BOO1) (Rubber 2 with Sadi Sadi) - Won 21-11 21-17 | 2025-10-27: vs Bilborough Open 1 (BOO1) (Rubber 4 with Sadi Sadi) - Won 21-12 21-17 | 2025-11-03: vs Safari Badminton Open 2 (SBO2) (Rubber 9 with Sadi Sadi) - Won 21-18 21-10 | 2025-11-17: vs Beeston Braves Open 2 (BBO2) (Rubber 5 with Sadi Sadi) - Won 21-19 21-13 | 2025-12-08: vs Radcliffe Knights Open 2 (RKO2) (Rubber 1 with Madhawa Fonseka) - Won 21-19 21-11 | 2025-12-08: vs Radcliffe Knights Open 2 (RKO2) (Rubber 6 with Madhawa Fonseka) - Won 21-19 21-19 | 2026-01-12: vs North Notts Social Open 1 (NNO1) (Rubber 3 with Sadi Sadi) - Won 21-10 21-6 | 2026-01-12: vs North Notts Social Open 1 (NNO1) (Rubber 7 with Sadi Sadi) - Won 21-18 21-13 | 2026-03-02: vs Freddie's Open 2 (FGO2) (Rubber 6 with Ivan Weei Wong) - Won 21-9 21-14 | 2026-03-02: vs Freddie's Open 2 (FGO2) (Rubber 8 with Ivan Weei Wong) - Won 21-19 21-13 | 2026-03-09: vs Arboretum Open 4 (ARO4) (Rubber 6 with Ivan Weei Wong) - Won 21-17 21-16 | 2026-03-30: vs Southwell Open 2 (SOO2) (Rubber 3 with Roy Luk) - Won 21-9 21-7"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Graeme Wallace",
+          "player_2": null,
+          "award_value": 17,
+          "award_details": "Played in 17 matches | Played 51 rubbers | Total points: 4292"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Ivan Weei Wong",
+          "player_2": null,
+          "award_value": 39,
+          "award_details": "Conceded 355 points across 9 rubbers (avg: 39.4 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Roy Luk",
+          "player_2": "Justin Wright",
+          "award_value": 63,
+          "award_details": "2025-12-08 at Chilwell Olympia Sports Centre vs Radcliffe Knights Open 2 (RKO2) (Score: 17-21 24-22 22-20, Total points: 63, Game 3: 22)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Mohammed Rahman",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-10-26: vs Safari Badminton Open 3 (SBO3) (Rubber 6 with Sadi Sadi) - Defeated Samson Blake from Open Division 2 (5 divisions higher), margin: +4"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Caroline Bartliff",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2025-11-21: vs David Lloyd Aspley Mixed 1 (DLX1) (Rubber 8 with Mohamed Imran Rafideen) | 2025-11-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 2 with Mohamed Imran Rafideen) | 2025-11-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 4 with Mohamed Imran Rafideen) | 2025-11-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 9 with Mohamed Imran Rafideen) | 2025-12-15: vs Crusader Mixed 2 (CRX2) (Rubber 2 with Matthew Brookes) | 2025-12-15: vs Crusader Mixed 2 (CRX2) (Rubber 4 with Matthew Brookes)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Caroline Bartliff",
+          "player_2": null,
+          "award_value": 2,
+          "award_details": "2025-11-21: vs David Lloyd Aspley Mixed 1 (DLX1) (Rubber 8 with Mohamed Imran Rafideen) - Lost Game 1 10-21, Won Game 2 21-15, Won Game 3 21-13 | 2025-11-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 2 with Mohamed Imran Rafideen) - Lost Game 1 18-21, Won Game 2 22-20, Won Game 3 21-19"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Penny Page",
+          "player_2": "Graeme Wallace",
+          "award_value": 27,
+          "award_details": "Team: Beeston Valley Mixed 2 (BVMX2) | vs Beeston Braves Mixed 2 (BBMX2) | Score: 8-21 7-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Hyunwoo Jung",
+          "player_2": "Sadi Sadi",
+          "award_value": 6,
+          "award_details": "2025-10-27: vs Bilborough Open 1 (BOO1) (Rubber 2) - Won 21-11 21-17 | 2025-10-27: vs Bilborough Open 1 (BOO1) (Rubber 4) - Won 21-12 21-17 | 2025-11-03: vs Safari Badminton Open 2 (SBO2) (Rubber 9) - Won 21-18 21-10 | 2025-11-17: vs Beeston Braves Open 2 (BBO2) (Rubber 5) - Won 21-19 21-13 | 2026-01-12: vs North Notts Social Open 1 (NNO1) (Rubber 3) - Won 21-10 21-6"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Caroline Bartliff",
+          "player_2": null,
+          "award_value": 14,
+          "award_details": "2025-10-19: vs Beeston Braves Mixed 2 (BBMX2) (Rubber 8 with Mohamed Imran Rafideen) - Game 3: 23-21 | 2025-11-10: vs North Notts Social Mixed 1 (NNX1) (Rubber 1 with Graeme Wallace) - Game 2: 21-19 | 2025-11-10: vs North Notts Social Mixed 1 (NNX1) (Rubber 6 with Graeme Wallace) - Game 1: 21-19 | 2025-11-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 2 with Mohamed Imran Rafideen) - Game 2: 22-20, Game 3: 21-19 | 2025-12-15: vs Crusader Mixed 2 (CRX2) (Rubber 2 with Matthew Brookes) - Game 2: 22-20 | 2025-12-15: vs Crusader Mixed 2 (CRX2) (Rubber 4 with Matthew Brookes) - Game 1: 25-23 | 2026-01-05: vs Forest Mixed 3 (FOX3) (Rubber 3 with Matthew Brookes) - Game 1: 21-19 | 2026-01-05: vs Forest Mixed 3 (FOX3) (Rubber 7 with Matthew Brookes) - Game 1: 23-21 | 2026-01-22: vs Chilwell Womens 1 (CHW1) (Rubber 2 with Tessa Key) - Game 2: 21-19 | 2026-02-09: vs Carlton Womens 1 (CAW1) (Rubber 5 with Kathryn Britton) - Game 2: 21-19 | 2026-03-23: vs Chilwell Mixed 1 (CHX1) (Rubber 2 with Matthew Brookes) - Game 1: 24-22 | 2026-03-23: vs Chilwell Mixed 1 (CHX1) (Rubber 4 with Matthew Brookes) - Game 1: 21-19 | 2026-03-23: vs Chilwell Mixed 1 (CHX1) (Rubber 9 with Matthew Brookes) - Game 1: 21-19"
+        }
+      ]
+    },
+    "bilborough": {
+      "name": "Bilborough",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Ian Cross",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2025-10-27: vs Beeston Valley Open 1 (BVO1) (Rubber 6 with Naveed Malik) - Won 8-21 13-21 | 2025-10-27: vs Beeston Valley Open 1 (BVO1) (Rubber 9 with Naveed Malik) - Won 10-21 13-21 | 2025-11-02: vs Beeston Braves Mixed 1 (BBMX1) (Rubber 9 with Bridget Stanbrook) - Won 18-21 22-24 | 2025-11-26: vs Crusader Open 1 (CRO1) (Rubber 4 with Richard Lee) - Won 21-14 21-18 | 2025-12-10: vs Carlton Open 2 (CAO2) (Rubber 9 with Matthew Rogers) - Won 21-18 21-8 | 2026-02-06: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 7 with Robert Brown) - Won 8-21 18-21 | 2026-03-11: vs Carlton Open 3 (CAO3) (Rubber 1 with Robert Brown) - Won 21-17 21-16 | 2026-03-11: vs Carlton Open 3 (CAO3) (Rubber 6 with Robert Brown) - Won 21-17 21-9 | 2026-03-11: vs Carlton Open 3 (CAO3) (Rubber 8 with Robert Brown) - Won 21-13 21-11 | 2026-04-15: vs Forest Mixed 4 (FOX4) (Rubber 1 with Lisa Crouch) - Won 21-19 21-18 | 2026-04-15: vs Forest Mixed 4 (FOX4) (Rubber 6 with Lisa Crouch) - Won 21-15 21-13 | 2026-04-22: vs Beeston Braves Open 1 (BBO1) (Rubber 7 with Robert Brown) - Won 21-15 21-19"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Robert Brown",
+          "player_2": null,
+          "award_value": 18,
+          "award_details": "Played in 18 matches | Played 54 rubbers | Total points: 4509"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Naveed Malik",
+          "player_2": null,
+          "award_value": 40,
+          "award_details": "Conceded 1108 points across 28 rubbers (avg: 39.6 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Ian Cross",
+          "player_2": "Rob Bryant",
+          "award_value": 63,
+          "award_details": null
+        },
+        {
+          "award": "giant_killing",
+          "player": "Simon Barnes",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-03-11: vs Carlton Open 3 (CAO3) (Rubber 2 with Scott Hewes) - Defeated Wlodzimierz Pietrzak from Open Division 1 (4 divisions higher), margin: +8"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Izzy Bramhall",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2026-01-09: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 3 with Lisa Crouch) | 2026-01-09: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 6 with Lisa Crouch) | 2026-01-09: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 9 with Lisa Crouch) | 2026-02-11: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 1 with Lisa Crouch) | 2026-02-11: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 6 with Lisa Crouch) | 2026-02-11: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 8 with Lisa Crouch)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Robert Brown",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2025-11-05: vs Falcon Feathers Open 1 (FFO1) (Rubber 1 with Scott Hewes) - Lost Game 1 8-21, Won Game 2 21-15, Won Game 3 21-16 | 2025-11-05: vs Falcon Feathers Open 1 (FFO1) (Rubber 3 with Scott Hewes) - Lost Game 1 13-21, Won Game 2 21-17, Won Game 3 21-17 | 2025-11-26: vs Crusader Open 1 (CRO1) (Rubber 7 with Christopher Friend) - Lost Game 1 19-21, Won Game 2 21-18, Won Game 3 22-20 | 2026-02-06: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 1 with Ian Cross) - Lost Game 1 15-21, Won Game 2 21-14, Won Game 3 22-20"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Abi Page",
+          "player_2": "Sarah Butler",
+          "award_value": 29,
+          "award_details": "Team: Bilborough Womens 1 (BOW1) | vs Rushcliffe Arena Womens 1 (RAW1) | Score: 6-21 7-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Izzy Bramhall",
+          "player_2": "Lisa Crouch",
+          "award_value": 6,
+          "award_details": "2026-01-09: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 3) - Won 19-21 12-21 | 2026-01-09: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 6) - Won 16-21 20-22 | 2026-01-09: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 9) - Won 13-21 12-21 | 2026-02-11: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 6) - Won 21-11 21-10 | 2026-02-11: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 8) - Won 21-15 21-15"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Robert Brown",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2025-11-12: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 4 with Sarah Butler) - Game 3: 22-20 | 2025-11-26: vs Crusader Open 1 (CRO1) (Rubber 7 with Christopher Friend) - Game 3: 22-20 | 2025-12-10: vs Carlton Open 2 (CAO2) (Rubber 3 with Christopher Friend) - Game 1: 21-19 | 2025-12-10: vs Carlton Open 2 (CAO2) (Rubber 5 with Christopher Friend) - Game 1: 24-22 | 2026-02-04: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 6 with Susanna Brown) - Game 1: 21-19 | 2026-02-06: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 1 with Ian Cross) - Game 3: 22-20 | 2026-03-04: vs Southwell Mixed 2 (SOX2) (Rubber 8 with Sarah Butler) - Game 1: 23-21 | 2026-04-01: vs Arboretum Open 3 (ARO3) (Rubber 2 with Naveed Malik) - Game 2: 22-20 | 2026-04-01: vs Arboretum Open 3 (ARO3) (Rubber 4 with Naveed Malik) - Game 2: 21-19 | 2026-04-01: vs Arboretum Open 3 (ARO3) (Rubber 9 with Naveed Malik) - Game 1: 21-19 | 2026-04-15: vs Forest Mixed 4 (FOX4) (Rubber 5 with Sarah Butler) - Game 1: 22-20 | 2026-04-22: vs Beeston Braves Open 1 (BBO1) (Rubber 7 with Ian Cross) - Game 2: 21-19"
+        }
+      ]
+    },
+    "bingham": {
+      "name": "Bingham",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Anna Owen",
+          "player_2": null,
+          "award_value": 34,
+          "award_details": "2025-11-04: vs North Notts Social Mixed 1 (NNX1) (Rubber 2 with Jamie Gamble) - Won 12-21 15-21 | 2025-11-04: vs North Notts Social Mixed 1 (NNX1) (Rubber 5 with Jamie Gamble) - Won 13-21 13-21 | 2025-11-04: vs North Notts Social Mixed 1 (NNX1) (Rubber 8 with Jamie Gamble) - Won 20-22 19-21 | 2025-12-03: vs East Leake Womens 2 (ELW2) (Rubber 1 with Michelle Jackson) - Won 10-21 12-21 | 2025-12-03: vs East Leake Womens 2 (ELW2) (Rubber 4 with Michelle Jackson) - Won 13-21 7-21 | 2025-12-07: vs Forest Mixed 3 (FOX3) (Rubber 2 with Paul Grimley) - Won 14-21 16-21 | 2025-12-07: vs Forest Mixed 3 (FOX3) (Rubber 5 with Paul Grimley) - Won 0-21 0-21 | 2025-12-10: vs Mapperley Park Mixed 3 (MPX3) (Rubber 5 with Paul Grimley) - Won 21-16 21-0 | 2025-12-10: vs Mapperley Park Mixed 3 (MPX3) (Rubber 7 with Paul Grimley) - Won 21-7 21-10 | 2026-01-04: vs Arboretum Mixed 2 (ARMX2) (Rubber 4 with Jack Akehurst) - Won 14-21 14-21 | 2026-01-04: vs Arboretum Mixed 2 (ARMX2) (Rubber 7 with Jack Akehurst) - Won 24-26 16-21 | 2026-01-07: vs East Leake Womens 1 (ELW1) (Rubber 3 with Conny Fung) - Won 21-13 21-13 | 2026-01-16: vs Chilwell Mixed 1 (CHX1) (Rubber 8 with Christopher Nunn) - Won 19-21 14-21 | 2026-01-21: vs Forest Womens 1 (FOW1) (Rubber 3 with Amy Brumfitt) - Won 21-16 24-22 | 2026-01-23: vs Carlton Mixed 1 (CAX1) (Rubber 1 with Matthew Tongue) - Won 19-21 12-21 | 2026-01-23: vs Carlton Mixed 1 (CAX1) (Rubber 4 with Matthew Tongue) - Won 18-21 16-21 | 2026-01-23: vs Carlton Mixed 1 (CAX1) (Rubber 7 with Matthew Tongue) - Won 15-21 9-21 | 2026-01-28: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 2 with Bestin Joseph) - Won 21-15 21-8 | 2026-01-28: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 9 with Bestin Joseph) - Won 21-13 21-11 | 2026-02-04: vs Beeston Valley Womens 1 (BVW1) (Rubber 2 with Michelle Jackson) - Won 21-18 21-13 | 2026-02-04: vs Beeston Valley Womens 1 (BVW1) (Rubber 4 with Michelle Jackson) - Won 21-15 21-14 | 2026-02-04: vs Beeston Valley Womens 1 (BVW1) (Rubber 9 with Michelle Jackson) - Won 21-13 21-10 | 2026-02-18: vs Carlton Womens 1 (CAW1) (Rubber 2 with Christine Gleave) - Won 21-14 21-10 | 2026-02-18: vs Carlton Womens 1 (CAW1) (Rubber 9 with Christine Gleave) - Won 21-13 21-14 | 2026-02-25: vs Crusader Mixed 2 (CRX2) (Rubber 4 with Jamie Gamble) - Won 21-14 21-10 | 2026-02-25: vs Crusader Mixed 2 (CRX2) (Rubber 9 with Jamie Gamble) - Won 21-19 21-10 | 2026-03-06: vs Beeston Fields Womens 2 (BFW2) (Rubber 6 with Conny Fung) - Won 13-21 7-21 | 2026-03-16: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 5 with Nick Gill) - Won 9-21 13-21 | 2026-03-16: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 8 with Nick Gill) - Won 10-21 21-23 | 2026-03-25: vs Southwell Womens 1 (SO1) (Rubber 2 with Jane Smith) - Won 13-21 18-21 | 2026-03-25: vs Southwell Womens 1 (SO1) (Rubber 5 with Jane Smith) - Won 17-21 12-21 | 2026-03-27: vs Beeston Fields Mixed 3 (BFMX3) (Rubber 4 with Matthew Tongue) - Won 15-21 17-21 | 2026-04-18: vs Crusader Womens 1 (CRW1) (Rubber 2 with Jane Smith) - Won 13-21 12-21 | 2026-04-18: vs Crusader Womens 1 (CRW1) (Rubber 5 with Jane Smith) - Won 18-21 12-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Anna Owen",
+          "player_2": null,
+          "award_value": 21,
+          "award_details": "Played in 21 matches | Played 61 rubbers | Total points: 4906"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Sarah Heathcote",
+          "player_2": null,
+          "award_value": 29,
+          "award_details": "Conceded 744 points across 26 rubbers (avg: 28.6 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Joshua Guest",
+          "player_2": "Matthew Tongue",
+          "award_value": 67,
+          "award_details": "2026-04-22 at Bingham Leisure Centre vs Rolls Royce Open 2 (RRO2) (Score: 21-13 24-26 22-20, Total points: 67, Game 3: 22)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Michelle Jackson",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-12-03: vs East Leake Womens 2 (ELW2) (Rubber 4 with Anna Owen) - Defeated Beverley Dolman from Mixed Premier (5 divisions higher), margin: +22 | 2026-02-18: vs Carlton Womens 1 (CAW1) (Rubber 5 with Amelia Simpson) - Defeated Jessica Alice Clarke from Mixed Division 1 (4 divisions higher), margin: +8 | 2026-01-26: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 3 with Jamie Gamble) - Defeated Tessa Key from Mixed Division 3 (2 divisions higher), margin: +9 | 2026-01-26: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 6 with Jamie Gamble) - Defeated Graeme Wallace from Mixed Division 3 (2 divisions higher), margin: +26 | 2026-02-04: vs Beeston Valley Womens 1 (BVW1) (Rubber 2 with Anna Owen) - Defeated Tessa Key from Mixed Division 3 (2 divisions higher), margin: +11 | 2026-02-04: vs Beeston Valley Womens 1 (BVW1) (Rubber 9 with Anna Owen) - Defeated Caroline Bartliff from Mixed Division 3 (2 divisions higher), margin: +19 | 2026-04-18: vs Crusader Womens 1 (CRW1) (Rubber 3 with Sarah Heathcote) - Defeated Sally Moore from Mixed Division 3 (2 divisions higher), margin: +9"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Sarah Heathcote",
+          "player_2": null,
+          "award_value": 24,
+          "award_details": "2025-11-04: vs North Notts Social Mixed 1 (NNX1) (Rubber 3 with Christopher Nunn) | 2025-11-04: vs North Notts Social Mixed 1 (NNX1) (Rubber 6 with Christopher Nunn) | 2025-11-04: vs North Notts Social Mixed 1 (NNX1) (Rubber 9 with Christopher Nunn) | 2025-11-12: vs Chilwell Womens 1 (CHW1) (Rubber 1 with Christine Gleave) | 2025-11-12: vs Chilwell Womens 1 (CHW1) (Rubber 6 with Christine Gleave) | 2025-11-12: vs Chilwell Womens 1 (CHW1) (Rubber 8 with Christine Gleave) | 2025-11-24: vs Freddie's Mixed 2 (FGX2) (Rubber 1 with Nick Gill) | 2025-11-24: vs Freddie's Mixed 2 (FGX2) (Rubber 7 with Nick Gill) | 2025-12-03: vs East Leake Womens 2 (ELW2) (Rubber 3 with Christine Gleave) | 2025-12-03: vs East Leake Womens 2 (ELW2) (Rubber 6 with Christine Gleave) | 2025-12-03: vs East Leake Womens 2 (ELW2) (Rubber 9 with Christine Gleave) | 2026-01-26: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 2 with Christopher Nunn) | 2026-01-26: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 5 with Christopher Nunn) | 2026-01-26: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 8 with Christopher Nunn) | 2026-02-04: vs Beeston Valley Womens 1 (BVW1) (Rubber 3 with Christine Gleave) | 2026-02-04: vs Beeston Valley Womens 1 (BVW1) (Rubber 5 with Christine Gleave) | 2026-02-04: vs Beeston Valley Womens 1 (BVW1) (Rubber 7 with Christine Gleave) | 2026-03-11: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 2 with James Pugh) | 2026-03-11: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 4 with James Pugh) | 2026-03-11: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 9 with James Pugh) | 2026-04-15: vs Beeston Braves Mixed 2 (BBMX2) (Rubber 1 with James Pugh) | 2026-04-15: vs Beeston Braves Mixed 2 (BBMX2) (Rubber 6 with James Pugh) | 2026-04-15: vs Beeston Braves Mixed 2 (BBMX2) (Rubber 8 with James Pugh) | 2026-04-18: vs Crusader Womens 1 (CRW1) (Rubber 3 with Michelle Jackson)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Anna Owen",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2025-12-03: vs East Leake Womens 2 (ELW2) (Rubber 7 with Michelle Jackson) - Lost Game 1 20-22, Won Game 2 21-8, Won Game 3 21-13 | 2026-01-16: vs Chilwell Mixed 1 (CHX1) (Rubber 5 with Christopher Nunn) - Lost Game 1 17-21, Won Game 2 21-16, Won Game 3 21-19 | 2026-01-21: vs Forest Womens 1 (FOW1) (Rubber 5 with Amy Brumfitt) - Lost Game 1 15-21, Won Game 2 21-17, Won Game 3 21-12 | 2026-02-25: vs Crusader Mixed 2 (CRX2) (Rubber 2 with Jamie Gamble) - Lost Game 1 18-21, Won Game 2 21-19, Won Game 3 21-15 | 2026-03-16: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 2 with Nick Gill) - Lost Game 1 16-21, Won Game 2 21-16, Won Game 3 21-12 | 2026-03-27: vs Beeston Fields Mixed 3 (BFMX3) (Rubber 7 with Matthew Tongue) - Lost Game 1 16-21, Won Game 2 21-17, Won Game 3 21-15"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Amy Brumfitt",
+          "player_2": "Megan Attewell",
+          "award_value": 42,
+          "award_details": "Team: Bingham Womens 1 (BIW1) | vs Mapperley Park Womens 1 (MPW1) | Score: 21-0 21-0"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Jack Akehurst",
+          "player_2": "Livia Sebestova",
+          "award_value": 12,
+          "award_details": "2026-01-14: vs Southwell Mixed 1 (SOX1) (Rubber 2) - Won 21-11 21-7 | 2026-01-14: vs Southwell Mixed 1 (SOX1) (Rubber 9) - Won 21-15 21-9 | 2026-01-23: vs Carlton Mixed 1 (CAX1) (Rubber 2) - Won 17-21 18-21 | 2026-01-23: vs Carlton Mixed 1 (CAX1) (Rubber 5) - Won 14-21 16-21 | 2026-01-23: vs Carlton Mixed 1 (CAX1) (Rubber 8) - Won 17-21 16-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Anna Owen",
+          "player_2": null,
+          "award_value": 16,
+          "award_details": "2025-10-29: vs Mansfield Oaktree Womens 1 (MOW1) (Rubber 3 with Amy Brumfitt) - Game 2: 21-19 | 2025-11-04: vs North Notts Social Mixed 1 (NNX1) (Rubber 8 with Jamie Gamble) - Game 1: 22-20, Game 2: 21-19 | 2025-11-26: vs Mapperley Park Womens 1 (MPW1) (Rubber 7 with Conny Fung) - Game 2: 25-23 | 2025-12-07: vs Forest Mixed 3 (FOX3) (Rubber 8 with Paul Grimley) - Game 2: 21-19 | 2026-01-04: vs Arboretum Mixed 2 (ARMX2) (Rubber 1 with Jack Akehurst) - Game 1: 21-19 | 2026-01-04: vs Arboretum Mixed 2 (ARMX2) (Rubber 7 with Jack Akehurst) - Game 1: 26-24 | 2026-01-16: vs Chilwell Mixed 1 (CHX1) (Rubber 5 with Christopher Nunn) - Game 3: 21-19 | 2026-01-16: vs Chilwell Mixed 1 (CHX1) (Rubber 8 with Christopher Nunn) - Game 1: 21-19 | 2026-01-21: vs Forest Womens 1 (FOW1) (Rubber 3 with Amy Brumfitt) - Game 2: 24-22 | 2026-01-23: vs Carlton Mixed 1 (CAX1) (Rubber 1 with Matthew Tongue) - Game 1: 21-19 | 2026-02-25: vs Crusader Mixed 2 (CRX2) (Rubber 2 with Jamie Gamble) - Game 2: 21-19 | 2026-02-25: vs Crusader Mixed 2 (CRX2) (Rubber 9 with Jamie Gamble) - Game 1: 21-19 | 2026-03-06: vs Beeston Fields Womens 2 (BFW2) (Rubber 9 with Conny Fung) - Game 1: 22-20, Game 3: 21-19 | 2026-03-16: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 8 with Nick Gill) - Game 2: 23-21"
+        }
+      ]
+    },
+    "byron": {
+      "name": "Byron",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Steven Pincott",
+          "player_2": null,
+          "award_value": 21,
+          "award_details": "2025-10-14: vs North Notts Social Mixed 2 (NNX2) (Rubber 1 with Eleanor Giacometti) - Won 19-21 7-21 | 2025-10-14: vs North Notts Social Mixed 2 (NNX2) (Rubber 7 with Eleanor Giacometti) - Won 3-21 5-21 | 2025-11-03: vs Mapperley Park Open 1 (MPO1) (Rubber 6 with Alex Ramsey) - Won 20-22 19-21 | 2025-11-03: vs Mapperley Park Open 1 (MPO1) (Rubber 9 with Alex Ramsey) - Won 8-21 12-21 | 2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 2 with Liz Riviere) - Won 22-20 21-11 | 2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 4 with Liz Riviere) - Won 21-18 21-12 | 2025-12-02: vs Nottingham Para Mixed 1 (NPX1) (Rubber 1 with Rosemary Horn) - Won 16-21 16-21 | 2025-12-02: vs Nottingham Para Mixed 1 (NPX1) (Rubber 4 with Rosemary Horn) - Won 4-21 9-21 | 2025-12-02: vs Nottingham Para Mixed 1 (NPX1) (Rubber 7 with Rosemary Horn) - Won 8-21 11-21 | 2026-01-19: vs Crusader Mixed 3 (CRX3) (Rubber 2 with Eleanor Slack) - Won 21-18 21-12 | 2026-01-19: vs Crusader Mixed 3 (CRX3) (Rubber 4 with Eleanor Slack) - Won 21-7 21-16 | 2026-01-19: vs Crusader Mixed 3 (CRX3) (Rubber 9 with Eleanor Slack) - Won 21-13 21-9 | 2026-01-28: vs Bilborough Mixed 1 (BOX1) (Rubber 2 with Liz Riviere) - Won 17-21 16-21 | 2026-01-28: vs Bilborough Mixed 1 (BOX1) (Rubber 5 with Liz Riviere) - Won 14-21 14-21 | 2026-01-28: vs Bilborough Mixed 1 (BOX1) (Rubber 8 with Liz Riviere) - Won 9-21 11-21 | 2026-03-02: vs Chilwell Mixed 2 (CHX2) (Rubber 3 with Eleanor Slack) - Won 21-8 21-7 | 2026-03-02: vs Chilwell Mixed 2 (CHX2) (Rubber 5 with Eleanor Slack) - Won 21-12 21-13 | 2026-03-02: vs Chilwell Mixed 2 (CHX2) (Rubber 7 with Eleanor Slack) - Won 21-17 21-17 | 2026-03-09: vs David Lloyd Aspley Open 1 (DLO1) (Rubber 2 with Peter Buckby) - Won 21-17 22-20 | 2026-03-09: vs David Lloyd Aspley Open 1 (DLO1) (Rubber 9 with Peter Buckby) - Won 21-12 21-19 | 2026-04-15: vs East Leake Open 3 (ELO3) (Rubber 1 with Peter Buckby) - Won 15-21 12-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Steven Pincott",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "Played in 15 matches | Played 45 rubbers | Total points: 3877"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Eleanor Slack",
+          "player_2": null,
+          "award_value": 29,
+          "award_details": "Conceded 264 points across 9 rubbers (avg: 29.3 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Kamrul Hasan",
+          "player_2": "Peter Buckby",
+          "award_value": 65,
+          "award_details": "2026-02-23 at Ravenshead Leisure Centre vs Rushcliffe Arena Open 1 (RAO1) (Score: 19-21 21-16 25-23, Total points: 65, Game 3: 25)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Peter Buckby",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-04-15: vs East Leake Open 3 (ELO3) (Rubber 7 with Steven Pincott) - Defeated Justin Staves from Open Premier (4 divisions higher), margin: +6"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Ben Brown",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-11-12: vs Bingham Open 2 (BIO2) (Rubber 4 with Boobalan Selvakumar) | 2025-11-12: vs Bingham Open 2 (BIO2) (Rubber 7 with Boobalan Selvakumar) | 2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 1 with Serena Midha) | 2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 6 with Serena Midha) | 2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 8 with Serena Midha) | 2026-01-28: vs Bilborough Mixed 1 (BOX1) (Rubber 1 with Serena Midha) | 2026-01-28: vs Bilborough Mixed 1 (BOX1) (Rubber 4 with Serena Midha) | 2026-01-28: vs Bilborough Mixed 1 (BOX1) (Rubber 7 with Serena Midha) | 2026-02-23: vs Freddie's Mixed 1 (FGX1) (Rubber 2 with Serena Midha) | 2026-02-23: vs Freddie's Mixed 1 (FGX1) (Rubber 5 with Serena Midha) | 2026-02-23: vs Freddie's Mixed 1 (FGX1) (Rubber 8 with Serena Midha) | 2026-03-06: vs Carlton Open 1 (CAO1) (Rubber 3 with Stephen Kirby) | 2026-03-06: vs Carlton Open 1 (CAO1) (Rubber 6 with Stephen Kirby) | 2026-03-06: vs Carlton Open 1 (CAO1) (Rubber 9 with Stephen Kirby) | 2026-04-13: vs Forest Open 2 (FOO2) (Rubber 3 with Stephen Kirby)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Ben Brown",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2025-11-03: vs Mapperley Park Open 1 (MPO1) (Rubber 7 with Richard Cronin) - Lost Game 1 15-21, Won Game 2 21-16, Won Game 3 21-18 | 2025-11-12: vs Bingham Open 2 (BIO2) (Rubber 4 with Boobalan Selvakumar) - Lost Game 1 16-21, Won Game 2 21-18, Won Game 3 21-18 | 2025-11-12: vs Bingham Open 2 (BIO2) (Rubber 7 with Boobalan Selvakumar) - Lost Game 1 14-21, Won Game 2 21-19, Won Game 3 21-19 | 2026-02-23: vs Freddie's Mixed 1 (FGX1) (Rubber 8 with Serena Midha) - Lost Game 1 15-21, Won Game 2 23-21, Won Game 3 21-18 | 2026-04-13: vs Forest Open 2 (FOO2) (Rubber 3 with Stephen Kirby) - Lost Game 1 20-22, Won Game 2 21-13, Won Game 3 21-19 | 2026-04-27: vs Arboretum Open 1 (ARO1) (Rubber 1 with Boobalan Selvakumar) - Lost Game 1 14-21, Won Game 2 21-19, Won Game 3 21-11"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Eleanor Giacometti",
+          "player_2": "Steven Pincott",
+          "award_value": 34,
+          "award_details": "Team: Byron Mixed 2 (BYX2) | vs North Notts Social Mixed 2 (NNX2) | Score: 3-21 5-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Julie Gater",
+          "player_2": "Matthew Adcock",
+          "award_value": 8,
+          "award_details": "2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 3) - Won 21-9 21-19 | 2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 5) - Won 21-14 21-14 | 2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 7) - Won 21-11 21-14 | 2026-02-23: vs Freddie's Mixed 1 (FGX1) (Rubber 6) - Won 15-21 15-21 | 2026-02-23: vs Freddie's Mixed 1 (FGX1) (Rubber 9) - Won 22-24 15-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Matthew Adcock",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-10-20: vs East Leake Mixed 2 (ELX2) (Rubber 1 with Sindy Midha) - Game 1: 21-19 | 2025-10-20: vs East Leake Mixed 2 (ELX2) (Rubber 6 with Sindy Midha) - Game 2: 21-19 | 2025-10-20: vs East Leake Mixed 2 (ELX2) (Rubber 8 with Sindy Midha) - Game 1: 21-19, Game 3: 21-19 | 2025-11-12: vs Bingham Open 2 (BIO2) (Rubber 3 with Rob Denton) - Game 2: 21-19 | 2025-11-12: vs Bingham Open 2 (BIO2) (Rubber 9 with Rob Denton) - Game 2: 22-20 | 2025-11-17: vs Mapperley Park Mixed 2 (MPX2) (Rubber 3 with Julie Gater) - Game 2: 21-19 | 2026-01-28: vs Bilborough Mixed 1 (BOX1) (Rubber 3 with Eleanor Giacometti) - Game 2: 21-19 | 2026-01-28: vs Bilborough Mixed 1 (BOX1) (Rubber 6 with Eleanor Giacometti) - Game 3: 21-19 | 2026-02-23: vs Freddie's Mixed 1 (FGX1) (Rubber 3 with Julie Gater) - Game 3: 21-19 | 2026-02-23: vs Freddie's Mixed 1 (FGX1) (Rubber 9 with Julie Gater) - Game 1: 24-22 | 2026-02-28: vs Crusader Mixed 1 (CRX1) (Rubber 2 with Julie Gater) - Game 2: 22-20 | 2026-04-27: vs Arboretum Open 1 (ARO1) (Rubber 3 with Andrew Greening) - Game 1: 21-19 | 2026-04-27: vs Arboretum Open 1 (ARO1) (Rubber 5 with Andrew Greening) - Game 2: 21-19 | 2026-04-27: vs Arboretum Open 1 (ARO1) (Rubber 7 with Andrew Greening) - Game 1: 21-19"
+        }
+      ]
+    },
+    "carlton": {
+      "name": "Carlton",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Andrew Ellis",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-11-07: vs Southwell Open 1 (SOO1) (Rubber 9 with Tom Clarke) - Won 23-21 21-17 | 2025-11-14: vs Arboretum Mixed 1 (ARMX1) (Rubber 6 with Tammy Beadle) - Won 21-14 21-17 | 2025-12-10: vs Bilborough Open 1 (BOO1) (Rubber 4 with Tom Clarke) - Won 15-21 9-21 | 2025-12-10: vs Bilborough Open 1 (BOO1) (Rubber 7 with Tom Clarke) - Won 8-21 15-21 | 2025-12-20: vs Crusader Open 1 (CRO1) (Rubber 7 with Tom Clarke) - Won 13-21 14-21 | 2026-01-09: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 9 with Louise Bolam) - Won 21-8 21-17 | 2026-01-30: vs Mapperley Park Mixed 1 (MPX1) (Rubber 2 with Louise Bolam) - Won 21-13 21-9 | 2026-02-06: vs Beeston Valley Open 1 (BVO1) (Rubber 1 with Tom Clarke) - Won 21-18 21-16 | 2026-02-06: vs Beeston Valley Open 1 (BVO1) (Rubber 6 with Tom Clarke) - Won 21-17 21-11 | 2026-02-06: vs Beeston Valley Open 1 (BVO1) (Rubber 8 with Tom Clarke) - Won 21-10 21-19 | 2026-03-06: vs Byron Open 1 (BYO1) (Rubber 5 with Tom Clarke) - Won 21-13 21-9 | 2026-03-13: vs Arboretum Open 3 (ARO3) (Rubber 2 with Tom Clarke) - Won 21-9 23-21 | 2026-03-13: vs Arboretum Open 3 (ARO3) (Rubber 9 with Tom Clarke) - Won 21-12 21-18 | 2026-03-15: vs Southwell Mixed 1 (SOX1) (Rubber 5 with Louise Bolam) - Won 9-21 12-21 | 2026-03-20: vs Mapperley Park Open 3 (MPO3) (Rubber 9 with Tom Clarke) - Won 22-20 23-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Andrew Ellis",
+          "player_2": null,
+          "award_value": 18,
+          "award_details": "Played in 18 matches | Played 54 rubbers | Total points: 4349"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Michelle La Roche",
+          "player_2": null,
+          "award_value": 32,
+          "award_details": "Conceded 192 points across 6 rubbers (avg: 32.0 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Jasmeet Kaler",
+          "player_2": "Louise Bolam",
+          "award_value": 62,
+          "award_details": "2026-01-16 at Carlton Forum Leisure Centre vs Southwell Womens 1 (SO1) (Score: 21-19 18-21 23-21, Total points: 62, Game 3: 23)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Sophie Donaldson",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2026-02-09: vs Beeston Valley Womens 1 (BVW1) (Rubber 3 with Michelle La Roche) - Defeated Caroline Bartliff from Mixed Division 3 (3 divisions higher), margin: +6 | 2026-02-09: vs Beeston Valley Womens 1 (BVW1) (Rubber 6 with Michelle La Roche) - Defeated Tessa Key from Mixed Division 3 (3 divisions higher), margin: +19"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Jasmeet Kaler",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2026-01-21: vs East Leake Womens 2 (ELW2) (Rubber 1 with Louise Bolam) | 2026-01-21: vs East Leake Womens 2 (ELW2) (Rubber 4 with Louise Bolam) | 2026-01-21: vs East Leake Womens 2 (ELW2) (Rubber 7 with Louise Bolam) | 2026-02-09: vs Beeston Valley Womens 1 (BVW1) (Rubber 1 with Louise Bolam) | 2026-02-09: vs Beeston Valley Womens 1 (BVW1) (Rubber 4 with Louise Bolam) | 2026-02-09: vs Beeston Valley Womens 1 (BVW1) (Rubber 7 with Louise Bolam)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Jessica Alice Clarke",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-01-16: vs Southwell Womens 1 (SO1) (Rubber 8 with Becky Newman) - Lost Game 1 11-21, Won Game 2 21-19, Won Game 3 21-16 | 2026-01-30: vs Mapperley Park Mixed 1 (MPX1) (Rubber 6 with John Tilling) - Lost Game 1 11-21, Won Game 2 21-14, Won Game 3 21-17 | 2026-01-30: vs Mapperley Park Mixed 1 (MPX1) (Rubber 8 with John Tilling) - Lost Game 1 17-21, Won Game 2 21-14, Won Game 3 21-12 | 2026-02-09: vs Beeston Valley Womens 1 (BVW1) (Rubber 8 with Becky Newman) - Lost Game 1 19-21, Won Game 2 21-19, Won Game 3 21-9"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Can Truong",
+          "player_2": "Alex Ho",
+          "award_value": 42,
+          "award_details": "Team: Carlton Open 1 (CAO1) | vs Mapperley Park Open 1 (MPO1) | Score: 0-21 0-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Andrew Ellis",
+          "player_2": "Tom Clarke",
+          "award_value": 11,
+          "award_details": "2025-11-07: vs Southwell Open 1 (SOO1) (Rubber 9) - Won 23-21 21-17 | 2025-12-10: vs Bilborough Open 1 (BOO1) (Rubber 4) - Won 15-21 9-21 | 2025-12-10: vs Bilborough Open 1 (BOO1) (Rubber 7) - Won 8-21 15-21 | 2025-12-20: vs Crusader Open 1 (CRO1) (Rubber 7) - Won 13-21 14-21 | 2026-02-06: vs Beeston Valley Open 1 (BVO1) (Rubber 1) - Won 21-18 21-16"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Andrew Ellis",
+          "player_2": null,
+          "award_value": 11,
+          "award_details": "2025-11-07: vs Southwell Open 1 (SOO1) (Rubber 9 with Tom Clarke) - Game 1: 23-21 | 2025-11-09: vs Arboretum Open 1 (ARO1) (Rubber 4 with Tom Clarke) - Game 1: 24-22 | 2025-12-20: vs Crusader Open 1 (CRO1) (Rubber 1 with Tom Clarke) - Game 1: 21-19 | 2026-01-30: vs Mapperley Park Mixed 1 (MPX1) (Rubber 4 with Louise Bolam) - Game 2: 21-19 | 2026-02-06: vs Beeston Valley Open 1 (BVO1) (Rubber 8 with Tom Clarke) - Game 2: 21-19 | 2026-03-06: vs Byron Open 1 (BYO1) (Rubber 7 with Tom Clarke) - Game 2: 23-21 | 2026-03-13: vs Arboretum Open 3 (ARO3) (Rubber 2 with Tom Clarke) - Game 2: 23-21 | 2026-03-20: vs Mapperley Park Open 3 (MPO3) (Rubber 2 with Tom Clarke) - Game 2: 21-19 | 2026-03-20: vs Mapperley Park Open 3 (MPO3) (Rubber 9 with Tom Clarke) - Game 1: 22-20, Game 2: 23-21 | 2026-04-17: vs Beeston Fields Mixed 3 (BFMX3) (Rubber 1 with Louise Bolam) - Game 1: 21-19"
+        }
+      ]
+    },
+    "chilwell": {
+      "name": "Chilwell",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Albert Salimov",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2025-10-31: vs Forest Open 4 (FOO4) (Rubber 2 with Sam Murphy) - Won 21-10 21-17 | 2025-11-07: vs Radcliffe Knights Mixed 2 (RKX2) (Rubber 2 with Gillian Maloney) - Won 21-13 21-13 | 2025-11-07: vs Radcliffe Knights Mixed 2 (RKX2) (Rubber 9 with Gillian Maloney) - Won 21-13 21-12 | 2025-11-26: vs East Leake Open 3 (ELO3) (Rubber 2 with Sam Murphy) - Won 16-21 18-21 | 2025-11-26: vs East Leake Open 3 (ELO3) (Rubber 8 with Sam Murphy) - Won 13-21 15-21 | 2026-01-24: vs Crusader Mixed 2 (CRX2) (Rubber 3 with Jacqui Burton) - Won 20-22 18-21 | 2026-01-24: vs Crusader Mixed 2 (CRX2) (Rubber 6 with Jacqui Burton) - Won 16-21 9-21 | 2026-01-24: vs Crusader Mixed 2 (CRX2) (Rubber 9 with Jacqui Burton) - Won 21-23 14-21 | 2026-03-02: vs Byron Mixed 2 (BYX2) (Rubber 1 with Jacqui Burton) - Won 18-21 18-21 | 2026-03-20: vs Nottingham Para Mixed 1 (NPX1) (Rubber 3 with Eileen Clarke) - Won 21-5 21-5 | 2026-03-20: vs Nottingham Para Mixed 1 (NPX1) (Rubber 5 with Eileen Clarke) - Won 21-6 21-5 | 2026-03-20: vs Nottingham Para Mixed 1 (NPX1) (Rubber 7 with Eileen Clarke) - Won 21-16 21-14"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Jacqui Burton",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "Played in 12 matches | Played 35 rubbers | Total points: 2797"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Eileen Clarke",
+          "player_2": null,
+          "award_value": 36,
+          "award_details": "Conceded 542 points across 15 rubbers (avg: 36.1 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Julie Peart",
+          "player_2": "Vijesh Poruthikkottu Chirakkil",
+          "award_value": 58,
+          "award_details": "2026-01-16 at Chilwell Olympia Sports Centre vs Bingham Mixed 3 (BIX3) (Score: 21-18 14-21 23-21, Total points: 58, Game 3: 23)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Albert Salimov",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2025-11-26: vs East Leake Open 3 (ELO3) (Rubber 8 with Sam Murphy) - Defeated Justin Staves from Open Premier (4 divisions higher), margin: +14 | 2026-03-02: vs Byron Mixed 2 (BYX2) (Rubber 4 with Jacqui Burton) - Defeated Mujahid Ali from Open Division 1 (3 divisions higher), margin: +12 | 2025-11-01: vs Crusader Mixed 3 (CRX3) (Rubber 2 with Gillian Maloney) - Defeated Craig Eaton from Open Division 3 (1 division higher), margin: +2 | 2026-01-24: vs Crusader Mixed 2 (CRX2) (Rubber 9 with Jacqui Burton) - Defeated Andy Watts from Open Division 3 (1 division higher), margin: +9 | 2026-03-23: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 5 with Lesley Griffin) - Defeated Prasanna Adhyapak from Open Division 3 (1 division higher), margin: +4"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Vijesh Poruthikkottu Chirakkil",
+          "player_2": null,
+          "award_value": 9,
+          "award_details": "2026-03-13: vs Byron Open 2 (BYO2) (Rubber 1 with Praveen Kumar Prabhakaran) | 2026-03-13: vs Byron Open 2 (BYO2) (Rubber 8 with Praveen Kumar Prabhakaran) | 2026-03-23: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 1 with Julie Peart) | 2026-03-23: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 4 with Julie Peart) | 2026-03-23: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 7 with Julie Peart) | 2026-03-27: vs Radcliffe Knights Open 1 (RKO1) (Rubber 1 with Praveen Kumar Prabhakaran) | 2026-03-27: vs Radcliffe Knights Open 1 (RKO1) (Rubber 6 with Praveen Kumar Prabhakaran) | 2026-03-27: vs Radcliffe Knights Open 1 (RKO1) (Rubber 8 with Praveen Kumar Prabhakaran) | 2026-04-02: vs Forest Mixed 3 (FOX3) (Rubber 1 with Julie Peart)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Lesley Griffin",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-12-07: vs Arboretum Mixed 2 (ARMX2) (Rubber 8 with Ali Zahir) - Lost Game 1 17-21, Won Game 2 21-18, Won Game 3 21-12 | 2026-02-13: vs East Leake Womens 2 (ELW2) (Rubber 3 with Julie Peart) - Lost Game 1 18-21, Won Game 2 21-15, Won Game 3 21-17 | 2026-02-13: vs East Leake Womens 2 (ELW2) (Rubber 5 with Julie Peart) - Lost Game 1 21-23, Won Game 2 21-12, Won Game 3 21-10 | 2026-02-20: vs Southwell Womens 1 (SO1) (Rubber 8 with Julie Peart) - Lost Game 1 8-21, Won Game 2 21-9, Won Game 3 21-15 | 2026-03-23: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 5 with Albert Salimov) - Lost Game 1 17-21, Won Game 2 22-20, Won Game 3 21-15"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Eileen Clarke",
+          "player_2": "Albert Salimov",
+          "award_value": 32,
+          "award_details": "Team: Chilwell Mixed 2 (CHX2) | vs Nottingham Para Mixed 1 (NPX1) | Score: 21-5 21-5"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Praveen Kumar Prabhakaran",
+          "player_2": "Vijesh Poruthikkottu Chirakkil",
+          "award_value": 7,
+          "award_details": "2025-10-10: vs Rushcliffe Arena Open 1 (RAO1) (Rubber 1) - Won 10-21 17-21 | 2025-10-31: vs Forest Open 4 (FOO4) (Rubber 1) - Won 21-7 21-10 | 2025-10-31: vs Forest Open 4 (FOO4) (Rubber 8) - Won 21-15 21-10 | 2026-03-13: vs Byron Open 2 (BYO2) (Rubber 1) - Won 26-24 21-19 | 2026-03-27: vs Radcliffe Knights Open 1 (RKO1) (Rubber 1) - Won 21-17 21-13"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Vijesh Poruthikkottu Chirakkil",
+          "player_2": null,
+          "award_value": 11,
+          "award_details": "2025-12-07: vs Arboretum Mixed 2 (ARMX2) (Rubber 1 with Julie Peart) - Game 2: 21-19 | 2025-12-07: vs Arboretum Mixed 2 (ARMX2) (Rubber 7 with Julie Peart) - Game 1: 21-19, Game 3: 21-19 | 2026-01-16: vs Bingham Mixed 3 (BIX3) (Rubber 2 with Julie Peart) - Game 1: 22-20 | 2026-01-16: vs Bingham Mixed 3 (BIX3) (Rubber 9 with Julie Peart) - Game 3: 23-21 | 2026-01-24: vs Crusader Mixed 2 (CRX2) (Rubber 7 with Julie Peart) - Game 1: 22-20 | 2026-03-13: vs Byron Open 2 (BYO2) (Rubber 1 with Praveen Kumar Prabhakaran) - Game 1: 26-24, Game 2: 21-19 | 2026-03-23: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 4 with Julie Peart) - Game 3: 21-19 | 2026-03-27: vs Radcliffe Knights Open 1 (RKO1) (Rubber 6 with Praveen Kumar Prabhakaran) - Game 2: 21-19 | 2026-03-27: vs Radcliffe Knights Open 1 (RKO1) (Rubber 8 with Praveen Kumar Prabhakaran) - Game 2: 24-22"
+        }
+      ]
+    },
+    "crusader": {
+      "name": "Crusader",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Karen Gleave",
+          "player_2": null,
+          "award_value": 21,
+          "award_details": "2025-09-29: vs Freddie's Womens 1 (FGW1) (Rubber 7 with Nathalie Woolsey Butler) - Won 16-21 13-21 | 2025-10-11: vs Freddie's Mixed 1 (FGX1) (Rubber 8 with John Fletcher) - Won 21-13 21-10 | 2025-10-29: vs Bilborough Mixed 1 (BOX1) (Rubber 1 with John Fletcher) - Won 17-21 9-21 | 2025-10-29: vs Bilborough Mixed 1 (BOX1) (Rubber 7 with John Fletcher) - Won 12-21 7-21 | 2025-11-08: vs East Leake Mixed 2 (ELX2) (Rubber 1 with John Fletcher) - Won 21-15 22-20 | 2025-11-08: vs East Leake Mixed 2 (ELX2) (Rubber 8 with John Fletcher) - Won 21-16 21-16 | 2025-12-05: vs Chilwell Womens 1 (CHW1) (Rubber 1 with Sophie Wileen) - Won 15-21 17-21 | 2025-12-05: vs Chilwell Womens 1 (CHW1) (Rubber 4 with Sophie Wileen) - Won 10-21 17-21 | 2025-12-05: vs Chilwell Womens 1 (CHW1) (Rubber 7 with Sophie Wileen) - Won 14-21 10-21 | 2026-02-04: vs East Leake Womens 2 (ELW2) (Rubber 1 with Alice Moffatt) - Won 14-21 14-21 | 2026-02-04: vs East Leake Womens 2 (ELW2) (Rubber 4 with Alice Moffatt) - Won 10-21 9-21 | 2026-02-04: vs East Leake Womens 2 (ELW2) (Rubber 7 with Alice Moffatt) - Won 0-21 0-21 | 2026-02-20: vs Carlton Mixed 2 (CAX2) (Rubber 1 with John Fletcher) - Won 11-21 6-21 | 2026-02-20: vs Carlton Mixed 2 (CAX2) (Rubber 4 with John Fletcher) - Won 12-21 14-21 | 2026-02-20: vs Carlton Mixed 2 (CAX2) (Rubber 7 with John Fletcher) - Won 13-21 14-21 | 2026-03-07: vs Beeston Valley Womens 1 (BVW1) (Rubber 8 with Sophie Wileen) - Won 21-10 21-11 | 2026-03-09: vs Mapperley Park Mixed 2 (MPX2) (Rubber 4 with John Fletcher) - Won 16-21 18-21 | 2026-03-14: vs Southwell Womens 1 (SO1) (Rubber 6 with Alice Moffatt) - Won 21-10 21-9 | 2026-04-18: vs Bingham Womens 2 (BIW2) (Rubber 1 with Claire Whitmore) - Won 21-17 21-18 | 2026-04-18: vs Bingham Womens 2 (BIW2) (Rubber 6 with Claire Whitmore) - Won 21-15 21-17 | 2026-04-18: vs Bingham Womens 2 (BIW2) (Rubber 8 with Claire Whitmore) - Won 22-20 22-20"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Michael Bunney",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "Played in 15 matches | Played 45 rubbers | Total points: 3729"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Claire Whitmore",
+          "player_2": null,
+          "award_value": 34,
+          "award_details": "Conceded 309 points across 9 rubbers (avg: 34.3 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Sally Moore",
+          "player_2": "Michael Bunney",
+          "award_value": 63,
+          "award_details": "2025-11-29 at Cotgrave Leisure Centre vs Arboretum Mixed 2 (ARMX2) (Score: 15-21 26-24 22-20, Total points: 63, Game 3: 22)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Sophie Wileen",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-01-19: vs Byron Mixed 2 (BYX2) (Rubber 6 with Nok Hei Alvin Lo) - Defeated Eleanor Giacometti from Mixed Division 2 (4 divisions higher), margin: +2 | 2025-11-01: vs Chilwell Mixed 2 (CHX2) (Rubber 7 with Nok Hei Alvin Lo) - Defeated Ben Wheatcroft from Mixed Division 3 (3 divisions higher), margin: +1 | 2026-03-07: vs Beeston Valley Womens 1 (BVW1) (Rubber 8 with Karen Gleave) - Defeated Tessa Key from Mixed Division 3 (3 divisions higher), margin: +21"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Karen Gleave",
+          "player_2": null,
+          "award_value": 11,
+          "award_details": "2025-11-08: vs East Leake Mixed 2 (ELX2) (Rubber 8 with John Fletcher) | 2025-12-05: vs Chilwell Womens 1 (CHW1) (Rubber 1 with Sophie Wileen) | 2025-12-05: vs Chilwell Womens 1 (CHW1) (Rubber 4 with Sophie Wileen) | 2025-12-05: vs Chilwell Womens 1 (CHW1) (Rubber 7 with Sophie Wileen) | 2026-02-04: vs East Leake Womens 2 (ELW2) (Rubber 1 with Alice Moffatt) | 2026-02-04: vs East Leake Womens 2 (ELW2) (Rubber 4 with Alice Moffatt) | 2026-02-04: vs East Leake Womens 2 (ELW2) (Rubber 7 with Alice Moffatt) | 2026-02-20: vs Carlton Mixed 2 (CAX2) (Rubber 1 with John Fletcher) | 2026-02-20: vs Carlton Mixed 2 (CAX2) (Rubber 4 with John Fletcher) | 2026-02-20: vs Carlton Mixed 2 (CAX2) (Rubber 7 with John Fletcher) | 2026-02-28: vs Byron Mixed 1 (BYX1) (Rubber 1 with John Fletcher)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "John Fletcher",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-10-19: vs Arboretum Open 3 (ARO3) (Rubber 5 with Jerry Deacon) - Lost Game 1 20-22, Won Game 2 21-17, Won Game 3 21-12 | 2025-10-19: vs Arboretum Open 3 (ARO3) (Rubber 8 with Jerry Deacon) - Lost Game 1 14-21, Won Game 2 21-15, Won Game 3 21-16 | 2025-10-29: vs Bilborough Mixed 1 (BOX1) (Rubber 4 with Karen Gleave) - Lost Game 1 16-21, Won Game 2 21-14, Won Game 3 21-17 | 2025-12-20: vs Carlton Open 2 (CAO2) (Rubber 2 with Jerry Deacon) - Lost Game 1 23-25, Won Game 2 21-16, Won Game 3 21-14 | 2026-01-18: vs Southwell Open 1 (SOO1) (Rubber 7 with Adrian Mateo) - Lost Game 1 17-21, Won Game 2 21-16, Won Game 3 21-7"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Andy Watts",
+          "player_2": "Clark Thornton",
+          "award_value": 42,
+          "award_details": "Team: Crusader Open 1 (CRO1) | vs Carlton Open 2 (CAO2) | Score: 21-0 21-0"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "John Fletcher",
+          "player_2": "Karen Gleave",
+          "award_value": 9,
+          "award_details": "2025-10-11: vs Freddie's Mixed 1 (FGX1) (Rubber 8) - Won 21-13 21-10 | 2025-10-29: vs Bilborough Mixed 1 (BOX1) (Rubber 1) - Won 17-21 9-21 | 2025-10-29: vs Bilborough Mixed 1 (BOX1) (Rubber 7) - Won 12-21 7-21 | 2025-11-08: vs East Leake Mixed 2 (ELX2) (Rubber 1) - Won 21-15 22-20 | 2025-11-08: vs East Leake Mixed 2 (ELX2) (Rubber 8) - Won 21-16 21-16"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Michael Bunney",
+          "player_2": null,
+          "award_value": 13,
+          "award_details": "2025-10-19: vs Arboretum Open 3 (ARO3) (Rubber 7 with Craig Eaton) - Game 3: 23-21 | 2025-10-29: vs Bilborough Mixed 1 (BOX1) (Rubber 3 with Nathalie Woolsey Butler) - Game 2: 21-19 | 2025-11-08: vs East Leake Mixed 2 (ELX2) (Rubber 7 with Yvonne Orchard) - Game 1: 21-19 | 2025-11-26: vs Bilborough Open 1 (BOO1) (Rubber 3 with Craig Eaton) - Game 2: 21-19 | 2025-11-29: vs Arboretum Mixed 2 (ARMX2) (Rubber 9 with Sally Moore) - Game 2: 26-24, Game 3: 22-20 | 2025-12-20: vs Carlton Open 2 (CAO2) (Rubber 5 with Craig Eaton) - Game 2: 24-22 | 2026-01-18: vs Southwell Open 1 (SOO1) (Rubber 3 with Craig Eaton) - Game 2: 21-19 | 2026-01-31: vs Mapperley Park Open 3 (MPO3) (Rubber 7 with Craig Eaton) - Game 2: 22-20, Game 3: 23-21 | 2026-02-20: vs Carlton Mixed 2 (CAX2) (Rubber 5 with Nathalie Woolsey Butler) - Game 1: 22-20 | 2026-02-20: vs Carlton Mixed 2 (CAX2) (Rubber 8 with Nathalie Woolsey Butler) - Game 3: 22-20 | 2026-02-28: vs Byron Mixed 1 (BYX1) (Rubber 9 with Nathalie Woolsey Butler) - Game 2: 21-19"
+        }
+      ]
+    },
+    "david-lloyd-aspley": {
+      "name": "David Lloyd Aspley",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Adnan Aslam",
+          "player_2": null,
+          "award_value": 22,
+          "award_details": "2025-11-02: vs Safari Badminton Open 4 (SBO4) (Rubber 3 with Riaz Rashid) - Won 10-21 17-21 | 2025-11-02: vs Safari Badminton Open 4 (SBO4) (Rubber 6 with Riaz Rashid) - Won 19-21 16-21 | 2025-11-02: vs Safari Badminton Open 4 (SBO4) (Rubber 9 with Riaz Rashid) - Won 9-21 13-21 | 2025-11-14: vs Rushcliffe Arena Open 2 (RAO2) (Rubber 8 with Riaz Rashid) - Won 21-10 21-12 | 2025-11-20: vs West Bridgford Open 3 (SGO3) (Rubber 2 with Riaz Rashid) - Won 20-22 16-21 | 2025-11-20: vs West Bridgford Open 3 (SGO3) (Rubber 5 with Riaz Rashid) - Won 18-21 15-21 | 2026-01-23: vs North Notts Social Open 2 (NNO2) (Rubber 6 with Riaz Rashid) - Won 21-14 21-10 | 2026-01-23: vs North Notts Social Open 2 (NNO2) (Rubber 8 with Riaz Rashid) - Won 21-12 21-17 | 2026-02-06: vs Bilborough Open 2 (BOO2) (Rubber 2 with Bishwash Kandel) - Won 21-18 24-22 | 2026-02-06: vs Bilborough Open 2 (BOO2) (Rubber 4 with Bishwash Kandel) - Won 21-10 21-13 | 2026-02-13: vs Arboretum Open 5 (ARO5) (Rubber 6 with Ammar Anis) - Won 21-14 21-6 | 2026-02-13: vs Arboretum Open 5 (ARO5) (Rubber 8 with Ammar Anis) - Won 21-9 21-14 | 2026-03-01: vs Arboretum Open 6 (ARO6) (Rubber 4 with Tom McKay) - Won 24-26 16-21 | 2026-03-01: vs Arboretum Open 6 (ARO6) (Rubber 7 with Tom McKay) - Won 11-21 17-21 | 2026-03-06: vs Radcliffe Knights Open 4 (RKO4) (Rubber 1 with Tom McKay) - Won 21-18 21-12 | 2026-03-06: vs Radcliffe Knights Open 4 (RKO4) (Rubber 6 with Tom McKay) - Won 21-18 21-5 | 2026-03-06: vs Radcliffe Knights Open 4 (RKO4) (Rubber 8 with Tom McKay) - Won 21-9 21-16 | 2026-03-09: vs Byron Open 2 (BYO2) (Rubber 3 with Harpal Patel) - Won 14-21 20-22 | 2026-03-13: vs East Leake Open 3 (ELO3) (Rubber 5 with Arslan Butt) - Won 21-9 21-12 | 2026-03-27: vs Beeston Braves Open 1 (BBO1) (Rubber 5 with Bishwash Kandel) - Won 22-20 21-17 | 2026-03-27: vs Beeston Braves Open 1 (BBO1) (Rubber 7 with Bishwash Kandel) - Won 26-24 21-14 | 2026-04-10: vs Carlton Open 3 (CAO3) (Rubber 1 with Bishwash Kandel) - Won 14-21 17-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Adnan Aslam",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "Played in 15 matches | Played 45 rubbers | Total points: 3714"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Mandeep Singh",
+          "player_2": null,
+          "award_value": 22,
+          "award_details": "Conceded 65 points across 3 rubbers (avg: 21.7 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Adnan Aslam",
+          "player_2": "Riaz Rashid",
+          "award_value": 59,
+          "award_details": "2025-11-28 at David Lloyd Leisure Centre vs West Bridgford Open 2 (SGO2) (Score: 16-21 21-16 22-20, Total points: 59, Game 3: 22)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Adnan Aslam",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-03-13: vs East Leake Open 3 (ELO3) (Rubber 3 with Arslan Butt) - Defeated Ethan Smith from Open Premier (4 divisions higher), margin: +3 | 2026-03-13: vs East Leake Open 3 (ELO3) (Rubber 7 with Arslan Butt) - Defeated Justin Staves from Open Premier (4 divisions higher), margin: +9 | 2026-03-09: vs Byron Open 2 (BYO2) (Rubber 3 with Harpal Patel) - Defeated Mujahid Ali from Open Division 1 (3 divisions higher), margin: +9 | 2026-03-22: vs Forest Open 4 (FOO4) (Rubber 6 with Ravi Gouni) - Defeated Daniel Straw from Open Division 1 (3 divisions higher), margin: +5 | 2026-04-10: vs Carlton Open 3 (CAO3) (Rubber 1 with Bishwash Kandel) - Defeated Can Truong from Open Division 1 (3 divisions higher), margin: +11 | 2026-04-10: vs Carlton Open 3 (CAO3) (Rubber 7 with Bishwash Kandel) - Defeated Martin Tilling from Open Division 1 (3 divisions higher), margin: +15 | 2025-11-28: vs West Bridgford Open 2 (SGO2) (Rubber 2 with Riaz Rashid) - Defeated Ekbal Hussain from Open Division 2 (2 divisions higher), margin: +2 | 2026-02-06: vs Bilborough Open 2 (BOO2) (Rubber 2 with Bishwash Kandel) - Defeated David Hall from Open Division 3 (1 division higher), margin: +5 | 2026-02-06: vs Bilborough Open 2 (BOO2) (Rubber 4 with Bishwash Kandel) - Defeated Ian Cross from Open Division 3 (1 division higher), margin: +19"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Rahim Faheem",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-10-24: vs Rushcliffe Arena Open 1 (RAO1) (Rubber 1 with Mohammad Ali) | 2025-10-24: vs Rushcliffe Arena Open 1 (RAO1) (Rubber 6 with Mohammad Ali) | 2025-10-24: vs Rushcliffe Arena Open 1 (RAO1) (Rubber 8 with Mohammad Ali) | 2026-01-18: vs Radcliffe Knights Open 1 (RKO1) (Rubber 1 with Mohammad Ali) | 2026-01-18: vs Radcliffe Knights Open 1 (RKO1) (Rubber 4 with Mohammad Ali) | 2026-01-18: vs Radcliffe Knights Open 1 (RKO1) (Rubber 7 with Mohammad Ali) | 2026-02-27: vs Chilwell Open 1 (CHO1) (Rubber 1 with Mohammad Ali) | 2026-02-27: vs Chilwell Open 1 (CHO1) (Rubber 6 with Mohammad Ali) | 2026-02-27: vs Chilwell Open 1 (CHO1) (Rubber 8 with Mohammad Ali) | 2026-03-13: vs East Leake Open 3 (ELO3) (Rubber 1 with Ravi Gouni) | 2026-03-13: vs East Leake Open 3 (ELO3) (Rubber 6 with Ravi Gouni) | 2026-03-13: vs East Leake Open 3 (ELO3) (Rubber 8 with Ravi Gouni) | 2026-03-22: vs Forest Open 4 (FOO4) (Rubber 1 with Mohammad Ali) | 2026-03-22: vs Forest Open 4 (FOO4) (Rubber 4 with Mohammad Ali) | 2026-03-22: vs Forest Open 4 (FOO4) (Rubber 7 with Mohammad Ali)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Adnan Aslam",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-11-28: vs West Bridgford Open 2 (SGO2) (Rubber 2 with Riaz Rashid) - Lost Game 1 16-21, Won Game 2 21-16, Won Game 3 22-20 | 2026-01-23: vs North Notts Social Open 2 (NNO2) (Rubber 1 with Riaz Rashid) - Lost Game 1 17-21, Won Game 2 21-16, Won Game 3 21-13 | 2026-03-01: vs Arboretum Open 6 (ARO6) (Rubber 1 with Tom McKay) - Lost Game 1 14-21, Won Game 2 21-18, Won Game 3 21-8 | 2026-03-13: vs East Leake Open 3 (ELO3) (Rubber 7 with Arslan Butt) - Lost Game 1 16-21, Won Game 2 21-17, Won Game 3 21-11 | 2026-03-22: vs Forest Open 4 (FOO4) (Rubber 6 with Ravi Gouni) - Lost Game 1 17-21, Won Game 2 21-19, Won Game 3 21-14"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Laura Toynton",
+          "player_2": "Steven Lee",
+          "award_value": 30,
+          "award_details": "Team: David Lloyd Aspley Mixed 1 (DLX1) | vs Beeston Braves Mixed 2 (BBMX2) | Score: 8-21 4-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Laura Toynton",
+          "player_2": "Steven Lee",
+          "award_value": 16,
+          "award_details": "2025-11-21: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 3) - Won 21-7 21-12 | 2025-11-21: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 5) - Won 21-8 21-15 | 2025-11-21: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 7) - Won 21-4 21-10 | 2025-11-30: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 2) - Won 7-21 8-21 | 2025-11-30: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 5) - Won 20-22 5-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Adnan Aslam",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2025-11-02: vs Safari Badminton Open 4 (SBO4) (Rubber 6 with Riaz Rashid) - Game 1: 21-19 | 2025-11-14: vs Rushcliffe Arena Open 2 (RAO2) (Rubber 1 with Riaz Rashid) - Game 1: 21-19 | 2025-11-20: vs West Bridgford Open 3 (SGO3) (Rubber 2 with Riaz Rashid) - Game 1: 22-20 | 2025-11-28: vs West Bridgford Open 2 (SGO2) (Rubber 2 with Riaz Rashid) - Game 3: 22-20 | 2026-02-06: vs Bilborough Open 2 (BOO2) (Rubber 2 with Bishwash Kandel) - Game 2: 24-22 | 2026-03-01: vs Arboretum Open 6 (ARO6) (Rubber 4 with Tom McKay) - Game 1: 26-24 | 2026-03-09: vs Byron Open 2 (BYO2) (Rubber 3 with Harpal Patel) - Game 2: 22-20 | 2026-03-13: vs East Leake Open 3 (ELO3) (Rubber 3 with Arslan Butt) - Game 1: 22-20 | 2026-03-22: vs Forest Open 4 (FOO4) (Rubber 6 with Ravi Gouni) - Game 2: 21-19 | 2026-03-27: vs Beeston Braves Open 1 (BBO1) (Rubber 3 with Bishwash Kandel) - Game 1: 24-22 | 2026-03-27: vs Beeston Braves Open 1 (BBO1) (Rubber 5 with Bishwash Kandel) - Game 1: 22-20 | 2026-03-27: vs Beeston Braves Open 1 (BBO1) (Rubber 7 with Bishwash Kandel) - Game 1: 26-24"
+        }
+      ]
+    },
+    "east-leake": {
+      "name": "East Leake",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Stephen Howe",
+          "player_2": null,
+          "award_value": 23,
+          "award_details": "2025-10-15: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 6 with Alix Ritchie) - Won 21-18 21-15 | 2025-10-15: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 8 with Alix Ritchie) - Won 21-13 21-11 | 2025-10-20: vs Byron Mixed 1 (BYX1) (Rubber 5 with Alix Ritchie) - Won 11-21 8-21 | 2025-11-02: vs Southwell Mixed 2 (SOX2) (Rubber 7 with Alix Ritchie) - Won 7-21 17-21 | 2025-11-16: vs Safari Badminton Open 1 (SBO1) (Rubber 2 with Craig Parkin) - Won 21-14 21-18 | 2025-11-16: vs Safari Badminton Open 1 (SBO1) (Rubber 9 with Craig Parkin) - Won 21-17 21-11 | 2025-12-17: vs Radcliffe Knights Open 1 (RKO1) (Rubber 1 with Keith Stockdale) - Won 21-17 21-9 | 2025-12-17: vs Radcliffe Knights Open 1 (RKO1) (Rubber 6 with Keith Stockdale) - Won 21-14 21-12 | 2025-12-17: vs Radcliffe Knights Open 1 (RKO1) (Rubber 8 with Keith Stockdale) - Won 21-11 21-9 | 2026-01-07: vs Forest Open 3 (FOO3) (Rubber 3 with Craig Parkin) - Won 21-19 21-17 | 2026-01-07: vs Forest Open 3 (FOO3) (Rubber 5 with Craig Parkin) - Won 21-17 21-16 | 2026-01-14: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 2 with Craig Parkin) - Won 16-21 14-21 | 2026-01-18: vs Forest Mixed 4 (FOX4) (Rubber 5 with Alix Ritchie) - Won 13-21 7-21 | 2026-01-18: vs Forest Mixed 4 (FOX4) (Rubber 8 with Alix Ritchie) - Won 18-21 12-21 | 2026-01-30: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 2 with Gill Rogerson) - Won 12-21 18-21 | 2026-01-30: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 5 with Gill Rogerson) - Won 4-21 6-21 | 2026-02-18: vs Bilborough Mixed 2 (BOX2) (Rubber 3 with Alix Ritchie) - Won 21-8 21-13 | 2026-02-18: vs Bilborough Mixed 2 (BOX2) (Rubber 5 with Alix Ritchie) - Won 21-15 22-20 | 2026-02-18: vs Bilborough Mixed 2 (BOX2) (Rubber 7 with Alix Ritchie) - Won 21-9 21-13 | 2026-03-11: vs Beeston Braves Mixed 1 (BBMX1) (Rubber 2 with Alix Ritchie) - Won 21-14 21-18 | 2026-03-11: vs Beeston Braves Mixed 1 (BBMX1) (Rubber 4 with Alix Ritchie) - Won 21-16 21-18 | 2026-03-11: vs Beeston Braves Mixed 1 (BBMX1) (Rubber 9 with Alix Ritchie) - Won 21-0 21-0 | 2026-03-25: vs Arboretum Open 2 (ARO2) (Rubber 8 with Craig Parkin) - Won 21-10 21-15"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Gill Rogerson",
+          "player_2": null,
+          "award_value": 20,
+          "award_details": "Played in 20 matches | Played 59 rubbers | Total points: 4506"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Halisha Tanna",
+          "player_2": null,
+          "award_value": 38,
+          "award_details": "Conceded 1136 points across 30 rubbers (avg: 37.9 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Abby Wright",
+          "player_2": "Keith Stockdale",
+          "award_value": 65,
+          "award_details": "2025-10-15 at East Leake Leisure Centre vs Beeston Fields Mixed 5 (BFMX5) (Score: 19-21 21-11 25-23, Total points: 65, Game 3: 25)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Abby Wright",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-01-18: vs Forest Mixed 4 (FOX4) (Rubber 9 with Keith Stockdale) - Defeated Precious Basra from Mixed Premier (4 divisions higher), margin: +18 | 2025-11-02: vs Southwell Mixed 2 (SOX2) (Rubber 6 with Keith Stockdale) - Defeated James Lawson from Mixed Division 1 (3 divisions higher), margin: +7 | 2025-10-06: vs Freddie's Womens 1 (FGW1) (Rubber 5 with Beverley Dolman) - Defeated Heather Marriott from Mixed Division 2 (2 divisions higher), margin: +2 | 2025-10-13: vs Beeston Valley Womens 1 (BVW1) (Rubber 3 with Beverley Dolman) - Defeated Caroline Bartliff from Mixed Division 3 (1 division higher), margin: +11"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Keith Stockdale",
+          "player_2": null,
+          "award_value": 19,
+          "award_details": "2026-01-18: vs Forest Mixed 4 (FOX4) (Rubber 9 with Abby Wright) | 2026-01-28: vs Forest Open 4 (FOO4) (Rubber 1 with Ethan Smith) | 2026-01-28: vs Forest Open 4 (FOO4) (Rubber 6 with Ethan Smith) | 2026-01-28: vs Forest Open 4 (FOO4) (Rubber 8 with Ethan Smith) | 2026-01-30: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 3 with Abby Wright) | 2026-01-30: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 6 with Abby Wright) | 2026-01-30: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 9 with Abby Wright) | 2026-02-18: vs Bilborough Mixed 2 (BOX2) (Rubber 2 with Abby Wright) | 2026-02-18: vs Bilborough Mixed 2 (BOX2) (Rubber 4 with Abby Wright) | 2026-02-18: vs Bilborough Mixed 2 (BOX2) (Rubber 9 with Abby Wright) | 2026-03-11: vs Beeston Braves Mixed 1 (BBMX1) (Rubber 3 with Abby Wright) | 2026-03-11: vs Beeston Braves Mixed 1 (BBMX1) (Rubber 5 with Abby Wright) | 2026-03-11: vs Beeston Braves Mixed 1 (BBMX1) (Rubber 7 with Abby Wright) | 2026-03-23: vs Mapperley Park Open 2 (MPO2) (Rubber 1 with Jack Rogerson) | 2026-03-23: vs Mapperley Park Open 2 (MPO2) (Rubber 4 with Jack Rogerson) | 2026-03-23: vs Mapperley Park Open 2 (MPO2) (Rubber 7 with Jack Rogerson) | 2026-03-25: vs Arboretum Open 2 (ARO2) (Rubber 3 with Rustam Zuggry) | 2026-03-25: vs Arboretum Open 2 (ARO2) (Rubber 5 with Rustam Zuggry) | 2026-03-25: vs Arboretum Open 2 (ARO2) (Rubber 7 with Rustam Zuggry)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Stephen Howe",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-11-06: vs West Bridgford Open 1 (SGO1) (Rubber 2 with Craig Parkin) - Lost Game 1 18-21, Won Game 2 22-20, Won Game 3 21-19 | 2025-11-16: vs Safari Badminton Open 1 (SBO1) (Rubber 4 with Craig Parkin) - Lost Game 1 12-21, Won Game 2 21-19, Won Game 3 21-17 | 2026-01-30: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 8 with Gill Rogerson) - Lost Game 1 13-21, Won Game 2 21-16, Won Game 3 21-13 | 2026-03-23: vs Mapperley Park Open 2 (MPO2) (Rubber 5 with Craig Parkin) - Lost Game 1 19-21, Won Game 2 21-18, Won Game 3 21-16 | 2026-03-25: vs Arboretum Open 2 (ARO2) (Rubber 6 with Craig Parkin) - Lost Game 1 15-21, Won Game 2 21-11, Won Game 3 21-11"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Alix Ritchie",
+          "player_2": "Stephen Howe",
+          "award_value": 42,
+          "award_details": "Team: East Leake Mixed 3 (ELX3) | vs Beeston Braves Mixed 1 (BBMX1) | Score: 21-0 21-0"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Alix Ritchie",
+          "player_2": "Stephen Howe",
+          "award_value": 12,
+          "award_details": "2025-10-15: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 6) - Won 21-18 21-15 | 2025-10-15: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 8) - Won 21-13 21-11 | 2025-10-20: vs Byron Mixed 1 (BYX1) (Rubber 5) - Won 11-21 8-21 | 2025-11-02: vs Southwell Mixed 2 (SOX2) (Rubber 7) - Won 7-21 17-21 | 2026-01-18: vs Forest Mixed 4 (FOX4) (Rubber 5) - Won 13-21 7-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Jack Rogerson",
+          "player_2": null,
+          "award_value": 11,
+          "award_details": "2025-11-02: vs Forest Mixed 2 (FOX2) (Rubber 1 with Chloe Wilkins) - Game 3: 21-19 | 2025-11-02: vs Forest Mixed 2 (FOX2) (Rubber 8 with Chloe Wilkins) - Game 1: 22-20 | 2025-11-09: vs Freddie's Mixed 1 (FGX1) (Rubber 4 with Beverley Dolman) - Game 1: 21-19 | 2025-11-12: vs Beeston Fields Mixed 2 (BFMX2) (Rubber 4 with Gill Rogerson) - Game 2: 21-19 | 2026-01-07: vs Forest Open 3 (FOO3) (Rubber 2 with Keith Stockdale) - Game 2: 21-19 | 2026-01-22: vs Forest Open 1 (FOO1) (Rubber 3 with James Evans) - Game 1: 23-21 | 2026-01-22: vs Forest Open 1 (FOO1) (Rubber 6 with James Evans) - Game 1: 22-20 | 2026-03-05: vs Forest Mixed 1 (FOX1) (Rubber 1 with Chloe Wilkins) - Game 1: 21-19 | 2026-03-05: vs Forest Mixed 1 (FOX1) (Rubber 4 with Chloe Wilkins) - Game 3: 25-23 | 2026-03-23: vs Mapperley Park Open 2 (MPO2) (Rubber 7 with Keith Stockdale) - Game 1: 21-19, Game 2: 22-20"
+        }
+      ]
+    },
+    "falcon-feathers": {
+      "name": "Falcon Feathers",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Surenprabu Govindarajulu",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2025-11-05: vs Bilborough Open 2 (BOO2) (Rubber 5 with Pinak Karmakar) - Won 21-11 21-12 | 2025-11-23: vs Beeston Braves Open 1 (BBO1) (Rubber 5 with Ujwal Kumar Swamy) - Won 19-21 20-22 | 2025-12-12: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 2 with Srikanth Reddy) - Won 16-21 15-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Surenprabu Govindarajulu",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "Played in 6 matches | Played 18 rubbers | Total points: 1410"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Vadivel Parthsarathy",
+          "player_2": null,
+          "award_value": 40,
+          "award_details": "Conceded 359 points across 9 rubbers (avg: 39.9 points per rubber)"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Vadivel Parthsarathy",
+          "player_2": null,
+          "award_value": 2,
+          "award_details": "2025-11-05: vs Bilborough Open 2 (BOO2) (Rubber 4 with Vishnuvardan Viswanathan) | 2025-11-05: vs Bilborough Open 2 (BOO2) (Rubber 7 with Vishnuvardan Viswanathan)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Surenprabu Govindarajulu",
+          "player_2": null,
+          "award_value": 1,
+          "award_details": "2026-02-11: vs Freddie's Open 1 (FGO1) (Rubber 5 with Vadivel Parthsarathy) - Lost Game 1 19-21, Won Game 2 21-16, Won Game 3 21-17"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Vadivel Parthsarathy",
+          "player_2": "Vishnuvardan Viswanathan",
+          "award_value": 22,
+          "award_details": "Team: Falcon Feathers Open 1 (FFO1) | vs Bilborough Open 2 (BOO2) | Score: 21-15 21-5"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Ujwal Kumar Swamy",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2025-11-23: vs Beeston Braves Open 1 (BBO1) (Rubber 5 with Surenprabu Govindarajulu) - Game 1: 21-19, Game 2: 22-20 | 2025-12-12: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 4 with Vishnuvardan Viswanathan) - Game 1: 21-19"
+        }
+      ]
+    },
+    "forest": {
+      "name": "Forest",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Lee Truong",
+          "player_2": null,
+          "award_value": 23,
+          "award_details": "2025-10-26: vs Mansfield Oaktree Mixed 1 (MOX1) (Rubber 9 with Sion Severn) - Won 21-19 21-6 | 2025-11-02: vs East Leake Mixed 1 (ELX1) (Rubber 2 with Sion Severn) - Won 14-21 11-21 | 2025-11-02: vs East Leake Mixed 1 (ELX1) (Rubber 5 with Sion Severn) - Won 24-26 12-21 | 2025-11-10: vs Mapperley Park Womens 1 (MPW1) (Rubber 3 with Nichola Stokes) - Won 18-21 10-21 | 2025-11-10: vs Mapperley Park Womens 1 (MPW1) (Rubber 6 with Nichola Stokes) - Won 19-21 13-21 | 2025-12-11: vs Bingham Mixed 1 (BIX1) (Rubber 9 with Matthew Lau) - Won 23-21 21-17 | 2026-01-08: vs Beeston Braves Womens 1 (BBW1) (Rubber 2 with Loraine Buck) - Won 21-5 21-6 | 2026-01-08: vs Beeston Braves Womens 1 (BBW1) (Rubber 4 with Loraine Buck) - Won 21-12 21-6 | 2026-01-08: vs Beeston Braves Womens 1 (BBW1) (Rubber 9 with Loraine Buck) - Won 21-3 21-2 | 2026-01-21: vs Bingham Womens 1 (BIW1) (Rubber 7 with Heather Walker) - Won 14-21 0-21 | 2026-02-05: vs East Leake Womens 1 (ELW1) (Rubber 2 with Steffi Culverwell) - Won 21-9 21-9 | 2026-02-05: vs East Leake Womens 1 (ELW1) (Rubber 9 with Steffi Culverwell) - Won 21-15 21-2 | 2026-02-08: vs Arboretum Womens 1 (ARW1) (Rubber 7 with Megan Birkinshaw) - Won 13-21 18-21 | 2026-02-19: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 2 with Steffi Culverwell) - Won 21-11 21-11 | 2026-02-19: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 4 with Steffi Culverwell) - Won 21-3 21-11 | 2026-02-19: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 9 with Steffi Culverwell) - Won 21-6 21-5 | 2026-03-05: vs East Leake Mixed 1 (ELX1) (Rubber 3 with Steve Gregory) - Won 21-12 21-10 | 2026-03-12: vs Bilborough Womens 1 (BOW1) (Rubber 1 with Steffi Culverwell) - Won 21-10 21-10 | 2026-03-12: vs Bilborough Womens 1 (BOW1) (Rubber 6 with Steffi Culverwell) - Won 21-3 21-4 | 2026-03-12: vs Bilborough Womens 1 (BOW1) (Rubber 8 with Steffi Culverwell) - Won 21-4 21-4 | 2026-03-20: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 2 with Megan Birkinshaw) - Won 11-21 2-21 | 2026-03-20: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 5 with Megan Birkinshaw) - Won 14-21 9-21 | 2026-03-20: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 8 with Megan Birkinshaw) - Won 11-21 9-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Abby Hunter",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "Played in 15 matches | Played 44 rubbers | Total points: 3740"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Loraine Buck",
+          "player_2": null,
+          "award_value": 28,
+          "award_details": "Conceded 768 points across 27 rubbers (avg: 28.4 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "George Hargreaves",
+          "player_2": "Matthew Lau",
+          "award_value": 63,
+          "award_details": "2025-11-13 at Chilwell Olympia Sports Centre vs Rolls Royce Open 1 (RRO1) (Score: 18-21 21-11 24-22, Total points: 63, Game 3: 24)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Warwick Mooney",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-01-28: vs East Leake Open 3 (ELO3) (Rubber 4 with Michael Storey) - Defeated Justin Staves from Open Premier (4 divisions higher), margin: +17 | 2026-01-28: vs East Leake Open 3 (ELO3) (Rubber 7 with Michael Storey) - Defeated Andy Longton from Open Division 2 (2 divisions higher), margin: +9"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "William Leather",
+          "player_2": null,
+          "award_value": 13,
+          "award_details": "2025-12-07: vs Bingham Mixed 3 (BIX3) (Rubber 9 with Nichola Stokes) | 2026-01-05: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 3 with Steffi Culverwell) | 2026-01-05: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 6 with Steffi Culverwell) | 2026-01-05: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 9 with Steffi Culverwell) | 2026-01-07: vs East Leake Open 2 (ELO2) (Rubber 1 with Andy Perry) | 2026-01-07: vs East Leake Open 2 (ELO2) (Rubber 4 with Andy Perry) | 2026-01-07: vs East Leake Open 2 (ELO2) (Rubber 7 with Andy Perry) | 2026-02-15: vs Arboretum Open 1 (ARO1) (Rubber 2 with Aidan Cheung) | 2026-02-15: vs Arboretum Open 1 (ARO1) (Rubber 5 with Aidan Cheung) | 2026-02-15: vs Arboretum Open 1 (ARO1) (Rubber 8 with Aidan Cheung) | 2026-03-19: vs Safari Badminton Open 1 (SBO1) (Rubber 2 with Adithya Vasantha) | 2026-03-19: vs Safari Badminton Open 1 (SBO1) (Rubber 4 with Adithya Vasantha) | 2026-03-19: vs Safari Badminton Open 1 (SBO1) (Rubber 9 with Adithya Vasantha)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "William Leather",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2025-10-19: vs Arboretum Mixed 2 (ARMX2) (Rubber 3 with Hanna Hartikainen) - Lost Game 1 18-21, Won Game 2 21-13, Won Game 3 21-7 | 2025-10-19: vs Arboretum Mixed 2 (ARMX2) (Rubber 9 with Hanna Hartikainen) - Lost Game 1 17-21, Won Game 2 21-15, Won Game 3 21-14 | 2025-11-20: vs Beeston Fields Open 3 (BFO3) (Rubber 2 with Adithya Vasantha) - Lost Game 1 18-21, Won Game 2 21-16, Won Game 3 21-10 | 2026-01-05: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 3 with Steffi Culverwell) - Lost Game 1 19-21, Won Game 2 21-18, Won Game 3 21-14 | 2026-01-07: vs East Leake Open 2 (ELO2) (Rubber 7 with Andy Perry) - Lost Game 1 18-21, Won Game 2 21-14, Won Game 3 21-16 | 2026-02-15: vs Arboretum Open 1 (ARO1) (Rubber 2 with Aidan Cheung) - Lost Game 1 16-21, Won Game 2 21-6, Won Game 3 21-14"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Loraine Buck",
+          "player_2": "Lee Truong",
+          "award_value": 37,
+          "award_details": "Team: Forest Womens 2 (FOW2) | vs Beeston Braves Womens 1 (BBW1) | Score: 21-3 21-2"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Daisy Jennings",
+          "player_2": "Precious Basra",
+          "award_value": 9,
+          "award_details": "2025-11-10: vs Mapperley Park Womens 1 (MPW1) (Rubber 2) - Won 12-21 11-21 | 2025-11-10: vs Mapperley Park Womens 1 (MPW1) (Rubber 5) - Won 6-21 21-23 | 2025-11-10: vs Mapperley Park Womens 1 (MPW1) (Rubber 8) - Won 16-21 13-21 | 2025-12-05: vs Beeston Fields Womens 2 (BFW2) (Rubber 2) - Won 11-21 18-21 | 2025-12-05: vs Beeston Fields Womens 2 (BFW2) (Rubber 5) - Won 14-21 12-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Matthew Lau",
+          "player_2": null,
+          "award_value": 11,
+          "award_details": "2025-11-06: vs Beeston Fields Mixed 2 (BFMX2) (Rubber 1 with Loraine Buck) - Game 1: 23-21 | 2025-11-13: vs Rolls Royce Open 1 (RRO1) (Rubber 6 with George Hargreaves) - Game 3: 24-22 | 2025-11-13: vs Rolls Royce Open 1 (RRO1) (Rubber 8 with George Hargreaves) - Game 3: 21-19 | 2025-12-11: vs Bingham Mixed 1 (BIX1) (Rubber 9 with Lee Truong) - Game 1: 23-21 | 2026-01-28: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 2 with Aidan Cheung) - Game 2: 21-19 | 2026-01-28: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 8 with Aidan Cheung) - Game 2: 25-23 | 2026-02-06: vs Beeston Fields Open 2 (BFO2) (Rubber 7 with Ernest Yu) - Game 1: 21-19, Game 2: 22-20 | 2026-02-12: vs Beeston Fields Open 1 (BFO1) (Rubber 1 with Callum Buck) - Game 1: 26-24 | 2026-02-12: vs Beeston Fields Open 1 (BFO1) (Rubber 6 with Callum Buck) - Game 2: 25-23 | 2026-03-13: vs Beeston Fields Mixed 1 (BFMX1) (Rubber 7 with Martha Franklin) - Game 1: 21-19"
+        }
+      ]
+    },
+    "freddie-s": {
+      "name": "Freddie's",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Joe Machin",
+          "player_2": null,
+          "award_value": 31,
+          "award_details": "2025-11-24: vs Bingham Mixed 4 (BIX4) (Rubber 3 with Kelly Winson) - Won 21-16 21-16 | 2025-11-24: vs Bingham Mixed 4 (BIX4) (Rubber 5 with Kelly Winson) - Won 21-11 21-18 | 2025-12-07: vs Beeston Braves Open 1 (BBO1) (Rubber 1 with Dan Bartlett) - Won 10-21 13-21 | 2025-12-07: vs Beeston Braves Open 1 (BBO1) (Rubber 4 with Dan Bartlett) - Won 9-21 10-21 | 2025-12-07: vs Beeston Braves Open 1 (BBO1) (Rubber 7 with Dan Bartlett) - Won 9-21 6-21 | 2025-12-08: vs Bilborough Mixed 1 (BOX1) (Rubber 8 with Heather Marriott) - Won 21-10 21-19 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 1 with Dan Bartlett) - Won 12-21 13-21 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 4 with Dan Bartlett) - Won 7-21 9-21 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 7 with Dan Bartlett) - Won 12-21 10-21 | 2026-01-12: vs Mapperley Park Mixed 2 (MPX2) (Rubber 2 with Heather Marriott) - Won 21-12 21-12 | 2026-01-12: vs Mapperley Park Mixed 2 (MPX2) (Rubber 5 with Heather Marriott) - Won 21-11 21-17 | 2026-01-19: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 2 with Heather Marriott) - Won 11-21 13-21 | 2026-01-19: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 8 with Heather Marriott) - Won 8-21 12-21 | 2026-01-26: vs Carlton Open 3 (CAO3) (Rubber 1 with Dan Bartlett) - Won 21-7 21-8 | 2026-01-26: vs Carlton Open 3 (CAO3) (Rubber 6 with Dan Bartlett) - Won 21-8 21-8 | 2026-01-26: vs Carlton Open 3 (CAO3) (Rubber 8 with Dan Bartlett) - Won 21-10 21-8 | 2026-02-11: vs Falcon Feathers Open 1 (FFO1) (Rubber 1 with Dan Bartlett) - Won 11-21 11-21 | 2026-02-11: vs Falcon Feathers Open 1 (FFO1) (Rubber 2 with Dan Bartlett) - Won 10-21 4-21 | 2026-02-20: vs David Lloyd Aspley Mixed 1 (DLX1) (Rubber 7 with Louise Buck) - Won 12-21 10-21 | 2026-03-02: vs Beeston Valley Open 3 (BVO3) (Rubber 1 with Ethan Marshall) - Won 9-21 12-21 | 2026-03-02: vs Beeston Valley Open 3 (BVO3) (Rubber 4 with Ethan Marshall) - Won 16-21 11-21 | 2026-03-02: vs Beeston Valley Open 3 (BVO3) (Rubber 7 with Ethan Marshall) - Won 9-21 12-21 | 2026-03-05: vs West Bridgford Open 2 (SGO2) (Rubber 1 with Dan Bartlett) - Won 18-21 19-21 | 2026-03-05: vs West Bridgford Open 2 (SGO2) (Rubber 4 with Dan Bartlett) - Won 9-21 11-21 | 2026-03-05: vs West Bridgford Open 2 (SGO2) (Rubber 7 with Dan Bartlett) - Won 14-21 16-21 | 2026-03-23: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 1 with Dan Bartlett) - Won 21-13 21-9 | 2026-03-23: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 6 with Dan Bartlett) - Won 21-4 21-9 | 2026-03-23: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 8 with Dan Bartlett) - Won 21-10 21-4 | 2026-04-13: vs Safari Badminton Open 3 (SBO3) (Rubber 1 with Jack Foulds) - Won 21-7 21-7 | 2026-04-13: vs Safari Badminton Open 3 (SBO3) (Rubber 6 with Jack Foulds) - Won 21-12 21-10 | 2026-04-13: vs Safari Badminton Open 3 (SBO3) (Rubber 8 with Jack Foulds) - Won 21-15 21-10"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Joe Machin",
+          "player_2": null,
+          "award_value": 14,
+          "award_details": "Played in 14 matches | Played 42 rubbers | Total points: 2960"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Mark Gresham",
+          "player_2": null,
+          "award_value": 21,
+          "award_details": "Conceded 64 points across 3 rubbers (avg: 21.3 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Heather Marriott",
+          "player_2": "Joe Machin",
+          "award_value": 62,
+          "award_details": "2026-02-23 at Kirkby Leisure Centre vs Byron Mixed 1 (BYX1) (Score: 21-19 17-21 24-22, Total points: 62, Game 3: 24)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Dan Bartlett",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-11-09: vs East Leake Mixed 2 (ELX2) (Rubber 1 with Sarah Parkes-Rolfe) - Defeated James Evans from Open Premier (5 divisions higher), margin: +2 | 2025-11-09: vs East Leake Mixed 2 (ELX2) (Rubber 7 with Sarah Parkes-Rolfe) - Defeated Simon Vanderwalt from Open Premier (5 divisions higher), margin: +13 | 2026-01-12: vs Mapperley Park Mixed 2 (MPX2) (Rubber 4 with Philippa Broadbent) - Defeated Joe Wong from Open Division 1 (4 divisions higher), margin: +24 | 2026-01-12: vs Mapperley Park Mixed 2 (MPX2) (Rubber 7 with Philippa Broadbent) - Defeated Casey Jones from Open Division 1 (4 divisions higher), margin: +18 | 2026-01-26: vs Carlton Open 3 (CAO3) (Rubber 1 with Joe Machin) - Defeated Can Truong from Open Division 1 (4 divisions higher), margin: +27 | 2026-01-26: vs Carlton Open 3 (CAO3) (Rubber 6 with Joe Machin) - Defeated Martin Tilling from Open Division 1 (4 divisions higher), margin: +26 | 2026-01-26: vs Carlton Open 3 (CAO3) (Rubber 8 with Joe Machin) - Defeated Wlodzimierz Pietrzak from Open Division 1 (4 divisions higher), margin: +24 | 2026-03-05: vs West Bridgford Open 2 (SGO2) (Rubber 1 with Joe Machin) - Defeated Sam Russell from Open Division 2 (3 divisions higher), margin: +5 | 2026-03-05: vs West Bridgford Open 2 (SGO2) (Rubber 4 with Joe Machin) - Defeated Yung Sam from Open Division 2 (3 divisions higher), margin: +22 | 2026-03-05: vs West Bridgford Open 2 (SGO2) (Rubber 7 with Joe Machin) - Defeated Ekbal Hussain from Open Division 2 (3 divisions higher), margin: +12 | 2025-10-11: vs Crusader Mixed 1 (CRX1) (Rubber 9 with Sarah Parkes-Rolfe) - Defeated Adrian Mateo from Open Division 3 (2 divisions higher), margin: +16 | 2025-12-08: vs Bilborough Mixed 1 (BOX1) (Rubber 3 with Rebecca Wilson) - Defeated Matthew Rogers from Open Division 3 (2 divisions higher), margin: +21 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 1 with Joe Machin) - Defeated Christopher Friend from Open Division 3 (2 divisions higher), margin: +17 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 7 with Joe Machin) - Defeated Ian Cross from Open Division 3 (2 divisions higher), margin: +20 | 2026-03-23: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 8 with Joe Machin) - Defeated Adnan Aslam from Open Division 4 (1 division higher), margin: +28"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Philippa Broadbent",
+          "player_2": null,
+          "award_value": 21,
+          "award_details": "2025-09-29: vs Crusader Womens 1 (CRW1) (Rubber 1 with Sarah Parkes-Rolfe) | 2025-09-29: vs Crusader Womens 1 (CRW1) (Rubber 6 with Sarah Parkes-Rolfe) | 2025-09-29: vs Crusader Womens 1 (CRW1) (Rubber 8 with Sarah Parkes-Rolfe) | 2025-10-06: vs East Leake Womens 2 (ELW2) (Rubber 1 with Sarah Parkes-Rolfe) | 2025-10-06: vs East Leake Womens 2 (ELW2) (Rubber 6 with Sarah Parkes-Rolfe) | 2025-10-06: vs East Leake Womens 2 (ELW2) (Rubber 8 with Sarah Parkes-Rolfe) | 2025-10-17: vs Chilwell Womens 1 (CHW1) (Rubber 1 with Sarah Parkes-Rolfe) | 2025-10-17: vs Chilwell Womens 1 (CHW1) (Rubber 4 with Sarah Parkes-Rolfe) | 2025-10-17: vs Chilwell Womens 1 (CHW1) (Rubber 7 with Sarah Parkes-Rolfe) | 2025-10-27: vs Beeston Valley Womens 1 (BVW1) (Rubber 1 with Sarah Parkes-Rolfe) | 2025-10-27: vs Beeston Valley Womens 1 (BVW1) (Rubber 6 with Sarah Parkes-Rolfe) | 2025-10-27: vs Beeston Valley Womens 1 (BVW1) (Rubber 8 with Sarah Parkes-Rolfe) | 2026-01-12: vs Mapperley Park Mixed 2 (MPX2) (Rubber 1 with Dan Bartlett) | 2026-01-12: vs Mapperley Park Mixed 2 (MPX2) (Rubber 4 with Dan Bartlett) | 2026-01-12: vs Mapperley Park Mixed 2 (MPX2) (Rubber 7 with Dan Bartlett) | 2026-01-19: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 1 with Baz Whitehead) | 2026-01-19: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 4 with Baz Whitehead) | 2026-01-19: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 7 with Baz Whitehead) | 2026-01-26: vs Southwell Womens 1 (SO1) (Rubber 2 with Louise Buck) | 2026-01-26: vs Southwell Womens 1 (SO1) (Rubber 4 with Louise Buck) | 2026-01-26: vs Southwell Womens 1 (SO1) (Rubber 9 with Louise Buck)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Dan Bartlett",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2025-10-11: vs Crusader Mixed 1 (CRX1) (Rubber 9 with Sarah Parkes-Rolfe) - Lost Game 1 19-21, Won Game 2 21-11, Won Game 3 21-13 | 2025-11-09: vs East Leake Mixed 2 (ELX2) (Rubber 7 with Sarah Parkes-Rolfe) - Lost Game 1 19-21, Won Game 2 21-12, Won Game 3 21-15 | 2025-12-08: vs Bilborough Mixed 1 (BOX1) (Rubber 7 with Rebecca Wilson) - Lost Game 1 17-21, Won Game 2 21-12, Won Game 3 21-15"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Graydon Peacock",
+          "player_2": "Neil Taylor",
+          "award_value": 34,
+          "award_details": "Team: Freddie's Open 1 (FGO1) | vs David Lloyd Aspley Open 2 (DLO2) | Score: 21-2 21-6"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Dan Bartlett",
+          "player_2": "Joe Machin",
+          "award_value": 17,
+          "award_details": "2025-12-07: vs Beeston Braves Open 1 (BBO1) (Rubber 1) - Won 10-21 13-21 | 2025-12-07: vs Beeston Braves Open 1 (BBO1) (Rubber 4) - Won 9-21 10-21 | 2025-12-07: vs Beeston Braves Open 1 (BBO1) (Rubber 7) - Won 9-21 6-21 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 1) - Won 12-21 13-21 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 4) - Won 7-21 9-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Adam Cox",
+          "player_2": null,
+          "award_value": 9,
+          "award_details": "2025-11-09: vs East Leake Mixed 2 (ELX2) (Rubber 3 with Heather Marriott) - Game 2: 21-19 | 2025-11-24: vs Bingham Mixed 4 (BIX4) (Rubber 2 with Rachel Emery) - Game 1: 22-20 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 3 with Ethan Marshall) - Game 1: 23-21 | 2026-01-07: vs Bilborough Open 2 (BOO2) (Rubber 9 with Ethan Marshall) - Game 1: 21-19 | 2026-01-26: vs Carlton Open 3 (CAO3) (Rubber 5 with Daniel Rolfe) - Game 1: 21-19 | 2026-01-26: vs Carlton Open 3 (CAO3) (Rubber 7 with Daniel Rolfe) - Game 2: 21-19 | 2026-02-02: vs Beeston Braves Mixed 2 (BBMX2) (Rubber 1 with Rachel Emery) - Game 3: 23-21 | 2026-02-11: vs Falcon Feathers Open 1 (FFO1) (Rubber 5 with Matt Chapman) - Game 1: 21-19 | 2026-02-23: vs Arboretum Open 4 (ARO4) (Rubber 1 with Ethan Marshall) - Game 1: 24-22"
+        }
+      ]
+    },
+    "mansfield-oaktree": {
+      "name": "Mansfield Oaktree",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Joanne Wilson",
+          "player_2": null,
+          "award_value": 16,
+          "award_details": "2025-10-02: vs Forest Mixed 2 (FOX2) (Rubber 1 with Christopher Gerrett) - Won 18-21 17-21 | 2025-10-02: vs Forest Mixed 2 (FOX2) (Rubber 7 with Christopher Gerrett) - Won 20-22 12-21 | 2025-10-26: vs Forest Mixed 1 (FOX1) (Rubber 2 with Christopher Gerrett) - Won 12-21 14-21 | 2025-10-29: vs Bingham Womens 1 (BIW1) (Rubber 9 with Rachael Gilchrist) - Won 21-7 21-7 | 2025-11-21: vs Beeston Fields Womens 2 (BFW2) (Rubber 2 with Rachael Gilchrist) - Won 13-21 11-21 | 2025-11-21: vs Beeston Fields Womens 2 (BFW2) (Rubber 5 with Rachael Gilchrist) - Won 13-21 10-21 | 2025-11-21: vs Beeston Fields Womens 2 (BFW2) (Rubber 8 with Rachael Gilchrist) - Won 12-21 15-21 | 2026-01-21: vs Beeston Fields Womens 1 (BFW1) (Rubber 3 with Ellie Wheatley) - Won 21-10 21-7 | 2026-01-21: vs Beeston Fields Womens 1 (BFW1) (Rubber 7 with Ellie Wheatley) - Won 21-10 21-5 | 2026-01-28: vs East Leake Womens 1 (ELW1) (Rubber 1 with Sarah Pulley) - Won 21-16 21-9 | 2026-01-28: vs East Leake Womens 1 (ELW1) (Rubber 6 with Sarah Pulley) - Won 21-13 21-5 | 2026-01-28: vs East Leake Womens 1 (ELW1) (Rubber 8 with Sarah Pulley) - Won 21-8 21-12 | 2026-03-16: vs Mapperley Park Womens 1 (MPW1) (Rubber 2 with Rachael Gilchrist) - Won 13-21 11-21 | 2026-03-16: vs Mapperley Park Womens 1 (MPW1) (Rubber 5 with Rachael Gilchrist) - Won 16-21 14-21 | 2026-03-16: vs Mapperley Park Womens 1 (MPW1) (Rubber 8 with Rachael Gilchrist) - Won 9-21 15-21 | 2026-03-18: vs Bingham Mixed 1 (BIX1) (Rubber 5 with Christopher Gerrett) - Won 18-21 15-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Dan Thomas",
+          "player_2": null,
+          "award_value": 10,
+          "award_details": "Played in 10 matches | Played 30 rubbers | Total points: 2544"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Elaine Marklew-Sheardown",
+          "player_2": null,
+          "award_value": 29,
+          "award_details": "Conceded 264 points across 9 rubbers (avg: 29.3 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Alan Bowmer",
+          "player_2": "Dan Thomas",
+          "award_value": 63,
+          "award_details": "2025-10-29 at Kirkby Leisure Centre vs Forest Open 3 (FOO3) (Score: 21-16 18-21 24-22, Total points: 63, Game 3: 24)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Baz Whitehead",
+          "player_2": null,
+          "award_value": 2,
+          "award_details": "2026-01-14: vs East Leake Open 2 (ELO2) (Rubber 5 with Thomas Weron) - Defeated Stephen Howe from Open Premier (2 divisions higher), margin: +10 | 2025-11-02: vs Arboretum Open 2 (ARO2) (Rubber 6 with Thomas Weron) - Defeated Stanley Ho from Open Division 1 (1 division higher), margin: +4 | 2025-11-02: vs Arboretum Open 2 (ARO2) (Rubber 9 with Thomas Weron) - Defeated Richard Packer from Open Division 1 (1 division higher), margin: +16 | 2025-12-03: vs Mapperley Park Open 2 (MPO2) (Rubber 3 with Thomas Weron) - Defeated Neil Franklin from Open Division 1 (1 division higher), margin: +8"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Nicholas Wilding",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2026-01-28: vs Forest Open 1 (FOO1) (Rubber 6 with Tim Rolfe) | 2026-01-28: vs Forest Open 1 (FOO1) (Rubber 8 with Tim Rolfe) | 2026-02-04: vs Beeston Fields Mixed 2 (BFMX2) (Rubber 2 with Ellie Wheatley) | 2026-02-04: vs Beeston Fields Mixed 2 (BFMX2) (Rubber 4 with Ellie Wheatley) | 2026-02-04: vs Beeston Fields Mixed 2 (BFMX2) (Rubber 9 with Ellie Wheatley) | 2026-03-04: vs East Leake Open 1 (ELO1) (Rubber 1 with Christopher Gerrett) | 2026-03-04: vs East Leake Open 1 (ELO1) (Rubber 6 with Christopher Gerrett) | 2026-03-04: vs East Leake Open 1 (ELO1) (Rubber 8 with Christopher Gerrett) | 2026-03-11: vs Bingham Open 1 (BIO1) (Rubber 1 with Christopher Gerrett) | 2026-03-11: vs Bingham Open 1 (BIO1) (Rubber 6 with Christopher Gerrett) | 2026-03-11: vs Bingham Open 1 (BIO1) (Rubber 8 with Christopher Gerrett) | 2026-03-18: vs Bingham Mixed 1 (BIX1) (Rubber 3 with Sophie Brealey)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Mark Gresham",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-10-29: vs Forest Open 3 (FOO3) (Rubber 2 with Ryan Collins) - Lost Game 1 20-22, Won Game 2 21-17, Won Game 3 21-19 | 2025-12-03: vs Mapperley Park Open 2 (MPO2) (Rubber 2 with Ryan Collins) - Lost Game 1 19-21, Won Game 2 21-19, Won Game 3 21-19 | 2026-01-14: vs East Leake Open 2 (ELO2) (Rubber 1 with Ryan Collins) - Lost Game 1 19-21, Won Game 2 21-11, Won Game 3 21-18 | 2026-01-14: vs East Leake Open 2 (ELO2) (Rubber 6 with Ryan Collins) - Lost Game 1 25-27, Won Game 2 21-6, Won Game 3 21-13 | 2026-03-19: vs West Bridgford Open 1 (SGO1) (Rubber 7 with Ryan Collins) - Lost Game 1 19-21, Won Game 2 21-17, Won Game 3 21-9"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Sarah Pulley",
+          "player_2": "Julie Gater",
+          "award_value": 36,
+          "award_details": "Team: Mansfield Oaktree Womens 1 (MOW1) | vs Forest Womens 1 (FOW1) | Score: 21-6 21-0"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Alan Bowmer",
+          "player_2": "Dan Thomas",
+          "award_value": 8,
+          "award_details": "2025-11-02: vs Arboretum Open 2 (ARO2) (Rubber 1) - Won 16-21 10-21 | 2025-11-02: vs Arboretum Open 2 (ARO2) (Rubber 4) - Won 13-21 18-21 | 2025-11-02: vs Arboretum Open 2 (ARO2) (Rubber 7) - Won 12-21 19-21 | 2026-03-19: vs West Bridgford Open 1 (SGO1) (Rubber 3) - Won 16-21 19-21 | 2026-03-19: vs West Bridgford Open 1 (SGO1) (Rubber 9) - Won 13-21 15-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Dan Thomas",
+          "player_2": null,
+          "award_value": 9,
+          "award_details": "2025-10-17: vs Beeston Fields Open 3 (BFO3) (Rubber 7 with Alan Bowmer) - Game 2: 22-20 | 2025-10-29: vs Forest Open 3 (FOO3) (Rubber 1 with Alan Bowmer) - Game 3: 24-22 | 2025-11-02: vs Arboretum Open 2 (ARO2) (Rubber 7 with Alan Bowmer) - Game 2: 21-19 | 2026-01-14: vs East Leake Open 2 (ELO2) (Rubber 4 with Zhen Dong Li) - Game 3: 21-19 | 2026-01-14: vs East Leake Open 2 (ELO2) (Rubber 9 with Zhen Dong Li) - Game 1: 24-22 | 2026-03-19: vs West Bridgford Open 1 (SGO1) (Rubber 3 with Alan Bowmer) - Game 2: 21-19 | 2026-03-19: vs West Bridgford Open 1 (SGO1) (Rubber 6 with Alan Bowmer) - Game 2: 22-20 | 2026-04-15: vs Safari Badminton Open 1 (SBO1) (Rubber 1 with Alan Bowmer) - Game 1: 21-19, Game 2: 21-19"
+        }
+      ]
+    },
+    "mapperley-park": {
+      "name": "Mapperley Park",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Matt Staniforth",
+          "player_2": null,
+          "award_value": 29,
+          "award_details": "2025-11-03: vs Byron Open 1 (BYO1) (Rubber 4 with Adam Tyas) - Won 21-13 25-23 | 2025-11-27: vs West Bridgford Open 1 (SGO1) (Rubber 6 with Adi Shah) - Won 14-21 14-21 | 2025-12-01: vs Beeston Valley Open 1 (BVO1) (Rubber 1 with Adi Shah) - Won 15-21 16-21 | 2025-12-01: vs Beeston Valley Open 1 (BVO1) (Rubber 7 with Adi Shah) - Won 12-21 11-21 | 2025-12-03: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 4 with Adi Shah) - Won 19-21 18-21 | 2026-01-12: vs Freddie's Mixed 1 (FGX1) (Rubber 8 with Jodie Henson) - Won 15-21 14-21 | 2026-01-18: vs Safari Badminton Open 1 (SBO1) (Rubber 7 with Adi Shah) - Won 14-21 18-21 | 2026-01-19: vs Bilborough Mixed 1 (BOX1) (Rubber 1 with Jodie Henson) - Won 21-15 21-11 | 2026-01-19: vs Bilborough Mixed 1 (BOX1) (Rubber 6 with Jodie Henson) - Won 21-12 21-8 | 2026-01-19: vs Bilborough Mixed 1 (BOX1) (Rubber 8 with Jodie Henson) - Won 21-16 21-17 | 2026-02-02: vs Arboretum Open 2 (ARO2) (Rubber 1 with Joe Wong) - Won 20-22 18-21 | 2026-02-02: vs Arboretum Open 2 (ARO2) (Rubber 6 with Joe Wong) - Won 13-21 16-21 | 2026-02-02: vs Arboretum Open 2 (ARO2) (Rubber 8 with Joe Wong) - Won 10-21 13-21 | 2026-02-07: vs Crusader Mixed 2 (CRX2) (Rubber 3 with Jodie Henson) - Won 11-21 13-21 | 2026-02-07: vs Crusader Mixed 2 (CRX2) (Rubber 6 with Jodie Henson) - Won 7-21 14-21 | 2026-02-07: vs Crusader Mixed 2 (CRX2) (Rubber 9 with Jodie Henson) - Won 15-21 15-21 | 2026-02-16: vs Arboretum Mixed 2 (ARMX2) (Rubber 2 with Jodie Henson) - Won 21-10 21-14 | 2026-02-16: vs Arboretum Mixed 2 (ARMX2) (Rubber 4 with Jodie Henson) - Won 21-18 21-11 | 2026-03-06: vs Beeston Fields Open 3 (BFO3) (Rubber 5 with Adi Shah) - Won 19-21 13-21 | 2026-03-20: vs Carlton Open 2 (CAO2) (Rubber 5 with Adi Shah) - Won 10-21 12-21 | 2026-03-20: vs Carlton Open 2 (CAO2) (Rubber 8 with Adi Shah) - Won 16-21 16-21 | 2026-03-25: vs Bilborough Open 1 (BOO1) (Rubber 3 with Adi Shah) - Won 9-21 15-21 | 2026-03-25: vs Bilborough Open 1 (BOO1) (Rubber 6 with Adi Shah) - Won 12-21 4-21 | 2026-03-25: vs Bilborough Open 1 (BOO1) (Rubber 9 with Adi Shah) - Won 13-21 18-21 | 2026-03-30: vs Arboretum Open 3 (ARO3) (Rubber 6 with Adi Shah) - Won 21-14 21-18 | 2026-03-30: vs Arboretum Open 3 (ARO3) (Rubber 8 with Adi Shah) - Won 21-13 21-17 | 2026-04-13: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 2 with Jodie Henson) - Won 21-9 21-12 | 2026-04-13: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 4 with Jodie Henson) - Won 21-9 21-12 | 2026-04-13: vs Beeston Valley Mixed 1 (BVMX1) (Rubber 9 with Jodie Henson) - Won 21-19 21-15"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Matt Staniforth",
+          "player_2": null,
+          "award_value": 22,
+          "award_details": "Played in 22 matches | Played 65 rubbers | Total points: 5341"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Mathew Haigh",
+          "player_2": null,
+          "award_value": 20,
+          "award_details": "Conceded 39 points across 2 rubbers (avg: 19.5 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Casey Jones",
+          "player_2": "Andrew Waplington",
+          "award_value": 61,
+          "award_details": "2026-01-18 at Kimberley School Sports Centre vs Safari Badminton Open 1 (SBO1) (Score: 21-16 19-21 22-24, Total points: 61, Game 3: 24)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Adi Shah",
+          "player_2": null,
+          "award_value": 2,
+          "award_details": "2025-12-03: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 7 with Matt Staniforth) - Defeated Thomas Weron from Open Premier (2 divisions higher), margin: +8 | 2026-03-23: vs East Leake Open 2 (ELO2) (Rubber 2 with Matt Staniforth) - Defeated Stephen Howe from Open Premier (2 divisions higher), margin: +3 | 2026-03-23: vs East Leake Open 2 (ELO2) (Rubber 9 with Matt Staniforth) - Defeated Lucas Staves from Open Premier (2 divisions higher), margin: +1 | 2026-03-20: vs Carlton Open 2 (CAO2) (Rubber 5 with Matt Staniforth) - Defeated Martin Tilling from Open Division 1 (1 division higher), margin: +20 | 2026-03-20: vs Carlton Open 2 (CAO2) (Rubber 8 with Matt Staniforth) - Defeated Can Truong from Open Division 1 (1 division higher), margin: +10 | 2026-03-30: vs Arboretum Open 3 (ARO3) (Rubber 6 with Matt Staniforth) - Defeated Ryan Picknell from Open Division 1 (1 division higher), margin: +10 | 2026-03-30: vs Arboretum Open 3 (ARO3) (Rubber 8 with Matt Staniforth) - Defeated Kumar Aryan from Open Division 1 (1 division higher), margin: +12"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Matt Staniforth",
+          "player_2": null,
+          "award_value": 9,
+          "award_details": "2026-02-02: vs Arboretum Open 2 (ARO2) (Rubber 1 with Joe Wong) | 2026-02-02: vs Arboretum Open 2 (ARO2) (Rubber 6 with Joe Wong) | 2026-02-02: vs Arboretum Open 2 (ARO2) (Rubber 8 with Joe Wong) | 2026-02-07: vs Crusader Mixed 2 (CRX2) (Rubber 3 with Jodie Henson) | 2026-02-07: vs Crusader Mixed 2 (CRX2) (Rubber 6 with Jodie Henson) | 2026-02-07: vs Crusader Mixed 2 (CRX2) (Rubber 9 with Jodie Henson) | 2026-02-16: vs Arboretum Mixed 2 (ARMX2) (Rubber 2 with Jodie Henson) | 2026-02-16: vs Arboretum Mixed 2 (ARMX2) (Rubber 4 with Jodie Henson) | 2026-02-16: vs Arboretum Mixed 2 (ARMX2) (Rubber 9 with Jodie Henson)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Neil Franklin",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2025-11-27: vs West Bridgford Open 1 (SGO1) (Rubber 5 with Con Truong) - Lost Game 1 13-21, Won Game 2 21-14, Won Game 3 21-13 | 2025-12-01: vs Beeston Valley Open 1 (BVO1) (Rubber 8 with Mohammed Maalik) - Lost Game 1 17-21, Won Game 2 21-18, Won Game 3 21-14 | 2025-12-03: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 9 with Con Truong) - Lost Game 1 18-21, Won Game 2 21-16, Won Game 3 21-17 | 2026-01-18: vs Safari Badminton Open 1 (SBO1) (Rubber 2 with Joe Wong) - Lost Game 1 14-21, Won Game 2 21-19, Won Game 3 21-19 | 2026-01-18: vs Safari Badminton Open 1 (SBO1) (Rubber 8 with Joe Wong) - Lost Game 1 18-21, Won Game 2 21-12, Won Game 3 21-14 | 2026-01-31: vs Crusader Open 1 (CRO1) (Rubber 6 with Sam Straw) - Lost Game 1 13-21, Won Game 2 21-19, Won Game 3 21-16"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Adi Shah",
+          "player_2": "Matt Staniforth",
+          "award_value": 26,
+          "award_details": "Team: Mapperley Park Open 3 (MPO3) | vs Bilborough Open 1 (BOO1) | Score: 12-21 4-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Adi Shah",
+          "player_2": "Matt Staniforth",
+          "award_value": 13,
+          "award_details": "2025-11-27: vs West Bridgford Open 1 (SGO1) (Rubber 6) - Won 14-21 14-21 | 2025-12-01: vs Beeston Valley Open 1 (BVO1) (Rubber 1) - Won 15-21 16-21 | 2025-12-01: vs Beeston Valley Open 1 (BVO1) (Rubber 7) - Won 12-21 11-21 | 2025-12-03: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 4) - Won 19-21 18-21 | 2026-01-18: vs Safari Badminton Open 1 (SBO1) (Rubber 7) - Won 14-21 18-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Andrew Waplington",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-10-09: vs Forest Mixed 3 (FOX3) (Rubber 9 with Alison O'Neill) - Game 1: 21-19 | 2025-12-03: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 2 with Casey Jones) - Game 1: 21-19 | 2025-12-18: vs Forest Open 3 (FOO3) (Rubber 8 with Casey Jones) - Game 1: 22-20 | 2026-01-18: vs Safari Badminton Open 1 (SBO1) (Rubber 9 with Casey Jones) - Game 2: 21-19, Game 3: 24-22 | 2026-01-31: vs Crusader Open 1 (CRO1) (Rubber 5 with Gurj Singh) - Game 1: 24-22, Game 2: 21-19 | 2026-01-31: vs Crusader Open 1 (CRO1) (Rubber 8 with Gurj Singh) - Game 1: 21-19 | 2026-02-02: vs Arboretum Open 2 (ARO2) (Rubber 9 with Casey Jones) - Game 2: 22-20 | 2026-03-23: vs East Leake Open 2 (ELO2) (Rubber 3 with Casey Jones) - Game 2: 21-19 | 2026-03-23: vs East Leake Open 2 (ELO2) (Rubber 5 with Casey Jones) - Game 1: 21-19 | 2026-03-25: vs Bilborough Open 1 (BOO1) (Rubber 2 with Gurj Singh) - Game 2: 23-21, Game 3: 22-20 | 2026-03-30: vs Arboretum Open 3 (ARO3) (Rubber 5 with Gurj Singh) - Game 2: 22-20 | 2026-04-08: vs Bingham Open 2 (BIO2) (Rubber 1 with Casey Jones) - Game 1: 21-19"
+        }
+      ]
+    },
+    "north-notts-social": {
+      "name": "North Notts Social",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Heath Caine",
+          "player_2": null,
+          "award_value": 21,
+          "award_details": "2025-10-05: vs Southwell Open 2 (SOO2) (Rubber 4 with Will Merrick) - Won 19-21 11-21 | 2025-11-10: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 2 with Sophie Bilzon) - Won 18-21 18-21 | 2025-11-25: vs Rushcliffe Arena Open 2 (RAO2) (Rubber 4 with Desmond Ward) - Won 21-15 21-17 | 2025-11-30: vs Arboretum Open 5 (ARO5) (Rubber 2 with Qamar Haque) - Won 5-21 7-21 | 2025-11-30: vs Arboretum Open 5 (ARO5) (Rubber 5 with Qamar Haque) - Won 12-21 16-21 | 2025-11-30: vs Arboretum Open 5 (ARO5) (Rubber 8 with Qamar Haque) - Won 9-21 19-21 | 2025-12-04: vs West Bridgford Open 3 (SGO3) (Rubber 5 with Desmond Ward) - Won 19-21 13-21 | 2025-12-07: vs Radcliffe Knights Mixed 2 (RKX2) (Rubber 4 with Sophie Bilzon) - Won 11-21 6-21 | 2025-12-07: vs Radcliffe Knights Mixed 2 (RKX2) (Rubber 7 with Sophie Bilzon) - Won 12-21 19-21 | 2026-01-11: vs Radcliffe Knights Open 4 (RKO4) (Rubber 1 with Qamar Haque) - Won 11-21 18-21 | 2026-01-11: vs Radcliffe Knights Open 4 (RKO4) (Rubber 4 with Qamar Haque) - Won 10-21 20-22 | 2026-01-11: vs Radcliffe Knights Open 4 (RKO4) (Rubber 7 with Qamar Haque) - Won 16-21 8-21 | 2026-01-12: vs Beeston Valley Open 2 (BVO2) (Rubber 1 with Will Merrick) - Won 14-21 16-21 | 2026-01-12: vs Beeston Valley Open 2 (BVO2) (Rubber 4 with Will Merrick) - Won 17-21 10-21 | 2026-02-01: vs Arboretum Open 6 (ARO6) (Rubber 3 with Fai Wong) - Won 19-21 9-21 | 2026-02-01: vs Arboretum Open 6 (ARO6) (Rubber 6 with Fai Wong) - Won 15-21 6-21 | 2026-02-01: vs Arboretum Open 6 (ARO6) (Rubber 9 with Fai Wong) - Won 5-21 9-21 | 2026-02-24: vs Beeston Braves Open 2 (BBO2) (Rubber 1 with Will Merrick) - Won 22-20 21-17 | 2026-02-24: vs Beeston Braves Open 2 (BBO2) (Rubber 8 with Will Merrick) - Won 21-11 23-21 | 2026-03-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 2 with Sophie Bilzon) - Won 21-14 21-18 | 2026-03-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 4 with Sophie Bilzon) - Won 21-16 21-13"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "David Day",
+          "player_2": null,
+          "award_value": 14,
+          "award_details": "Played in 14 matches | Played 41 rubbers | Total points: 3315"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Shuang Qiu",
+          "player_2": null,
+          "award_value": 33,
+          "award_details": "Conceded 299 points across 9 rubbers (avg: 33.2 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Laura Watson",
+          "player_2": "Will Merrick",
+          "award_value": 62,
+          "award_details": null
+        },
+        {
+          "award": "giant_killing",
+          "player": "Shiva Shankar Reddy Pingali",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2026-03-29: vs Safari Badminton Open 4 (SBO4) (Rubber 5 with Ryan Young) - Defeated Joe Kidd from Open Division 2 (6 divisions higher), margin: +7 | 2026-03-29: vs Safari Badminton Open 4 (SBO4) (Rubber 8 with Ryan Young) - Defeated Tom Burton from Open Division 7 (1 division higher), margin: +10"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Lisa Straw",
+          "player_2": null,
+          "award_value": 11,
+          "award_details": "2026-02-25: vs Bilborough Womens 1 (BOW1) (Rubber 5 with Laura Watson) | 2026-02-25: vs Bilborough Womens 1 (BOW1) (Rubber 8 with Laura Watson) | 2026-03-06: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 2 with Laura Watson) | 2026-03-06: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 5 with Laura Watson) | 2026-03-06: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 8 with Laura Watson) | 2026-03-09: vs Freddie's Mixed 2 (FGX2) (Rubber 3 with Carl Storey) | 2026-03-09: vs Freddie's Mixed 2 (FGX2) (Rubber 6 with Carl Storey) | 2026-03-09: vs Freddie's Mixed 2 (FGX2) (Rubber 9 with Carl Storey) | 2026-03-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 1 with Carl Storey) | 2026-03-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 6 with Carl Storey) | 2026-03-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 8 with Carl Storey)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Carl Storey",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-11-10: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 6 with Julie Whitby) - Lost Game 1 19-21, Won Game 2 21-17, Won Game 3 21-19 | 2026-03-03: vs Safari Badminton Open 2 (SBO2) (Rubber 2 with Ryan Merrell) - Lost Game 1 19-21, Won Game 2 21-17, Won Game 3 21-14 | 2026-03-09: vs Freddie's Mixed 2 (FGX2) (Rubber 6 with Lisa Straw) - Lost Game 1 19-21, Won Game 2 21-15, Won Game 3 21-19 | 2026-03-09: vs Freddie's Mixed 2 (FGX2) (Rubber 9 with Lisa Straw) - Lost Game 1 16-21, Won Game 2 21-17, Won Game 3 21-19 | 2026-03-24: vs Radcliffe Knights Mixed 1 (RKX1) (Rubber 8 with Lisa Straw) - Lost Game 1 19-21, Won Game 2 21-11, Won Game 3 21-11"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Ryan Merrell",
+          "player_2": "Carl Storey",
+          "award_value": 42,
+          "award_details": "Team: North Notts Social Open 1 (NNO1) | vs Beeston Valley Open 2 (BVO2) | Score: 0-21 0-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Laura Watson",
+          "player_2": "Lisa Straw",
+          "award_value": 9,
+          "award_details": "2026-01-13: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 1) - Won 21-17 21-12 | 2026-01-13: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 6) - Won 21-8 21-7 | 2026-01-13: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 8) - Won 21-8 21-7 | 2026-02-15: vs Beeston Braves Womens 1 (BBW1) (Rubber 1) - Won 6-21 18-21 | 2026-02-15: vs Beeston Braves Womens 1 (BBW1) (Rubber 4) - Won 14-21 5-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Heath Caine",
+          "player_2": null,
+          "award_value": 11,
+          "award_details": "2025-10-05: vs Southwell Open 2 (SOO2) (Rubber 1 with Will Merrick) - Game 2: 21-19 | 2025-10-05: vs Southwell Open 2 (SOO2) (Rubber 4 with Will Merrick) - Game 1: 21-19 | 2025-11-10: vs Beeston Valley Mixed 2 (BVMX2) (Rubber 5 with Sophie Bilzon) - Game 1: 21-19 | 2025-11-30: vs Arboretum Open 5 (ARO5) (Rubber 8 with Qamar Haque) - Game 2: 21-19 | 2025-12-04: vs West Bridgford Open 3 (SGO3) (Rubber 5 with Desmond Ward) - Game 1: 21-19 | 2025-12-07: vs Radcliffe Knights Mixed 2 (RKX2) (Rubber 7 with Sophie Bilzon) - Game 2: 21-19 | 2026-01-11: vs Radcliffe Knights Open 4 (RKO4) (Rubber 4 with Qamar Haque) - Game 2: 22-20 | 2026-02-01: vs Arboretum Open 6 (ARO6) (Rubber 3 with Fai Wong) - Game 1: 21-19 | 2026-02-24: vs Beeston Braves Open 2 (BBO2) (Rubber 1 with Will Merrick) - Game 1: 22-20 | 2026-02-24: vs Beeston Braves Open 2 (BBO2) (Rubber 8 with Will Merrick) - Game 2: 23-21 | 2026-03-03: vs Safari Badminton Open 2 (SBO2) (Rubber 8 with Will Merrick) - Game 2: 23-21"
+        }
+      ]
+    },
+    "nottingham-para": {
+      "name": "Nottingham Para",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Owen Kilburn",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2025-11-11: vs North Notts Social Mixed 2 (NNX2) (Rubber 6 with Sophie Donaldson) - Won 21-17 23-21 | 2025-11-11: vs North Notts Social Mixed 2 (NNX2) (Rubber 8 with Sophie Donaldson) - Won 21-18 22-20 | 2026-03-03: vs Crusader Mixed 3 (CRX3) (Rubber 4 with Sophie Donaldson) - Won 21-19 21-19"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Owen Kilburn",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "Played in 5 matches | Played 14 rubbers | Total points: 1048"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Owen Kilburn",
+          "player_2": null,
+          "award_value": 41,
+          "award_details": "Conceded 580 points across 14 rubbers (avg: 41.4 points per rubber)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Owen Kilburn",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2026-03-03: vs Crusader Mixed 3 (CRX3) (Rubber 4 with Sophie Donaldson) - Defeated Andrew Morrell from Mixed Division 3 (3 divisions higher), margin: +4"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Owen Kilburn",
+          "player_2": null,
+          "award_value": 2,
+          "award_details": "2025-11-11: vs North Notts Social Mixed 2 (NNX2) (Rubber 6 with Sophie Donaldson) | 2025-11-11: vs North Notts Social Mixed 2 (NNX2) (Rubber 8 with Sophie Donaldson)"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Sophie Donaldson",
+          "player_2": "Owen Kilburn",
+          "award_value": 6,
+          "award_details": "Team: Nottingham Para Mixed 1 (NPX1) | vs North Notts Social Mixed 2 (NNX2) | Score: 21-17 23-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Owen Kilburn",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2025-11-11: vs North Notts Social Mixed 2 (NNX2) (Rubber 6 with Sophie Donaldson) - Game 2: 23-21 | 2025-11-11: vs North Notts Social Mixed 2 (NNX2) (Rubber 8 with Sophie Donaldson) - Game 2: 22-20 | 2026-03-03: vs Crusader Mixed 3 (CRX3) (Rubber 4 with Sophie Donaldson) - Game 1: 21-19, Game 2: 21-19"
+        }
+      ]
+    },
+    "radcliffe-knights": {
+      "name": "Radcliffe Knights",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "David Lee",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-11-09: vs Southwell Open 2 (SOO2) (Rubber 3 with Roscoe Fernandes) - Won 10-21 17-21 | 2025-11-30: vs Beeston Valley Open 3 (BVO3) (Rubber 1 with Iain Avis) - Won 21-18 21-19 | 2025-11-30: vs Beeston Valley Open 3 (BVO3) (Rubber 6 with Iain Avis) - Won 21-17 21-10 | 2025-11-30: vs Beeston Valley Open 3 (BVO3) (Rubber 8 with Iain Avis) - Won 21-15 21-14 | 2025-12-07: vs North Notts Social Mixed 2 (NNX2) (Rubber 9 with Sharren Roe) - Won 21-13 26-24 | 2025-12-08: vs Beeston Valley Open 2 (BVO2) (Rubber 5 with Roscoe Fernandes) - Won 14-21 9-21 | 2026-01-11: vs Byron Mixed 2 (BYX2) (Rubber 4 with Meg Heath) - Won 21-16 21-5 | 2026-01-11: vs Byron Mixed 2 (BYX2) (Rubber 9 with Meg Heath) - Won 21-13 21-11 | 2026-01-25: vs Arboretum Open 4 (ARO4) (Rubber 6 with Iain Avis) - Won 21-15 21-12 | 2026-02-01: vs Rushcliffe Arena Open 1 (RAO1) (Rubber 2 with Richard Twiner) - Won 21-12 21-18 | 2026-02-22: vs Nottingham Para Mixed 1 (NPX1) (Rubber 2 with Meg Heath) - Won 21-14 21-19 | 2026-02-22: vs Nottingham Para Mixed 1 (NPX1) (Rubber 4 with Meg Heath) - Won 21-5 21-5 | 2026-02-22: vs Nottingham Para Mixed 1 (NPX1) (Rubber 9 with Meg Heath) - Won 21-11 21-14 | 2026-03-29: vs Beeston Braves Mixed 2 (BBMX2) (Rubber 4 with Rachael Wheatley) - Won 18-21 11-21 | 2026-04-19: vs Beeston Braves Open 2 (BBO2) (Rubber 7 with Roscoe Fernandes) - Won 19-21 11-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "David Lee",
+          "player_2": null,
+          "award_value": 16,
+          "award_details": "Played in 16 matches | Played 47 rubbers | Total points: 3834"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Kim Martin",
+          "player_2": null,
+          "award_value": 36,
+          "award_details": "Conceded 320 points across 9 rubbers (avg: 35.6 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Meg Heath",
+          "player_2": "Glyn Spencer",
+          "award_value": 59,
+          "award_details": "2025-12-07 at South Nottinghamshire Academy vs North Notts Social Mixed 2 (NNX2) (Score: 21-19 16-21 22-20, Total points: 59, Game 3: 22)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Julian Holmes",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2026-01-25: vs Arboretum Open 4 (ARO4) (Rubber 2 with Roscoe Fernandes) - Defeated Sam Maynard from Open Division 1 (5 divisions higher), margin: +-1 | 2026-01-25: vs Arboretum Open 4 (ARO4) (Rubber 4 with Roscoe Fernandes) - Defeated Boris Wong from Open Division 1 (5 divisions higher), margin: +9 | 2025-11-30: vs Beeston Valley Open 3 (BVO3) (Rubber 9 with Roscoe Fernandes) - Defeated Sadi Sadi from Open Division 3 (3 divisions higher), margin: +16"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Abigail Hayles",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2026-01-13: vs North Notts Social Womens 1 (NNW1) (Rubber 4 with Rachael Wheatley) | 2026-01-13: vs North Notts Social Womens 1 (NNW1) (Rubber 7 with Rachael Wheatley) | 2026-01-18: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 1 with Rachael Wheatley) | 2026-01-18: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 6 with Rachael Wheatley) | 2026-01-18: vs Rushcliffe Arena Womens 1 (RAW1) (Rubber 8 with Rachael Wheatley)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "David Lee",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2025-11-23: vs Safari Badminton Open 3 (SBO3) (Rubber 2 with Iain Avis) - Lost Game 1 16-21, Won Game 2 21-19, Won Game 3 21-12 | 2026-01-25: vs Arboretum Open 4 (ARO4) (Rubber 8 with Iain Avis) - Lost Game 1 14-21, Won Game 2 22-20, Won Game 3 21-19 | 2026-04-19: vs Beeston Braves Open 2 (BBO2) (Rubber 4 with Roscoe Fernandes) - Lost Game 1 15-21, Won Game 2 21-17, Won Game 3 21-14"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Tom Clare",
+          "player_2": "Yudan Chen",
+          "award_value": 36,
+          "award_details": "Team: Radcliffe Knights Open 1 (RKO1) | vs Byron Open 2 (BYO2) | Score: 3-21 3-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Jason Smith",
+          "player_2": "Mark Forth",
+          "award_value": 7,
+          "award_details": "2025-12-07: vs Arboretum Open 6 (ARO6) (Rubber 1) - Won 21-12 21-12 | 2025-12-07: vs Arboretum Open 6 (ARO6) (Rubber 6) - Won 21-16 21-14 | 2026-01-11: vs North Notts Social Open 2 (NNO2) (Rubber 6) - Won 21-10 21-15 | 2026-02-22: vs Arboretum Open 5 (ARO5) (Rubber 1) - Won 21-6 21-18 | 2026-02-22: vs Arboretum Open 5 (ARO5) (Rubber 4) - Won 21-8 21-7"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "David Lee",
+          "player_2": null,
+          "award_value": 10,
+          "award_details": "2025-11-23: vs Safari Badminton Open 3 (SBO3) (Rubber 2 with Iain Avis) - Game 2: 21-19 | 2025-11-30: vs Beeston Valley Open 3 (BVO3) (Rubber 1 with Iain Avis) - Game 2: 21-19 | 2025-12-07: vs North Notts Social Mixed 2 (NNX2) (Rubber 2 with Sharren Roe) - Game 1: 22-20 | 2025-12-07: vs North Notts Social Mixed 2 (NNX2) (Rubber 9 with Sharren Roe) - Game 2: 26-24 | 2025-12-08: vs Beeston Valley Open 2 (BVO2) (Rubber 8 with Roscoe Fernandes) - Game 2: 21-19 | 2025-12-17: vs East Leake Open 3 (ELO3) (Rubber 3 with Ben Allman) - Game 3: 21-19 | 2026-01-25: vs Arboretum Open 4 (ARO4) (Rubber 8 with Iain Avis) - Game 2: 22-20, Game 3: 21-19 | 2026-02-22: vs Nottingham Para Mixed 1 (NPX1) (Rubber 2 with Meg Heath) - Game 2: 21-19 | 2026-04-19: vs Beeston Braves Open 2 (BBO2) (Rubber 7 with Roscoe Fernandes) - Game 1: 21-19"
+        }
+      ]
+    },
+    "rolls-royce": {
+      "name": "Rolls Royce",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Sam Burdon",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-11-23: vs Beeston Fields Open 2 (BFO2) (Rubber 6 with Nicholas Tranter) - Won 21-6 21-14 | 2025-11-23: vs Beeston Fields Open 2 (BFO2) (Rubber 8 with Nicholas Tranter) - Won 21-18 21-15 | 2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 1 with Nathan Johnson) - Won 21-14 21-14 | 2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 6 with Nathan Johnson) - Won 21-14 21-9 | 2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 8 with Nathan Johnson) - Won 21-18 30-29 | 2026-01-16: vs Carlton Open 1 (CAO1) (Rubber 4 with Nathan Johnson) - Won 14-21 16-21 | 2026-01-16: vs Carlton Open 1 (CAO1) (Rubber 7 with Nathan Johnson) - Won 17-21 18-21 | 2026-02-09: vs Byron Open 1 (BYO1) (Rubber 1 with Nathan Johnson) - Won 15-21 12-21 | 2026-02-22: vs East Leake Open 1 (ELO1) (Rubber 7 with Nathan Johnson) - Won 21-12 21-13 | 2026-02-27: vs Arboretum Open 1 (ARO1) (Rubber 1 with Abdul Raheem Ali) - Won 21-12 21-10 | 2026-02-27: vs Arboretum Open 1 (ARO1) (Rubber 6 with Abdul Raheem Ali) - Won 21-14 21-10 | 2026-03-04: vs Bingham Open 1 (BIO1) (Rubber 5 with Santhush Thilakaratne) - Won 16-21 9-21 | 2026-03-29: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 2 with Nathan Johnson) - Won 21-8 21-19 | 2026-03-29: vs Mansfield Oaktree Open 1 (MOO1) (Rubber 4 with Nathan Johnson) - Won 21-16 21-15 | 2026-04-22: vs Bingham Open 2 (BIO2) (Rubber 7 with Colin Whitaker) - Won 12-21 18-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Sam Burdon",
+          "player_2": null,
+          "award_value": 10,
+          "award_details": "Played in 10 matches | Played 30 rubbers | Total points: 2452"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Andrew Brown",
+          "player_2": null,
+          "award_value": 31,
+          "award_details": "Conceded 185 points across 6 rubbers (avg: 30.8 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Colin Whitaker",
+          "player_2": "Andrew Greatbatch",
+          "award_value": 73,
+          "award_details": "2026-02-27 at The Bemrose School vs Arboretum Open 1 (ARO1) (Score: 29-30 21-15 23-21, Total points: 73, Game 3: 23)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Charlie Gibson-Kerry",
+          "player_2": null,
+          "award_value": 1,
+          "award_details": "2025-12-05: vs Forest Open 2 (FOO2) (Rubber 9 with Nivin Das) - Defeated Aidan Cheung from Open Premier (1 division higher), margin: +4"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Nathan Johnson",
+          "player_2": null,
+          "award_value": 9,
+          "award_details": "2025-12-05: vs Forest Open 2 (FOO2) (Rubber 8 with Sam Burdon) | 2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 1 with Sam Burdon) | 2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 6 with Sam Burdon) | 2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 8 with Sam Burdon) | 2026-01-16: vs Carlton Open 1 (CAO1) (Rubber 1 with Sam Burdon) | 2026-01-16: vs Carlton Open 1 (CAO1) (Rubber 4 with Sam Burdon) | 2026-01-16: vs Carlton Open 1 (CAO1) (Rubber 7 with Sam Burdon) | 2026-02-09: vs Byron Open 1 (BYO1) (Rubber 1 with Sam Burdon) | 2026-02-09: vs Byron Open 1 (BYO1) (Rubber 4 with Sam Burdon)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Shishira Ganapathi",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2025-11-23: vs Beeston Fields Open 2 (BFO2) (Rubber 3 with Nivin Das) - Lost Game 1 19-21, Won Game 2 21-12, Won Game 3 21-11 | 2025-12-05: vs Forest Open 2 (FOO2) (Rubber 3 with Abdul Raheem Ali) - Lost Game 1 19-21, Won Game 2 21-15, Won Game 3 21-19 | 2026-02-27: vs Arboretum Open 1 (ARO1) (Rubber 5 with Nivin Das) - Lost Game 1 19-21, Won Game 2 21-14, Won Game 3 21-17"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Nicholas Tranter",
+          "player_2": "Nathan Johnson",
+          "award_value": 42,
+          "award_details": "Team: Rolls Royce Open 1 (RRO1) | vs Bingham Open 1 (BIO1) | Score: 0-21 0-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Nathan Johnson",
+          "player_2": "Sam Burdon",
+          "award_value": 9,
+          "award_details": "2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 1) - Won 21-14 21-14 | 2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 6) - Won 21-14 21-9 | 2025-12-14: vs Mapperley Park Open 1 (MPO1) (Rubber 8) - Won 21-18 30-29 | 2026-01-16: vs Carlton Open 1 (CAO1) (Rubber 4) - Won 14-21 16-21 | 2026-01-16: vs Carlton Open 1 (CAO1) (Rubber 7) - Won 17-21 18-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Shishira Ganapathi",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-11-13: vs Forest Open 1 (FOO1) (Rubber 5 with Santhush Thilakaratne) - Game 1: 22-20, Game 3: 21-19 | 2025-12-05: vs Forest Open 2 (FOO2) (Rubber 3 with Abdul Raheem Ali) - Game 3: 21-19 | 2025-12-05: vs Forest Open 2 (FOO2) (Rubber 5 with Abdul Raheem Ali) - Game 1: 24-22 | 2026-03-04: vs Bingham Open 1 (BIO1) (Rubber 3 with Deep Sohanpal) - Game 1: 22-20"
+        },
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Nivin Das",
+          "player_2": null,
+          "award_value": 18,
+          "award_details": "2025-10-12: vs Beeston Braves Open 2 (BBO2) (Rubber 1 with Shishira Ganapathi) - Won 11-21 8-21 | 2025-10-12: vs Beeston Braves Open 2 (BBO2) (Rubber 4 with Shishira Ganapathi) - Won 17-21 10-21 | 2025-10-12: vs Beeston Braves Open 2 (BBO2) (Rubber 7 with Shishira Ganapathi) - Won 14-21 6-21 | 2025-10-24: vs North Notts Social Open 1 (NNO1) (Rubber 2 with Vishnu R Nair) - Won 21-17 21-8 | 2025-10-24: vs North Notts Social Open 1 (NNO1) (Rubber 4 with Vishnu R Nair) - Won 27-25 24-22 | 2025-10-24: vs North Notts Social Open 1 (NNO1) (Rubber 9 with Vishnu R Nair) - Won 21-9 21-12 | 2025-11-14: vs Beeston Valley Open 2 (BVO2) (Rubber 3 with Vishnu R Nair) - Won 21-13 21-12 | 2025-11-14: vs Beeston Valley Open 2 (BVO2) (Rubber 5 with Vishnu R Nair) - Won 21-16 21-11 | 2025-11-14: vs Beeston Valley Open 2 (BVO2) (Rubber 7 with Vishnu R Nair) - Won 21-11 21-9 | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 3 with Binish George) - Won 21-11 21-9 | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 5 with Binish George) - Won 21-17 21-12 | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 7 with Binish George) - Won 21-12 22-20 | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 3 with Binish George) - Won 18-21 14-21 | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 6 with Binish George) - Won 14-21 8-21 | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 9 with Binish George) - Won 12-21 8-21 | 2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 3 with Binish George) - Won 18-21 10-21 | 2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 6 with Binish George) - Won 8-21 10-21 | 2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 9 with Binish George) - Won 15-21 12-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Nivin Das",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "Played in 6 matches | Played 18 rubbers | Total points: 1225"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Mark Chan",
+          "player_2": null,
+          "award_value": 18,
+          "award_details": "Conceded 55 points across 3 rubbers (avg: 18.3 points per rubber)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Binish George",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 6 with Nivin Das) - Defeated Luke Whiting from Open Division 2 (4 divisions higher), margin: +24 | 2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 9 with Nivin Das) - Defeated Samson Blake from Open Division 2 (4 divisions higher), margin: +15 | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 7 with Nivin Das) - Defeated Alasdair Mullen from Open Division 3 (3 divisions higher), margin: +11 | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 6 with Nivin Das) - Defeated Yudan Chen from Open Division 4 (2 divisions higher), margin: +20 | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 9 with Nivin Das) - Defeated David Lee from Open Division 4 (2 divisions higher), margin: +22"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Nivin Das",
+          "player_2": null,
+          "award_value": 18,
+          "award_details": "2025-10-12: vs Beeston Braves Open 2 (BBO2) (Rubber 1 with Shishira Ganapathi) | 2025-10-12: vs Beeston Braves Open 2 (BBO2) (Rubber 4 with Shishira Ganapathi) | 2025-10-12: vs Beeston Braves Open 2 (BBO2) (Rubber 7 with Shishira Ganapathi) | 2025-10-24: vs North Notts Social Open 1 (NNO1) (Rubber 2 with Vishnu R Nair) | 2025-10-24: vs North Notts Social Open 1 (NNO1) (Rubber 4 with Vishnu R Nair) | 2025-10-24: vs North Notts Social Open 1 (NNO1) (Rubber 9 with Vishnu R Nair) | 2025-11-14: vs Beeston Valley Open 2 (BVO2) (Rubber 3 with Vishnu R Nair) | 2025-11-14: vs Beeston Valley Open 2 (BVO2) (Rubber 5 with Vishnu R Nair) | 2025-11-14: vs Beeston Valley Open 2 (BVO2) (Rubber 7 with Vishnu R Nair) | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 3 with Binish George) | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 5 with Binish George) | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 7 with Binish George) | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 3 with Binish George) | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 6 with Binish George) | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 9 with Binish George) | 2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 3 with Binish George) | 2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 6 with Binish George) | 2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 9 with Binish George)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Deep Sohanpal",
+          "player_2": null,
+          "award_value": 1,
+          "award_details": "2025-10-12: vs Beeston Braves Open 2 (BBO2) (Rubber 9 with Nigel Cook) - Lost Game 1 16-21, Won Game 2 21-17, Won Game 3 21-18"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Deep Sohanpal",
+          "player_2": "Charlie Gibson-Kerry",
+          "award_value": 34,
+          "award_details": "Team: Rolls-Royce Open 3 (RRO3) | vs North Notts Social Open 1 (NNO1) | Score: 21-2 21-6"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Binish George",
+          "player_2": "Nivin Das",
+          "award_value": 9,
+          "award_details": "2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 3) - Won 21-11 21-9 | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 5) - Won 21-17 21-12 | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 7) - Won 21-12 22-20 | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 3) - Won 18-21 14-21 | 2026-03-29: vs Radcliffe Knights Open 2 (RKO2) (Rubber 6) - Won 14-21 8-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Nigel Cook",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-10-12: vs Beeston Braves Open 2 (BBO2) (Rubber 6 with Deep Sohanpal) - Game 1: 24-22 | 2025-11-14: vs Beeston Valley Open 2 (BVO2) (Rubber 4 with Sai Kasam) - Game 2: 21-19 | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 2 with Sai Kasam) - Game 2: 21-19 | 2026-03-08: vs Southwell Open 2 (SOO2) (Rubber 9 with Sai Kasam) - Game 2: 21-19 | 2026-04-19: vs Safari Badminton Open 2 (SBO2) (Rubber 5 with Vishnu R Nair) - Game 2: 24-22"
+        }
+      ]
+    },
+    "rushcliffe-arena": {
+      "name": "Rushcliffe Arena",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Prashant Chahal",
+          "player_2": null,
+          "award_value": 17,
+          "award_details": "2025-10-10: vs Chilwell Open 1 (CHO1) (Rubber 3 with Anil Balakrishnan) - Won 21-7 21-10 | 2025-10-10: vs Chilwell Open 1 (CHO1) (Rubber 5 with Anil Balakrishnan) - Won 21-19 21-18 | 2025-10-16: vs Forest Open 4 (FOO4) (Rubber 4 with Aman Soni) - Won 16-21 10-21 | 2025-10-16: vs Forest Open 4 (FOO4) (Rubber 7 with Aman Soni) - Won 13-21 18-21 | 2025-10-31: vs East Leake Open 3 (ELO3) (Rubber 2 with Aman Soni) - Won 21-14 21-16 | 2025-10-31: vs East Leake Open 3 (ELO3) (Rubber 4 with Aman Soni) - Won 21-13 21-12 | 2025-10-31: vs East Leake Open 3 (ELO3) (Rubber 9 with Aman Soni) - Won 21-11 21-15 | 2025-11-12: vs Bilborough Mixed 2 (BOX2) (Rubber 7 with Thiripurasundari Selvaraj) - Won 14-21 16-21 | 2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 3 with Anil Balakrishnan) - Won 10-21 17-21 | 2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 6 with Anil Balakrishnan) - Won 19-21 14-21 | 2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 9 with Anil Balakrishnan) - Won 11-21 16-21 | 2026-02-06: vs Southwell Mixed 2 (SOX2) (Rubber 9 with Caroline Hill) - Won 21-19 21-16 | 2026-02-13: vs Forest Mixed 4 (FOX4) (Rubber 1 with Caroline Hill) - Won 21-15 22-20 | 2026-02-13: vs Forest Mixed 4 (FOX4) (Rubber 6 with Caroline Hill) - Won 21-11 21-12 | 2026-02-13: vs Forest Mixed 4 (FOX4) (Rubber 8 with Caroline Hill) - Won 21-11 21-8 | 2026-02-23: vs Byron Open 2 (BYO2) (Rubber 3 with Anil Balakrishnan) - Won 4-21 5-21 | 2026-02-23: vs Byron Open 2 (BYO2) (Rubber 6 with Anil Balakrishnan) - Won 13-21 11-21"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Alison Mcdonald",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "Played in 12 matches | Played 34 rubbers | Total points: 2799"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Alpesh Samani",
+          "player_2": null,
+          "award_value": 32,
+          "award_details": "Conceded 64 points across 2 rubbers (avg: 32.0 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Caroline Hill",
+          "player_2": "Anneka Hall",
+          "award_value": 65,
+          "award_details": "2026-01-18 at South Nottinghamshire Academy vs Radcliffe Knights Womens 1 (RKW1) (Score: 12-21 22-20 22-24, Total points: 65, Game 3: 24)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Zia Khan",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2026-01-16: vs West Bridgford Open 3 (SGO3) (Rubber 4 with Subeesh Bose) - Defeated Joshua McGregor from Open Division 2 (6 divisions higher), margin: +9 | 2025-10-26: vs Arboretum Open 5 (ARO5) (Rubber 2 with Sanaa Hallam) - Defeated Nathan Davies from Open Division 7 (1 division higher), margin: +4 | 2025-10-26: vs Arboretum Open 5 (ARO5) (Rubber 8 with Sanaa Hallam) - Defeated Kamal Mani from Open Division 7 (1 division higher), margin: +20"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Prashant Chahal",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 3 with Anil Balakrishnan) | 2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 6 with Anil Balakrishnan) | 2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 9 with Anil Balakrishnan) | 2026-02-06: vs Southwell Mixed 2 (SOX2) (Rubber 2 with Caroline Hill) | 2026-02-06: vs Southwell Mixed 2 (SOX2) (Rubber 4 with Caroline Hill) | 2026-02-06: vs Southwell Mixed 2 (SOX2) (Rubber 9 with Caroline Hill) | 2026-02-13: vs Forest Mixed 4 (FOX4) (Rubber 1 with Caroline Hill) | 2026-02-13: vs Forest Mixed 4 (FOX4) (Rubber 6 with Caroline Hill) | 2026-02-13: vs Forest Mixed 4 (FOX4) (Rubber 8 with Caroline Hill) | 2026-02-23: vs Byron Open 2 (BYO2) (Rubber 3 with Anil Balakrishnan) | 2026-02-23: vs Byron Open 2 (BYO2) (Rubber 6 with Anil Balakrishnan) | 2026-02-23: vs Byron Open 2 (BYO2) (Rubber 9 with Anil Balakrishnan)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Alison Mcdonald",
+          "player_2": null,
+          "award_value": 3,
+          "award_details": "2025-11-12: vs Bilborough Mixed 2 (BOX2) (Rubber 6 with Anil Balakrishnan) - Lost Game 1 19-21, Won Game 2 21-8, Won Game 3 21-9 | 2026-01-09: vs Bilborough Womens 1 (BOW1) (Rubber 7 with Yue Lin) - Lost Game 1 17-21, Won Game 2 21-16, Won Game 3 21-14 | 2026-02-06: vs Southwell Mixed 2 (SOX2) (Rubber 3 with Anil Balakrishnan) - Lost Game 1 17-21, Won Game 2 21-17, Won Game 3 21-17"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Anil Balakrishnan",
+          "player_2": "Prashant Chahal",
+          "award_value": 33,
+          "award_details": "Team: Rushcliffe Arena Open 1 (RAO1) | vs Byron Open 2 (BYO2) | Score: 4-21 5-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Anil Balakrishnan",
+          "player_2": "Prashant Chahal",
+          "award_value": 7,
+          "award_details": "2025-10-10: vs Chilwell Open 1 (CHO1) (Rubber 3) - Won 21-7 21-10 | 2025-10-10: vs Chilwell Open 1 (CHO1) (Rubber 5) - Won 21-19 21-18 | 2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 3) - Won 10-21 17-21 | 2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 6) - Won 19-21 14-21 | 2026-02-01: vs Radcliffe Knights Open 1 (RKO1) (Rubber 9) - Won 11-21 16-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Caroline Hill",
+          "player_2": null,
+          "award_value": 7,
+          "award_details": "2026-01-18: vs Radcliffe Knights Womens 1 (RKW1) (Rubber 2 with Anneka Hall) - Game 3: 24-22 | 2026-01-23: vs Beeston Fields Mixed 5 (BFMX5) (Rubber 8 with Tarun Jain) - Game 1: 21-19 | 2026-01-30: vs East Leake Mixed 3 (ELX3) (Rubber 9 with Charles Visarra) - Game 1: 22-20 | 2026-02-01: vs Arboretum Womens 1 (ARW1) (Rubber 5 with Anneka Hall) - Game 3: 25-23 | 2026-02-06: vs Southwell Mixed 2 (SOX2) (Rubber 4 with Prashant Chahal) - Game 3: 23-21 | 2026-02-06: vs Southwell Mixed 2 (SOX2) (Rubber 9 with Prashant Chahal) - Game 1: 21-19 | 2026-02-13: vs Forest Mixed 4 (FOX4) (Rubber 1 with Prashant Chahal) - Game 2: 22-20"
+        }
+      ]
+    },
+    "safari-badminton": {
+      "name": "Safari Badminton",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Nick Johnson",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "2025-10-26: vs Beeston Valley Open 3 (BVO3) (Rubber 8 with Samson Blake) - Won 21-14 21-14 | 2025-11-03: vs Beeston Valley Open 2 (BVO2) (Rubber 8 with Samson Blake) - Won 20-22 19-21 | 2025-11-23: vs Radcliffe Knights Open 3 (RKO3) (Rubber 1 with Samson Blake) - Won 24-22 21-13 | 2025-11-23: vs Radcliffe Knights Open 3 (RKO3) (Rubber 6 with Samson Blake) - Won 21-13 21-12 | 2025-11-23: vs Radcliffe Knights Open 3 (RKO3) (Rubber 8 with Samson Blake) - Won 21-19 21-18 | 2026-02-08: vs Radcliffe Knights Open 2 (RKO2) (Rubber 3 with Jonny George) - Won 13-21 4-21 | 2026-02-08: vs Radcliffe Knights Open 2 (RKO2) (Rubber 6 with Jonny George) - Won 14-21 14-21 | 2026-02-08: vs Radcliffe Knights Open 2 (RKO2) (Rubber 9 with Jonny George) - Won 17-21 19-21 | 2026-03-01: vs Arboretum Open 4 (ARO4) (Rubber 4 with Samson Blake) - Won 18-21 15-21 | 2026-03-01: vs Arboretum Open 4 (ARO4) (Rubber 7 with Samson Blake) - Won 12-21 13-21 | 2026-03-03: vs North Notts Social Open 1 (NNO1) (Rubber 3 with Samson Blake) - Won 15-21 16-21 | 2026-03-03: vs North Notts Social Open 1 (NNO1) (Rubber 6 with Samson Blake) - Won 14-21 12-21 | 2026-03-29: vs North Notts Social Open 2 (NNO2) (Rubber 3 with Joe Kidd) - Won 21-10 21-8 | 2026-04-13: vs Freddie's Open 2 (FGO2) (Rubber 7 with Samson Blake) - Won 19-21 12-21 | 2026-04-19: vs Rolls-Royce Open 3 (RRO3) (Rubber 7 with Cameron McClean) - Won 21-14 21-15"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Joe Kidd",
+          "player_2": null,
+          "award_value": 13,
+          "award_details": "Played in 13 matches | Played 38 rubbers | Total points: 3230"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Kwun Ting Chan",
+          "player_2": null,
+          "award_value": 35,
+          "award_details": "Conceded 738 points across 21 rubbers (avg: 35.1 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Steve Farey",
+          "player_2": "Darren Bridge",
+          "award_value": 59,
+          "award_details": "2026-01-25 at Nottingham Girls\u2019 High School vs Arboretum Open 2 (ARO2) (Score: 21-16 19-21 20-22, Total points: 59, Game 3: 22)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Kwun Ting Chan",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2026-03-01: vs Arboretum Open 4 (ARO4) (Rubber 6 with Tom Burton) - Defeated Sam Maynard from Open Division 1 (6 divisions higher), margin: +6 | 2026-04-09: vs West Bridgford Open 3 (SGO3) (Rubber 4 with Tom Burton) - Defeated Joshua McGregor from Open Division 2 (5 divisions higher), margin: +8 | 2025-11-02: vs David Lloyd Aspley Open 3 (DLO3) (Rubber 1 with Tom Burton) - Defeated Tom McKay from Open Division 5 (2 divisions higher), margin: +15 | 2025-11-02: vs David Lloyd Aspley Open 3 (DLO3) (Rubber 8 with Tom Burton) - Defeated Adam Richardson from Open Division 5 (2 divisions higher), margin: +7 | 2026-04-09: vs West Bridgford Open 3 (SGO3) (Rubber 1 with Tom Burton) - Defeated Cheung Sin Ng from Open Division 5 (2 divisions higher), margin: +15 | 2026-04-09: vs West Bridgford Open 3 (SGO3) (Rubber 7 with Tom Burton) - Defeated Steven Wilks from Open Division 5 (2 divisions higher), margin: +6 | 2026-03-29: vs North Notts Social Open 2 (NNO2) (Rubber 1 with Tom Burton) - Defeated James Bartlett from Open Division 6 (1 division higher), margin: +16"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Kwun Ting Chan",
+          "player_2": null,
+          "award_value": 8,
+          "award_details": "2026-02-08: vs Arboretum Open 6 (ARO6) (Rubber 1 with Tom Burton) | 2026-02-08: vs Arboretum Open 6 (ARO6) (Rubber 6 with Tom Burton) | 2026-02-08: vs Arboretum Open 6 (ARO6) (Rubber 8 with Tom Burton) | 2026-03-01: vs Arboretum Open 4 (ARO4) (Rubber 3 with Tom Burton) | 2026-03-01: vs Arboretum Open 4 (ARO4) (Rubber 6 with Tom Burton) | 2026-03-01: vs Arboretum Open 4 (ARO4) (Rubber 9 with Tom Burton) | 2026-03-29: vs North Notts Social Open 2 (NNO2) (Rubber 1 with Tom Burton) | 2026-03-29: vs North Notts Social Open 2 (NNO2) (Rubber 6 with Tom Burton)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Rishikesh Gupta",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2025-10-26: vs Beeston Valley Open 3 (BVO3) (Rubber 9 with Jonny George) - Lost Game 1 19-21, Won Game 2 21-19, Won Game 3 21-14 | 2025-12-14: vs Arboretum Open 5 (ARO5) (Rubber 2 with Cameron McClean) - Lost Game 1 15-21, Won Game 2 21-12, Won Game 3 22-20 | 2025-12-14: vs Arboretum Open 5 (ARO5) (Rubber 4 with Cameron McClean) - Lost Game 1 20-22, Won Game 2 21-19, Won Game 3 21-14 | 2026-04-26: vs Beeston Braves Open 2 (BBO2) (Rubber 5 with Nick Johnson) - Lost Game 1 19-21, Won Game 2 26-24, Won Game 3 21-18"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Tom Burton",
+          "player_2": "Kwun Ting Chan",
+          "award_value": 31,
+          "award_details": "Team: Safari Badminton Open 4 (SBO4) | vs Arboretum Open 6 (ARO6) | Score: 21-5 21-6"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Kwun Ting Chan",
+          "player_2": "Tom Burton",
+          "award_value": 14,
+          "award_details": "2025-11-02: vs David Lloyd Aspley Open 3 (DLO3) (Rubber 1) - Won 21-13 21-14 | 2025-11-02: vs David Lloyd Aspley Open 3 (DLO3) (Rubber 8) - Won 21-16 21-19 | 2025-12-14: vs Arboretum Open 5 (ARO5) (Rubber 1) - Won 21-18 22-20 | 2026-02-08: vs Arboretum Open 6 (ARO6) (Rubber 1) - Won 21-13 21-18 | 2026-02-08: vs Arboretum Open 6 (ARO6) (Rubber 6) - Won 21-5 21-6"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Joe Kidd",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2025-10-26: vs Beeston Valley Open 3 (BVO3) (Rubber 3 with Charlie Wagstaff) - Game 1: 22-20, Game 3: 23-21 | 2026-02-08: vs Radcliffe Knights Open 2 (RKO2) (Rubber 2 with Ben Clifton) - Game 1: 22-20 | 2026-02-08: vs Radcliffe Knights Open 2 (RKO2) (Rubber 8 with Ben Clifton) - Game 1: 21-19, Game 3: 21-19 | 2026-02-25: vs Southwell Open 2 (SOO2) (Rubber 6 with Charlie Wagstaff) - Game 1: 21-19 | 2026-03-03: vs North Notts Social Open 1 (NNO1) (Rubber 2 with Ben Clifton) - Game 1: 21-19 | 2026-03-29: vs North Notts Social Open 2 (NNO2) (Rubber 7 with Nick Johnson) - Game 3: 21-19 | 2026-04-05: vs West Bridgford Open 1 (SGO1) (Rubber 3 with Jim Farey) - Game 2: 23-21 | 2026-04-13: vs Freddie's Open 2 (FGO2) (Rubber 5 with Rishikesh Gupta) - Game 2: 25-23 | 2026-04-19: vs Rolls-Royce Open 3 (RRO3) (Rubber 4 with Samson Blake) - Game 2: 21-19, Game 3: 21-19"
+        }
+      ]
+    },
+    "southwell": {
+      "name": "Southwell",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Daniel Whaley",
+          "player_2": null,
+          "award_value": 32,
+          "award_details": "2025-10-06: vs Mapperley Park Open 3 (MPO3) (Rubber 1 with George Poyser) - Won 16-21 12-21 | 2025-10-06: vs Mapperley Park Open 3 (MPO3) (Rubber 4 with George Poyser) - Won 22-24 10-21 | 2025-10-06: vs Mapperley Park Open 3 (MPO3) (Rubber 7 with George Poyser) - Won 9-21 22-24 | 2025-10-17: vs Beeston Fields Mixed 3 (BFMX3) (Rubber 1 with Amie Rowson) - Won 15-21 16-21 | 2025-10-17: vs Beeston Fields Mixed 3 (BFMX3) (Rubber 7 with Amie Rowson) - Won 14-21 16-21 | 2025-10-20: vs Beeston Valley Open 1 (BVO1) (Rubber 1 with Adam Mullen) - Won 5-21 9-21 | 2025-10-20: vs Beeston Valley Open 1 (BVO1) (Rubber 4 with Adam Mullen) - Won 5-21 7-21 | 2025-10-20: vs Beeston Valley Open 1 (BVO1) (Rubber 7 with Adam Mullen) - Won 8-21 6-21 | 2025-10-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 1 with Amie Rowson) - Won 21-17 21-15 | 2025-10-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 6 with Amie Rowson) - Won 21-16 21-11 | 2025-10-22: vs Mapperley Park Mixed 1 (MPX1) (Rubber 8 with Amie Rowson) - Won 21-13 21-11 | 2025-11-07: vs Carlton Open 2 (CAO2) (Rubber 1 with Adam Mullen) - Won 17-21 4-21 | 2025-11-07: vs Carlton Open 2 (CAO2) (Rubber 4 with Adam Mullen) - Won 3-21 8-21 | 2025-11-07: vs Carlton Open 2 (CAO2) (Rubber 7 with Adam Mullen) - Won 6-21 2-21 | 2025-12-14: vs Arboretum Mixed 1 (ARMX1) (Rubber 1 with Amie Rowson) - Won 17-21 9-21 | 2025-12-14: vs Arboretum Mixed 1 (ARMX1) (Rubber 4 with Amie Rowson) - Won 14-21 19-21 | 2025-12-14: vs Arboretum Mixed 1 (ARMX1) (Rubber 7 with Amie Rowson) - Won 15-21 12-21 | 2026-01-14: vs Bingham Mixed 2 (BIX2) (Rubber 4 with Amie Rowson) - Won 9-21 14-21 | 2026-01-18: vs Crusader Open 1 (CRO1) (Rubber 1 with Jack Mullen) - Won 21-15 21-17 | 2026-01-18: vs Crusader Open 1 (CRO1) (Rubber 6 with Jack Mullen) - Won 21-16 21-9 | 2026-01-18: vs Crusader Open 1 (CRO1) (Rubber 8 with Jack Mullen) - Won 23-21 21-15 | 2026-01-21: vs Bilborough Open 1 (BOO1) (Rubber 1 with Jack Mullen) - Won 21-7 21-14 | 2026-01-21: vs Bilborough Open 1 (BOO1) (Rubber 6 with Jack Mullen) - Won 21-8 21-16 | 2026-01-21: vs Bilborough Open 1 (BOO1) (Rubber 8 with Jack Mullen) - Won 21-9 21-9 | 2026-02-04: vs Arboretum Open 3 (ARO3) (Rubber 1 with Jack Mullen) - Won 21-11 21-10 | 2026-02-04: vs Arboretum Open 3 (ARO3) (Rubber 6 with Jack Mullen) - Won 21-12 21-16 | 2026-02-04: vs Arboretum Open 3 (ARO3) (Rubber 8 with Jack Mullen) - Won 21-16 21-19 | 2026-03-15: vs Carlton Mixed 1 (CAX1) (Rubber 1 with Amie Rowson) - Won 21-12 21-11 | 2026-03-15: vs Carlton Mixed 1 (CAX1) (Rubber 6 with Amie Rowson) - Won 21-8 21-14 | 2026-03-15: vs Carlton Mixed 1 (CAX1) (Rubber 8 with Amie Rowson) - Won 21-3 21-12 | 2026-03-29: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 6 with Amie Rowson) - Won 21-9 21-9 | 2026-03-29: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 8 with Amie Rowson) - Won 21-10 21-7"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Isabella Richardson",
+          "player_2": null,
+          "award_value": 15,
+          "award_details": "Played in 15 matches | Played 43 rubbers | Total points: 3327"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Daniel Whaley",
+          "player_2": null,
+          "award_value": 27,
+          "award_details": "Conceded 973 points across 36 rubbers (avg: 27.0 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Emma Chapelhow",
+          "player_2": "Ella Sebestova",
+          "award_value": 64,
+          "award_details": "2026-03-25 at Southwell Leisure Centre vs Bingham Womens 2 (BIW2) (Score: 20-22 21-18 23-21, Total points: 64, Game 3: 23)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "Sam Mullen",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-02-25: vs Safari Badminton Open 2 (SBO2) (Rubber 9 with Craig Mullen) - Defeated Joe Kidd from Open Division 2 (4 divisions higher), margin: +16 | 2025-11-09: vs Radcliffe Knights Open 2 (RKO2) (Rubber 2 with Alasdair Mullen) - Defeated Tom Clare from Open Division 4 (2 divisions higher), margin: +3 | 2025-11-09: vs Radcliffe Knights Open 2 (RKO2) (Rubber 4 with Alasdair Mullen) - Defeated Yudan Chen from Open Division 4 (2 divisions higher), margin: +2"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Amie Rowson",
+          "player_2": null,
+          "award_value": 22,
+          "award_details": "2026-01-26: vs Freddie's Womens 1 (FGW1) (Rubber 7 with Millie Woodward) | 2026-02-20: vs Chilwell Womens 1 (CHW1) (Rubber 1 with Millie Woodward) | 2026-02-20: vs Chilwell Womens 1 (CHW1) (Rubber 4 with Millie Woodward) | 2026-02-20: vs Chilwell Womens 1 (CHW1) (Rubber 7 with Millie Woodward) | 2026-03-01: vs East Leake Womens 2 (ELW2) (Rubber 1 with Millie Woodward) | 2026-03-01: vs East Leake Womens 2 (ELW2) (Rubber 6 with Millie Woodward) | 2026-03-01: vs East Leake Womens 2 (ELW2) (Rubber 8 with Millie Woodward) | 2026-03-14: vs Crusader Womens 1 (CRW1) (Rubber 1 with Millie Woodward) | 2026-03-14: vs Crusader Womens 1 (CRW1) (Rubber 4 with Millie Woodward) | 2026-03-14: vs Crusader Womens 1 (CRW1) (Rubber 7 with Millie Woodward) | 2026-03-15: vs Carlton Mixed 1 (CAX1) (Rubber 1 with Daniel Whaley) | 2026-03-15: vs Carlton Mixed 1 (CAX1) (Rubber 6 with Daniel Whaley) | 2026-03-15: vs Carlton Mixed 1 (CAX1) (Rubber 8 with Daniel Whaley) | 2026-03-25: vs Bingham Womens 2 (BIW2) (Rubber 1 with Millie Woodward) | 2026-03-25: vs Bingham Womens 2 (BIW2) (Rubber 6 with Millie Woodward) | 2026-03-25: vs Bingham Womens 2 (BIW2) (Rubber 8 with Millie Woodward) | 2026-03-29: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 1 with Daniel Whaley) | 2026-03-29: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 6 with Daniel Whaley) | 2026-03-29: vs Beeston Fields Mixed 4 (BFMX4) (Rubber 8 with Daniel Whaley) | 2026-04-27: vs Beeston Valley Womens 1 (BVW1) (Rubber 1 with Millie Woodward) | 2026-04-27: vs Beeston Valley Womens 1 (BVW1) (Rubber 4 with Millie Woodward) | 2026-04-27: vs Beeston Valley Womens 1 (BVW1) (Rubber 7 with Millie Woodward)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Ella Sebestova",
+          "player_2": null,
+          "award_value": 6,
+          "award_details": "2026-01-26: vs Freddie's Womens 1 (FGW1) (Rubber 5 with Isabella Richardson) - Lost Game 1 20-22, Won Game 2 21-9, Won Game 3 21-18 | 2026-01-26: vs Freddie's Womens 1 (FGW1) (Rubber 8 with Isabella Richardson) - Lost Game 1 13-21, Won Game 2 21-11, Won Game 3 21-16 | 2026-02-20: vs Chilwell Womens 1 (CHW1) (Rubber 5 with Emma Chapelhow) - Lost Game 1 15-21, Won Game 2 21-12, Won Game 3 21-18 | 2026-03-01: vs East Leake Womens 2 (ELW2) (Rubber 2 with Emma Chapelhow) - Lost Game 1 18-21, Won Game 2 21-10, Won Game 3 21-8 | 2026-03-25: vs Bingham Womens 2 (BIW2) (Rubber 3 with Emma Chapelhow) - Lost Game 1 20-22, Won Game 2 21-18, Won Game 3 23-21 | 2026-04-27: vs Beeston Valley Womens 1 (BVW1) (Rubber 6 with Emma Chapelhow) - Lost Game 1 14-21, Won Game 2 21-14, Won Game 3 21-17"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Amie Rowson",
+          "player_2": "Millie Woodward",
+          "award_value": 42,
+          "award_details": "Team: Southwell Womens 1 (SO1) | vs Bingham Womens 2 (BIW2) | Score: 21-0 21-0"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Amie Rowson",
+          "player_2": "Millie Woodward",
+          "award_value": 17,
+          "award_details": "2026-01-16: vs Carlton Womens 1 (CAW1) (Rubber 4) - Won 13-21 16-21 | 2026-01-16: vs Carlton Womens 1 (CAW1) (Rubber 7) - Won 14-21 7-21 | 2026-01-26: vs Freddie's Womens 1 (FGW1) (Rubber 7) - Won 13-21 17-21 | 2026-02-20: vs Chilwell Womens 1 (CHW1) (Rubber 1) - Won 12-21 16-21 | 2026-02-20: vs Chilwell Womens 1 (CHW1) (Rubber 4) - Won 10-21 19-21"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Alasdair Mullen",
+          "player_2": null,
+          "award_value": 12,
+          "award_details": "2025-10-06: vs Mapperley Park Open 3 (MPO3) (Rubber 5 with Fraser Barr) - Game 1: 21-19 | 2025-11-09: vs Radcliffe Knights Open 2 (RKO2) (Rubber 2 with Sam Mullen) - Game 3: 22-20 | 2025-11-09: vs Radcliffe Knights Open 2 (RKO2) (Rubber 4 with Sam Mullen) - Game 2: 21-19, Game 3: 22-20 | 2026-01-18: vs Crusader Open 1 (CRO1) (Rubber 5 with Terry Watson) - Game 1: 22-20 | 2026-01-25: vs Beeston Braves Mixed 1 (BBMX1) (Rubber 6 with Phoebe Turner) - Game 2: 21-19 | 2026-02-04: vs Arboretum Open 3 (ARO3) (Rubber 5 with Fraser Barr) - Game 2: 22-20 | 2026-02-06: vs Rushcliffe Arena Mixed 1 (RAX1) (Rubber 6 with Emma Chapelhow) - Game 1: 22-20 | 2026-02-25: vs Safari Badminton Open 2 (SBO2) (Rubber 5 with Robert Berry) - Game 2: 21-19, Game 3: 21-19 | 2026-03-22: vs Beeston Braves Open 2 (BBO2) (Rubber 1 with Kristian Gaylard) - Game 2: 21-19 | 2026-03-22: vs Beeston Braves Open 2 (BBO2) (Rubber 7 with Kristian Gaylard) - Game 1: 21-19"
+        }
+      ]
+    },
+    "west-bridgford": {
+      "name": "West Bridgford",
+      "awards": [
+        {
+          "award": "clean_sweep_specialist",
+          "player": "Joshua McGregor",
+          "player_2": null,
+          "award_value": 23,
+          "award_details": "2025-10-30: vs Radcliffe Knights Open 4 (RKO4) (Rubber 3 with Steven Wilks) - Won 21-13 21-7 | 2025-10-30: vs Radcliffe Knights Open 4 (RKO4) (Rubber 5 with Steven Wilks) - Won 21-8 21-9 | 2025-10-30: vs Radcliffe Knights Open 4 (RKO4) (Rubber 7 with Steven Wilks) - Won 21-15 21-16 | 2025-11-13: vs Beeston Braves Open 1 (BBO1) (Rubber 2 with Steven Wilks) - Won 21-17 21-17 | 2025-11-20: vs David Lloyd Aspley Open 3 (DLO3) (Rubber 1 with Steven Wilks) - Won 21-15 21-15 | 2025-11-20: vs David Lloyd Aspley Open 3 (DLO3) (Rubber 6 with Steven Wilks) - Won 21-13 21-9 | 2025-11-20: vs David Lloyd Aspley Open 3 (DLO3) (Rubber 8 with Steven Wilks) - Won 21-12 21-7 | 2025-11-28: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 3 with Cheung Sin Ng) - Won 17-21 17-21 | 2025-11-28: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 6 with Cheung Sin Ng) - Won 11-21 13-21 | 2025-12-04: vs North Notts Social Open 2 (NNO2) (Rubber 6 with Cheung Sin Ng) - Won 21-6 21-18 | 2025-12-04: vs North Notts Social Open 2 (NNO2) (Rubber 8 with Cheung Sin Ng) - Won 21-9 21-12 | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 2 with Yung Sam) - Won 9-21 18-21 | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 5 with Yung Sam) - Won 11-21 10-21 | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 8 with Yung Sam) - Won 12-21 15-21 | 2026-01-29: vs Arboretum Open 5 (ARO5) (Rubber 3 with Steven Wilks) - Won 21-19 21-17 | 2026-01-29: vs Arboretum Open 5 (ARO5) (Rubber 5 with Steven Wilks) - Won 21-8 21-10 | 2026-01-29: vs Arboretum Open 5 (ARO5) (Rubber 7 with Steven Wilks) - Won 21-15 21-13 | 2026-02-26: vs Bilborough Open 2 (BOO2) (Rubber 3 with Yung Sam) - Won 21-14 21-10 | 2026-02-26: vs Bilborough Open 2 (BOO2) (Rubber 5 with Yung Sam) - Won 21-17 21-11 | 2026-04-02: vs Falcon Feathers Open 1 (FFO1) (Rubber 1 with Alex Mee) - Won 7-21 7-21 | 2026-04-02: vs Falcon Feathers Open 1 (FFO1) (Rubber 4 with Alex Mee) - Won 11-21 13-21 | 2026-04-02: vs Falcon Feathers Open 1 (FFO1) (Rubber 7 with Alex Mee) - Won 12-21 10-21 | 2026-04-09: vs Safari Badminton Open 4 (SBO4) (Rubber 9 with Lukasz Kacprzak) - Won 21-16 21-18"
+        },
+        {
+          "award": "club_stalwart",
+          "player": "Joshua McGregor",
+          "player_2": null,
+          "award_value": 16,
+          "award_details": "Played in 16 matches | Played 48 rubbers | Total points: 3851"
+        },
+        {
+          "award": "defensive_wall",
+          "player": "Cheung Sin Ng",
+          "player_2": null,
+          "award_value": 33,
+          "award_details": "Conceded 697 points across 21 rubbers (avg: 33.2 points per rubber)"
+        },
+        {
+          "award": "epic_win",
+          "player": "Sam Russell",
+          "player_2": "Alex Mee",
+          "award_value": 61,
+          "award_details": "2025-11-13 at Nottingham Emmanuel School vs Beeston Braves Open 1 (BBO1) (Score: 17-21 21-15 23-21, Total points: 61, Game 3: 23)"
+        },
+        {
+          "award": "giant_killing",
+          "player": "James Wilks",
+          "player_2": null,
+          "award_value": 4,
+          "award_details": "2026-01-16: vs Rushcliffe Arena Open 2 (RAO2) (Rubber 8 with Steven Wilks) - Defeated Mahendra Kumar from Open Division 4 (4 divisions higher), margin: +13 | 2026-04-09: vs Safari Badminton Open 4 (SBO4) (Rubber 5 with Steven Wilks) - Defeated Cameron McClean from Open Division 6 (2 divisions higher), margin: +14"
+        },
+        {
+          "award": "longest_winning_streak",
+          "player": "Yung Sam",
+          "player_2": null,
+          "award_value": 13,
+          "award_details": "2025-11-28: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 1 with Alex Mee) | 2025-11-28: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 4 with Alex Mee) | 2025-11-28: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 7 with Alex Mee) | 2025-12-04: vs Forest Open 3 (FOO3) (Rubber 3 with Paul Barton) | 2025-12-04: vs Forest Open 3 (FOO3) (Rubber 6 with Paul Barton) | 2025-12-04: vs Forest Open 3 (FOO3) (Rubber 9 with Paul Barton) | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 2 with Joshua McGregor) | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 5 with Joshua McGregor) | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 8 with Joshua McGregor) | 2026-02-26: vs Bilborough Open 2 (BOO2) (Rubber 3 with Joshua McGregor) | 2026-02-26: vs Bilborough Open 2 (BOO2) (Rubber 5 with Joshua McGregor) | 2026-02-26: vs Bilborough Open 2 (BOO2) (Rubber 7 with Joshua McGregor) | 2026-03-05: vs Freddie's Open 1 (FGO1) (Rubber 2 with Joshua McGregor)"
+        },
+        {
+          "award": "most_comebacks",
+          "player": "Joshua McGregor",
+          "player_2": null,
+          "award_value": 5,
+          "award_details": "2025-11-28: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 9 with Cheung Sin Ng) - Lost Game 1 13-21, Won Game 2 21-18, Won Game 3 22-20 | 2025-12-04: vs North Notts Social Open 2 (NNO2) (Rubber 1 with Cheung Sin Ng) - Lost Game 1 13-21, Won Game 2 21-14, Won Game 3 21-11 | 2026-01-16: vs Rushcliffe Arena Open 2 (RAO2) (Rubber 1 with Nick Law) - Lost Game 1 19-21, Won Game 2 22-20, Won Game 3 21-19 | 2026-02-26: vs Bilborough Open 2 (BOO2) (Rubber 7 with Yung Sam) - Lost Game 1 23-25, Won Game 2 21-17, Won Game 3 21-15 | 2026-03-05: vs Freddie's Open 1 (FGO1) (Rubber 2 with Yung Sam) - Lost Game 1 15-21, Won Game 2 21-10, Won Game 3 21-13"
+        },
+        {
+          "award": "no_mercy",
+          "player": "Alex Mee",
+          "player_2": "Joshua McGregor",
+          "award_value": 28,
+          "award_details": "Team: West Bridgford Open 2 (SGO2) | vs Falcon Feathers Open 1 (FFO1) | Score: 7-21 7-21"
+        },
+        {
+          "award": "perfect_partnership",
+          "player": "Alex Mee",
+          "player_2": "Sam Russell",
+          "award_value": 10,
+          "award_details": "2025-11-13: vs Beeston Braves Open 1 (BBO1) (Rubber 6) - Won 21-9 21-14 | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 1) - Won 11-21 16-21 | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 4) - Won 17-21 13-21 | 2026-01-23: vs Carlton Open 3 (CAO3) (Rubber 7) - Won 22-24 14-21 | 2026-02-26: vs Bilborough Open 2 (BOO2) (Rubber 1) - Won 21-13 21-8"
+        },
+        {
+          "award": "performs_under_pressure",
+          "player": "Joshua McGregor",
+          "player_2": null,
+          "award_value": 9,
+          "award_details": "2025-11-13: vs Beeston Braves Open 1 (BBO1) (Rubber 4 with Steven Wilks) - Game 2: 21-19 | 2025-11-13: vs Beeston Braves Open 1 (BBO1) (Rubber 9 with Steven Wilks) - Game 2: 21-19 | 2025-11-28: vs David Lloyd Aspley Open 2 (DLO2) (Rubber 9 with Cheung Sin Ng) - Game 3: 22-20 | 2026-01-16: vs Rushcliffe Arena Open 2 (RAO2) (Rubber 1 with Nick Law) - Game 2: 22-20, Game 3: 21-19 | 2026-01-29: vs Arboretum Open 5 (ARO5) (Rubber 3 with Steven Wilks) - Game 1: 21-19 | 2026-03-19: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 5 with Sam Russell) - Game 2: 24-22 | 2026-03-19: vs Mansfield Oaktree Open 2 (MOO2) (Rubber 7 with Sam Russell) - Game 1: 21-19 | 2026-04-09: vs Safari Badminton Open 4 (SBO4) (Rubber 2 with Lukasz Kacprzak) - Game 2: 21-19"
+        }
+      ]
+    }
+  }
+}
