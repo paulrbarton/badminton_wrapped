@@ -16,6 +16,7 @@ with home_players as (
         match_date,
         division,
         venue,
+        season,
         'home' as home_away,
         1 as player_position,
         
@@ -72,6 +73,7 @@ with home_players as (
         match_date,
         division,
         venue,
+        season,
         'home' as home_away,
         2 as player_position,
         
@@ -122,6 +124,7 @@ away_players as (
         match_date,
         division,
         venue,
+        season,
         'away' as home_away,
         1 as player_position,
         
@@ -172,6 +175,7 @@ away_players as (
         match_date,
         division,
         venue,
+        season,
         'away' as home_away,
         2 as player_position,
         
@@ -221,6 +225,7 @@ final as (
         match_date,
         division,
         venue,
+        season,
         home_away,
         player_position,
         

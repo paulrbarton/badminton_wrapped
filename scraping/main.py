@@ -1,19 +1,13 @@
 """
-Main script to orchestrate the scraping of Nottinghamshire Badminton League data.
+Main script to orchestrate the scraping of badminton league data.
 """
+import argparse
 import logging
 import pandas as pd
 from typing import List, Dict
 import sys
 
-from config import (
-    EVENTS_URL,
-    DRAWMATCHES_URL,
-    TEAMMATCH_URL,
-    DIVISIONS_CSV,
-    MATCHES_CSV,
-    GAMES_CSV
-)
+from config import DEFAULT_SEASON, get_season_config
 from scraper import BadmintonScraper
 from parsers import parse_divisions, parse_matches, parse_match_details
 
@@ -29,21 +23,27 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def scrape_all_data():
-    """Main function to scrape all badminton league data."""
+def scrape_all_data(season: str):
+    """Main function to scrape all badminton league data for a given season."""
+    cfg = get_season_config(season)
+
     logger.info("="*60)
-    logger.info("Starting Nottinghamshire Badminton League scraper")
+    logger.info(f"Starting {cfg['season_name']} scraper")
     logger.info("="*60)
     
     all_divisions = []
     all_matches = []
     all_match_details = []
     
+    divisions_csv = cfg["divisions_csv"]
+    matches_csv = cfg["matches_csv"]
+    games_csv = cfg["games_csv"]
+
     try:
         with BadmintonScraper() as scraper:
             # Step 1: Scrape divisions
             logger.info("\n--- STEP 1: Scraping divisions ---")
-            if not scraper.get_page(EVENTS_URL):
+            if not scraper.get_page(cfg["events_url"]):
                 logger.error("Failed to load events page")
                 return
             
@@ -67,8 +67,8 @@ def scrape_all_data():
             # Save divisions immediately
             if all_divisions:
                 df_divisions = pd.DataFrame(all_divisions)
-                df_divisions.to_csv(DIVISIONS_CSV, index=False)
-                logger.info(f"Saved {len(all_divisions)} divisions to {DIVISIONS_CSV}")
+                df_divisions.to_csv(divisions_csv, index=False)
+                logger.info(f"Saved {len(all_divisions)} divisions to {divisions_csv}")
             
             # Step 2: Scrape matches for each division
             logger.info("\n--- STEP 2: Scraping matches from each division ---")
@@ -77,7 +77,7 @@ def scrape_all_data():
             for i, division in enumerate(divisions, 1):
                 logger.info(f"\n[{i}/{len(divisions)}] Processing division: {division['division_name']}")
                 
-                url = DRAWMATCHES_URL.format(draw_id=division['draw_id'])
+                url = cfg["drawmatches_url"].format(draw_id=division['draw_id'])
                 if not scraper.get_page(url):
                     logger.warning(f"Failed to load matches for {division['division_name']}")
                     continue
@@ -95,14 +95,14 @@ def scrape_all_data():
                 # Save matches incrementally after each division
                 if all_matches:
                     df_matches = pd.DataFrame(all_matches)
-                    df_matches.to_csv(MATCHES_CSV, index=False)
+                    df_matches.to_csv(matches_csv, index=False)
                     logger.debug(f"Incremental save: {len(all_matches)} total matches")
             
             # Save final matches data
             if all_matches:
                 df_matches = pd.DataFrame(all_matches)
-                df_matches.to_csv(MATCHES_CSV, index=False)
-                logger.info(f"Saved {len(all_matches)} matches to {MATCHES_CSV}")
+                df_matches.to_csv(matches_csv, index=False)
+                logger.info(f"Saved {len(all_matches)} matches to {matches_csv}")
             
             # Step 3: Scrape details for each match (flat format)
             logger.info("\n--- STEP 3: Scraping match details (flat format) ---")
@@ -120,12 +120,12 @@ def scrape_all_data():
                     # Save progress every 10 matches
                     if all_match_details:
                         df_details = pd.DataFrame(all_match_details)
-                        df_details.to_csv(GAMES_CSV, index=False)
+                        df_details.to_csv(games_csv, index=False)
                         logger.debug(f"Incremental save: {len(all_match_details)} matches with full details")
                 
                 logger.debug(f"Processing match {i}/{total_matches}: Match ID {match['match_id']}")
                 
-                url = TEAMMATCH_URL.format(match_id=match['match_id'])
+                url = cfg["teammatch_url"].format(match_id=match['match_id'])
                 if not scraper.get_page(url):
                     logger.warning(f"Failed to load details for match {match['match_id']}")
                     continue
@@ -148,25 +148,26 @@ def scrape_all_data():
         # Save divisions
         if all_divisions:
             df_divisions = pd.DataFrame(all_divisions)
-            df_divisions.to_csv(DIVISIONS_CSV, index=False)
-            logger.info(f"Saved {len(all_divisions)} divisions to {DIVISIONS_CSV}")
+            df_divisions.to_csv(divisions_csv, index=False)
+            logger.info(f"Saved {len(all_divisions)} divisions to {divisions_csv}")
         
         # Save matches
         if all_matches:
             df_matches = pd.DataFrame(all_matches)
-            df_matches.to_csv(MATCHES_CSV, index=False)
-            logger.info(f"Saved {len(all_matches)} matches to {MATCHES_CSV}")
+            df_matches.to_csv(matches_csv, index=False)
+            logger.info(f"Saved {len(all_matches)} matches to {matches_csv}")
         
         # Save match details (flat format with all games)
         if all_match_details:
             df_details = pd.DataFrame(all_match_details)
-            df_details.to_csv(GAMES_CSV, index=False)
-            logger.info(f"Saved {len(all_match_details)} matches with full game details to {GAMES_CSV}")
+            df_details.to_csv(games_csv, index=False)
+            logger.info(f"Saved {len(all_match_details)} matches with full game details to {games_csv}")
             logger.info(f"Total columns: {len(df_details.columns)}")
         
         logger.info("\n" + "="*60)
         logger.info("Scraping completed successfully!")
         logger.info(f"Summary:")
+        logger.info(f"  - Season: {cfg['season_name']}")
         logger.info(f"  - Divisions: {len(all_divisions)}")
         logger.info(f"  - Matches: {len(all_matches)}")
         logger.info(f"  - Match details: {len(all_match_details)} (flat format)")
@@ -176,11 +177,11 @@ def scrape_all_data():
         logger.info("\n\nScraping interrupted by user")
         # Still try to save partial data
         if all_divisions:
-            pd.DataFrame(all_divisions).to_csv(DIVISIONS_CSV, index=False)
+            pd.DataFrame(all_divisions).to_csv(divisions_csv, index=False)
         if all_matches:
-            pd.DataFrame(all_matches).to_csv(MATCHES_CSV, index=False)
+            pd.DataFrame(all_matches).to_csv(matches_csv, index=False)
         if all_match_details:
-            pd.DataFrame(all_match_details).to_csv(GAMES_CSV, index=False)
+            pd.DataFrame(all_match_details).to_csv(games_csv, index=False)
         logger.info("Partial data saved")
         
     except Exception as e:
@@ -189,4 +190,13 @@ def scrape_all_data():
 
 
 if __name__ == "__main__":
-    scrape_all_data()
+    parser = argparse.ArgumentParser(
+        description='Scrape badminton league data for a specific season'
+    )
+    parser.add_argument(
+        '--season',
+        default=DEFAULT_SEASON,
+        help=f'Season to scrape (default: {DEFAULT_SEASON})'
+    )
+    args = parser.parse_args()
+    scrape_all_data(args.season)

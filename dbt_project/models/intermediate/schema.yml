@@ -39,6 +39,11 @@ models:
       - name: venue
         description: Venue where match was played
         
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
+        tests:
+          - not_null
+        
       - name: home_player_1
         description: First home player in this rubber
         
@@ -206,6 +211,11 @@ models:
         tests:
           - not_null
 
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
+        tests:
+          - not_null
+
   - name: int_player_highest_divisions
     description: |
       Intermediate model that determines each player's highest division 
@@ -247,6 +257,11 @@ models:
           
       - name: rubbers_in_highest_division
         description: Number of rubbers played in this highest division
+        tests:
+          - not_null
+
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
         tests:
           - not_null
 
@@ -346,6 +361,12 @@ models:
           - accepted_values:
               values: [1, 2, 3, 4, 5, 6, 7, 8]
               quote: false
+
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
+        tests:
+          - not_null
+
   - name: int_player_match_rubbers
     description: |
       Intermediate model showing individual player statistics for each match rubber.
@@ -526,5 +547,10 @@ models:
           - not_null          
       - name: is_forfeit
         description: Boolean flag indicating if this rubber was forfeited (opponent didn't show up, resulting in 21-0 21-0)
+        tests:
+          - not_null
+
+      - name: season
+        description: Season identifier (e.g., "2024-25", "2025-26")
         tests:
           - not_null

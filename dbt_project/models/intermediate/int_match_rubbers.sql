@@ -12,6 +12,7 @@ with rubbers_unpivoted as (
         match_date,
         division,
         venue,
+        season,
         1 as rubber_number,
         R1_Home_P1 as home_player_1,
         R1_Home_P2 as home_player_2,
@@ -23,56 +24,56 @@ with rubbers_unpivoted as (
     
     union all
     
-    select match_id, home_team, away_team, match_date, division, venue,
+    select match_id, home_team, away_team, match_date, division, venue, season,
            2, R2_Home_P1, R2_Home_P2, R2_Away_P1, R2_Away_P2, R2_Score
     from {{ ref('stg_games') }}
     where R2_Score is not null
     
     union all
     
-    select match_id, home_team, away_team, match_date, division, venue,
+    select match_id, home_team, away_team, match_date, division, venue, season,
            3, R3_Home_P1, R3_Home_P2, R3_Away_P1, R3_Away_P2, R3_Score
     from {{ ref('stg_games') }}
     where R3_Score is not null
     
     union all
     
-    select match_id, home_team, away_team, match_date, division, venue,
+    select match_id, home_team, away_team, match_date, division, venue, season,
            4, R4_Home_P1, R4_Home_P2, R4_Away_P1, R4_Away_P2, R4_Score
     from {{ ref('stg_games') }}
     where R4_Score is not null
     
     union all
     
-    select match_id, home_team, away_team, match_date, division, venue,
+    select match_id, home_team, away_team, match_date, division, venue, season,
            5, R5_Home_P1, R5_Home_P2, R5_Away_P1, R5_Away_P2, R5_Score
     from {{ ref('stg_games') }}
     where R5_Score is not null
     
     union all
     
-    select match_id, home_team, away_team, match_date, division, venue,
+    select match_id, home_team, away_team, match_date, division, venue, season,
            6, R6_Home_P1, R6_Home_P2, R6_Away_P1, R6_Away_P2, R6_Score
     from {{ ref('stg_games') }}
     where R6_Score is not null
     
     union all
     
-    select match_id, home_team, away_team, match_date, division, venue,
+    select match_id, home_team, away_team, match_date, division, venue, season,
            7, R7_Home_P1, R7_Home_P2, R7_Away_P1, R7_Away_P2, R7_Score
     from {{ ref('stg_games') }}
     where R7_Score is not null
     
     union all
     
-    select match_id, home_team, away_team, match_date, division, venue,
+    select match_id, home_team, away_team, match_date, division, venue, season,
            8, R8_Home_P1, R8_Home_P2, R8_Away_P1, R8_Away_P2, R8_Score
     from {{ ref('stg_games') }}
     where R8_Score is not null
     
     union all
     
-    select match_id, home_team, away_team, match_date, division, venue,
+    select match_id, home_team, away_team, match_date, division, venue, season,
            9, R9_Home_P1, R9_Home_P2, R9_Away_P1, R9_Away_P2, R9_Score
     from {{ ref('stg_games') }}
     where R9_Score is not null
@@ -88,6 +89,7 @@ games_parsed as (
         match_date,
         division,
         venue,
+        season,
         rubber_number,
         home_player_1,
         home_player_2,
@@ -194,6 +196,7 @@ final as (
         match_date,
         division,
         venue,
+        season,
         rubber_number,
         home_player_1,
         home_player_2,

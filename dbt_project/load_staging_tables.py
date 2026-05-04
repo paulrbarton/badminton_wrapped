@@ -2,14 +2,25 @@
 Direct DuckDB script to load CSV files into staging tables.
 Workaround for Python 3.14 compatibility issues with dbt.
 """
+import argparse
 import duckdb
 from pathlib import Path
+
+# Parse arguments
+parser = argparse.ArgumentParser(description='Load staging tables for a specific season')
+parser.add_argument('--season', default='2025-26', help='Season to load (default: 2025-26)')
+args = parser.parse_args()
+season = args.season
 
 # Connect to DuckDB
 db_path = Path(__file__).parent.parent / 'data' / 'badminton_wrapped.duckdb'
 conn = duckdb.connect(str(db_path))
 
+raw_dir = Path(__file__).parent.parent / 'data' / 'raw' / season
+
 print(f"Connected to DuckDB at: {db_path}")
+print(f"Loading season: {season}")
+print(f"Raw data directory: {raw_dir}")
 print("="*60)
 
 # Create staging tables
@@ -17,19 +28,20 @@ print("\n1. Creating staging tables...")
 
 # stg_divisions
 print("   - Creating stg_divisions...")
-conn.execute("""
+conn.execute(f"""
     CREATE OR REPLACE TABLE stg_divisions AS
     SELECT 
         draw_id,
         division_name,
         url,
+        '{season}' as season,
         current_timestamp as loaded_at
-    FROM read_csv_auto('../data/raw/divisions.csv', header=true)
+    FROM read_csv_auto('{raw_dir}/divisions.csv', header=true)
 """)
 
 # stg_matches  
 print("   - Creating stg_matches...")
-conn.execute("""
+conn.execute(f"""
     CREATE OR REPLACE TABLE stg_matches AS
     SELECT 
         match_id,
@@ -40,13 +52,14 @@ conn.execute("""
         away_team,
         score,
         url,
+        '{season}' as season,
         current_timestamp as loaded_at
-    FROM read_csv_auto('../data/raw/matches.csv', header=true)
+    FROM read_csv_auto('{raw_dir}/matches.csv', header=true)
 """)
 
 # stg_games (flat format with all game columns)
 print("   - Creating stg_games...")
-conn.execute("""
+conn.execute(f"""
     CREATE OR REPLACE TABLE stg_games AS
     SELECT 
         match_id,
@@ -79,8 +92,9 @@ conn.execute("""
         XD2_Home_P1, XD2_Home_P2, XD2_Away_P1, XD2_Away_P2, XD2_Score,
         XD3_Home_P1, XD3_Home_P2, XD3_Away_P1, XD3_Away_P2, XD3_Score,
         
+        '{season}' as season,
         current_timestamp as loaded_at
-    FROM read_csv_auto('../data/raw/games.csv', header=true)
+    FROM read_csv_auto('{raw_dir}/games.csv', header=true)
 """)
 
 print("\n2. Verifying tables...")

@@ -15,6 +15,7 @@ with player_rubbers as (
         division as match_division,
         match_date,
         venue,
+        season,
         won_rubber,
         
         -- Winning margin across all games in the rubber
@@ -29,7 +30,8 @@ player_highest_divs as (
         player_name,
         highest_division,
         division_category,
-        highest_division_number
+        highest_division_number,
+        season
     from {{ ref('int_player_highest_divisions') }}
 ),
 
@@ -43,6 +45,7 @@ players_with_highest_div as (
     from player_rubbers pr
     left join player_highest_divs phd
         on pr.player_name = phd.player_name
+        and pr.season = phd.season
 ),
 
 -- Get highest divisions for both opponents
@@ -63,8 +66,10 @@ with_opponent_divs as (
     from players_with_highest_div pwhd
     left join player_highest_divs opp1
         on pwhd.opponent_1 = opp1.player_name
+        and pwhd.season = opp1.season
     left join player_highest_divs opp2
         on pwhd.opponent_2 = opp2.player_name
+        and pwhd.season = opp2.season
 ),
 
 -- Identify the higher-division opponent (if any)
@@ -118,6 +123,7 @@ final as (
         match_division,
         match_date,
         venue,
+        season,
         player_highest_division,
         player_division_category,
         player_highest_division_number,

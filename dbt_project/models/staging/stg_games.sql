@@ -2,7 +2,7 @@
 -- Loads detailed match data with all individual games in flat format
 
 with source as (
-    select * from read_csv_auto('/Users/c16305a/Documents/ECS/Sandpit/badminton-wrapped/data/raw/games.csv', header=true)
+    select * from read_csv_auto('/Users/c16305a/Documents/ECS/Sandpit/badminton-wrapped/data/raw/{{ var("season") }}/games.csv', header=true)
 ),
 
 renamed as (
@@ -27,6 +27,7 @@ renamed as (
         R8_Home_P1, R8_Home_P2, R8_Away_P1, R8_Away_P2, R8_Score,
         R9_Home_P1, R9_Home_P2, R9_Away_P1, R9_Away_P2, R9_Score,
         
+        '{{ var("season") }}' as season,
         current_timestamp as loaded_at
     from source
 )

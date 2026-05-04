@@ -9,6 +9,7 @@ with comeback_rubbers as (
         player_name,
         -- Extract club name (everything before " Open", " Womens", " Mixed", etc.)
         trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        season,
         match_id,
         rubber_number
     from {{ ref('int_player_match_rubbers') }}
@@ -28,11 +29,13 @@ comeback_counts as (
     select
         player_name,
         club,
+        season,
         count(*) as comeback_count
     from comeback_rubbers
     group by 
         player_name,
-        club
+        club,
+        season
 ),
 
 comeback_awards as (
@@ -40,9 +43,10 @@ comeback_awards as (
     select
         'most_comebacks' as award,
         club,
+        season,
         player_name as player,
         comeback_count as award_value,
-        row_number() over (partition by club order by comeback_count desc, player_name) as rn
+        row_number() over (partition by club, season order by comeback_count desc, player_name) as rn
     from comeback_counts
 ),
 
@@ -51,6 +55,7 @@ comeback_details as (
     select
         pmr.player_name,
         trim(regexp_replace(pmr.team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        pmr.season,
         pmr.match_date,
         pmr.opponent_team,
         pmr.partner_name,
@@ -66,6 +71,7 @@ comeback_details as (
     inner join comeback_awards ca
         on pmr.player_name = ca.player
         and trim(regexp_replace(pmr.team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) = ca.club
+        and pmr.season = ca.season
         and ca.rn = 1  -- Only get details for award winners
     where 
         -- Apply same comeback logic
@@ -80,6 +86,7 @@ comeback_details_formatted as (
     select
         player_name,
         club,
+        season,
         match_date || ': vs ' || opponent_team || 
         ' (Rubber ' || rubber_number || ' with ' || partner_name || ') - ' ||
         'Lost Game 1 ' || game_1_score_for || '-' || game_1_score_against || ', ' ||
@@ -98,11 +105,13 @@ comeback_details_aggregated as (
     select
         player_name,
         club,
+        season,
         string_agg(detail_line, ' | ') as award_details
     from comeback_details_formatted
     group by 
         player_name,
-        club
+        club,
+        season
 ),
 
 stalwart_stats as (
@@ -110,6 +119,7 @@ stalwart_stats as (
     select
         player_name,
         trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        season,
         count(distinct match_id) as matches_played,
         count(*) as rubbers_played,
         sum(total_points_for + total_points_against) as total_points
@@ -117,7 +127,8 @@ stalwart_stats as (
     where is_forfeit = false
     group by 
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''))
+        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')),
+        season
 ),
 
 stalwart_awards as (
@@ -125,11 +136,12 @@ stalwart_awards as (
     select
         'club_stalwart' as award,
         club,
+        season,
         player_name as player,
         matches_played as award_value,
         rubbers_played,
         total_points,
-        row_number() over (partition by club order by matches_played desc, rubbers_played desc, player_name) as rn
+        row_number() over (partition by club, season order by matches_played desc, rubbers_played desc, player_name) as rn
     from stalwart_stats
 ),
 
@@ -138,6 +150,7 @@ stalwart_details as (
     select
         player,
         club,
+        season,
         'Played in ' || award_value || ' matches | ' ||
         'Played ' || rubbers_played || ' rubbers | ' ||
         'Total points: ' || total_points as award_details
@@ -149,6 +162,7 @@ comeback_final as (
     select
         ca.award,
         ca.club,
+        ca.season,
         ca.player,
         ca.award_value,
         coalesce(cda.award_details, '') as award_details
@@ -156,6 +170,7 @@ comeback_final as (
     left join comeback_details_aggregated cda
         on ca.player = cda.player_name
         and ca.club = cda.club
+        and ca.season = cda.season
     where ca.rn = 1
 ),
 
@@ -163,6 +178,7 @@ stalwart_final as (
     select
         sa.award,
         sa.club,
+        sa.season,
         sa.player,
         sa.award_value,
         sd.award_details
@@ -170,6 +186,7 @@ stalwart_final as (
     left join stalwart_details sd
         on sa.player = sd.player
         and sa.club = sd.club
+        and sa.season = sd.season
     where sa.rn = 1
 ),
 
@@ -186,6 +203,7 @@ no_mercy_rubbers as (
         away_player_2,
         rubber_winner,
         rubber_score,
+        season,
         game_1_margin,
         game_2_margin,
         game_1_margin + game_2_margin as total_margin
@@ -228,6 +246,7 @@ no_mercy_partnerships as (
             ' (Open|Womens|Mixed|Mens) \d+.*$', 
             ''
         )) as club,
+        season,
         total_margin,
         rubber_score,
         match_id,
@@ -239,13 +258,14 @@ no_mercy_top_partnerships as (
     -- Find the biggest margin per club
     select
         club,
+        season,
         player_1,
         player_2,
         team,
         opponent_team,
         total_margin,
         rubber_score,
-        row_number() over (partition by club order by total_margin desc, player_1, player_2) as rn
+        row_number() over (partition by club, season order by total_margin desc, player_1, player_2) as rn
     from no_mercy_partnerships
 ),
 
@@ -253,6 +273,7 @@ no_mercy_details as (
     -- Create details for both players
     select
         club,
+        season,
         player_1,
         player_2,
         'Team: ' || team || ' | ' ||
@@ -268,6 +289,7 @@ no_mercy_awards as (
     select
         'no_mercy' as award,
         club,
+        season,
         player_1 as player,
         player_2,
         total_margin as award_value,
@@ -285,6 +307,7 @@ pressure_games as (
     select
         player_name,
         trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        season,
         match_id,
         rubber_number,
         match_date,
@@ -323,6 +346,7 @@ pressure_games_counted as (
     select
         player_name,
         club,
+        season,
         -- Count each game individually
         sum(case when game_1_detail is not null then 1 else 0 end) +
         sum(case when game_2_detail is not null then 1 else 0 end) +
@@ -330,16 +354,18 @@ pressure_games_counted as (
     from pressure_games
     group by 
         player_name,
-        club
+        club,
+        season
 ),
 
 pressure_top_player as (
     -- Find top player per club
     select
         club,
+        season,
         player_name,
         pressure_wins,
-        row_number() over (partition by club order by pressure_wins desc, player_name) as rn
+        row_number() over (partition by club, season order by pressure_wins desc, player_name) as rn
     from pressure_games_counted
 ),
 
@@ -348,6 +374,7 @@ pressure_details as (
     select
         pg.player_name,
         pg.club,
+        pg.season,
         pg.match_date || ': vs ' || pg.opponent_team || 
         ' (Rubber ' || pg.rubber_number || ' with ' || pg.partner_name || ') - ' ||
         coalesce(pg.game_1_detail, '') || 
@@ -359,6 +386,7 @@ pressure_details as (
     inner join pressure_top_player ptp
         on pg.player_name = ptp.player_name
         and pg.club = ptp.club
+        and pg.season = ptp.season
         and ptp.rn = 1
     order by 
         pg.player_name,
@@ -372,11 +400,13 @@ pressure_details_aggregated as (
     select
         player_name,
         club,
+        season,
         string_agg(detail_line, ' | ') as award_details
     from pressure_details
     group by 
         player_name,
-        club
+        club,
+        season
 ),
 
 pressure_final as (
@@ -384,6 +414,7 @@ pressure_final as (
     select
         'performs_under_pressure' as award,
         ptp.club,
+        ptp.season,
         ptp.player_name as player,
         ptp.pressure_wins as award_value,
         coalesce(pda.award_details, 'No details available') as award_details
@@ -391,6 +422,7 @@ pressure_final as (
     left join pressure_details_aggregated pda
         on ptp.player_name = pda.player_name
         and ptp.club = pda.club
+        and ptp.season = pda.season
     where ptp.rn = 1
 ),
 
@@ -404,6 +436,7 @@ player_rubbers_chronological as (
     select
         player_name,
         trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        season,
         match_id,
         rubber_number,
         match_date,
@@ -413,7 +446,7 @@ player_rubbers_chronological as (
         is_forfeit,
         -- Create a chronological ordering
         row_number() over (
-            partition by player_name, trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''))
+            partition by player_name, trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')), season
             order by match_date, match_id, rubber_number
         ) as rubber_seq
     from {{ ref('int_player_match_rubbers') }}
@@ -426,6 +459,7 @@ streak_groups as (
     select
         player_name,
         club,
+        season,
         match_id,
         rubber_number,
         match_date,
@@ -435,7 +469,7 @@ streak_groups as (
         rubber_seq,
         -- Group identifier: when won_rubber changes, this creates a new group
         rubber_seq - row_number() over (
-            partition by player_name, club, won_rubber
+            partition by player_name, club, season, won_rubber
             order by rubber_seq
         ) as streak_group
     from player_rubbers_chronological
@@ -446,6 +480,7 @@ winning_streaks as (
     select
         player_name,
         club,
+        season,
         streak_group,
         count(*) as streak_length,
         min(match_date) as streak_start_date,
@@ -461,6 +496,7 @@ winning_streaks as (
     group by 
         player_name,
         club,
+        season,
         streak_group
 ),
 
@@ -469,23 +505,26 @@ longest_streak_per_player as (
     select
         player_name,
         club,
+        season,
         max(streak_length) as longest_streak,
         -- Get details of the longest streak (take first if tied)
         (array_agg(streak_details order by streak_length desc, streak_start_date))[1] as streak_details
     from winning_streaks
     group by 
         player_name,
-        club
+        club,
+        season
 ),
 
 longest_streak_per_club as (
     -- Find the top player per club
     select
         club,
+        season,
         player_name,
         longest_streak,
         streak_details,
-        row_number() over (partition by club order by longest_streak desc, player_name) as rn
+        row_number() over (partition by club, season order by longest_streak desc, player_name) as rn
     from longest_streak_per_player
 ),
 
@@ -494,6 +533,7 @@ streak_final as (
     select
         'longest_winning_streak' as award,
         club,
+        season,
         player_name as player,
         longest_streak as award_value,
         streak_details as award_details
@@ -511,6 +551,7 @@ defensive_stats as (
     select
         player_name,
         trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        season,
         count(*) as rubbers_played,
         sum(
             coalesce(game_1_score_against, 0) + 
@@ -536,18 +577,20 @@ defensive_stats as (
         )
     group by 
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''))
+        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')),
+        season
 ),
 
 defensive_top_per_club as (
     -- Find player with lowest average points conceded per club
     select
         club,
+        season,
         player_name,
         rubbers_played,
         total_points_conceded,
         avg_points_conceded_per_rubber,
-        row_number() over (partition by club order by avg_points_conceded_per_rubber asc, player_name) as rn
+        row_number() over (partition by club, season order by avg_points_conceded_per_rubber asc, player_name) as rn
     from defensive_stats
 ),
 
@@ -556,6 +599,7 @@ defensive_final as (
     select
         'defensive_wall' as award,
         club,
+        season,
         player_name as player,
         -- Award value is the average (rounded to 1 decimal for display)
         cast(round(avg_points_conceded_per_rubber, 1) as int) as award_value,
@@ -571,13 +615,15 @@ giant_killing_stats as (
     select
         player_name,
         trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        season,
         max(divisions_higher) as max_divisions_higher,
         sum(rubber_margin) as total_margin,
         count(*) as giant_killing_count
     from {{ ref('int_cross_division_matchups') }}
     group by 
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''))
+        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')),
+        season
 ),
 
 giant_killing_awards as (
@@ -585,11 +631,12 @@ giant_killing_awards as (
     select
         'giant_killing' as award,
         club,
+        season,
         player_name as player,
         max_divisions_higher as award_value,
         total_margin,
         giant_killing_count,
-        row_number() over (partition by club order by max_divisions_higher desc, total_margin desc, player_name) as rn
+        row_number() over (partition by club, season order by max_divisions_higher desc, total_margin desc, player_name) as rn
     from giant_killing_stats
 ),
 
@@ -597,6 +644,7 @@ giant_killing_winners as (
     -- Filter to only award winners BEFORE joining to details
     select
         club,
+        season,
         player
     from giant_killing_awards
     where rn = 1
@@ -607,6 +655,7 @@ giant_killing_details as (
     select
         cdm.player_name,
         trim(regexp_replace(cdm.team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        cdm.season,
         cdm.match_date || ': vs ' || cdm.opponent_team || 
         ' (Rubber ' || cdm.rubber_number || ' with ' || cdm.partner_name || ') - ' ||
         'Defeated ' || cdm.higher_division_opponent_name || 
@@ -620,6 +669,7 @@ giant_killing_details as (
     inner join giant_killing_winners gkw
         on cdm.player_name = gkw.player
         and trim(regexp_replace(cdm.team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) = gkw.club
+        and cdm.season = gkw.season
 ),
 
 giant_killing_details_aggregated as (
@@ -627,17 +677,20 @@ giant_killing_details_aggregated as (
     select
         player_name,
         club,
+        season,
         string_agg(detail_line, ' | ' order by divisions_higher desc, match_date, rubber_number) as award_details
     from giant_killing_details
     group by 
         player_name,
-        club
+        club,
+        season
 ),
 
 giant_killing_final as (
     select
         gka.award,
         gka.club,
+        gka.season,
         gka.player,
         gka.award_value,
         coalesce(gkda.award_details, '') as award_details
@@ -645,6 +698,7 @@ giant_killing_final as (
     left join giant_killing_details_aggregated gkda
         on gka.player = gkda.player_name
         and gka.club = gkda.club
+        and gka.season = gkda.season
     where gka.rn = 1
 ),
 
@@ -669,6 +723,7 @@ epic_win_rubbers as (
         venue,
         rubber_winner,
         rubber_score,
+        season,
         -- Calculate total points for home team
         game_1_home_score + game_2_home_score + game_3_home_score as home_total_points,
         -- Calculate total points for away team
@@ -730,6 +785,7 @@ epic_win_partnerships as (
             ' (Open|Womens|Mixed|Mens) \d+.*$', 
             ''
         )) as club,
+        season,
         match_date,
         venue,
         rubber_score,
@@ -742,6 +798,7 @@ epic_win_top_partnerships as (
     -- Find the highest total points scored per club
     select
         club,
+        season,
         player_1,
         player_2,
         team,
@@ -751,7 +808,7 @@ epic_win_top_partnerships as (
         match_date,
         venue,
         rubber_score,
-        row_number() over (partition by club order by total_points_scored desc, game_3_score desc, player_1, player_2) as rn
+        row_number() over (partition by club, season order by total_points_scored desc, game_3_score desc, player_1, player_2) as rn
     from epic_win_partnerships
 ),
 
@@ -759,6 +816,7 @@ epic_win_details as (
     -- Create details for both players
     select
         club,
+        season,
         player_1,
         player_2,
         match_date || ' at ' || venue || ' vs ' || opponent_team || 
@@ -774,6 +832,7 @@ epic_win_awards as (
     select
         'epic_win' as award,
         club,
+        season,
         player_1 as player,
         player_2,
         total_points_scored as award_value,
@@ -787,6 +846,7 @@ clean_sweep_rubbers as (
     select
         player_name,
         trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        season,
         match_id,
         rubber_number,
         match_date,
@@ -807,11 +867,13 @@ clean_sweep_counted as (
     select
         player_name,
         club,
+        season,
         count(*) as clean_sweep_count
     from clean_sweep_rubbers
     group by 
         player_name,
-        club
+        club,
+        season
     having count(*) >= 3  -- Minimum threshold of 3 clean sweeps
 ),
 
@@ -819,9 +881,10 @@ clean_sweep_top_player as (
     -- Rank players per club
     select
         club,
+        season,
         player_name,
         clean_sweep_count,
-        row_number() over (partition by club order by clean_sweep_count desc, player_name) as rn
+        row_number() over (partition by club, season order by clean_sweep_count desc, player_name) as rn
     from clean_sweep_counted
 ),
 
@@ -830,6 +893,7 @@ clean_sweep_details as (
     select
         csr.player_name,
         csr.club,
+        csr.season,
         csr.match_date || ': vs ' || csr.opponent_team || 
         ' (Rubber ' || csr.rubber_number || ' with ' || csr.partner_name || ') - ' ||
         'Won ' || csr.rubber_score as detail_line
@@ -837,6 +901,7 @@ clean_sweep_details as (
     inner join clean_sweep_top_player cstp
         on csr.player_name = cstp.player_name
         and csr.club = cstp.club
+        and csr.season = cstp.season
         and cstp.rn = 1  -- Only get details for award winners
     order by 
         csr.player_name,
@@ -850,11 +915,13 @@ clean_sweep_details_aggregated as (
     select
         player_name,
         club,
+        season,
         string_agg(detail_line, ' | ') as award_details
     from clean_sweep_details
     group by 
         player_name,
-        club
+        club,
+        season
 ),
 
 clean_sweep_final as (
@@ -862,6 +929,7 @@ clean_sweep_final as (
     select
         'clean_sweep_specialist' as award,
         cstp.club,
+        cstp.season,
         cstp.player_name as player,
         cstp.clean_sweep_count as award_value,
         coalesce(csda.award_details, 'No details available') as award_details
@@ -869,6 +937,7 @@ clean_sweep_final as (
     left join clean_sweep_details_aggregated csda
         on cstp.player_name = csda.player_name
         and cstp.club = csda.club
+        and cstp.season = csda.season
     where cstp.rn = 1
 ),
 
@@ -887,7 +956,8 @@ perfect_partnership_rubbers as (
         rubber_winner,
         match_date,
         venue,
-        rubber_score
+        rubber_score,
+        season
     from {{ ref('int_match_rubbers') }}
     where 
         went_to_three_games = false  -- Only 2 games played
@@ -923,6 +993,7 @@ perfect_partnership_partnerships as (
             ' (Open|Womens|Mixed|Mens) \d+.*$', 
             ''
         )) as club,
+        season,
         match_id,
         rubber_number,
         match_date,
@@ -935,12 +1006,14 @@ perfect_partnership_counted as (
     -- Count 2-0 wins per partnership
     select
         club,
+        season,
         player_1,
         player_2,
         count(*) as partnership_wins
     from perfect_partnership_partnerships
     group by 
         club,
+        season,
         player_1,
         player_2
     having count(*) >= 5  -- Minimum threshold of 5 wins together
@@ -950,10 +1023,11 @@ perfect_partnership_top_partnerships as (
     -- Rank partnerships per club
     select
         club,
+        season,
         player_1,
         player_2,
         partnership_wins,
-        row_number() over (partition by club order by partnership_wins desc, player_1, player_2) as rn
+        row_number() over (partition by club, season order by partnership_wins desc, player_1, player_2) as rn
     from perfect_partnership_counted
 ),
 
@@ -961,12 +1035,13 @@ perfect_partnership_details as (
     -- Gather detailed information, limited to first 5 matches
     select
         ppp.club,
+        ppp.season,
         ppp.player_1,
         ppp.player_2,
         ppp.match_date || ': vs ' || ppp.opponent_team || 
         ' (Rubber ' || ppp.rubber_number || ') - Won ' || ppp.rubber_score as detail_line,
         row_number() over (
-            partition by ppp.club, ppp.player_1, ppp.player_2 
+            partition by ppp.club, ppp.player_1, ppp.player_2, ppp.season 
             order by ppp.match_date, ppp.rubber_number
         ) as detail_rn
     from perfect_partnership_partnerships ppp
@@ -974,6 +1049,7 @@ perfect_partnership_details as (
         on ppp.club = pptp.club
         and ppp.player_1 = pptp.player_1
         and ppp.player_2 = pptp.player_2
+        and ppp.season = pptp.season
         and pptp.rn = 1  -- Only get details for award winners
 ),
 
@@ -981,6 +1057,7 @@ perfect_partnership_details_aggregated as (
     -- Aggregate details with truncation
     select
         club,
+        season,
         player_1,
         player_2,
         string_agg(
@@ -996,6 +1073,7 @@ perfect_partnership_details_aggregated as (
     where detail_rn <= 5  -- Limit to first 5 matches
     group by 
         club,
+        season,
         player_1,
         player_2
 ),
@@ -1005,6 +1083,7 @@ perfect_partnership_awards as (
     select
         'perfect_partnership' as award,
         pptp.club,
+        pptp.season,
         pptp.player_1 as player,
         pptp.player_2,
         pptp.partnership_wins as award_value,
@@ -1014,12 +1093,14 @@ perfect_partnership_awards as (
         on pptp.club = ppda.club
         and pptp.player_1 = ppda.player_1
         and pptp.player_2 = ppda.player_2
+        and pptp.season = ppda.season
     where pptp.rn = 1
 )
 
 select 
     award,
     club,
+    season,
     player,
     null as player_2,
     award_value,
@@ -1031,6 +1112,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     null as player_2,
     award_value,
@@ -1042,6 +1124,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     player_2,
     award_value,
@@ -1053,6 +1136,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     null as player_2,
     award_value,
@@ -1064,6 +1148,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     null as player_2,
     award_value,
@@ -1075,6 +1160,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     null as player_2,
     award_value,
@@ -1086,6 +1172,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     null as player_2,
     award_value,
@@ -1097,6 +1184,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     null as player_2,
     award_value,
@@ -1108,6 +1196,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     player_2,
     award_value,
@@ -1119,6 +1208,7 @@ union all
 select 
     award,
     club,
+    season,
     player,
     player_2,
     award_value,
@@ -1126,5 +1216,6 @@ select
 from perfect_partnership_awards
 
 order by 
+    season,
     award_value desc,
     club
