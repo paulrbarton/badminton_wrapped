@@ -7,8 +7,8 @@ with comeback_rubbers as (
     -- A comeback is: lost game 1, but won the rubber (meaning won games 2 and 3)
     select
         player_name,
-        -- Extract club name (everything before " Open", " Womens", " Mixed", etc.)
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        -- Extract and normalize club name to avoid punctuation variants splitting clubs.
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         season,
         match_id,
         rubber_number
@@ -54,7 +54,7 @@ comeback_details as (
     -- Gather detailed information for each comeback rubber
     select
         pmr.player_name,
-        trim(regexp_replace(pmr.team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        trim(regexp_replace(replace(regexp_replace(pmr.team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         pmr.season,
         pmr.match_date,
         pmr.opponent_team,
@@ -70,7 +70,7 @@ comeback_details as (
     from {{ ref('int_player_match_rubbers') }} pmr
     inner join comeback_awards ca
         on pmr.player_name = ca.player
-        and trim(regexp_replace(pmr.team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) = ca.club
+        and trim(regexp_replace(replace(regexp_replace(pmr.team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) = ca.club
         and pmr.season = ca.season
         and ca.rn = 1  -- Only get details for award winners
     where 
@@ -118,7 +118,7 @@ stalwart_stats as (
     -- Calculate match and rubber counts per player/club
     select
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         season,
         count(distinct match_id) as matches_played,
         count(*) as rubbers_played,
@@ -127,7 +127,7 @@ stalwart_stats as (
     where is_forfeit = false
     group by 
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')),
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')),
         season
 ),
 
@@ -241,11 +241,11 @@ no_mercy_partnerships as (
             else home_team
         end as opponent_team,
         -- Club extraction
-        trim(regexp_replace(
+        trim(regexp_replace(replace(regexp_replace(
             case when rubber_winner = 'home' then home_team else away_team end,
             ' (Open|Womens|Mixed|Mens) \d+.*$', 
             ''
-        )) as club,
+        ), '-', ' '), ' +', ' ')) as club,
         season,
         total_margin,
         rubber_score,
@@ -306,7 +306,7 @@ pressure_games as (
     -- Identify all games won by exactly 2 points
     select
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         season,
         match_id,
         rubber_number,
@@ -435,7 +435,7 @@ player_rubbers_chronological as (
     -- Get all rubbers for each player in chronological order
     select
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         season,
         match_id,
         rubber_number,
@@ -446,7 +446,7 @@ player_rubbers_chronological as (
         is_forfeit,
         -- Create a chronological ordering
         row_number() over (
-            partition by player_name, trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')), season
+            partition by player_name, trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')), season
             order by match_date, match_id, rubber_number
         ) as rubber_seq
     from {{ ref('int_player_match_rubbers') }}
@@ -550,7 +550,7 @@ defensive_stats as (
     -- Calculate total points conceded per player
     select
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         season,
         count(*) as rubbers_played,
         sum(
@@ -577,7 +577,7 @@ defensive_stats as (
         )
     group by 
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')),
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')),
         season
 ),
 
@@ -614,7 +614,7 @@ giant_killing_stats as (
     -- Extract club directly in aggregation to reduce memory
     select
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         season,
         max(divisions_higher) as max_divisions_higher,
         sum(rubber_margin) as total_margin,
@@ -622,7 +622,7 @@ giant_killing_stats as (
     from {{ ref('int_cross_division_matchups') }}
     group by 
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')),
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')),
         season
 ),
 
@@ -654,7 +654,7 @@ giant_killing_details as (
     -- Get details only for award winners (much smaller result set)
     select
         cdm.player_name,
-        trim(regexp_replace(cdm.team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        trim(regexp_replace(replace(regexp_replace(cdm.team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         cdm.season,
         cdm.match_date || ': vs ' || cdm.opponent_team || 
         ' (Rubber ' || cdm.rubber_number || ' with ' || cdm.partner_name || ') - ' ||
@@ -668,7 +668,7 @@ giant_killing_details as (
     from {{ ref('int_cross_division_matchups') }} cdm
     inner join giant_killing_winners gkw
         on cdm.player_name = gkw.player
-        and trim(regexp_replace(cdm.team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) = gkw.club
+        and trim(regexp_replace(replace(regexp_replace(cdm.team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) = gkw.club
         and cdm.season = gkw.season
 ),
 
@@ -780,11 +780,11 @@ epic_win_partnerships as (
             else game_3_away_score
         end as game_3_score,
         -- Club extraction
-        trim(regexp_replace(
+        trim(regexp_replace(replace(regexp_replace(
             case when rubber_winner = 'home' then home_team else away_team end,
             ' (Open|Womens|Mixed|Mens) \d+.*$', 
             ''
-        )) as club,
+        ), '-', ' '), ' +', ' ')) as club,
         season,
         match_date,
         venue,
@@ -845,7 +845,7 @@ clean_sweep_rubbers as (
     -- Identify all 2-0 rubber wins
     select
         player_name,
-        trim(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', '')) as club,
+        trim(regexp_replace(replace(regexp_replace(team, ' (Open|Womens|Mixed|Mens) \d+.*$', ''), '-', ' '), ' +', ' ')) as club,
         season,
         match_id,
         rubber_number,
@@ -988,11 +988,11 @@ perfect_partnership_partnerships as (
             else home_team
         end as opponent_team,
         -- Club extraction
-        trim(regexp_replace(
+        trim(regexp_replace(replace(regexp_replace(
             case when rubber_winner = 'home' then home_team else away_team end,
             ' (Open|Womens|Mixed|Mens) \d+.*$', 
             ''
-        )) as club,
+        ), '-', ' '), ' +', ' ')) as club,
         season,
         match_id,
         rubber_number,

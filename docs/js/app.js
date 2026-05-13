@@ -12,6 +12,7 @@
     "use strict";
 
     const app = document.getElementById("app");
+    const embeddedData = window.BADMINTON_WRAPPED_DATA || null;
 
     // Data cache: { "2024-25": { season, clubs } }
     const cache = {};
@@ -33,14 +34,22 @@
 
     async function getSeasons() {
         if (!seasons) {
-            seasons = await fetchJSON("data/seasons.json");
+            if (embeddedData && Array.isArray(embeddedData.seasons)) {
+                seasons = embeddedData.seasons;
+            } else {
+                seasons = await fetchJSON("data/seasons.json");
+            }
         }
         return seasons;
     }
 
     async function getSeasonData(season) {
         if (!cache[season]) {
-            cache[season] = await fetchJSON(`data/${season}.json`);
+            if (embeddedData && embeddedData.seasonsData && embeddedData.seasonsData[season]) {
+                cache[season] = embeddedData.seasonsData[season];
+            } else {
+                cache[season] = await fetchJSON(`data/${season}.json`);
+            }
         }
         return cache[season];
     }

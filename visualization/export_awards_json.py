@@ -5,6 +5,7 @@ Export award data from DuckDB to JSON files for the awards website.
 Queries mart_club_awards for all seasons and writes:
   - docs/data/seasons.json  — list of available seasons
   - docs/data/{season}.json — per-season file with clubs and their awards
+    - docs/data/inline-data.js — embedded data bundle for file:// browsing
 
 Usage:
     python visualization/export_awards_json.py
@@ -23,6 +24,7 @@ logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = PROJECT_ROOT / "data" / "badminton_wrapped.duckdb"
 OUTPUT_DIR = PROJECT_ROOT / "docs" / "data"
+INLINE_DATA_PATH = OUTPUT_DIR / "inline-data.js"
 
 
 def slugify(name: str) -> str:
@@ -87,6 +89,8 @@ def export_awards() -> None:
     seasons_path.write_text(json.dumps(seasons, indent=2))
     logger.info("Wrote %s", seasons_path)
 
+    seasons_data: dict[str, dict] = {}
+
     # Export each season
     for season in seasons:
         if has_season:
@@ -109,8 +113,10 @@ def export_awards() -> None:
             ).fetchall()
 
         clubs: dict = {}
+        slug_sources: dict[str, set[str]] = {}
         for award, club, player, player_2, award_value, award_details in rows:
             slug = slugify(club)
+            slug_sources.setdefault(slug, set()).add(club)
             if slug not in clubs:
                 clubs[slug] = {"name": club, "awards": []}
             clubs[slug]["awards"].append(
@@ -123,7 +129,17 @@ def export_awards() -> None:
                 }
             )
 
+        for slug, names in slug_sources.items():
+            if len(names) > 1:
+                logger.warning(
+                    "Slug collision for season %s at slug '%s': source club names=%s",
+                    season,
+                    slug,
+                    sorted(names),
+                )
+
         season_data = {"season": season, "clubs": clubs}
+        seasons_data[season] = season_data
         season_path = OUTPUT_DIR / f"{season}.json"
         season_path.write_text(json.dumps(season_data, indent=2))
         logger.info(
@@ -132,6 +148,14 @@ def export_awards() -> None:
             len(clubs),
             len(rows),
         )
+
+    inline_payload = {
+        "seasons": seasons,
+        "seasonsData": seasons_data,
+    }
+    inline_js = "window.BADMINTON_WRAPPED_DATA = " + json.dumps(inline_payload, separators=(",", ":")) + ";\n"
+    INLINE_DATA_PATH.write_text(inline_js)
+    logger.info("Wrote %s", INLINE_DATA_PATH)
 
     conn.close()
     logger.info("Export complete")
